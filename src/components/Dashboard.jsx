@@ -1,3 +1,5 @@
+import React, { useState, useMemo } from 'react';
+
 export default function Dashboard({ questions, stats, history, startQuiz, currentUser, onOpenAuth, onOpenCompareModal, onOpenRankModal, onOpenGoalModal, dailyGoal = 50 }) {
   const [selectedMockLimit, setSelectedMockLimit] = useState(50);
   const [dailyCaseSelected, setDailyCaseSelected] = useState(null);
