@@ -33,7 +33,11 @@ export function safeStorageGet(key, fallbackValue = null) {
   try {
     const item = localStorage.getItem(key);
     if (!item) return fallbackValue;
-    return JSON.parse(item);
+    const parsed = JSON.parse(item);
+    if (Array.isArray(fallbackValue) && !Array.isArray(parsed)) {
+      return fallbackValue;
+    }
+    return parsed !== null && parsed !== undefined ? parsed : fallbackValue;
   } catch (error) {
     console.warn(`[Storage Warning] Corrupt data detected for key "${key}". Resetting to fallback.`, error);
     return fallbackValue;

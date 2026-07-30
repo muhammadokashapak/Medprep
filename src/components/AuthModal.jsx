@@ -47,24 +47,25 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
     setLoading(true);
     try {
       const hashedPassword = await hashPassword(password);
-      const users = safeStorageGet('fcps_users', []);
-      const found = users.find(u => u.email.toLowerCase() === email.trim().toLowerCase());
+      const rawUsers = safeStorageGet('fcps_users', []);
+      const users = Array.isArray(rawUsers) ? rawUsers : [];
+      const found = users.find(u => u && u.email && u.email.toLowerCase() === email.trim().toLowerCase());
 
       if (found) {
         if (found.password === hashedPassword || found.password === password) {
-          const safeUser = sanitizeUserSession(found);
+          const safeUser = sanitizeUserSession(found) || { name: 'Doctor', email: found.email, examPreference: found.examPreference || 'FCPS Part 1' };
           onLogin(safeUser, rememberMe);
-          addToast(`Welcome back, ${safeUser.name}!`, 'success');
+          if (addToast) addToast(`Welcome back, ${safeUser.name || 'Candidate'}!`, 'success');
           onClose();
         } else {
-          addToast('Incorrect password', 'error');
+          if (addToast) addToast('Incorrect password', 'error');
         }
       } else {
-        addToast('No candidate account found with this email. Please register first.', 'error');
+        if (addToast) addToast('No candidate account found with this email. Please register first.', 'error');
       }
     } catch (err) {
       console.error('[Auth Error]', err);
-      addToast('Login failed. Please try again.', 'error');
+      if (addToast) addToast('Login failed. Please try again.', 'error');
     } finally {
       setLoading(false);
     }
@@ -72,36 +73,38 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
 
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
-    const cleanName = sanitizeInputString(name, 60);
+    const cleanName = sanitizeInputString(name, 60) || 'Dr. Candidate';
     const cleanEmail = email.trim().toLowerCase();
 
     if (!cleanName || !cleanEmail || !password || !confirmPassword) {
-      addToast('Please fill in all registration fields', 'error');
+      if (addToast) addToast('Please fill in all registration fields', 'error');
       return;
     }
 
     if (!validateEmail(cleanEmail)) {
-      addToast('Please enter a valid email address', 'error');
+      if (addToast) addToast('Please enter a valid email address', 'error');
       return;
     }
 
     if (password !== confirmPassword) {
-      addToast('Passwords do not match', 'error');
+      if (addToast) addToast('Passwords do not match', 'error');
       return;
     }
 
     if (password.length < 6) {
-      addToast('Password must be at least 6 characters', 'error');
+      if (addToast) addToast('Password must be at least 6 characters', 'error');
       return;
     }
 
     setLoading(true);
     try {
       const hashedPassword = await hashPassword(password);
-      const users = safeStorageGet('fcps_users', []);
+      const rawUsers = safeStorageGet('fcps_users', []);
+      const users = Array.isArray(rawUsers) ? rawUsers : [];
 
-      if (users.some(u => u.email.toLowerCase() === cleanEmail)) {
-        addToast('An account with this email address already exists', 'error');
+      if (users.some(u => u && u.email && u.email.toLowerCase() === cleanEmail)) {
+        if (addToast) addToast('An account with this email address already exists', 'error');
+        setLoading(false);
         return;
       }
 
@@ -109,20 +112,20 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
         name: cleanName,
         email: cleanEmail,
         password: hashedPassword,
-        examPreference,
+        examPreference: examPreference || 'FCPS Part 1',
         joined: new Date().toLocaleDateString()
       };
 
       users.push(newUser);
       safeStorageSet('fcps_users', users);
 
-      const safeUser = sanitizeUserSession(newUser);
+      const safeUser = sanitizeUserSession(newUser) || { name: cleanName, email: cleanEmail, examPreference: examPreference || 'FCPS Part 1' };
       onLogin(safeUser, rememberMe);
-      addToast('Candidate account created successfully!', 'success');
+      if (addToast) addToast('Candidate account created successfully!', 'success');
       onClose();
     } catch (err) {
       console.error('[Registration Error]', err);
-      addToast('Registration failed. Please try again.', 'error');
+      if (addToast) addToast('Registration failed. Please try again.', 'error');
     } finally {
       setLoading(false);
     }
@@ -131,31 +134,32 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
   const handleForgotSubmit = async (e) => {
     e.preventDefault();
     if (!email || !validateEmail(email)) {
-      addToast('Please enter a valid registered email address', 'error');
+      if (addToast) addToast('Please enter a valid registered email address', 'error');
       return;
     }
     if (!newPassword || newPassword.length < 6) {
-      addToast('New password must be at least 6 characters long', 'error');
+      if (addToast) addToast('New password must be at least 6 characters long', 'error');
       return;
     }
 
     setLoading(true);
     try {
       const hashedPassword = await hashPassword(newPassword);
-      const users = safeStorageGet('fcps_users', []);
-      const userIndex = users.findIndex(u => u.email.toLowerCase() === email.trim().toLowerCase());
+      const rawUsers = safeStorageGet('fcps_users', []);
+      const users = Array.isArray(rawUsers) ? rawUsers : [];
+      const userIndex = users.findIndex(u => u && u.email && u.email.toLowerCase() === email.trim().toLowerCase());
 
       if (userIndex !== -1) {
         users[userIndex].password = hashedPassword;
         safeStorageSet('fcps_users', users);
-        addToast(`Password updated successfully for ${email}. You can now sign in.`, 'success');
+        if (addToast) addToast(`Password updated successfully for ${email}. You can now sign in.`, 'success');
         setView('login');
       } else {
-        addToast('No candidate account found matching that email address', 'error');
+        if (addToast) addToast('No candidate account found matching that email address', 'error');
       }
     } catch (err) {
       console.error('[Forgot Password Error]', err);
-      addToast('Failed to reset password. Please try again.', 'error');
+      if (addToast) addToast('Failed to reset password. Please try again.', 'error');
     } finally {
       setLoading(false);
     }

@@ -213,13 +213,16 @@ export default function App() {
   };
 
   const handleLogin = (userObj, rememberMe) => {
-    const safeUser = sanitizeUserSession(userObj);
+    if (!userObj) return;
+    const safeUser = sanitizeUserSession(userObj) || { name: 'Candidate', email: userObj.email || '', examPreference: userObj.examPreference || 'FCPS Part 1' };
     setCurrentUser(safeUser);
     setIsAuthOpen(false);
     if (rememberMe) {
       safeStorageSet('medprep_user', safeUser);
     }
-    addToast(`Welcome, Dr. ${safeUser.name}! Loading ${safeUser.examPreference || 'FCPS Part 1'} QBank.`, 'success');
+    const doctorName = safeUser.name || 'Candidate';
+    const pref = safeUser.examPreference || 'FCPS Part 1';
+    addToast(`Welcome, Dr. ${doctorName}! Loading ${pref} QBank.`, 'success');
   };
 
   const handleLogout = () => {
