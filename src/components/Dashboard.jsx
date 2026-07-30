@@ -1,5 +1,7 @@
 export default function Dashboard({ questions, stats, history, startQuiz, currentUser, onOpenAuth, onOpenCompareModal, onOpenRankModal, onOpenGoalModal, dailyGoal = 50 }) {
   const [selectedMockLimit, setSelectedMockLimit] = useState(50);
+  const [dailyCaseSelected, setDailyCaseSelected] = useState(null);
+  const [showCaseRationale, setShowCaseRationale] = useState(false);
 
   const accuracy = stats.attemptedCount > 0 
     ? Math.round((stats.correctCount / stats.attemptedCount) * 100) 
@@ -412,6 +414,113 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Daily High-Yield Clinical Vignette Challenge Spotlight Card */}
+      <div className="glass-panel" style={{
+        padding: '1.35rem',
+        marginBottom: '2rem',
+        background: 'var(--gradient-card-hero)',
+        border: '1px solid var(--border-glow)',
+        borderRadius: 'var(--radius-md)'
+      }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.85rem', flexWrap: 'wrap', gap: '0.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <span className="badge" style={{ background: 'var(--gradient-primary)', color: '#fff', fontWeight: 800 }}>
+              <i className="fa-solid fa-star"></i> DAILY CLINICAL CHALLENGE
+            </span>
+            <span style={{ fontSize: '0.78rem', color: 'var(--accent-cyan)', fontWeight: 600 }}>USMLE / FCPS High-Yield Case</span>
+          </div>
+          <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Updated Today</span>
+        </div>
+
+        <h4 style={{ fontSize: '1rem', color: 'var(--text-main)', marginBottom: '0.75rem', lineHeight: 1.5, fontWeight: 700 }}>
+          A 45-year-old male presents with sudden-onset severe epigastric pain radiating to his back, accompanied by nausea and vomiting. Serum amylase is elevated at 1,450 U/L. Which pathophysiological mechanism is primary?
+        </h4>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.6rem', marginBottom: '0.85rem' }}>
+          {[
+            { id: 'A', text: 'Intra-acinar activation of zymogens', isCorrect: true },
+            { id: 'B', text: 'Autoimmune IgG4 plasma cell infiltrate', isCorrect: false },
+            { id: 'C', text: 'Biliary stricture fibrosis', isCorrect: false },
+            { id: 'D', text: 'Thrombin clot microembolization', isCorrect: false }
+          ].map(opt => {
+            const isChosen = dailyCaseSelected === opt.id;
+            let btnBg = 'rgba(255,255,255,0.04)';
+            let btnBorder = '1px solid var(--border-subtle)';
+            let textColor = 'var(--text-main)';
+
+            if (isChosen) {
+              if (opt.isCorrect) {
+                btnBg = 'rgba(16, 185, 129, 0.18)';
+                btnBorder = '2px solid var(--accent-emerald)';
+                textColor = 'var(--accent-emerald)';
+              } else {
+                btnBg = 'rgba(239, 68, 68, 0.18)';
+                btnBorder = '2px solid var(--accent-rose)';
+                textColor = 'var(--accent-rose)';
+              }
+            }
+
+            return (
+              <button
+                key={opt.id}
+                onClick={() => {
+                  setDailyCaseSelected(opt.id);
+                  setShowCaseRationale(true);
+                }}
+                style={{
+                  padding: '0.65rem 0.85rem',
+                  borderRadius: 'var(--radius-sm)',
+                  background: btnBg,
+                  border: btnBorder,
+                  color: textColor,
+                  fontSize: '0.82rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  textAlign: 'left',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <span style={{
+                  width: '24px',
+                  height: '24px',
+                  borderRadius: '50%',
+                  background: 'rgba(255,255,255,0.08)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '0.75rem',
+                  fontWeight: 800
+                }}>
+                  {opt.id}
+                </span>
+                <span>{opt.text}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {showCaseRationale && (
+          <div style={{
+            background: 'rgba(6, 182, 212, 0.08)',
+            border: '1px solid rgba(6, 182, 212, 0.25)',
+            padding: '0.85rem 1rem',
+            borderRadius: 'var(--radius-sm)',
+            fontSize: '0.82rem',
+            color: 'var(--text-main)',
+            lineHeight: 1.5,
+            marginTop: '0.75rem'
+          }}>
+            <strong style={{ color: 'var(--accent-cyan)', display: 'block', marginBottom: '0.25rem' }}>
+              <i className="fa-solid fa-lightbulb"></i> Clinical Rationale & Key Takeaway:
+            </strong>
+            Acute pancreatitis is initiated by premature intra-acinar activation of trypsinogen to trypsin, leading to enzymatic autodigestion of pancreatic parenchyma and fat necrosis.
+          </div>
+        )}
       </div>
 
       {/* Visual Analytics Graphs Section */}
