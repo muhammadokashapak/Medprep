@@ -1,0 +1,2893 @@
+=== PAGE 131 ===
+■ 2°/3°:  Caused by ↓ ACTH production by the pituitary gland or ↓ CRH 
+production by the hypothalamus; most often caused by cessation of long-
+term glucocorticoid treatment (often during higher doses and longer dura-
+tion of therapy).
+History/PE
+■ Most symptoms are nonspecific.
+■ Weakness, fatigue, and anorexia with weight loss are common.
+■ Hyperpigmentation (caused by ↑ ACTH secretion) and non–anion gap 
+metabolic acidosis (caused by ↓ aldosterone deficiency) is seen in Addison 
+disease.
+■ Hypotension, confusion, and coma is seen in acute adrenal crisis (eg, stop -
+ping long-term steroids).
+Diagnosis
+■ Lab tests:  Hypoglycemia, electrolyte imbalances (see Table 2.3-11).
+■ 8 am  plasma cortisol levels and ACTH levels (see Table 2.3-11). An 8 am 
+plasma cortisol level < 3 μg/dL in the absence of exogenous glucocorti-
+coid administration is diagnostic of AI.
+■ A synthetic ACTH stimulation (cosyntropin) test is the test of choice if morn -
+ing cortisol levels are nondiagnostic. Failure of cortisol to rise >   20 μg/dL 
+following ACTH administration confirms the diagnosis.
+trEatmEnt
+■ 1°:  Glucocorticoid and mineralocorticoid replacement.
+■ 2°/3°:  Only glucocorticoid replacement is necessary (mineralocorticoid 
+production is not ACTH dependent).
+■ Acute adrenal crisis:  Provide IV steroids, correct electrolyte abnormalities 
+as needed, provide 50% dextrose to correct hypoglycemia, and initiate 
+aggressive volume resuscitation.
+■ ↑  Steroids during periods of stress (eg, major surgery, trauma, infection).
+■ In patients on chronic steroid therapy, taper slowly to prevent 2°/3° AI .
+PHEOCHROMOCYTOMA
+A tumor of chromaffin tissue that secretes catecholamines and is found either 
+in the adrenal medulla or in extra-adrenal sites. Most commonly associated 
+with MEN 2A and 2B.
+History/PE
+■ Presents with paroxysmal tachycardia, palpitations, chest pain, diaphoresis, 
+hypertension, headache, tremor, and anxiety.
+■ Obtain a family history to rule out genetic causes of pheochromocytoma 
+(eg, MEN 2A/2B, von Hippel–Lindau disease, neurofibromatosis).
+ KEY FACT
+1° AI is associated with ↑ skin 
+pigmentation, ↓ glucocorticoids, and 
+↓ mineralocorticoids. 2° AI is only 
+associated with ↓ glucocorticoids and 
+does not have skin pigmentation or 
+hyperkalemia.
+ MNEMONIC
+The 4 S’s of adrenal crisis 
+management—
+Salt: 0.9% saline
+Steroids: IV hydrocortisone 100 mg every 
+8 hours
+Support
+Search for the underlying illness
+ KEY FACT
+Do not delay the administration of 
+steroids in a patient with suspected AI.
+ MNEMONIC
+Pheochromocytoma rule of 10’s—
+10% Extra-adrenal
+10% Bilateral
+10% Malignant
+10% Occur in children
+10% Familial
+cortisoL aLdosterone acth sodiuM PotassiuM
+1° Adrenal 
+insufficiency
+↓ ↓ ↑ ↓ ↑ ↑
+2°/3° Adrenal 
+insufficiency
+↓ Normal ↓ Nl/↓ Nl
+TABLE 2.3-11.  L aboratory Findings in Adrenal Insufficiency
+114 ENDOCRINOLOGYHIGH-YIELD FACTS IN
+2019_02.03_Step2CK_Endo_10e_089-118.indd   114 8/28/18   12:37 PM
+
+=== PAGE 132 ===
+Diagnosis
+■ Best initial test:  Look for ↑ 24-hour urine metanephrines and catechol-
+amines or plasma-fractionated metanephrines.
+■ Imaging (only after labs):  CT or MRI of adrenal glands (see Figure 2.3-21). 
+A nuclear metaiodobenzylguanidine (MIBG) scan can localize extra-adrenal 
+lesions and metastatic disease.
+trEatmEnt
+■ Surgical resection.
+■ Preoperatively, use α-adrenergic blockade first (phenoxybenzamine) to 
+control hypertension, followed by β-blockade to control tachycardia. 
+Never give β-blockade first, as unopposed α-adrenergic stimulation can 
+lead to severe hypertension.
+HYPERALDOSTERONISM
+Results from excessive secretion of aldosterone from the zona glomerulosa 
+of the adrenal cortex. It is usually caused by bilateral adrenocortical hyper-
+plasia (60–70%) but can also result from unilateral adrenal adenoma (Conn 
+syndrome).
+History/PE
+■ Presents with hypertension, headache, polyuria, and muscle weakness 
+(caused by hypokalemia).
+■ Consider hyperaldosteronism in younger adults who are diagnosed with 
+hypertension without risk factors or a family history of hypertension
+.
+Diagnosis
+■ Lab tests:  Hypokalemia, metabolic alkalosis, hypomagnesemia, hyperaldo-
+steronism, ↑ aldosterone-to-plasma renin activity ratio (usually > 30).
+■ Imaging:  Only after labs. CT or MRI may reveal an adrenal mass.
+■ Adrenal venous sampling (will show ↑ aldosterone) may be needed to 
+localize the adenoma or to confirm bilateral adrenal hyperplasia.
+trEatmEnt
+■ Adenoma:  Surgical resection (after correction of BP and potassium).
+■ Bilateral hyperplasia: Aldosterone receptor antagonist (eplerenone pre-
+ferred over spironolactone as has fewer side effects).
+ MNEMONIC
+The 5 P’s of pheochromocytoma—
+Pressure (BP)
+Pain (headache)
+Perspiration
+Palpitations
+Pallor
+ KEY FACT
+In pheochromocytoma, administer 
+α-blockers before β-blockers to prevent 
+hypertensive crisis.
+A 23-year-old man with a history of 
+schizophrenia presents with complaints 
+of fatigue, weakness, cramps, and 
+headache for the past several days. He 
+denies any other symptoms, although 
+he had to urinate several times while 
+in the office. Routine labs reveal 
+hyponatremia. With water deprivation, 
+his urine osmolality ↑. What is the most 
+likely diagnosis?
+1
+An asymptomatic 36-year-old woman 
+presents with a 2-cm thyroid mass. 
+TFTs are unremarkable, but FNA 
+reveals medullary carcinoma. Total 
+thyroidectomy with thyroid hormone 
+replacement is recommended. What 
+is the most important screening test 
+to perform prior to surgery? 
+2
+FIGURE 2.3-21.  Pheochromocytoma. (A) MRI showing left suprarenal mass (arrow). (B) Pheochromocytoma post-
+surgical resection. (Reproduced with permission from Roghi A, et al. Adrenergic myocarditis in pheochromocytoma. J Cardiovasc Magn Reson. 2011;13:4.)
+A
+ B
+115ENDOCRINOLOGY HIGH-YIELD FACTS IN
+2019_02.03_Step2CK_Endo_10e_089-118.indd   115 8/28/18   12:37 PM
+
+=== PAGE 133 ===
+CONGENITAL ADRENAL HYPERPLASIA
+Inherited enzyme defects that impair cortisol synthesis and result in the 
+accumulation of cortisol precursors. Most cases are caused by 21-hydroxylase 
+deficiency (95%, autosomal recessive), but other causes include 11- and 
+17-hydroxylase deficiencies.
+History/PE
+See Table 2.3-12.
+Diagnosis
+■ Lab tests:  Electrolyte abnormalities (see Table 2.3-12). In severe cases, 
+mineralocorticoid deficiency may lead to life-threatening salt wasting.
+■ Elevated serum 17-hydroxyprogesterone level is diagnostic of 21-hydroxylase 
+deficiency.
+trEatmEnt
+■ Immediate fluid resuscitation and salt repletion. Administer cortisol to ↓ 
+ACTH and adrenal androgens. Fludrocortisone is appropriate for severe 
+21-hydroxylase deficiency.
+■ Possible surgical correction of ambiguous genitalia.
+■ Refer to the Gynecology chapter for information on the diagnosis and 
+treatment of late-onset CAH.
+ KEY FACT
+Congenital aromatase deficiency will 
+present similarly to CAH in female 
+newborns with external virilization and 
+ambiguous external genitalia. However, 
+the patient will have no electrolyte or 
+blood pressure abnormalities.
+1° (psychogenic) polydipsia, a 
+condition in which patients consume 
+large volumes of fluid, resulting in 
+polyuria. It most often occurs in 
+patients with psychiatric disorders. 
+Patients present with symptoms 
+similar to DI, but following a water 
+deprivation test, urine osmolality 
+↑ (vs DI, in which urine remains dilute).
+1
+VMA and metanephrines. Medullary 
+carcinoma of the thyroid is associated 
+with MEN type 2A/2B, an autosomal 
+dominant condition that predisposes 
+patients not only to medullary 
+carcinoma but also to parathyroid 
+adenomas and pheochromocytomas. 
+Screening for pheochromocytoma 
+with urine VMA and metanephrines 
+prior to surgery can prevent potentially 
+life-threatening hypertensive crises 
+during thyroidectomy.
+2
+enzyMe deficiency MineraLocorticoids cortisoL
+sex 
+horMones bP [K +] Laboratory tests Presentation
+17α-hydroxylasea ↑ ↓ ↓ ↑ ↓ ↓ Androstenedione XY: pseudoher-
+maphroditism 
+(ambiguous geni-
+talia, undescended 
+testes)
+XX: lack sec-
+ondary sexual 
+development
+21-hydroxylase
+a ↓ ↓ ↑ ↓ ↑ ↑ Renin activity
+↑ 17-hydroxyprogesterone
+↓ Sodium
+↓ Chloride
+Most common
+Presents in infancy 
+(salt wasting) or 
+childhood (preco-
+cious puberty)
+XX: virilization
+11β-hydroxylase
+a ↓ Aldosterone
+↑ 11-deoxycorticosterone 
+(results in ↑ BP)
+↓ ↑ ↑ ↓ ↓ Renin activity XX: virilization
+aAll congenital adrenal enzyme deficiencies are characterized by an enlargement of both adrenal glands caused by ↑ ACTH stimulation (caused by 
+↓ cortisol).
+Reproduced with permission from Le T, Bhushan V. First Aid for the USMLE Step 1 2018. New York, NY: McGraw-Hill; 2018.
+TABLE 2.3-12.  O verview of Congenital Adrenal Hyperplasia
+116 ENDOCRINOLOGYHIGH-YIELD FACTS IN
+2019_02.03_Step2CK_Endo_10e_089-118.indd   116 8/28/18   12:37 PM
+
+=== PAGE 134 ===
+Multiple Endocrine Neoplasias
+A family of tumor syndromes with autosomal dominant inheritance (see 
+Figure 2.3-22).
+■ MEN type 1 (Wermer syndrome):
+■ Pancreatic islet cell tumors.
+■ Gastrinomas: Zollinger-Ellison syndrome.
+■ Insulinomas: Recurrent hypoglycemia with elevated insulin and 
+C-peptide levels.
+■ VIPomas: Watery diarrhea, hypokalemia, hypochlorhydria.
+■ Glucagonoma: New-onset diabetes, necrolytic migratory erythema.
+■ Parathyroid hyperplasia.
+■ Pituitary adenomas.
+■ MEN type 2A (Sipple syndrome):  Medullary carcinoma of the thyroid, 
+pheochromocytoma or adrenal hyperplasia, parathyroid gland hyperplasia. 
+Caused by mutations in the RET proto-oncogene.
+■ MEN type 2B:  Medullary carcinoma of the thyroid, pheochromocytoma, 
+oral and intestinal ganglioneuromatosis (mucosal neuromas), marfanoid 
+habitus. Caused by mutations in the RET proto-oncogene.
+ MNEMONIC
+MEN 1 affects “P” organs—
+Pancreas
+Pituitary
+Parathyroid
+CONGENITAL ADRENAL HYPERPLASIA
+Inherited enzyme defects that impair cortisol synthesis and result in the 
+accumulation of cortisol precursors. Most cases are caused by 21-hydroxylase 
+deficiency (95%, autosomal recessive), but other causes include 11- and 
+17-hydroxylase deficiencies.
+H
+istory/PE
+See Table 2.3-12.
+D
+iagnosis
+■ Lab tests: Electrolyte abnormalities (see Table 2.3-12). In severe cases, 
+mineralocorticoid deficiency may lead to life-threatening salt wasting.
+■ Elevated serum 17-hydroxyprogesterone level is diagnostic of 21-hydroxylase 
+deficiency.
+t
+rEatmEnt
+■ Immediate fluid resuscitation and salt repletion. Administer cortisol to ↓ 
+ACTH and adrenal androgens. Fludrocortisone is appropriate for severe 
+21-hydroxylase deficiency.
+■ Possible surgical correction of ambiguous genitalia.
+■ Refer to the Gynecology chapter for information on the diagnosis and 
+treatment of late-onset CAH.
+ KEY FACT
+Congenital aromatase deficiency will 
+present similarly to CAH in female 
+newborns with external virilization and 
+ambiguous external genitalia. However, 
+the patient will have no electrolyte or 
+blood pressure abnormalities.
+FIGURE 2.3-22.  Multiple endocrine neoplasias (MEN). (Reproduced with permission from UMSLE-
+Rx.com.)
+Pituitary
+Pancreas
+Parathyroids
+Thyroid
+(medullary carcinoma)
+Pheochromocytomas
+Mucosal neuromas
+MEN 1 = 3 P’s: Pituitary, Parathyroids, 
+   and Pancreas
+MEN 2A = 2 P’s: Parathyroids 
+   and Pheochromocytomas 
+MEN 2 B = 1 P: Pheochromocytomas
+117ENDOCRINOLOGY HIGH-YIELD FACTS IN
+2019_02.03_Step2CK_Endo_10e_089-118.indd   117 8/28/18   12:37 PM
+
+=== PAGE 135 ===
+NOTES
+118 ENDOCRINOLOGYHIGH-YIELD FACTS IN
+2019_02.03_Step2CK_Endo_10e_089-118.indd   118 8/28/18   12:37 PM
+
+=== PAGE 136 ===
+Assessment of Disease Frequency 120
+Assessment of Diagnostic Studies
+ 120
+SenSitivity and Specificity 120
+poSitive and negative predictive valueS 121
+likelihood ratio 122
+Measures of Effect 122
+Survival Curves
+ 123
+Types of Clinical Studies
+ 123
+croSS-Sectional Study 124
+cohort Study 124
+caSe-control Study 124
+randomized controlled trial 125
+Evaluating Clinical Studies 126
+BiaS 126
+StatiStical teSting 127
+prevention 128
+vaccination 128
+Behavioral Counseling 130
+Screening Recommendations
+ 132
+Causes of Death
+ 133
+Reportable Diseases
+ 134
+119
+HIGH-YIELD FACTS IN
+EPIDEMIOLOGY
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   119 8/28/18   12:39 PM
+
+=== PAGE 137 ===
+Assessment of Disease Frequency
+The prevalence of a disease is the number of existing cases in the population 
+at a specific moment in time.
+Prevalence total numbero fc ases in thep opulat= i iona to ne pointi n time
+totalp opulation
+The incidence of a disease is the number of new cases in the disease-free pop-
+ulation (“population at risk”) that develop over a period of time.
+Incidence numbero fn ew casesi nt he population= over ag iven timep eriod
+totalp opulationa tr i iskd uringt he specified timep eriod
+Prevalence depends on incidence and duration.
+Prevalence (P) = incidence (I) × average duration of disease (D)
+For incidence, remember to subtract any preexisting cases of the disease from 
+the total population at risk, as these individuals are no longer at risk.
+Assessment of Diagnostic Studies
+SENSITIVITY AND SPECIFICITY
+Physicians often use tests to narrow and confirm possible diagnoses. The sen-
+sitivity and specificity of these tests allow physicians to determine how often 
+false⊕ and false⊝ results occur (see Figure 2.4-1). Both sensitivity and speci-
+ficity are independent of disease prevalence.
+■ Sensitivity:  The probability that a patient with a disease will have a ⊕ test 
+result.
+■ A sensitive test will rarely miss people with the disease and is therefore 
+good at ruling out those who do not have the disease. A high sensitivity 
+means there is a low false⊝ rate.
+■ Desirable early in a diagnostic workup or screening test, when it is nec -
+essary to reduce a broad differential diagnosis.
+■ Example: An initial ELISA test for HIV infection.
+False⊝ ratio 
+= 1 − sensitivity
+■ Specificity:  The probability that a patient without a disease will have a ⊝ 
+test result.
+■ A specific test will rarely determine that someone has the disease when 
+in fact they do not and is therefore good at ruling in those who have 
+the disease. A high specificity means there is a low false⊕ rate.
+ KEY FACT
+Incidence can be measured in a cohort 
+study; prevalence can be measured in a 
+cross-sectional study.
+ KEY FACT
+As the mortality of a disease ↓, the 
+prevalence of that disease ↑ (eg, HIV 
+infection), because the duration of 
+disease has lengthened. Remember:  
+P = I × D.
+ KEY FACT
+Accuracy (and validity) measures 
+bias. Accuracy requires correct 
+measurements. Precision (and reliability) 
+measures random error. Precision ↑ 
+with ↑ sample size.
+ MNEMONIC
+SNOUT—SeNsitive tests rule OUT disease.
+SPIN—SPecific tests rule IN disease.
+Disease
+present
+No
+disease
+Positive test aP PV = a  / (a + b) 
+Negative test cN PV = d / (c + d) 
+LR+ = Sensitivity / (a − Speci/f_icity)
+LR− = (1 Sensitivity) / Speci/f_icity
+Sensitivity = a / (a + c)  Speci/f_icity = d / (b + d)
+Prevalence = (a + b) / (a + b + c + d)
+b
+d
+FIGURE 2.4-1.  Sensitivity, specificity, positive predictive value (PPV), and negative pre-
+dictive value (NPV). Presence or absence of disease is typically assessed using a “gold standard” 
+test, or the most accurate test available for a given disease.
+120 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   120 8/28/18   12:39 PM
+
+=== PAGE 138 ===
+■ Desirable when confirming a likely diagnosis. ↑ Specificity ↓ the num-
+ber of false⊕ results.
+■ Example: A Western blot confirmatory HIV test.
+False⊕ ratio 
+= 1 − specificity
+The ideal test is both sensitive and specific, but a trade-off must often be 
+made between sensitivity and specificity (see Figure 2.4-2). For a given test, 
+when sensitivity ↑, specificity ↓ (and vice versa).
+Occasionally, you will be asked to compare different diagnostic tests using 
+their receiver operating characteristic (ROC) curves, where sensitivity is plot-
+ted on the y-axis and 1 – specificity is plotted on the x-axis (see Figure 2.4-3). 
+The best diagnostic test will have a curve that “hugs” the x- and y-axes 
+(curve X).
+POSITIVE AND NEGATIVE PREDICTIVE VALUES
+Once a test has been administered and a patient’s result has been made avail-
+able, that result must be interpreted through use of predictive values. Remem-
+ber, unlike sensitivity and specificity, positive predictive value (PPV) and 
+negative predictive value (NPV) depend both on the test characteristics and 
+the underlying disease prevalence.
+■ PPV:  The probability that a patient with a ⊕ test result truly has the dis-
+ease. The higher the disease prevalence, the higher the PPV of the test for 
+that disease. A change in test cutoff point which ↑ both TP and FP will ↓ 
+the PPV.
+FIGURE 2.4-2.  Effect of cutoff values on sensitivity and specificity. (Modified with permission from USMLE-RX.com.)
+No disease
+Test results
+Disease
+Number of people
+AB C
+POSSIBLE CUTOFF VALUES
+A = 100% sensitivity cutoff value
+B = practical compromise between speci/f_icity and sensitivity
+C = 100% speci/f_icity cutoff value
+Your hospital is considering 
+adopting a new diagnostic test for 
+pheochromocytoma. In Figure 2.4-2, 
+the current diagnostic test (urinary 
+metanephrines) falls close to point B. 
+The new test falls closer to point A. 
+How will the false positive and 
+false negative rates of this new test 
+compare to urinary metanephrines?
+X
+Y
+    1
+0.8
+0.6
+0.4
+0.2
+    0
+0           0.2            0.4            0.6            0.8            1
+1-sensitivity 
+Speciﬁcity 
+FIGURE 2.4-3.  Receiver operating characteristic (ROC) curves. Curve X represents a bet-
+ter diagnostic test than curve Y. (Reproduced with permission of USMLE-Rx.com.)
+121EPIDEMIOLOGY HIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   121 8/28/18   12:39 PM
+
+=== PAGE 139 ===
+■ NPV:  The probability that a patient with a ⊝ test result truly does not 
+have the disease. The lower the disease prevalence, the higher the NPV of 
+the test for that disease.
+LIKELIHOOD RATIO
+The likelihood ratio (LR) expresses the extent to which a given test result is 
+likely in diseased people as opposed to people without disease:
+■ ⊕ LR shows how much the odds (or probability) of disease are ↑ if the test 
+result is ⊕.
+■ ⊝ LR shows how much the odds (or probability) of disease are ↓ if the test 
+result is ⊝.
+LR+ = sensitivity/(1 − specificity)
+LR− = (1 − sensitivity)/specificity
+Posttest odds = pretest odds × LR
+Measures of Effect
+A central aim of epidemiology is to assess the relationship between an expo-
+sure event and an outcome measure. The likelihood or risk of observing an 
+outcome following an exposure is quantified using measures of effect. There 
+are several ways to express and compare risk. These include the following:
+■ Absolute risk:  The incidence of disease.
+■ Attributable risk (or risk difference):  The difference in risk between the 
+exposed and unexposed groups.
+Attributable risk = incidence of disease in exposed − incidence in unexposed 
+= (RR − 1)/RR
+■ Number needed to treat (NNT):  Number of individuals that need to be 
+treated for one patient to benefit.
+NNT = 1/absolute risk reduction
+■ Relative risk (or risk ratio; RR):  Expresses how much more likely an 
+exposed person is to get the disease in comparison to an unexposed per-
+son. This indicates the relative strength of the association between expo-
+sure and disease, making it useful when one is considering disease 
+etiology.
+RR incidencei ne xposed
+incidencei n unexposed=
+RR > 1 suggests ↑ risk
+RR < 1 suggests ↓ risk
+■ Odds ratio (OR):  An estimate of relative risk that is used in case-control 
+studies. The OR tells how much more likely it is that a person with a dis-
+ease has been exposed to a risk factor than someone without the disease. 
+The lower the disease prevalence, the more closely it approximates RR. In 
+case-control studies, the OR also describes how many times more likely an 
+exposed individual is to have disease compared to an unexposed individ-
+ual (see Figure 2.4-4).
+■ Hazard ratio (HR):  An estimate of the chances that an event occurs in the 
+treatment arm of a trial vs the nontreatment arm. Calculated similarly to 
+The false positive rate will ↑ (capturing 
+more of the “no disease” cohort), 
+but the false negative rate will ↓ 
+(capturing the little tail of the “disease” 
+cohort).
+122 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   122 8/28/18   12:39 PM
+
+=== PAGE 140 ===
+OR. Values < 1 indicate that the treatment arm had a ↓ event rate and 
+values > 1 indicate the event rate ↑.
+OR odds that ad iseasedp ersoni se xposed
+odds t= hhata nondiseasedp ersoni se xposed
+Survival Curves
+Once a diagnosis has been established, it is important to be able to describe 
+the associated prognosis. Survival analysis is used to summarize the average 
+time from one event (eg, presentation, diagnosis, or start of treatment) to any 
+outcome that can occur only once during follow-up (eg, death or recurrence 
+of cancer). The usual method is with a Kaplan-Meier curve (see Figure 2.4-5) 
+describing the survival in a cohort of patients, with the probability of survival 
+↓ over time as patients die or drop out from the study.
+Types of Clinical Studies
+Studies are typically used to evaluate diagnosis, treatment, and screening for a 
+disease. Although the gold standard for such evaluation is a randomized, 
+double-blind controlled trial, other types of studies may be used as well (eg, 
+an observational study, in which the exposure in question is a therapeutic 
+intervention). In descending order of strength of evidence, published studies 
+regarding treatment options include randomized controlled trials (RCTs), 
+ KEY FACT
+Randomization minimizes bias and 
+confounding; double-blind studies 
+prevent observation bias.
+RR  = a / (a + b) 
+c / (c + d) 
+OR = ad / bc
+Disease
+develops
+No
+disease
+Exposure a
+No exposure c
+b
+d
+Absolute risk = (a + c) / (a + b + c + d)
+Attributable risk = a / (a + b) − c / (c + d)
+Number needed to treat = 1/AR
+FIGURE 2.4-4.  Relative risk (RR) vs odds ratio (OR).
+100
+50
+0
+51 01 5
+Years
+Survival (%)
+Chemotherapy 
+plus radiation
+Radiation alone
+FIGURE 2.4-5.  Example of a Kaplan-Meier curve. Tick marks indicate right-censoring, or 
+patients who did not fulfill the outcome measure during follow-up. In this example, the blue 
+curve represents a more favorable prognosis compared to the red curve.
+123EPIDEMIOLOGY HIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   123 8/28/18   12:39 PM
+
+=== PAGE 141 ===
+observational studies, and case series/case reports. Meta-analyses are often 
+used to systematically synthesize information across studies to help summa-
+rize the totality of the evidence. Randomization is successful when the base-
+line characteristics of patients in each group are statistically similar.
+CROSS-SECTIONAL STUDY
+A cross-sectional study is an observational study that assesses risk factors and 
+outcomes at a snapshot in time. This study does not prove temporal relation-
+ships because it measures correlation, not causation.
+Advantages of cross-sectional studies are as follows:
+■ Provide an efficient means of examining a population, allowing simultane -
+ous assessment of people with the disorder and those without it.
+■ Can be used as a basis for diagnostic testing.
+Disadvantages include the following:
+■ Causal relationships cannot be determined because information is obtained  
+only at a single point in time.
+■ Risk or incidence of disease cannot be directly measured.
+COHORT STUDY
+In a cohort study,  a group of people sharing certain characteristics (eg, age, 
+gender, occupation, or date of birth) is assembled to study the relationships 
+between exposures and outcomes of interest. For each possible risk factor, 
+the members of the cohort are classified as either exposed or unexposed. All 
+the cohort members are then followed over time, and the incidence of out-
+come events is compared in the two exposure groups. Example: The Fram-
+ingham Heart Study followed a group of men and women over time to see 
+how different exposures (eg, diet, exercise, aspirin) affected the incidence of 
+heart disease.
+Advantages of cohort studies are as follows:
+■  Only way to directly determine incidence (because they follow a cohort 
+over time to assess disease development).
+■ Can be used to assess the relationship of a given exposure to many diseases.
+■ In prospective studies, exposure is elicited without bias from a known 
+outcome.
+Disadvantages include the following:
+■ Can be time-consuming and expensive.
+■ Studies assess only the relationship of the disease to the few exposure fac-
+tors recorded at the start of the study.
+■ Requirements for many subjects makes it difficult to study rare diseases .
+Cohort studies can be either prospective, in which a cohort is assembled in 
+the present and followed into the future, or retrospective, in which a cohort is 
+identified from past records and is followed to the present.
+CASE-CONTROL STUDY
+In a case-control study, a series of cases are identified and a set of controls are 
+sampled from the underlying population to estimate the frequency of expo-
+sure in the population at risk for the outcome. In such a study, a researcher 
+compares the frequency of exposure to a possible risk factor between the case 
+ KEY FACT
+A cross-sectional study that is 
+undertaken to estimate prevalence is 
+called a prevalence study.
+ KEY FACT
+Cohort studies are also known as 
+longitudinal studies or incidence 
+studies, from which both OR and RR 
+can be calculated.
+ KEY FACT
+In cohort studies, the researcher 
+determines whether the participants 
+are exposed or unexposed and 
+follows them over time for disease 
+development.
+124 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   124 8/28/18   12:39 PM
+
+=== PAGE 142 ===
+and control groups. Example: A study examines patients with heart disease 
+(cases) and without heart disease (controls) and compares exposures to red 
+meat between both groups.
+■ Validity depends on appropriate selection of cases and controls, the way 
+exposure is measured, and the way with which confounding variables are 
+dealt.
+■ External validity (also known as generalizability) is the applicability of the 
+results to a new population
+.
+■ Cases and controls should be comparable in terms of opportunity for expo-
+sure (ie, they should be members of the same base population with an 
+equal opportunity of risk factor exposure).
+■ “Matching” occurs when the researcher chooses controls that match cases 
+on a particular characteristic.
+■ Example: If matching on gender, female cases would be matched to 
+female controls and male cases would be matched to male controls.
+■ The purpose of matching is to ↓ confounding.
+Advantages of case-control studies are as follows:
+■ Use smaller groups than cohorts, thereby reducing cost.
+■ Can be used to study rare diseases and can easily examine multiple risk 
+factors. This is because in case-control studies the odds ratio is a close 
+approximation of relative risk, known as “rare disease assumption.”
+Disadvantages include the following:
+■  Studies cannot calculate disease prevalence, or incidence, or directly 
+estimate the relative risk because the numbers of subjects with and with-
+out a disease are determined artificially by the investigator, not by 
+nature. However, an OR can be used to estimate a measure of RR, if the 
+prevalence is low.
+■ Retrospective data can be inaccurate because of recall or survivorship biases.
+RANDOMIZED CONTROLLED TRIAL
+An experimental, prospective study in which subjects are randomly assigned 
+to a treatment or control group. Random assignment helps remove confound-
+ing and ensure that the two groups are truly comparable. The control group 
+may be treated with a placebo or with the accepted standard of care.
+The study can be masked in one of two ways: single blind, in which 
+patients do not know which treatment group they are in, or double blind, in 
+which neither the patients nor their physicians know who is in which group.
+■ Double-blind studies are the gold standard for studying treatment effects.
+■ Factorial design involves several rounds of randomization with two or 
+more variables.
+■ Example: A trial studies the role of aspirin in preventing MI by giving one 
+randomized group a baby aspirin daily and the control group a placebo. 
+The rates of MI are then measured.
+Advantages of RCTs are as follows (see also Table 2.4-1):
+■ Minimize bias.
+■ Have the potential to demonstrate causal relationships, because exposure 
+is assigned randomly, which minimizes confounding.
+Disadvantages include the following:
+■ Costly and time-intensive.
+■ Some interventions (eg, surgery) are not amenable to masking.
+ KEY FACT
+In case-control studies, the researcher 
+controls the number of cases and 
+controls. Only ORs can be calculated 
+from case-control studies.
+A local child care center that was built 
+before the 1950s was found to have 
+elevated lead levels in its paint. A 
+student organization at your medical 
+school is hosting a lead-screening 
+event to test all children at the center. 
+Which initial screening test would 
+be more appropriate: a test that has 
+high sensitivity or one that has high 
+specificity?
+1
+What happens to the PPV and NPV 
+when prevalence ↓?
+2
+125EPIDEMIOLOGY HIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   125 8/28/18   12:39 PM
+
+=== PAGE 143 ===
+Evaluating Clinical Studies
+BIAS
+Any process that causes results to systematically differ from the truth. Com-
+mon types of bias include the following:
+■ Selection bias: Occurs when samples or participants are selected that dif-
+fer from other groups in additional determinants of outcome.
+■ Example: Individuals concerned about a family history of breast cancer 
+may 
+be more likely to self-select in entering a mammography program, 
+giving the impression of a prevalence that is higher than it is in reality.
+■ Example: If a substantial portion of subjects in one group are lost to 
+follow-up (attrition bias), the study may overestimate the association. 
+This is a special type of selection bias.
+Variable rC T CohorT Cross-seCTional Case ConTrol
+Purpose Tests causality through random 
+assignment of exposure
+Follows groups of patients 
+over a specified period 
+to capture the associa-
+tion of risk factors to the 
+development of disease
+Determines prevalence 
+in a snapshot of time
+Tests association (usually 
+retrospectively, but 
+outcome first, then looks 
+for risk factors)
+Measures Varied, including response to 
+treatment, adverse effects, sur-
+vival during follow-up
+RR, OR, incidence, 
+prevalence
+Prevalence (not 
+incidence)
+OR
+Design Subjects are randomly assigned 
+to be in treatment or placebo 
+arms
+Subjects are not assigned 
+to groups
+Determines if subjects are 
+in exposed or unexposed 
+groups and follows them 
+until they develop the 
+disease (or do not)
+Determines disease 
+prevalence at one 
+point in time; cannot 
+determine the direc-
+tionality of association 
+between exposure 
+and outcome
+Identifies cases (disease) 
+and controls (no disease) 
+groups first and then 
+goes backward to deter-
+mine if they are exposed 
+or not (the opposite of 
+RCT and cohort studies)
+Advantages Can determine causality; mini-
+mizes bias and confounding
+Temporality can be deter-
+mined; incidence can be 
+determined
+Less time-consuming 
+and costly
+Predetermined number 
+of cases; less time-
+consuming and costly
+Disadvantages RCT is not possible when:
+■ T reatment has a known adverse 
+outcome
+■ Disease is v ery rare
+■ T reatment is in widespread use 
+or represents the best option 
+(because it is unethical to 
+withhold treatment)
+Follows large groups over 
+long periods
+Selection bias in retrospec-
+tive cohort studies
+Directionality of asso-
+ciation cannot be 
+determined
+Incidence cannot be 
+determined
+Recall bias, selection bias
+TABLE 2.4-1.  C omparison of Study Designs
+126 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+A test with high sensitivity, such as a 
+fingerstick lead test (capillary blood), is 
+preferred for initial screening because 
+it can ensure that no children who 
+might have the disease—and who 
+might benefit from further testing 
+and treatment—will be missed. The 
+children with a ⊕ fingerstick test 
+should subsequently have a serum 
+blood level drawn (higher specificity).
+1
+PPV ↓ and NPV ↑. Remember that if 
+prevalence is low, even a test with 
+high sensitivity or specificity will have 
+a low PPV.
+2
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   126 8/28/18   12:39 PM
+
+=== PAGE 144 ===
+■ Measurement bias: Occurs when measurement or data-gathering meth-
+ods differ between groups.
+■ Example: One group is assessed by CT, while another group is assessed 
+by MRI
+.
+■ Confounding bias:  Occurs when a third variable is either positively or 
+negatively associated with both the exposure and outcome variables, 
+inducing an incorrect association.
+■ Example: Fishermen in an area may experience a higher incidence of 
+lung cancer than that found in the general population. However, if 
+smokers are more likely to become fishermen and are also more likely 
+to develop lung cancer than nonsmokers, becoming a fisherman will 
+not in itself lead to lung cancer. Rather, it is the smoking to which 
+those fishermen are exposed that causes the association.
+■ Effect modification, on the other hand, occurs when a third variable 
+disproportionately affects two groups. Effect modification shows a 
+meaningful difference, whereas confounding does not.
+■ Example: A new chemotherapeutic agent is shown to improve survival 
+in 
+non-Hodgkin lymphoma, but only in patients who are undergoing 
+radiation therapy, whereas those not receiving radiation show no 
+benefit.
+■ Recall bias:  Results from a difference between two groups in the retro-
+spective recall of past factors or outcomes.
+■ Example: A patient with cancer may be more motivated to recall past 
+episodes of chemical exposure than would a healthy individual.
+■ Observer bias:  Results from investigator’s awareness of the population 
+being studied and its exposure status.
+■ Example: A trial for new blood pressure management in the ICU is 
+biased 
+when the attending physician knows which patients are enrolled 
+in the treatment arm.
+■ Hawthorne effect:  Results from study subjects’ awareness that they are 
+being studied, causing them to change aspects of their behavior.
+■ Example: Employees at an automotive factory may work more produc -
+tively when they realize that their superiors are conducting random 
+audits.
+■ Lead-time bias:  Results from earlier detection of disease, giving an appear-
+ance of prolonged survival when in fact the natural course is not altered.
+■ Example: A new and widely used screening test that detects cancer 
+5 
+years earlier may yield the impression that patients are living longer 
+with the disease.
+■ Length bias:  Occurs when screening tests detect a disproportionate num-
+ber of slowly progressive diseases but miss rapidly progressive ones, leading 
+to overestimation of the benefit of the screen.
+■ Example: A better prognosis for patients with cancer is celebrated fol -
+lowing the implementation of a new screening program. However, this 
+test disproportionately detects slow-growing tumors, which generally 
+tend to be less aggressive.
+STATISTICAL TESTING
+Even with bias reduction, unsystematic random error is unavoidable because 
+of chance variation in studied data. Types of errors are as follows:
+■ Type I ( 𝛂) error:
+■ The probability of concluding that there is a difference in treatment 
+effects between groups when in fact there is not (ie, a false ⊕ 
+conclusion)—in other words, rejecting the null hypothesis (of no 
+effect) when it should not be rejected.
+ KEY FACT
+Studies that are masked and 
+randomized are better protected 
+from the effects of bias, whereas 
+observational studies are particularly 
+susceptible to bias.
+ KEY FACT
+Confounding variables reduce the 
+internal validity of a study.
+Assume that the data below are from 
+a hypothetical case-control study. 
+Calculate and interpret the OR.
+Exposed
+Not 
+exposed
+Cases 283 263
+Controls 182 210
+127EPIDEMIOLOGY HIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   127 8/28/18   12:39 PM
+
+=== PAGE 145 ===
+■ The P  value is an estimate of the probability that differences in treat-
+ment effects in a study could have happened by chance alone if no 
+true association exists. Often, differences associated with a P<0.05 are 
+statistically significant. A P value alone does not give any information 
+about the direction or size of the effect.
+■ Type II ( 𝛃) error:
+■ The probability of concluding that there is no difference in treatment 
+effects when in fact a difference exists (ie, a false ⊝ conclusion)—in 
+other words, not rejecting the null hypothesis (of no effect) when it 
+should be rejected.
+■ Power is the probability that a study will find a statistically significant 
+difference when one is truly there. Increasing the number of subjects 
+in a study 
+↑ the power.
+Power = 1 − type II error (β)
+The confidence interval (CI) is a way of expressing statistical significance 
+(P value) that shows the size of the effect and the statistical power (the nar-
+rower the CI, the greater the statistical power). CIs are interpreted as follows:
+■ If one is using a 95% CI, there is a 95% chance that the interval contains 
+the true value.
+■ Larger sample sizes produce more power and narrower CIs. If the CI 
+includes the null value (RR of 1.0% or 0%), the results are not statistically 
+significant.
+■ Example: An RCT studying aspirin to prevent myocardial infarction shows 
+a relative risk of 0.9 with a 95% CI of 0.85 to 0.95 in a sample of 3000 
+patients, whereas in a sample of 30 patients the 95% CI is 0.1 to 1.7. The 
+first example shows a significant difference, whereas the second does not.
+PREVENTION
+There are three levels of prevention:
+■ 1° Prevention:  Includes preventive measures to ↓ the incidence of disease 
+in unaffected individuals.
+■ 2° Prevention:  Focuses on identifying the disease early, when it is asymp-
+tomatic or mild, and implementing measures that can halt or slow disease 
+progression. Includes screening tests that are designed to identify subclini-
+cal disease.
+■ 3° Prevention:  Includes measures that ↓ morbidity or mortality resulting 
+from the presence of disease.
+Prevention may be accomplished by a combination of immunization, chemo-
+prevention, behavioral counseling, and screening. A good screening test has 
+the following characteristics:
+■ High sensitivity and specificity (usually more important to have high sensi -
+tivity to rule out those who do not have the disease).
+■ High PPV.
+■ Inexpensive, easy to administer, and safe.
+■ Treatment after screening is more effective than subsequent treatment 
+without screening.
+VACCINATION
+Vaccines work by mimicking infections and triggering an immune response 
+in which memory cells are formed to recognize and fight any future infection. 
+There are several different vaccine formulations, as indicated in Table 2.4-2.
+ KEY FACT
+Examples of levels of prevention:
+■ 1° P revention: A woman reduces 
+dietary intake of fat or alcohol to 
+reduce her risk for developing 
+breast cancer.
+■ 2° P revention: A woman obtains 
+a mammogram to screen for breast 
+cancer.
+■ 3° P revention: A woman 
+undergoes adjuvant therapy with 
+tamoxifen for breast cancer.
+OR  =  ad/bc  
+= (283 × 210)/(263 × 182) = 1.24
+Interpretation: The exposed group 
+had 1.24 times the odds of having 
+disease compared to the unexposed 
+group.
+128 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   128 8/28/18   12:39 PM
+
+=== PAGE 146 ===
+Recommended vaccination schedules for children and adults are outlined 
+in Figures 2.4-6 and 2.4-7.
+Live vaccines should not be administered to immunosuppressed patients 
+(see Figure 2.4-8). They are also contraindicated in pregnant women owing to 
+a theoretical risk for maternal-fetal transmission. A possible exception to this 
+rule can be some asymptomatic HIV/AIDS patients who may be candidates 
+for the MMR vaccine.
+FIGURE 2.4-6.  Recommended vaccinations for children 0–18 years of age. (Reproduced courtesy of the Centers for Disease Control and Prevention, 
+Atlanta, GA, https://www.cdc.gov/vaccines/schedules/downloads/child/0-18yrs-child-combined-schedule.pdf. Data from 2017.)
+Birth 1 mo 2 mos 4 mos 6 mos 9 mos 12 mos 15 mos 18 mos 19–23 mos 2–3 yrs4 –6 yrs7 –10 yrs 11–12 yrs 13–15 yrs 17–18 yrs16 yrs
+Hepatitis B (HepB) 1st dose
+Rotavirus (RV) RV1 (2-dose 
+series); RV5 (3-dose series)
+1st dose 2nd dose
+Diphtheria, tetanus, & acellular 
+pertussis (DTaP: < 7 yrs)
+1st dose 2nd dose 3rd dose 5th dose
+Tetanus, diphtheria, & acellular 
+pertussis (Tdap: ≥ 7 yrs)
+Tdap
+type b (Hib)
+Haemophilus in/f_luenzae
+1st dose 2nd dose
+Pneumococcal conjugate
+(PCV13)
+1st dose 2nd dose 3rd dose
+Pneumococcal polysaccharide
+(PPSV23)
+Inactivated poliovirus
+(IPV: < 18 yrs)
+1st dose 2nd dose 4th dose
+In/f_luenza (IIV)
+Measles, mumps, rubella (MMR) 2nd dose
+Varicella (VAR) 2nd dose
+Hepatitis A (HepA)
+Human papillomavirus (HPV)
+Meningococcal (MenACWY-D
+≥ 9 mos; MenACWY-CRM ≥ 2 mos) 1st dose 2nd dose
+3rd dose2nd dose
+4th dose
+3rd or 4th dose
+4th dose
+Meningococcal B
+3rd dose
+Annual vaccination (IIV) 1 or 2 doses
+Annual vaccination (IIV) 
+1 dose only
+1st dose
+1st dose
+2-dose series
+Range of recommended 
+ages for all children
+Range of recommended ages 
+for catch-up immunization
+Range of recommended ages 
+for certain high-risk groups
+Not routinely recommended Range of recommended ages for
+non-high-risk groups that may
+receive vaccine, subject to
+individual clinical decision making
+Vaccine ▼ Age 
+▼
+VaCCine Type TargeTed diseases
+Live attenuated Measles, mumps, rubella, polio (Sabin), yellow fever, influenza (nasal spray), 
+varicella
+Inactivated (killed) Cholera, HAV, polio (Salk), rabies, influenza (injection)
+Toxoid Diphtheria, tetanus
+Subunit HBV, pertussis, Streptococcus pneumoniae, HPV, meningococcus
+Conjugate Hib, S pneumoniae
+TABLE 2.4-2.  T ypes of Vaccinations
+129EPIDEMIOLOGY HIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   129 8/28/18   12:39 PM
+
+=== PAGE 147 ===
+Behavioral Counseling
+In offering counsel, physicians should tailor their education and sugges-
+tions to the individual patient as well as to his or her stage of change (see 
+Table 2.4-3 and Figure 2.4-9).
+FIGURE 2.4-7.  Recommended vaccinations for adults. (Reproduced courtesy of the Centers for Disease Control and Prevention, Atlanta, GA, https://www.cdc.
+gov/vaccines/schedules/downloads/adult/adult-combined-schedule.pdf. Data from 2017.)
+Vaccine  19–21 years 22–26 years 27–49 years 50–64 years ≥ 65 years
+Tdap or Td
+VAR
+RZV (preferred)
+or
+ZVL
+In/f_luenza
+HPV-Female
+HPV-Male
+PCV13
+PPSV23
+HepA
+HepB
+MenACWY
+MenB
+1 dose annually
+1 dose Tdap, then Td booster every 10 yrs
+2 doses
+2 doses RZV (preferred)
+MMR 1 or 2 doses depending on indication (if born in 1957 or later)
+2 or 3 doses depending on age at series initiation
+2 or 3 doses depending on age at series initiation
+2 or 3 doses depending on vaccine
+3 doses
+1 or 2 doses depending on indication, then booster every 5 yrs if risk remains
+2 or 3 doses depending on vaccine
+Hib 1 or 3 doses depending on indication
+Recommended for adults who meet the age requirement, lack
+documentation of vaccination, or lack evidence of past infection
+Recommended for adults with other indications No recommendation
+1 dose
+1 or 2 doses depending on indicatio
+n1  dose
+1 dose ZVL
+or
+sTage of Change CharaCTerizaTion example
+Precontemplation Denial or ignorance of the problem A heroin addict has not even thought about cessation
+Contemplation Ambivalence or conflicted emotions; 
+assessing benefits and barriers to change
+The heroin addict considers treatment for his addiction
+Preparation Experimenting with small changes; col-
+lecting information about change
+The heroin addict visits his doctor to ask questions about quitting
+Action Taking direct action toward achieving a goal The heroin addict enters a rehabilitation facility for treatment of addiction
+Maintenance Maintaining a new behavior; avoiding 
+temptation
+The heroin addict continues to visit recovery meetings to gain support 
+and reinforcement against relapse
+TABLE 2.4-3.  S tages of Change in Behavioral Counseling
+130 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   130 8/28/18   12:39 PM
+
+=== PAGE 148 ===
+FIGURE 2.4-8.  Recommended vaccines for special populations. (Reproduced courtesy of the Centers for Disease Control and Prevention, Atlanta, GA, https://
+www.cdc.gov/vaccines/schedules/downloads/adult/adult-combined-schedule.pdf. Data from 2017.)
+Va ccine ▼
+ 
+Pregnancy
+Immuno-
+compromised
+(excluding HIV
+infection)
+HIV infection
+CD4+ count
+(cells/µL)
+/H11021 200/H11350 200
+Asplenia,
+persistent
+complement
+de/f_iciencies
+Kidney failure,
+end-stage renal
+disease, on
+hemodialysis
+Heart or lung
+disease, chronic
+alcoholism
+Chronic liver
+disease Diabetes
+Healthcare
+personnel
+Men who
+have sex
+with men
+Td/Tdap
+VAR
+HZV
+HPV-Female
+In/f_luenza
+HPV-Male
+PCV13
+PPSV23
+HepA
+HepB
+MenACWY or MPSV4
+MenB
+Hib
+1 dose annually
+Substitute Tdap for Td once, then Td booster every 10 yrs
+2 doses
+1 dose
+3 doses through age 26 yrs
+Contraindicated
+Contraindicated
+Contraindicated
+MMR 1 or 2 doses depending on indication
+1 dose
+3 doses
+1 or more doses depending on indication
+2 or 3 doses depending on vaccine
+1 dose
+3 doses
+post-HSCT
+recipients only
+Recommended for adults who meet the age
+requirement, lack documentation of vaccination,
+or lack evidence of past infection
+Recommended for adults with additional
+medical conditions or other indications
+No recommendation
+1, 2, or 3 doses depending on indication
+2 or 3 doses depending on vaccine
+1 dose Tdap
+each pregnancy
+3 doses through age 21 yrs3 doses through age 26 yrs
+3 doses
+through age
+26 yrs
+Contraindicated
+FIGURE 2.4-9.  Stages of change model. (Reproduced with permission from USMLE-Rx.com.)
+Action
+Active modiﬁcation
+of behavior
+Precontemplation
+No intention of
+changing behavior
+Preparation
+Made the decision to
+change, intent on
+taking action
+Maintenance
+Sustaining
+change
+Contemplation
+Problem
+acknowledgment,
+no speciﬁc actions
+Relapse
+Fall back into old
+patterns of behavior
+131EPIDEMIOLOGY HIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   131 8/28/18   12:39 PM
+
+=== PAGE 149 ===
+Screening Recommendations
+Tables 2.4-4 and 2.4-5 outline recommended health care screening measures 
+by gender and age.
+age in 
+years 
+reCommendaTion
+CardioVasCular breasT/reproduCTiVe oTher
+19–39 BP screening at least 
+once every 2 years
+Cholesterol screening 
+starting at 20 years 
+of age for patients 
+at ↑ risk of heart 
+disease
+Pap test every 3 years starting at 21 years of age; co-
+testing (Pap + HPV) may be done every 5 years 
+starting at 30 years of age
+Chlamydia test yearly until 24 years of age if sexually 
+active. Women ≥ 25 years of age should be tested 
+only if there is an ↑ risk
+HIV test at least once to ascertain status
+Test for gonorrhea and syphilis if at ↑ risk
+Diabetes: Blood glucose or HbA
+1c screening 
+starting if BP > 135/80 mm Hg or taking medi-
+cation for hypertension
+40–49 BP screening at least 
+once every 2 years
+Cholesterol screening 
+for patients at ↑ risk 
+for heart disease
+Pap test every 3 years or co-testing every 5 years
+Pelvic exam yearly; chlamydia test if patient has new or 
+multiple partners
+HIV test at least once to ascertain status
+Test for gonorrhea and syphilis if at ↑ risk
+Diabetes: Blood glucose or HbA
+1c screening 
+starting if BP > 135/80 mm Hg or taking medi-
+cation for hypertension
+50–64 BP screening at least 
+once every 2 years
+Cholesterol screening 
+for patients at ↑ risk 
+for heart disease
+Mammogram once every 1–2 years (can start at 40 
+years of age, if patient chooses)
+Pap test every 3 years
+Chlamydia test if patient has new or multiple partners
+HIV test at least once to ascertain status
+Test for gonorrhea and syphilis if at ↑ risk
+Diabetes: Blood glucose or HbA
+1c screening 
+starting if BP > 135/80 mm Hg or taking 
+medication for hypertension
+Bone: Discuss BMD test with physician or nurse
+Colorectal: FOBT yearly; flexible sigmoidoscopy 
+every 5 years or colonoscopy every 10 years
+≥ 65 BP screening at least 
+once every 2 years
+Cholesterol screening 
+for patients at ↑ risk 
+for heart disease
+Mammogram once every 1–2 years until 75 years of age
+Discuss Pap test with physician or nurse
+Chlamydia test if patient has new or multiple partners
+Discuss HIV test with physician or nurse
+Test for gonorrhea and syphilis if at ↑ risk
+Diabetes: Blood glucose or HbA
+1c screening 
+starting if blood pressure higher than 135/80 
+or taking medication for hypertension
+Bone: BMD test at least once
+Colorectal: Screening with fecal occult blood 
+testing, sigmoidoscopy, or colonoscopy 
+every 10 years until 75 years of age
+Modified with permission from the US Department of Health and Human Services, Washington, DC.
+TABLE 2.4-4.  H ealth Screening Recommendations for Women by Age
+132 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   132 8/28/18   12:39 PM
+
+=== PAGE 150 ===
+Causes of Death
+The leading cause of cancer mortality in the United States is lung cancer. 
+Prostate and breast cancers are the most prevalent cancers in men and 
+women, respectively, with lung and colorectal cancers ranking second and 
+third most common in both sexes. Table 2.4-6 lists the principal causes of 
+death in the United States by age group.
+TABLE 2.4-5.  H ealth Screening Recommendations for Men by Age
+age in 
+years
+reCommendaTion
+CardioVasCular reproduCTiVe oTher
+19–39 BP screening at least once every 
+2 years
+Cholesterol screening starting at 
+20 years of age for patients at 
+↑ risk for heart disease. Screen 
+all men > 35 years of age
+Both partners should be tested for 
+STDs, including HIV, before initiating 
+sexual intercourse
+Test for syphilis if at ↑ risk
+N/A
+40–49 BP screening at least once every 
+2 years
+Cholesterol screening for all 
+men > 35 years of age
+Discuss DRE and PSA with physician or 
+nurse
+HIV test at least once to ascertain status
+Test for syphilis if at ↑ risk
+Diabetes: Blood glucose or HbA
+1c screening starting 
+if BP > 135/80 mm Hg or taking medication for 
+hypertension
+50–64 BP screening at least once every 
+2 years
+Cholesterol screening for all 
+men > 35 years of age
+Discuss DRE and PSA with physician or 
+nurse
+HIV test at least once to ascertain status
+Test for syphilis if at ↑ risk
+Diabetes: Blood glucose or HbA
+1c screening starting 
+if BP > 135/80 mm Hg or taking medication for 
+hypertension
+Colorectal: Screening with fecal occult blood testing 
+yearly; flexible sigmoidoscopy every 5 years or 
+colonoscopy every 10 years
+≥ 65 BP screening at least once every 
+2 years
+Cholesterol screening for all 
+men > 35 years of age 
+Discuss DRE and PSA with physician or 
+nurse
+Discuss HIV test with physician
+Test for syphilis if at ↑ risk
+Diabetes: Blood glucose or HbA
+1c screening starting 
+if BP > 135/80 mm Hg or taking medication for 
+hypertension
+Colorectal: Screening with fecal occult blood 
+testing; flexible sigmoidoscopy every 5 years or 
+colonoscopy every 10 years (patients > 75 years 
+of age should discuss with physician)
+Abdominal aortic aneurysm: One-time screening for 
+men who have ever smoked
+Modified with permission from the US Department of Health and Human Services, Washington, DC.
+A hypothetical study finds a ⊕ 
+association between poor sleep 
+habits and the risk for Parkinson 
+disease. The RR is 10, and the P value 
+is 0.4. How do you interpret these 
+results?
+133EPIDEMIOLOGY HIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   133 8/28/18   12:39 PM
+
+=== PAGE 151 ===
+Reportable Diseases
+By law, disease reporting is mandated at the state level, and the list of dis-
+eases that must be reported to public health authorities varies slightly by 
+state. The CDC has a list of nationally notifiable diseases that states volun-
+tarily report to the CDC. These diseases include but are not limited to those 
+listed in Table 2.4-7.
+rank men Women
+1 Heart disease (24%) Heart disease (22%)
+2 Cancer (23%) Cancer (21%)
+3 Unintentional injuries (7%) Chronic lower respiratory diseases (6%)
+4 Chronic lower respiratory diseases (7%) Cerebrovascular diseases (6%)
+5 Cerebrovascular diseases (4%) Alzheimer disease (6%)
+6 Diabetes (3%) Unintentional injuries (4%)
+7 Suicide (2%) Diabetes (3%)
+8 Alzheimer disease (2%) Influenza and pneumonia (2%)
+9 Influenza and pneumonia (2%) Kidney disease (2%)
+10 Chronic liver disease and cirrhosis (2%) Septicemia (2%)
+Modified with permission from the Centers for Disease Control and Prevention, Atlanta, GA, 
+https://www.cdc.gov/nchs/data/hus/hus16.pdf. Data from 2015.
+TABLE 2.4-6.  L eading Causes of Death by Gender
+disease CaTegory examples
+STDs HIV, AIDS, syphilis, gonorrhea, chlamydia, chancroid, HCV
+Tick-borne disease Lyme disease, ehrlichiosis, Rocky Mountain spotted fever
+Potential bioweapons Anthrax, smallpox, plague
+Vaccine-preventable 
+disease
+Diphtheria, tetanus, pertussis, measles, mumps, rubella, polio, vari-
+cella, HAV, HBV, H influenzae (invasive), meningococcal disease
+Water-/food-borne 
+disease
+Cholera, giardiasis, Legionella, listeriosis, botulism, shigellosis, shiga 
+toxin–producing E coli, salmonellosis, trichinellosis, typhoid
+Zoonoses Tularemia, psittacosis, brucellosis, rabies
+Miscellaneous TB, leprosy, toxic shock syndrome, SARS, West Nile virus, VRSA, coccidi-
+oidomycosis, cryptosporidiosis. MRSA is reportable in several states
+TABLE 2.4-7.  C ommon Reportable Diseases
+There is no sufficient evidence 
+to reject the null hypothesis, and 
+therefore there is insufficient evidence 
+to support an association between 
+poor sleep habits and the risk for 
+Parkinson disease. Remember that the 
+null hypothesis always assumes that 
+there is no association between the 
+exposure and outcome variables. If 
+the P value is > 0.05, then you cannot 
+reject the null hypothesis.
+134 EPIDEMIOLOGYHIGH-YIELD FACTS IN
+2019_02.04_Step2CK_Epidem_10e_119-134.indd   134 8/28/18   12:39 PM
+
+=== PAGE 152 ===
+General Principles 136
+Informed Consent
+ 136
+Minors
+ 
+136
+Competence and Decision-Making Capacity
+ 137
+End-of-Life Issues
+ 138
+Written AdvAnce directives 138
+WithdrAWAl of cAre 138
+euthAnAsiA And PhysiciAn-Assisted suicide 138
+futile treAtment 139
+AlternAtive treAtment 139
+Disclosure 139
+full disclosure 139
+medicAl errors 139
+clinicAl reseArch 140
+Confidentiality 140
+Conflict of Interest
+ 140
+Malpractice
+ 
+141
+135
+HIGH-YIELD FACTS IN
+ETHICS AND LEGAL ISSUES
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   135 8/23/18   1:09 PM
+
+=== PAGE 153 ===
+General Principles
+■ Respect for autonomy:  Clinicians are obligated to respect patients as indi-
+viduals and to honor their preferences.
+■ Example: A pregnant women has the right to refuse cesarean section 
+despite potential risk to the fetus. This is called the principle of mater-
+nal autonomy—so long as the mother has capacity, she has ultimate 
+rights over her unborn child (in the United States).
+■ Beneficence:  Physicians have a responsibility to act in the patient’s best 
+interest. Respect for patient autonomy may conflict with beneficence. In 
+general, if a patient is mentally competent, respect for patient autonomy 
+supersedes beneficence even if the physician believes the patient is not 
+acting in his or her best interest.
+■ Example: The physician has a responsibility to recommend a life  saving 
+transfusion to a Jehovah’s Witness (beneficence) and respect the 
+patient’s autonomy if he or she should refuse.
+■ Nonmaleficence:  “Do no harm.” All medical interventions involve bene-
+fits and risks, and physicians should generally only recommend treatments 
+where the likely benefits outweigh the known risks.
+■ Example: A surgeon declines to perform a procedure, because she 
+thinks the patient will die intraoperatively.
+■ Justice:  Health care is a scarce resource. Fairness and equality in distribu-
+tion and delivery of health care are ongoing challenges for health policy 
+and in the clinical arena.
+Informed Consent
+■ Willing and voluntary acceptance of a medical intervention by a patient 
+after adequate discussion with a physician about the nature of the inter
+-
+vention along with its indications, risks, benefits, and potential alternatives 
+(including no treatment).
+■ Patients may change their minds at any time.
+■ Informed consent is required for significant procedures except for the 
+following:
+■ Emergency treatment is required.
+■ Example: An unconscious patient presents with cerebral edema 
+after a motor vehicle collision, or a patient without previously indi
+-
+cated DNR/DNI (do not resuscitate/do not intubate) status under-
+goes cardiac arrest.
+■ Patient lacks decision-making capacity. Consent is still required but 
+must be obtained from a surrogate decision maker.
+■ Example: Minors generally require surrogate decision makers  
+until they demonstrate adequate decision-making capacity or are 
+of legal age.
+Minors
+In general, minors (persons < 18 years of age) cannot consent for their own 
+medical treatment and require parents or guardians to consent on their behalf 
+(one parent is sufficient as long as that parent has custody), except in the fol-
+lowing situations:
+■ Life-threatening emergencies  when parents cannot be contacted.
+■ Legal emancipation:  Emancipated minors do not require parental con-
+sent for medical care. Although emancipation laws vary from state to state, 
+ KEY FACT
+In some cases (eg, psychiatric illness, 
+grave disability), patients can be 
+hospitalized against their will if they are 
+deemed a threat to themselves or to 
+others.
+ KEY FACT
+Patients with psychiatric illness can 
+give consent if their decision-making 
+capacity is intact.
+ MNEMONIC
+BRAIN of informed consent—
+Benefits
+Risks
+Alternatives
+Indications
+Nature
+ MNEMONIC
+In the absence of a living will or 
+durable power of attorney for 
+health care—
+The SPOUSE CHIPS in For the 
+patient
+SPOUSE
+CHIldren
+Parent
+Sibling
+Friend (in this order)
+136 ETHICS AND LEGAL ISSUESHIGH-YIELD FACTS IN
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   136 8/23/18   1:09 PM
+
+=== PAGE 154 ===
+in general minors are emancipated if they are married, are in the armed 
+services, or are financially independent of their parents and have obtained 
+legal emancipation.
+■ Sexually transmitted infections and substance abuse treatment:  Rules 
+concerning contraception, pregnancy, and abortion services and treatment 
+for drug and alcohol dependency vary across the United States. In some 
+states, the physician is left with the decision of informing parents about 
+adolescent use of confidential services in the interest of best serving the 
+patient; other states limit disclosure.
+■ Refusal of treatment: A parent has the right to refuse treatment for his or 
+her child as long as those decisions do not pose a serious threat to the 
+child’s well-being (eg, refusing immunizations is not considered a serious 
+threat). If a parental decision is not in the best interest of the child, a phy-
+sician may provide treatment against parental wishes. In emergent situa-
+tions, if withholding treatment jeopardizes the child’s safety, treatment can 
+be initiated on the basis of legal precedent. In nonemergent situations, the 
+provider should seek a court order.
+■ Example: A physician provides blood transfusion to save the life of a 
+6-year-old child seriously injured in a motor vehicle collision despite 
+parental requests to withhold such a measure.
+■ Prenatal care:  Some states allow, but do not require, parental disclosure 
+when a minor seeks prenatal care.
+Competence and Decision-Making Capacity
+■ Competence:  A person’s global and legal capacity to make decisions and 
+to be held accountable in a court of law. Competence is assessed by the 
+courts and is distinct from the term decision-making capacity.
+■ Incompetent patients, as assessed by the courts, or temporarily incapac-
+itated patients may still be able to provide assent for treatment or refuse 
+treatment. However, the need to treat supersedes the refusal of an inca-
+pacitated patient in emergency situations.
+■ Example: An extremely hypertensive patient with altered mental 
+status who refuses treatment may receive antihypertensive therapy, 
+as this constitutes a medical emergency.
+■ Decision-making capacity:  The ability of a patient to understand relevant 
+information, appreciate the severity of the medical situation and its conse-
+quences, communicate a choice, and deliberate rationally about his or her 
+values in relation to the decision being made. This can be assessed by the 
+physician.
+■ Decision-making capacity is best understood as varying with the com -
+plexity of the decision involved.
+■ Example: The level of capacity needed for a decision about liver 
+transplantation is different from that needed to choose between two 
+types of pain medication for fracture-related pain.
+■ In general, patients who have decision-making capacity have the right 
+to refuse or discontinue treatment.
+■ Example: Jehovah’s Witnesses can refuse blood products. When a 
+Jehovah’s Witness lacks decision-making capacity (eg, altered men
+-
+tal status or unconscious), the physician is allowed to provide a 
+blood transfusion in an emergency situation.
+■ A patient’s decision to refuse treatment can be overruled if the choice 
+endangers the health and welfare of others.
+■ Example: A patient with active TB must undergo antibiotic treat -
+ment, because not treating would pose a public health threat.
+ KEY FACT
+Brain death is the irreversible loss of 
+all brain activity and is equivalent to 
+cardiopulmonary death. If a patient 
+is brain dead, no consent is needed 
+to stop therapy. Two physicians are 
+required to perform a brain death exam 
+to legally declare a patient brain dead.
+A 47-year-old man is diagnosed with 
+pancreatic cancer. His diagnosis and 
+treatment options are discussed, but 
+the patient refuses any intervention. 
+He states that he would like to go 
+home to his wife and children to 
+die peacefully. What is the most 
+appropriate next step in management?
+1
+A 5-year-old girl with hydrocephalus 
+needs another revision of her 
+ventriculoperitoneal shunt. There are 
+no satisfactory alternatives available 
+to relieve her symptoms. Her father 
+consents, but her mother refuses, 
+arguing that she has been through 
+enough procedures in her young life. 
+What is the most appropriate next 
+step in management?
+2
+A 51-year-old man is brought to 
+the emergency department after 
+he was struck by a motor vehicle. 
+He is unresponsive and in need 
+of emergent surgery. His wife and 
+children cannot be reached. What 
+is the most appropriate next step in 
+treatment?
+3
+137ETHICS AND LEGAL ISSUES HIGH-YIELD FACTS IN
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   137 8/23/18   1:09 PM
+
+=== PAGE 155 ===
+End-of-Life Issues
+WRITTEN ADVANCE DIRECTIVES
+■ Living will:  Addresses a patient’s wishes to maintain, withhold, or with-
+draw life-sustaining treatment in the event of terminal disease or a persis-
+tent vegetative state when the patient has lost the capacity to make 
+decisions. DNR and DNI orders are based on patient preferences regard-
+ing CPR and intubation only. Patients can refuse all nonpalliative treat-
+ments or specific therapies (eg, CPR, intubation, antibiotics, feeding 
+tubes). A living will overrides the wishes of the family.
+■ Durable power of attorney for health care:  Legally designates a surrogate 
+health care decision maker if a patient lacks decision-making capacity. 
+More flexible than a living will. Surrogates should make decisions consis-
+tent with the person’s stated wishes.
+■ No living will:  If no living will or durable power of attorney for health 
+care exists, decisions should be made by close family members (spouse, 
+adult children, parents, and adult siblings) or friends, in that order.
+■ Ethics committees or court orders can be helpful when the patient lacks 
+capacity, has no proxy or advance directives, and there is disagreement 
+among family members, or when there is disagreement between the fam-
+ily and health care providers (eg, in cases of medical futility or parental 
+refusal of necessary treatment for minors).
+WITHDRAWAL OF CARE
+■ Patients and their decision makers have the right to forego or withdraw 
+life-sustaining treatment. Nevertheless, physicians should seek to under
+-
+stand patients and their reasons for refusing beneficial treatments.
+■ No ethical distinction is made between withholding a treatment and with -
+drawing a treatment, because a patient may choose to refuse an interven-
+tion either before or after it is initiated. This can include ventilation, 
+fluids, nutrition, and medications such as antibiotics.
+■ Hospice care is focused on palliation of symptoms for patients with a prog -
+nosis of < 6 months of life. The focus is on pain management, quality of 
+life, and bereavement.
+■ If the intent is to relieve suffering and medications administered are 
+titrated for that purpose, it is considered ethical to provide palliative treat
+-
+ment to relieve pain and suffering even if it may hasten a patient’s death 
+(principle of double effect).
+■ Example: A physician may prescribe a high-dose opioid analgesic to a 
+patient who is expected to die within 1 day, even though it may sup
+-
+press respiration and hasten death.
+EUTHANASIA AND PHYSICIAN-ASSISTED SUICIDE
+■ Euthanasia is the administration of a lethal agent with the intent to end 
+life.
+■ It is opposed by the AMA Code of Medical Ethics and is illegal in all 
+states.
+■ Patients who request euthanasia should be evaluated for inadequate 
+pain control and comorbid depression.
+■ Physician-assisted suicide consists of prescribing a lethal agent to a patient 
+who will self-administer it to end his or her own life. This is currently 
+ KEY FACT
+Do not resuscitate (DNR) and Do not 
+intubate (DNI) orders do not mean “do 
+not treat.”
+Proceed with the surgery. A physician 
+may give emergent treatment in the 
+absence of informed consent when 
+immediate intervention is necessary 
+to prevent serious harm or death.
+3
+Proceed with the shunt revision. The 
+consent of one parent is sufficient 
+to proceed with the treatment 
+of a minor, particularly when it is 
+unequivocally clear that the decision 
+is in the child’s best interest.
+2
+Respectfully ask the patient about 
+his reasons for not wanting to 
+pursue treatment. Patients often 
+need clarification and reassurance. 
+If he continues to decline treatment, 
+abide by his decision (respect for 
+autonomy).
+1
+138 ETHICS AND LEGAL ISSUESHIGH-YIELD FACTS IN
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   138 8/23/18   1:09 PM
+
+=== PAGE 156 ===
+illegal except in the states of Oregon, Washington, Vermont, Colorado, 
+and California. This is also legal via court order in Montana. Though 
+legal in the aforementioned states, according to the AMA Code of Medi-
+cal Ethics, physician-assisted suicide is “fundamentally incompatible with 
+the physician’s role as healer.”
+FUTILE TREATMENT
+Physicians are not ethically obligated to provide treatment and may refuse a 
+patient’s or family member’s request for further intervention on the grounds 
+of futility under any of the following circumstances:
+■ There is no evidence or pathophysiologic rationale for the treatment.
+■ The intervention has already failed.
+■ Maximal intervention is currently failing.
+■ Treatment will not achieve the goals of care .
+ALTERNATIVE TREATMENT
+If a patient is interested in alternative/nontraditional treatment, the physician 
+should obtain more information as to why the patient is interested. While the 
+physician should provide as much information as possible, he or she should 
+not dismiss the patient.
+Disclosure
+FULL DISCLOSURE
+■ Patients have a right to know about their medical status, prognosis, and 
+treatment options (full disclosure). They have the legal right to obtain cop
+-
+ies of their medical records within a specified timeframe.
+■ A patient’s family cannot require that a physician withhold information 
+from the patient without the knowledge and consent of the patient. A phy
+-
+sician should explore why the family member does not want the diagnosis 
+revealed, but ultimately the patient should be told.
+■ A physician may withhold information only if the patient requests not to 
+be 
+told, or in the rare and controversial case in which a physician deter-
+mines that disclosure would cause severe and immediate harm to the 
+patient (therapeutic privilege).
+MEDICAL ERRORS
+■ Physicians are obligated to inform patients of mistakes made in their medi-
+cal treatment.
+■ It is not appropriate for a physician to blame another physician for a  
+medical error without obtaining additional information from the original 
+physician.
+■ If the cause of a specific error or series of errors is not known, the physi -
+cian should communicate this with the family promptly and maintain 
+contact with the patient as investigations reveal more facts.
+■ One of the largest contributors to medical error is failure to communi-
+cate during sign-out and hand-off processes. The best way to avoid 
+communication breakdown is to implement a checklist for hand-off.
+ KEY FACT
+Potential signs of elder abuse and 
+neglect:
+■ C uts, bruises, pressure ulcers, burns.
+■ Uncommon frac tures.
+■ M alnutrition or dehydration.
+■ Anogenital injur y or infection.
+■ E vidence of poor caretaking or 
+financial exploitation.
+ KEY FACT
+Signs of suspected child abuse:
+■ H istory given not consistent with 
+injury.
+■ Unusual child or par ental behavior.
+■ D elay in seeking medical care.
+■ Subdural hemat omas.
+■ R etinal hemorrhages.
+■ Spiral , bucket-handle, or rib 
+fractures.
+■ I njuries in different stages of 
+healing.
+A 35-year-old woman visits a primary 
+care physician after hurting her wrist. 
+Physical exam reveals circumferential 
+bruises of her wrist, neck, and arms. 
+The patient admits that the injuries 
+were inflicted by her husband. What 
+is the most appropriate next step in 
+management?
+139ETHICS AND LEGAL ISSUES HIGH-YIELD FACTS IN
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   139 8/23/18   1:09 PM
+
+=== PAGE 157 ===
+CLINICAL RESEARCH
+■ Physicians are obligated to inform patients considering involvement in a 
+clinical research protocol about the purpose of the research study and the 
+entire study design as it will affect the patient’s treatment. This includes 
+the possible risks, benefits, and alternatives to the research protocol.
+■ An informed consent form approved by the overseeing research institu -
+tional review board must be completed for participation in any clinical 
+research protocol.
+■ Newly deceased patients may be used for training health care providers.  
+The physician must obtain permission from the family (or patient prior to 
+death), and training must occur as part of a structured training program.
+Confidentiality
+■ Information disclosed by a patient to his or her physician and information 
+about a patient’s medical condition are strictly confidential and should be 
+discussed 
+and accessed only by those directly involved in the patient’s 
+care, with few exceptions (described later).
+■ A patient may waive the obligation of the physician to protect confidential -
+ity (eg, with insurance companies, authorized family members), preferably 
+by way of written or verbal consent. The physician should disclose only 
+the minimally necessary information.
+■ It is ethically and legally necessary to override confidentiality in the follow-
+ing situations:
+■ Patient intent to commit a violent crime (Tarasoff decision): Physi-
+cians have a duty to protect the intended victim through reasonable 
+means (eg, warn the victim, notify police).
+■ Suicidal patients .
+■ Child abuse/neglect and elder abuse/neglect.
+■ Reportable infectious diseases  (eg, HIV, sexually transmitted infec-
+tions, tuberculosis). Duty to warn public officials and identifiable peo-
+ple at risk. It is normally best to encourage patients themselves to inform 
+sexual contacts who are at risk for contracting the illness.
+■ Gunshot and knife wounds  (duty to notify the police).
+■ The patient is a danger to others  (eg, impaired automobile drivers). 
+Currently, only six states have mandatory physician reporting laws.
+■ Example: A patient begins to drive 1 week after hospitalization for sei -
+zures, although the department of motor vehicles in his state requires 
+that licensed drivers be without seizures for at least 3 months.
+Conflict of Interest
+■ Occurs when physicians find themselves having a personal interest in a 
+given situation that influences their professional obligations.
+■ Example: A physician may own stock in a pharmaceutical company 
+(financial interest) that produces a drug he is prescribing to his patient 
+(patient care interest).
+■ Physicians should disclose existing conflicts of interest to affected parties (eg,  
+patients, institutions, audiences of journal articles or scientific meetings).
+■ Accepting gifts from pharmaceutical companies can influence a physi -
+cian’s practice and should generally be avoided. Nonmonetary gifts 
+should be accepted only if they will directly benefit patient care and 
+are of small monetary value. A physician should never accept cash.
+ MNEMONIC
+Overriding confidentiality—
+WAIT a SEC before letting a 
+dangerous patient go!
+Wounds
+Automobile-driving impairment
+Infectious disease
+Tarasoff (violent crimes) and Human 
+Trafficking
+Suicide
+Elder abuse and neglect
+Child abuse
+ KEY FACT
+Guiding principles for overriding 
+confidentiality:
+■ T here is an identifiable third party at 
+risk for harm.
+■ T he harm is significant and 
+probable.
+■ Disclosur e will help prevent or 
+mitigate the harm.
+■ O ther measures, such as convincing 
+the patient to self-disclose, have 
+failed.
+ KEY FACT
+Mandatory reporting of intimate-
+partner violence is controversial and 
+varies by state. Nonetheless, physicians 
+should document the encounter, offer 
+support, and have resources available 
+for assistance.
+Offer support, and acknowledge the 
+courage it takes to discuss abuse. 
+Assess the safety of the woman and 
+of any children involved, introduce 
+the concept of an emergency 
+plan, and encourage the use of 
+community resources. If the patient 
+consents, report the abuse to relevant 
+authorities.
+140 ETHICS AND LEGAL ISSUESHIGH-YIELD FACTS IN
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   140 8/23/18   1:09 PM
+
+=== PAGE 158 ===
+Malpractice
+The essential elements of a civil suit under negligence include the 4 D’s:
+■ The physician has a Duty to the patient.
+■ Dereliction  of duty occurs.
+■ There is Damage to the patient.
+■ Dereliction is the Direct cause of damage.
+Unlike a criminal suit, in which the burden of proof is “beyond a reason-
+able doubt,” the burden of proof in a malpractice suit is “a preponderance of 
+the evidence.”
+Physicians may refuse inappropriate requests, such as demanding to be 
+seen after hours. The physician should set clear limits and professional bound-
+aries while remaining calm. If the patient has a nonurgent condition, the phy-
+sician should not recommend that the patient visit the emergency department.
+ KEY FACT
+Physicians are not obligated to accept 
+everyone coming to them as a patient. 
+Furthermore, physicians have the right 
+to end a doctor-patient relationship but 
+must give the patient the resources and 
+time to find another physician.
+ MNEMONIC
+The 4 D’s of malpractice—
+Duty
+Dereliction
+Damage
+Direct cause
+141ETHICS AND LEGAL ISSUES HIGH-YIELD FACTS IN
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   141 8/23/18   1:09 PM
+
+=== PAGE 159 ===
+NOTES
+142 ETHICS AND LEGAL ISSUESHIGH-YIELD FACTS IN
+2019_02.05_Step2CK_Ethics_10e_135-142.indd   142 8/23/18   1:09 PM
+
+=== PAGE 160 ===
+Esophageal Disease 144
+Dysphagia/ODynOphagia 144
+infectiOus esOphagitis 144
+Diffuse (Distal) esOphageal spasm 145
+achalasia 145
+esOphageal Diverticula 146
+esOphageal cancer 147
+gastrOesOphageal reflux Disease 147
+hiatal hernia 148
+Disorders of the Stomach and Duodenum 149
+gastritis 149
+gastric cancer 150
+peptic ulcer Disease 150
+ZOllinger-ellisOn synDrOme 151
+Disorders of the Small Bowel 151
+Diarrhea 151
+malabsOrptiOn/malDigestiOn 154
+lactOse intOlerance 154
+carcinOiD synDrOme 154
+irritable bOwel synDrOme 155
+small bOwel ObstructiOn 155
+ileus 156
+mesenteric ischemia 157
+appenDicitis 157
+Disorders of the Large Bowel 158
+Diverticular Disease 158
+large bOwel ObstructiOn 158
+cOlOrectal cancer 159
+ischemic cOlitis 161
+pilOniDal Disease 161
+Gastrointestinal Bleeding 161
+Inflammatory Bowel Disease
+ 161
+Hernias
+ 
+163
+Biliary Disease
+ 165
+chOlelithiasis anD biliary cOlic 165
+acute chOlecystitis 166
+chOleDOchOlithiasis 167
+acute chOlangitis 167
+gallstOne ileus 167
+Liver Disease 168
+abnOrmal liver functiOn tests 168
+hepatitis 168
+cirrhOsis 171
+primary sclerOsing chOlangitis 173
+primary biliary chOlangitis 173
+nOnalcOhOlic fatty liver Disease 174
+hepatOcellular carcinOma 174
+hemOchrOmatOsis 175
+wilsOn Disease (hepatOlenticular DegeneratiOn) 176
+Pancreatic Disease 176
+insulinOma 176
+VIPOma 177
+pancreatitis 177
+pancreatic cancer 177
+143
+HIGH-YIELD FACTS IN
+GASTROINTESTINAL
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   143 8/23/18   1:09 PM
+
+=== PAGE 161 ===
+Esophageal Disease
+DYSPHAGIA/ODYNOPHAGIA
+Difficulty swallowing (dysphagia) or pain with swallowing (odynophagia) caused 
+by abnormalities of the oropharynx or esophagus.
+Oropharyngeal Dysphagia
+■ Problem with initiation of swallowing; may lead to aspiration of food into 
+the lungs.
+■ Etiology:  Neurologic or muscular, including stroke, Parkinson disease, 
+myasthenia gravis, prolonged intubation, and Zenker diverticula.
+■ Usually more of a problem with liquids than with solids.
+■ Best initial test:  Modified barium swallow (video fluoroscopic swallowing 
+exam). Esophagogastroduodenoscopy (EGD) may also be appropriate.
+Esophageal Dysphagia
+■ Can be caused by an obstruction (eg, strictures, Schatzki rings, webs, carci -
+noma) or motility disorder (eg, achalasia, scleroderma, esophageal spasm).
+■ Obstructions usually more of a problem with solids than with liquids; 
+while motility disorders cause both solid and liquid food dysphagia.
+■ Best initial test: EGD; consider pre-EGD barium swallow (aka esopha-
+gram) if history of esophageal radiation or strictures as these patients may 
+be at higher risk for esophageal perforation (Boerhaave syndrome). May be 
+followed by manometry in some cases.
+INFECTIOUS ESOPHAGITIS
+Seen in immunocompromised patients. Table 2.6-1 outlines the etiology, 
+diagnosis, and treatment of infectious esophagitis.
+ KEY FACT
+In an immunocompromised person 
+with odynophagia, consider candidiasis.
+ KEY FACT
+Esophageal webs are associated with 
+iron deficiency anemia and glossitis 
+(Plummer-Vinson syndrome).
+Etiologic AgEnt ExAm Findings UppEr Endoscopy trEAtmEnt
+Candida albicans
+A
+± oral thrush  
+(see Image A)
+Yellow-white plaques adherent to the mucosa Fluconazole PO (treat with 
+more than a topical agent 
+alone)
+Herpes simplex virus Oral ulcers Small, deep ulcerations; multinucleated giant cells 
+with intranuclear inclusions on biopsy + Tzanck smear
+Acyclovir IV
+Cytomegalovirus Retinitis, colitis Large, linear, superficial ulcerations; intranuclear and 
+intracytoplasmic inclusions on biopsy
+Ganciclovir IV
+Image reproduced with permission from Kantarjian HM, et al. MD Anderson Manual of Medical Oncology. New York: McGraw-Hill; 2006.
+TABLE 2.6-1.  C auses of Infectious Esophagitis
+144 GASTROINTESTINALHIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   144 8/23/18   1:09 PM
+
+=== PAGE 162 ===
+Remember that esophagitis may also be caused by medications, especially 
+tetracyclines, bisphosphonates, NSAIDs, and potassium chloride.
+DIFFUSE (DISTAL) ESOPHAGEAL SPASM
+Motility disorder in which normal peristalsis is periodically interrupted by 
+high-amplitude nonperistaltic contractions (see Figure 2.6-1A).
+History/PE
+Presents with heartburn, chest pain, dysphagia, and odynophagia. Often pre-
+cipitated by ingestion of hot or cold liquids; relieved by nitroglycerin.
+Diagnosis
+■ Barium swallow:  Shows a corkscrew-shaped esophagus.
+■ Esophageal manometry (most accurate test):  High-amplitude, simultane-
+ous contractions in greater than 20% of swallows.
+trEatmEnt
+■ Symptomatic relief: Calcium channel blockers, tricyclic antidepressants 
+(TCAs), or nitrates.
+■ Severe, incapacitating symptoms:  Surgery (esophageal myotomy) but has 
+limited utility.
+ACHALASIA
+■ Motility disorder of the esophagus characterized by impaired relaxation of 
+the lower esophageal sphincter (LES) and loss of peristalsis in the distal 
+two-thirds of the esophagus.
+■ Etiology:  Degeneration of the inhibitory neurons in the myenteric (Auer-
+bach) plexus.
+History/PE
+Progressive dysphagia (solids and liquids), chest pain, regurgitation of undi-
+gested food, weight loss, and nocturnal cough.
+ KEY FACT
+Candida esophagitis is an AIDS-defining 
+illness.
+ KEY FACT
+The musculature of the upper one-third 
+of the esophagus is skeletal, whereas 
+that of the lower two-thirds is smooth 
+muscle.
+FIGURE 2.6-1.  Esophageal disease on barium esophagram. (A) Esophageal spasm. 
+(B) Achalasia. Note the dilated esophagus tapering to a “bird’s beak” narrowing (arrows) at the 
+LES. (C) Barrett esophagus with adenocarcinoma. Note the nodular mucosa of Barrett esopha-
+gus (arrow) and the raised filling defect (arrowhead) representing adenocarcinoma in this 
+patient. (D) Peptic stricture (arrows) 2° to GERD above a hiatal hernia (right).
+ (Image A reproduced 
+with permission from USMLE-Rx.com. Image B reproduced with permission from Doherty GM. Current Diagnosis & Treatment: 
+Surgery, 13th ed. New York, NY: McGraw-Hill; 2010. Images C and D reproduced with permission from Chen MY et al. Basic 
+Radiology, 1st ed. New York, NY: McGraw-Hill; 2004.)
+A
+ D
+B
+ C
+145GASTROINTESTINAL HIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   145 8/23/18   1:09 PM
+
+=== PAGE 163 ===
+Diagnosis
+■ Best initial test:  Barium swallow; shows esophageal dilation with a “bird’s 
+beak” tapering of the distal esophagus (see Figure 2.6-1B).
+■ Most accurate test:  Manometry; shows ↑ resting LES pressure, incom-
+plete LES relaxation upon swallowing, and ↓ peristalsis in the body of the 
+esophagus (see Figure 2.6-2).
+■ EGD to rule out structural disorders beyond achalasia (ie, mechanical 
+obstruction) that may present similarly to achalasia (pseudoachalasia), 
+especially cancer.
+trEatmEnt
+■ Short term:  Nitrates, calcium channel blockers, or endoscopic injection 
+of botulinum toxin into the LES.
+■ Long term:  Pneumatic balloon dilation or surgical (Heller) myotomy.
+ESOPHAGEAL DIVERTICULA
+■ Diverticula can be present in any location. Zenker diverticulum is 
+defined as cervical outpouching through the cricopharyngeus muscle and 
+is a posterior, false diverticulum (outpouching only through submucosa 
+and mucosa).
+FIGURE 2.6-2.  Achalasia. Manometry with incomplete LES relaxation. (Reproduced with 
+permission from Farrokhi F, Vaezi MF. Idiopathic (primary) achalasia. Orphanet J Rare Dis. 2007;2:38.)
+Wet swallow
+LES pressure
+(mm Hg)
+Proximal
+esophageal
+pressure
+(mm Hg)
+Distal
+esophageal
+pressure
+(mm Hg)
+15 sec
+100
+100
+100
+100
+100
+0
+0
+0
+0
+0
+146 GASTROINTESTINALHIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   146 8/23/18   1:09 PM
+
+=== PAGE 164 ===
+■ Hx/PE:  Chest pain, dysphagia, halitosis, and regurgitation of undigested 
+food.
+■ Dx:  Barium swallow will demonstrate outpouchings.
+■ Tx:  If symptomatic, treat with surgical excision of the diverticulum. For 
+Zenker diverticulum, myotomy of the cricopharyngeus is required to relieve 
+the high-pressure zone.
+ESOPHAGEAL CANCER
+■ Squamous cell carcinoma (SCC) is the most common type of esophageal 
+cancer worldwide. Adenocarcinoma is the most common type of esopha-
+geal cancer in United States, Europe, and Australia.
+■ Risk factors:
+■ SCC:  Alcohol, tobacco use, and nitrosamines.
+■ Adenocarcinoma:  Barrett esophagus (columnar metaplasia of the dis-
+tal esophagus 2° to chronic GERD).
+History/PE
+Progressive dysphagia, initially to solids and later to liquids, is common. Weight 
+loss, odynophagia, GERD, GI bleeding, and vomiting are also seen.
+Diagnosis
+■ Best initial test:  Barium study. Narrowing of esophagus with an irregular 
+border protruding into the lumen (see Figure 2.6-1C).
+■ Most accurate test:  EGD with biopsy; required to establish the diagnosis.
+■ CT and endoscopic ultrasound for tumor staging.
+trEatmEnt
+■ Best initial treatment:  Chemoradiation and surgical resection.
+■ Resection is also indicated in cases of high-grade Barrett dysplasia. Has a 
+poor prognosis
+.
+GASTROESOPHAGEAL REFLUX DISEASE
+Symptomatic reflux of gastric contents into the esophagus, most commonly 
+from transient LES relaxation. Can also result from an incompetent LES, gas-
+troparesis, or hiatal hernia.
+History/PE
+■ Hx:  Heartburn that commonly occurs 30–90 minutes after a meal, wors-
+ens with reclining, and often improves with antacids, sitting, or standing; 
+sour taste; a globus sensation; unexplained cough; morning hoarseness; 
+and chest pain mimicking coronary artery disease.
+■ PE:  Normal unless a systemic disease (eg, scleroderma) is present.
+Diagnosis
+■ Primarily a clinical diagnosis, with empirical treatment first (see below for 
+lifestyle modification and medical treatment).
+■ Most accurate test:  24-hour pH monitoring with impedance; indicated if 
+the diagnosis is uncertain.
+■ EGD with biopsy:  Performed in patients whose symptoms are the following:
+■ Refractory to initial empiric therapy.
+■ Long-standing (to rule out Barrett esophagus and adenocarcinoma; see 
+Figure 2.6-3).
+ KEY FACT
+Esophageal cancer metastasizes early, 
+because the esophagus lacks a serosa.
+ KEY FACT
+SCC of the esophagus tends to occur 
+in the upper and middle thirds of the 
+esophagus, whereas adenocarcinoma 
+occurs in the lower third.
+FIGURE 2.6-3.  Barrett esophagus 
+on upper endoscopy. Shown is an irreg-
+ular Z line (squamocolumnar junction 
+between the esophagus and stomach) 
+caused by columnar metaplasia of the 
+lower esophagus. 
+(Reproduced with permission 
+from Fauci AS et al. Harrison’s Principles of Internal 
+Medicine, 17th ed. New York, NY: McGraw-Hill; 2008.)
+147GASTROINTESTINAL HIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   147 8/23/18   1:09 PM
+
+=== PAGE 165 ===
+■ Associated with alarm symptoms like blood in the stool, weight loss, 
+dysphagia/odynophagia (signs of obstruction), or chest pain
+.
+■ Other studies:  Indicated for refractory symptoms or if concern for other 
+causes. May include barium swallow (may demonstrate reflux see 
+Figure 2.6-1D) or esophageal manometry.
+trEatmEnt
+■ Lifestyle modifications:  Indicated for all patients. Includes weight loss, 
+head-of-bed elevation, small but frequent meals, avoidance of nocturnal 
+meals, avoidance of substances like alcohol, chocolate, or coffee that ↓ 
+LES tone.
+■ Pharmacologic:
+■ Mild/intermittent:  Antacids.
+■ Chronic/frequent:  H 2-receptor antagonists (cimetidine, ranitidine) or 
+proton pump inhibitors (PPIs) (omeprazole, lansoprazole).
+■ Severe/erosive:  PPIs first; if refractory, Nissen fundoplication surgery 
+may be of benefit.
+■ Complications:  Erosive esophagitis, esophageal peptic stricture, aspira-
+tion pneumonia, upper GI bleeding, Barrett esophagus.
+HIATAL HERNIA
+■ Herniation of stomach upward into the chest through the diaphragm.
+■ Common types:
+■ Sliding hiatal hernia (95%): Gastroesophageal junction and a portion 
+of the stomach are displaced above the diaphragm (see Figure 2.6-4).
+■ Paraesophageal hiatal hernia (5 %): Gastroesophageal junction remains 
+below the diaphragm, while the fundus herniates into the thorax (see 
+Figure 2.6-4).
+■ Hx/PE:  May be asymptomatic. Patients with sliding hernias may pre  sent 
+with GERD; paraesophageal hernias can cause strangulation.
+■ Dx:  Incidental finding on chest x-ray (CXR); also frequently diagnosed by 
+barium swallow or EGD.
+■ Tx:
+■ Sliding hernias:  Medical therapy and lifestyle modifications to 
+↓ GERD symptoms.
+■ Paraesophageal hernias:  Surgical gastropexy to prevent gastric 
+volvulus.
+ KEY FACT
+GERD can also mimic angina or 
+myocardial infarction.
+ KEY FACT
+GERD is not a result of the presence of 
+Helicobacter pylori. GERD arises from a 
+transient relaxation of the LES.
+Herniated
+gastric cardia
+A
+Herniated
+gastric fundus
+B
+FIGURE 2.6-4.  (A) Sliding hiatal and (B) paraesophageal hiatal hernia. (Reproduced with 
+permission from USMEL-Rx.com.)
+148 GASTROINTESTINALHIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   148 8/23/18   1:09 PM
+
+=== PAGE 166 ===
+Disorders of the Stomach and Duodenum
+GASTRITIS
+Inflammation of the gastric mucosa. Subtypes:
+■ Acute gastritis:  Rapidly developing, superficial or deep erosive lesions, 
+often caused by NSAID use, alcohol, H pylori infection, and stress from 
+severe illness (eg, burns, CNS injury). Toxic ingestion can also cause 
+acute gastritis along with possible gastric outlet stricture.
+■ Chronic  gastritis:
+■ Type A (10 %): Occurs in the fundus and is caused by autoantibodies 
+to parietal cells. Causes pernicious anemia and is associated with other 
+autoimmune disorders and ↑ risk for gastric adenocarcinoma and car-
+cinoid tumors.
+■ Type B (90 %): Occurs in the antrum and may be caused by NSAIDs 
+or H pylori infection. Often asymptomatic, but associated with ↑ risk 
+for peptic ulcer disease (PUD) and gastric cancer. Note: H pylori infec-
+tion can but does not always cause gastritis.
+History/PE
+Asymptomatic or symptoms of epigastric pain, nausea, vomiting, hemateme-
+sis, or melena.
+Diagnosis
+Upper endoscopy is required to diagnose acute gastritis. Different tests for 
+H pylori are shown in the Table 2.6-2.
+trEatmEnt
+■ Stop intake of exacerbating agents such as NSAIDs or alcohol.
+■ Antacids, sucralfate, H2 receptor blockers, and/or PPIs may help.
+ KEY FACT
+Type A gastritis is associated with 
+pernicious anemia caused by lack 
+of intrinsic factor necessary for the 
+absorption of vitamin B
+12.
+ KEY FACT
+Stress ulcers include Curling ulcers, 
+which are associated with burn 
+injuries, and Cushing ulcers, which are 
+associated with traumatic brain injury.
+ KEY FACT
+H pylori antibodies stay ⊕ even when 
+the infection is cleared. Use the urea 
+breath test or a repeat stool antigen as 
+a test of cure.
+ KEY FACT
+Consider peptic ulcer disease or 
+gastritis in elderly patients who are 
+taking medications for arthritis or heart 
+disease (eg, NSAIDs) who present with 
+abdominal pain or GI bleeding.
+tEst dEscription tEst chArActEristics
+Serology Detects IgG antibodies to H pylori High sensitivity, high specificity
+Cannot distinguish between 
+treated and active disease
+Urea breath 
+test
+H pylori urease converts radio-labeled 
+urea (C14 or C13) to CO2 and ammonia; 
+this test detects CO2 formed from urea 
+metabolism
+High specificity, lower sensitivity
+PPIs may cause false ⊝ results
+Stool 
+antigen 
+test
+Detects H pylori antigens in stool High specificity, high sensitivity
+Cost-effective initial test for 
+H pylori
+Endoscopic 
+biopsy
+Detects H pylori on histology or culture. 
+Can also detect intestinal metaplasia, 
+mucosa-associated lymphoid tissue 
+(MALT), or widespread gastritis
+Gold standard for diagnosis of 
+gastritis and H pylori
+Most invasive test
+TABLE 2.6-2.  T ests for H pylori
+149GASTROINTESTINAL HIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   149 8/23/18   1:09 PM
+
+=== PAGE 167 ===
+■ Administer triple therapy (amoxicillin, clarithromycin, omeprazole) to 
+treat H 
+pylori infection unless the patient is allergic to penicillin, in which 
+case metronidazole should be substituted for amoxicillin.
+■ Give prophylactic PPIs to patients at risk for stress ulcers (eg, ICU patients).
+GASTRIC CANCER
+■ Malignant tumor (mostly adenocarcinoma) with a poor prognosis that is 
+particularly common in Korea and Japan
+.
+■ Risk factors: Diet high in nitrites and salt and low in fresh vegetables 
+(antioxidants), H pylori colonization, and chronic gastritis.
+■ Hx/PE:  Early-stage disease is usually asymptomatic but may be associated 
+with indigestion and loss of appetite.
+■ Late-stage disease presents with alarm symptoms: abdominal pain, 
+weight loss, and upper GI bleeding.
+■ Dx:  Upper endoscopy with biopsy (most accurate test) to rule out other 
+etiologies and confirm the diagnosis.
+■ Tx:  If detected early, treatment is surgical resection. Most patients present 
+with late-stage, incurable disease. Five-year survival rate is < 10% for 
+advanced disease.
+PEPTIC ULCER DISEASE
+■ Results from damage to the gastric or duodenal mucosa caused by 
+impaired mucosal defense and/or 
+↑ acidic gastric contents.
+■ Risk factors:  H pylori (> 90% of duodenal ulcers and 70% of gastric 
+ulcers), NSAIDs, alcohol, and tobacco use; concomitant use of corticoste-
+roids and NSAIDs; male gender.
+History/PE
+■ Presentation:  Chronic or periodic dull, burning epigastric pain that is 
+often related to meals and can radiate to the back; nausea; hematemesis 
+(“coffee-ground” emesis); or melena (blood in the stool).
+■ PE:  Usually normal but may reveal epigastric tenderness and stool guaiac.
+■ Risks:  Acute perforation (rigid abdomen, rebound tenderness, and/or 
+guarding).
+Diagnosis
+■ Most accurate test:  Upper endoscopy with biopsy is the most accurate test. 
+It can also be used to test for H pylori infection and to rule out active bleed-
+ing or gastric adenocarcinoma (10% of gastric ulcers without perforation).
+■ H pylori  testing. See Table 2.6-2.
+■ If perforation is suspected , perform upright CXR (see Figure 2.6-5) to eval-
+uate air under the diaphragm or CT scan of the abdomen.
+■ In recurrent or refractory cases, check serum gastrin levels to screen for 
+Zollinger-Ellison syndrome.
+trEatmEnt
+■ Acute  management:
+■ If perforation is suspected:  Perform x-ray of the abdomen (initial test) 
+to rule out free air under the diaphragm. Consider CT (definitive test) 
+if x-ray of the abdomen shows no perforation but there is high clinical 
+suspicion. Then, surgery if perforation is confirmed on CT. Carefully 
+monitor BP.
+ KEY FACT
+A gastric adenocarcinoma that 
+metastasizes to the ovary is called a 
+Krukenberg tumor.
+ KEY FACT
+MALT lymphoma is a rare gastric 
+tumor that presents in patients with 
+chronic H pylori infection. It is the only 
+malignancy that can be cured with 
+antibiotics. Treat with triple therapy.
+ KEY FACT
+Gastric cancer may present with 
+Virchow node (an enlarged left 
+supraclavicular lymph node) or a 
+Sister Mary Joseph node (a palpable 
+lymph node near the umbilicus).
+ KEY FACT
+After a meal, pain from a Gastric ulcer 
+is Greater, whereas Duodenal pain 
+Decreases.
+FIGURE 2.6-5.  Pneumoperitoneum. 
+Upright chest x-ray (CXR) reveals free air 
+under the diaphragm. (Reproduced with permis-
+sion from USMLE-Rx.com.)
+150 GASTROINTESTINALHIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   150 8/23/18   1:09 PM
+
+=== PAGE 168 ===
+■ Rule out active bleeding:  Serial hematocrits (initially), rectal vault 
+exam, NG suction. Monitor BP and treat with IV hydration, blood 
+transfusion, and IV PPIs. Then, perform an urgent EGD (definitive) to 
+control suspected bleeding.
+■ Long-term  management:
+■ Medical therapy goals:  Protect the mucosa, ↓ acid production, and 
+eradicate H pylori infection.
+■ Mild disease: Treat with antacids, PPIs, or H2-blockers.
+■ H pylori  infection: Triple therapy (omeprazole, clarithromycin, and 
+amoxicillin).
+■ Discontinue exacerbating agents (alcohol, tobacco).
+■ Endoscopy with targeted biopsy: Indicated in patients with symptoms 
+refractory to medical therapy to rule out gastric cancer.
+■ Surgical therapy (eg, parietal cell vagotomy):  Severe cases refractory to 
+medical therapy.
+ComPliCations
+Hemorrhage (most likely from posterior ulcers that erode into the gastroduo-
+denal artery), gastric outlet obstruction (presenting with succussion splash), 
+perforation, intractable pain.
+ZOLLINGER-ELLISON SYNDROME
+■ Rare condition characterized by gastrin-producing tumors in the duode -
+num and/or pancreas that lead to excessive secretion of gastrin and recur-
+rent or intractable ulcers.
+■ Hx/PE:  Unresponsive, recurrent gnawing, burning abdominal pain; diar-
+rhea; nausea; vomiting; fatigue; weakness; weight loss; and GI bleeding.
+■ Dx:  ↑ Fasting serum gastrin levels and ↑ gastrin with the administration of 
+secretin are diagnostic; CT is indicated to characterize and stage disease. 
+Nuclear octreotide scan can also be used to facilitate localization of 
+gastrinomas.
+■ Tx:  Moderate- to high-dose PPIs to control symptoms. Surgical resection 
+of the gastrinoma if not metastatic.
+Disorders of the Small Bowel
+DIARRHEA
+■ The most common mechanisms are malabsorption/osmotic, secretory, 
+inflammatory/infectious, and 
+↑ motility. (See also Tables 2.6-3 and 2.6-4).
+ KEY FACT
+A biopsy must be performed on all 
+gastric ulcers to rule out malignancy.
+ KEY FACT
+Misoprostol can help patients with PUD 
+who require NSAID therapy (eg, for 
+arthritis).
+ KEY FACT
+Zollinger-Ellison syndrome:
+■ H ypercalcemia from 
+hyperparathyroidism (In 20%, 
+gastrinomas are associated with 
+MEN type 1).
+■ Epigastr ic pain (peptic ulcer).
+■ Diar rhea (caused by mucosal 
+damage and pancreatic 
+enzyme inactivation leading to 
+malabsorption).
+stool osmotic gAp dEscription ExAmplEs
+Low osmotic gap (< 50 mOsm/kg) Secretory diarrhea: ↑ Secretion or inhibition 
+of absorption of water
+Bacterial toxins (eg, cholera, Escherichia coli), VIPoma, 
+gastrinoma, medullary cancer of thyroid
+High osmotic gap (> 100 mOsm/kg) Osmotic diarrhea: Osmotically active com-
+pounds in bowel draw in water
+Celiac disease, Whipple disease, pancreatic insuffi-
+ciency, laxative abuse
+TABLE 2.6-3.  T ypes of Stool Osmotic Gap
+151GASTROINTESTINAL HIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   151 8/23/18   1:09 PM
+
+=== PAGE 169 ===
+■ Stool electrolytes:  Primarily sodium and potassium (normal stool osmotic 
+gap is 50–100 mOsm/kg).
+Stool osmotic gap = 290 − 2 × (stool Na + stool K)
+History/PE
+■ Acute diarrhea: Acute onset with a duration of < 2 weeks; usually infec-
+tious and self-limited.
+■ Multiple pathogens may be responsible (see Table 2.6-4).
+ KEY FACT
+Cryptosporidium and Isospora are 
+associated with chronic diarrhea in 
+patients with HIV/AIDS.inFEctioUs 
+AgEnt history
+ExAm And tEst rEsUl ts 
+(notE: All hAvE FEcAl 
+rBcs And WBcs) commEnts trEAtmEnt
+Campylobacter The most common etiology 
+of bacterial diarrhea
+Caused by ingestion of con-
+taminated food or water
+Affects young children and 
+young adults; generally 
+lasts 7–10 days
+Frequently presents with 
+bloody diarrhea
+Rule out appendicitis and 
+inflammatory bowel 
+disease (IBD)
+Supportive treatment first, 
+then fluoroquinolones 
+(eg, ciprofloxacin) or 
+azithromycin
+Clostridium 
+difficile
+Associated with recent 
+treatment with anti-
+biotics (penicillins, 
+quinolones, clindamycin)
+Affects hospitalized adult 
+patients
+Watch for toxic megacolon 
+(seen on x-ray of the 
+abdomen)
+Presents with fever, 
+abdominal pain, and 
+possible systemic 
+toxicity
+Most commonly causes 
+colitis, but can involve the 
+small bowel
+Identify C difficile toxin in the 
+stool
+Sigmoidoscopy shows 
+pseudomembranes
+Cessation of the inciting 
+antibiotic
+Treat with PO metronida-
+zole (mild disease), PO 
+vancomycin (moderate-
+severe disease), or IV 
+metronidazole ± rectal 
+vancomycin (if ileus)
+PO fidaxomicin useful 
+when there are multiple 
+relapses on previous 
+antibiotics
+Echinococcus 
+granulosus
+Contracted from close 
+contact with dogs, defini-
+tive host for tapeworm. 
+Causes simple liver cysts
+“Eggshell calcification” on 
+CT scan
+Usually found incidentally, 
+but may cause mild right 
+upper quadrant (RUQ) 
+pain caused by compres-
+sion of other structures
+Cyst aspiration may cause 
+cyst rupture and anaphy-
+lactic shock
+Surgical resection and 
+albendazole
+Entamoeba 
+histolytica
+Caused by ingestion of con-
+taminated food or water; 
+look for a history of travel 
+in developing countries
+The incubation period can 
+last up to 3 months
+Presents with severe 
+abdominal pain and 
+fever
+Endoscopy shows “flask-
+shaped” ulcers
+Chronic amebic colitis mimics 
+IBD
+Steroids can lead to fatal 
+perforation
+Treat with metronidazole
+TABLE 2.6-4.  C auses of Infectious Diarrhea
+(continues)
+152 GASTROINTESTINALHIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   152 8/23/18   1:09 PM
+
+=== PAGE 170 ===
+■ Common causes of pediatric diarrhea are rotavirus, Norwalk virus, and 
+enterovirus infection.
+■ Chronic diarrhea:  Insidious onset with a duration of > 4 weeks.
+■ Secretory:  Carcinoid tumors, VIPomas.
+■ Malabsorption/maldigestive/osmotic:  Bacterial overgrowth, pancre-
+atic insufficiency, mucosal damage, lactose intolerance, celiac disease, 
+laxative abuse (presents with dark brown colonic discoloration), post-
+surgical short bowel syndrome.
+■ Inflammatory/infectious:  Inflammatory bowel disease (IBD), giardia-
+sis, amoebic dysentery.
+■ Increased motility:  Irritable bowel syndrome (IBS).
+Diagnosis
+■ Acute diarrhea:  No further studies are indicated unless the patient has a 
+high fever, bloody diarrhea, or diarrhea lasting > 4–5 days.
+ KEY FACT
+Organisms that cause bloody diarrhea 
+include Salmonella, Shigella, E coli 
+(EHEC), and Campylobacter.
+ KEY FACT
+Organisms that cause watery diarrhea 
+include Vibrio cholerae, rotavirus, E coli 
+(ETEC), Cryptosporidium, Giardia, and 
+norovirus.
+TABLE 2.6-4.  C auses of Infectious Diarrhea (continued)
+inFEctioUs 
+AgEnt history
+ExAm And tEst rEsUl ts 
+(notE: All hAvE FEcAl 
+rBcs And WBcs) commEnts trEAtmEnt
+E coli O157:H7 Caused by ingestion of 
+contaminated food (raw 
+meat)
+Affects children and the 
+elderly; generally lasts 
+5–10 days
+Presents with severe 
+abdominal pain, 
+low-grade fever, and 
+vomiting
+It is important to rule out 
+GI bleeding and ischemic 
+colitis
+Hemolytic uremic syndrome 
+(HUS) is a potential compli-
+cation, primarily in children
+Avoid antibiotic or antidiar-
+rheal therapy, which ↑ 
+HUS risk
+Salmonella Caused by ingestion of 
+contaminated poultry or 
+eggs
+Affects young children and 
+the elderly; generally 
+lasts 2–5 days
+Presents with a pro-
+dromal headache, fever, 
+myalgia, and abdominal 
+pain
+Sepsis is a concern, as 
+5–10% of patients become 
+bacteremic
+Sickle cell patients are sus-
+ceptible to invasive disease 
+leading to osteomyelitis
+First fluids. Treat bacte-
+remia or at-risk patients 
+(eg, sickle cell patients) 
+with oral quinolone or 
+TMP-SMX
+Shigella Extremely contagious; trans-
+mitted between people 
+by the fecal-oral route
+Affects young children and 
+institutionalized patients
+May lead to severe 
+dehydration
+Can also cause febrile sei-
+zures in the very young
+Treat with TMP-SMX to ↓ 
+person-to-person spread
+Taenia solium Pork tapeworm. Acquired 
+by ingestion of under-
+cooked pork
+Presents with signs of 
+elevated intracranial 
+pressure (headaches, 
+vomiting, seizures, visual 
+changes)
+Diagnosed via CT or mag-
+netic resonance imaging 
+(MRI) showing several cysts 
+with edema
+Treat with albendazole 
+and with symptomatic 
+management of CNS 
+symptoms
+Trichinella Acquired by ingestion of 
+undercooked meat in 
+developing countries 
+(especially Mexico and 
+Thailand)
+Classic triad of myositis, 
+periorbital edema, and 
+eosinophilia
+Multiorgan involvement is 
+possible
+153GASTROINTESTINAL HIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   153 8/23/18   1:09 PM
+
+=== PAGE 171 ===
+■ Chronic diarrhea:  History/physical exam to narrow the differential diag-
+nosis. Additional studies include the following:
+■ Stool analysis:  Leukocytes, culture, C difficile toxin, and ova and para-
+site exam (O&P).
+trEatmEnt
+■ Acute  diarrhea: Oral rehydration is key. Antibiotics are not indicated 
+(except in C difficile infection, or in the epidemic setting), because they 
+do not shorten the course of illness.
+■ Chronic diarrhea:  Treatment is etiology specific.
+MALABSORPTION/MALDIGESTION
+■ Inability to absorb macro- and/or micronutrients. Common etiologies 
+include the following:
+■ Mucosal abnormalities:  Celiac disease (associated with dermatitis her-
+petiformis; see Figure 2.6-6), Whipple disease (also presents with 
+arthritis, lymphadenopathy, cardiac issues, PAS positive granules in 
+lamina propria on biopsy), tropical sprue.
+■ Bile salt deficiency:  Ileal disease in Crohn disease or small bowel 
+resections (> 100 cm of terminal ileum), bacterial overgrowth.
+■  Other:  Pancreatic insufficiency, short bowel syndrome.
+■ Hx/PE:  Presents with pale, foul-smelling, bulky stools (steatorrhea or fat 
+maldigestion) associated with abdominal pain, flatus, bloating, weight loss, 
+nutritional deficiencies, and fatigue.
+■ Dx:  Multiple laboratory tests based on the clinical suspicion. Biopsy is 
+definitive.
+■ Tx:  Etiology dependent. In severe cases, patients may require TPN, 
+immunosuppressants, and anti-inflammatory medications.
+LACTOSE INTOLERANCE
+■ Common among populations of African, Asian, and Native American 
+descent, also transiently after an acute episode of gastroenteritis.
+■ Hx/PE:  Presents with abdominal bloating, flatulence, cramping, and 
+watery diarrhea following milk ingestion.
+■ Dx:  Often treated empirically with lactose-free diet. Hydrogen breath test 
+reveals ↑ hydrogen following the ingestion of lactose.
+■ Tx:  Avoidance of dairy products; oral lactase enzyme replacement.
+CARCINOID SYNDROME
+■ Carcinoid syndrome is caused by metastasis of carcinoid tumors, which 
+most commonly arise from the ileum and appendix and produce sero-
+tonin. Prior to metastasis, most secreted hormones undergo first-pass 
+metabolism by the liver and do not cause systemic symptoms.
+■ Hx/PE:  Cutaneous flushing, diarrhea, abdominal cramps, wheezing, and 
+right-sided cardiac valvular lesions are the most common manifestations.
+■ Dx:  High urine levels of the serotonin metabolite 5-HIAA (best initial test) 
+are diagnostic. CT and In-111 octreotide scans are used to localize the 
+tumor.
+■ Tx:  Treatment includes octreotide and surgical resection.
+ KEY FACT
+Diarrhea after ingestion of raw eggs or 
+dairy: think Salmonella.
+ KEY FACT
+The initial tests specific for celiac 
+disease are IgA anti-transglutaminase 
+antibody or anti-endomysial antibody. 
+The gold standard is intestinal biopsy.
+ KEY FACT
+Whipple disease shows PAS positive 
+granules in lamina propria on biopsy.
+ KEY FACT
+The classic presentation of pellagra 
+is the 4 D’s: Diarrhea, Dementia, 
+Dermatitis, and Death.
+ KEY FACT
+Patients with carcinoid syndrome also 
+develop niacin deficiency because 
+tryptophan is metabolized into 
+serotonin.
+FIGURE 2.6-6.  Dermatitis her -
+petiformis. Grouped, papulovesicular, 
+pruritic skin lesions are shown. Lesions 
+tend to be symmetrically located on the 
+extensor surfaces of the elbows, knees, 
+buttocks, and posterior scalp, and are 
+associated with celiac disease. 
+(Reproduced 
+with permission from Caproni M et al. Celiac disease 
+and dermatologic manifestations: many skin clues to 
+unfold gluten-sensitive enteropathy. Gastroenterol Res 
+Pract. 2012;2012:952753.)
+154 GASTROINTESTINALHIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   154 8/23/18   1:10 PM
+
+=== PAGE 172 ===
+IRRITABLE BOWEL SYNDROME
+An idiopathic functional disorder that commonly affects women in their 20s 
+to 30s; often patients have comorbid psychiatric disorders like depression, anx-
+iety, and fibromyalgia.
+History/PE
+■ Patients present with abdominal pain that is relieved by bowel move -
+ments, diarrhea and/or constipation, abdominal distention, and mucous 
+stools. Symptoms often worsen with stress.
+■ No alarm symptoms:  Rarely awakens patients from sleep; vomiting, signif-
+icant weight loss, and constitutional symptoms are uncommon.
+■ PE:  Usually unremarkable.
+Diagnosis
+■ Definition (per Rome III diagnostic criteria):  At least 3 days in 
+3 months of episodic abdominal discomfort that is (two or more crite-
+ria): (1)  relieved by defecation; (2) associated with a change in stool  
+frequency or consistency; (3) associated with a change in stool 
+appearance.
+■ Exclude organic disorders such as IBD; increased prevalence of celiac dis -
+ease in IBS, so celiac should be ruled out when IBS is suspected.
+trEatmEnt
+■ Psychosocial:  Patients benefit from a strong patient-physician relation-
+ship. Physicians should offer reassurance and should not dismiss the 
+symptoms.
+■ Diet:  Fiber supplements (psyllium); exclude gas-producing foods.
+■ Chronic constipation may lead to anal fissures. Treat with topical anes -
+thetics and vasodilators.
+■ Pharmacologic:  Symptomatic treatment with antispasmodics. TCAs and 
+SSRIs may help. Long-term medical therapy is usually not indicated.
+SMALL BOWEL OBSTRUCTION
+Partial or complete blockage of passage of bowel contents through the small 
+bowel.
+■ Etiologies:  Adhesions (60% of cases), hernias (10–20%), neoplasms 
+(10–20%), intussusception, gallstone ileus, stricture caused by IBD, and 
+volvulus.
+■ Partial small bowel obstruction (SBO):  Continued passage of flatus, but 
+no stool.
+■ Complete SBO:  No passage of flatus or stool (obstipation).
+History/PE
+■ Hx:  Crampy abdominal pain at 4- to 5-minute intervals; vomiting typically 
+follows the pain.
+■ Abdominal exam:  Distention, tenderness, prior surgical scars, or hernias, 
+hyperactive bowel sounds (high-pitched tinkles and peristaltic rushes).
+■ Complications:  Ischemic necrosis and bowel rupture with prolonged or 
+complete obstruction. Patients present with peritonitis manifested by fever, 
+hypotension, rebound tenderness, and tachycardia.
+ KEY FACT
+In the United States, the leading cause 
+of SBO in children is hernia. The leading 
+cause of SBO in adults is adhesions.
+A 53-year-old woman with a history 
+of carcinoid tumor of the appendix 
+(status post-resection) presents to 
+a local clinic with symmetric, dry, 
+hyperpigmented skin lesions and 
+persistent diarrhea. Her husband 
+expresses concern that the patient 
+does not seem to be herself anymore; 
+he reports that she has been irritable, 
+confused, and forgetful. What is the 
+most likely diagnosis?
+155GASTROINTESTINAL HIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   155 8/23/18   1:10 PM
+
+=== PAGE 173 ===
+Diagnosis
+■ Best initial test: Abdominal x-ray demonstrates a stepladder pattern of 
+dilated small bowel loops, air-fluid levels (see Figure 2.6-7), and a paucity 
+of gas in the colon.
+■ Most accurate test: CT scan of the abdomen to further characterize 
+obstruction and evaluate for etiology.
+■ CBC may demonstrate leukocytosis if there is ischemia or necrosis of 
+bowel.
+■ Lab tests often reveal dehydration. Lactic acidosis is a prognostic sign, as it 
+suggests necrotic bowel.
+trEatmEnt
+■ Best initial treatment:  Fluid resuscitation.
+■ Partial obstruction:  Supportive care may be sufficient and should include 
+NPO status, NG suction, IV hydration, correction of electrolyte abnormal-
+ities, Foley catheterization to monitor fluid status, and pain management; 
+avoid opioids and anticholinergics (slow GI motility).
+■ Complete obstruction:  Exploratory laparotomy indicated in complete 
+SBO, ischemic necrosis, or refractory SBO symptoms.
+ILEUS
+■ Loss of peristalsis without structural obstruction.
+■ Risk factors:  Recent surgery/GI procedures, severe medical illness, immobil-
+ity, hypokalemia or other electrolyte imbalances, hypothyroidism, diabetes 
+mellitus (DM), and medications that slow GI motility (eg, anticholinergics, 
+opioids).
+History/PE
+■ Hx:  Diffuse, constant abdominal discomfort, nausea and vomiting, and an 
+absence of flatus or bowel movements.
+■ PE:  Diffuse tenderness, abdominal distention, and ↓  or absent bowel 
+sounds; rectal exam required to rule out fecal impaction in elderly 
+patients.
+ KEY FACT
+Gallstone ileus is a form of SBO that 
+occurs when a gallstone lodges at the 
+ileocecal valve.
+A
+ B
+FIGURE 2.6-7.  Small bowel obstruction. (A) Supine x-ray of the abdomen shows dilated 
+air-filled small bowel loops with relatively little gas in the colon. (B) Left lateral decubitus x-ray 
+on the same patient demonstrates multiple air-fluid levels (arrows) at different levels. These are 
+typical plain film findings of complete SBO. 
+(Reproduced with permission from Doherty GM. Current Diagnosis 
+& Treatment: Surgery, 13th ed. New York, NY: McGraw-Hill; 2010.)
+Pellagra, a deficiency of vitamin B3 
+(niacin), 2° to a recurrent carcinoid 
+tumor. Carcinoid tumors produce 
+serotonin, which is a derivative of 
+tryptophan. However, tryptophan 
+is also the precursor of niacin. In 
+patients with carcinoid tumors, the 
+tumor can be so active that most 
+tryptophan is used for serotonin 
+production, resulting in niacin 
+deficiency.
+156 GASTROINTESTINALHIGH-YIELD FACTS IN
+2019_02.06_Step2CK_Gastro_10e_143-178.indd   156 8/23/18   1:10 PM
+

@@ -1,0 +1,89 @@
+{
+  "total_questions": 18000,
+  "books": [
+    {
+      "slug": "first_aid_step_1_2023",
+      "name": "First Aid Step 1 2023",
+      "subject": "USMLE Step 1 Basic Sciences",
+      "count": 1500,
+      "file": "qbank/book_first_aid_step_1_2023.json"
+    },
+    {
+      "slug": "first_aid_step_2_ck_10th_ed",
+      "name": "First Aid Step 2 CK 10th Ed",
+      "subject": "USMLE Step 2 CK Clinical Sciences",
+      "count": 1500,
+      "file": "qbank/book_first_aid_step_2_ck_10th_ed.json"
+    },
+    {
+      "slug": "first_aid_q_a_step_1",
+      "name": "First Aid Q&A Step 1",
+      "subject": "USMLE Step 1 QBank",
+      "count": 1500,
+      "file": "qbank/book_first_aid_q_a_step_1.json"
+    },
+    {
+      "slug": "pathoma_fundamentals_of_pathol",
+      "name": "Pathoma Fundamentals of Pathology",
+      "subject": "Pathology & Disease Mechanisms",
+      "count": 1500,
+      "file": "qbank/book_pathoma_fundamentals_of_pathol.json"
+    },
+    {
+      "slug": "pathoma_2021_edition",
+      "name": "Pathoma 2021 Edition",
+      "subject": "Systemic Pathology",
+      "count": 1500,
+      "file": "qbank/book_pathoma_2021_edition.json"
+    },
+    {
+      "slug": "bailey___love_surgery_26th_ed",
+      "name": "Bailey & Love Surgery 26th Ed",
+      "subject": "Surgery & Surgical Specialties",
+      "count": 1500,
+      "file": "qbank/book_bailey___love_surgery_26th_ed.json"
+    },
+    {
+      "slug": "roams_medical_review",
+      "name": "ROAMS Medical Review",
+      "subject": "PG Medical Entrance & FCPS Part 1",
+      "count": 1500,
+      "file": "qbank/book_roams_medical_review.json"
+    },
+    {
+      "slug": "self_assessment_pharmacology_4",
+      "name": "Self-Assessment Pharmacology 4th Ed",
+      "subject": "Pharmacology QBank",
+      "count": 1500,
+      "file": "qbank/book_self_assessment_pharmacology_4.json"
+    },
+    {
+      "slug": "snell_s_clinical_anatomy_8th_e",
+      "name": "Snell's Clinical Anatomy 8th Ed",
+      "subject": "Gross Anatomy & Neuroanatomy",
+      "count": 1500,
+      "file": "qbank/book_snell_s_clinical_anatomy_8th_e.json"
+    },
+    {
+      "slug": "guyton_and_hall_physiology_14t",
+      "name": "Guyton and Hall Physiology 14th Ed",
+      "subject": "Medical Physiology",
+      "count": 1500,
+      "file": "qbank/book_guyton_and_hall_physiology_14t.json"
+    },
+    {
+      "slug": "pharmacology_an_illustrated_re",
+      "name": "Pharmacology An Illustrated Review",
+      "subject": "High-Yield Pharmacology",
+      "count": 1500,
+      "file": "qbank/book_pharmacology_an_illustrated_re.json"
+    },
+    {
+      "slug": "review_of_pharmacology_9th_ed_",
+      "name": "Review of Pharmacology 9th Ed (Garg & Gupta)",
+      "subject": "Pharmacology & Therapeutics",
+      "count": 1500,
+      "file": "qbank/book_review_of_pharmacology_9th_ed_.json"
+    }
+  ]
+}

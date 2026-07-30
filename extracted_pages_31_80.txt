@@ -1,0 +1,3241 @@
+--- PAGE 31 ---
+NOTES
+14 SECTION 1 GUIDE TO EFFICIENT EXAM PREPARATION
+2019_01.01_Step2CK_Intro_10e_001-014.indd   14 8/23/18   12:16 PM
+--- PAGE 32 ---
+Cardiovascular
+Dermatology
+Endocrinology
+Epidemiology
+Ethics and Legal Issues
+Gastrointestinal
+Hematology/Oncology
+Infectious Disease
+Musculoskeletal
+Neurology
+Obstetrics
+Gynecology
+Pediatrics
+Psychiatry
+Pulmonary
+Renal/Genitourinary
+Selected Topics in Emergency Medicine
+Rapid Review
+15
+SECTION 2
+DATABASE OF HIGH-YIELD FACTS
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   15 8/28/18   12:28 PM
+--- PAGE 33 ---
+How to Use the Database
+The tenth edition of First Aid for the USMLE Step 2 CK contains a revised 
+and expanded database of clinical material that student authors and faculty 
+have identified as high yield for boards review. The facts are organized 
+according to subject matter, whether medical specialty (eg, Cardiovascular, 
+Renal) or high-yield topic (eg, Ethics). Each subject is then divided into 
+smaller subsections of related facts.
+Individual facts are generally presented in a logical fashion, from basic 
+definitions and epidemiology to History/Physical Exam, Diagnosis, and Treat-
+ment. Lists, mnemonics, pull quotes, vignette flash cards, and tables are used 
+when they can help the reader form key associations. In addition, color and 
+black-and-white images are interspersed throughout the text. At the end of 
+Section 2, we also feature a Rapid Review chapter consisting of key facts and 
+classic associations that can be studied a day or two before the exam.
+The content contained herein is useful primarily for the purpose of 
+reviewing material already learned. The information presented is not ideal for 
+learning complex or highly conceptual material for the first time.
+The Database of High-Yield Facts is not meant to be comprehensive. Use 
+it to complement your core study material, not as your primary study source. 
+The facts and notes have been condensed and edited to emphasize essential 
+material. Work with the material, add your own notes and mnemonics, and 
+recognize that not all memory techniques work for all students.
+We update Section 2 biannually to keep current with new trends in boards 
+content as well as to expand our database of high-yield information. However, 
+we must note that inevitably many other high-yield entries and topics are not 
+yet included in our database.
+We actively encourage medical students and faculty to submit entries and 
+mnemonics so that we may enhance the database for future students. We also 
+solicit recommendations of additional study tools that may be useful in pre-
+paring for the exam, such as diagrams, charts, and computer-based tutorials 
+(see How to Contribute, p. xiii).
+DISCLAIMER
+The entries in this section reflect student opinions of what is high yield. 
+Owing to the diverse sources of material, no attempt has been made to trace 
+or reference the origins of entries individually. We have regarded mnemonics 
+as essentially in the public domain. All errors and omissions will gladly be 
+corrected if brought to the attention of the authors, either through the pub-
+lisher or directly by e-mail.
+16   
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   16 8/28/18   12:28 PM
+--- PAGE 34 ---
+Electrocardiogram 18
+Cardiac Physical Exam
+ 21
+Arrhythmias
+ 
+23
+Bradyarrhythmias and ConduCtion aBnormalities 23
+taChyarrhythmias 24
+Congestive Heart Failure 25
+systoliC dysfunCtion/heart failure with reduCed ejeCtion fraCtion 27
+nonsystoliC dysfunCtion/heart failure  
+with Preserved ejeCtion fraCtion 29
+Cardiomyopathy 30
+dilated CardiomyoPathy 30
+hyPertroPhiC CardiomyoPathy 31
+restriCtive CardiomyoPathy 32
+Coronary Artery Disease 33
+angina PeCtoris 33
+Prinzmetal (variant) angina 34
+Carotid artery stenosis 34
+Acute Coronary Syndromes 35
+unstaBle angina/non–st-segment elevation myoCardial infarCtion 35
+st-segment elevation myoCardial infarCtion 36
+Dyslipidemia 39
+Hypertension
+ 
+41
+1° (essential) hyPertension 41
+2° hyPertension 42
+hyPertensive Crises 43
+Pericardial Disease 45
+PeriCarditis 45
+CardiaC tamPonade 46
+Valvular Heart Disease 47
+Vascular Diseases
+ 47
+aortiC aneurysm 47
+aortiC disseCtion 49
+deeP venous thromBosis 50
+PeriPheral arterial disease 51
+lymPhedema 52
+Syncope 53
+17
+HIGH-YIELD FACTS IN
+CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   17 8/28/18   12:28 PM
+--- PAGE 35 ---
+Electrocardiogram
+Assesses the ECG for rate, rhythm, axis, intervals, ischemia, and chamber 
+enlargement (see Figure 2.1-1).
+Rate
+Normal adult HR is 60–100 bpm. HR < 60 bpm is bradycardia. HR > 
+100 bpm is tachycardia. Common causes of sinus bradycardia are physical fit-
+ness, sick sinus syndrome, drugs, vasovagal attacks, acute MI, ↑ intracranial 
+pressure. Common causes of sinus tachycardia are anxiety, anemia, pain, 
+fever, sepsis, CHF, PE, hypovolemia, thyrotoxicosis, CO
+2 retention, and 
+sympathomimetics.
+Rhythm
+Sinus rhythm: Normal rhythm that originates from sinus node. It is charac-
+terized by a P wave (upright in II, III, and aVF; inverted in aVR) preceding 
+every QRS complex and a QRS complex following every P wave. Sinus 
+arrhythmia is common in young adults.
+Axis
+Can be determined by examining the QRS in leads I, II, and aVF (see 
+Table 2.1-1 and Figure 2.1-2).
+ KEY FACT
+At usual speed (25 = mm/s), each large 
+square = 200 msec, and each small 
+square = 40 msec.
+ KEY FACT
+Heart rate = 300/number of large 
+boxes between two consecutive 
+QRS complexes.
+ MNEMONIC
+Axis deviation—
+RAD RALPH, the LAD from  
+VILLA hates WOLVES
+Right Axis Deviation
+Right ventricular hypertrophy
+Anterolateral MI
+Left Posterior Hemiblock  
+(also consider PE)
+Left Axis Deviation
+Ventricular tachycardia
+Inferior myocardial infarction
+Left ventricular hypertrophy
+Left Anterior hemiblock
+WOLVES – Wolf-Parkinson-White 
+syndrome can cause BOTH
+FIGURE 2.1-1.  Normal electrocardiogram from a healthy subject. (Reproduced with permission 
+from USMLE-Rx.com.)
+Lead I L ead II L ead aVF degrees
+Normal axis ↑ ↑ ↑ ⊝30–⊕90
+Left axis deviation ↑ ↓ ↓ ⊝30–⊝90
+Right axis deviation ↓ ↑ ↑ ⊕90–⊕180
+Extreme axis ↓ ↓ ↓ ⊝90–⊝180
+TABLE 2.1-1.   A xis Deviation by ECG Findings
+18 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   18 8/28/18   12:28 PM
+--- PAGE 36 ---
+Intervals
+■ PR interval:  Normally 120–200 msec (3–5 small boxes).
+■ Prolonged =  delayed AV conduction (eg, first-degree heart block).
+■ Short =  fast AV conduction down accessory pathway (eg, WPW 
+syndrome).
+■ QRS interval:  Normally < 120 msec. A normal Q wave is < 40 msec 
+wide and < 2mm deep. Ventricular conduction defects can cause a 
+widened QRS complex (> 120 msec):
+■ Left bundle branch block (LBBB):  Deep S wave and no R wave in 
+V1 (“W”-shaped); wide, tall and broad, or notched (“M”-shaped) 
+R waves in I, V 5, and V 6 (see Figure 2.1-3). A new LBBB is patho-
+logic and may be a sign of acute MI.
+■ Right bundle branch block (RBBB):  RSR′ complex (“rabbit ears;” 
+“M”-shaped); qR or R morphology with a wide R wave in V 1; QRS 
+pattern with a wide S wave in I, V5, and V6 (see Figure 2.1-4).
+■ QT interval: Normally QTc (the QT interval corrected for extremes in 
+heart rate) is 380–440 msec (QTc = QT/√RR). Long QT syndrome 
+(QTc > 440 msec) is an underdiagnosed congenital disorder that pre-
+disposes to ventricular tachyarrhythmias. Other common causes of pro-
+longed QTc: acute MI, bradycardia, myocarditis, ↓ K
++, ↓ Ca2+, ↓ Mg2+, 
+congenital syndromes, head injury, drugs.
+■ Jervell and Lange-Nielsen syndrome:  Long QT syndrome due to a 
+defect in K + channel conduction. Associated with sensorineural deaf-
+ness. Treat with β-blockers and pacemaker.
+Ischemia/Infarction
+Acute ischemia:
+■ Within hours, peaked T-waves and ST-segment changes (either depres -
+sion or elevation).
+■ Within 24 hours, T-wave inversion and ST-segment resolution.
+■ Within a few days, pathologic Q waves ( > 40 msec or more than one-
+third of the QRS amplitude). Q waves usually persist, but may resolve 
+in 10% of patients. Because of this, Q waves signify either acute or prior 
+ischemic events.
+ MNEMONIC
+Left bundle branch block—
+WiLLiaM
+V1 = W QRS pattern
+V6 = M QRS pattern
+Right bundle branch block—
+MaRRoW
+V1 = M QRS pattern
+V6 = W QRS pattern
+F IGURE 2.1-2 .  ECG axis interpretation. QRS axis and frontal leads. (Reproduced with per-
+mission from USMLE-Rx.com.) 
+RAD
+Extreme
+AXIS
+Deviation
+LAD
+Normal
+QRS AXIS
+‒150
+o
+‒90
+o
++ 120
+o
++ 90
+o
++ 60
+o
+‒30
+o
+0
+o
+aVF
+aVL
+I
+IIIII
+aVR
+180
+o V1
+A
+V6
+B
+FIGURE 2.1-3.  Left bundle branch 
+block. Characteristic ECG findings are 
+seen in leads V1 (A) and V6 (B). (Modified 
+with permission from USMLE-Rx.com.)
+V1
+V6
+A
+B
+FIGURE 2.1-4.  Right bundle 
+branch block. Characteristic ECG find-
+ings are seen in leads V1 (A) and V6 (B). 
+(Modified with permission from USMLE-Rx.com.)
+19HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   19 8/28/18   12:28 PM
+--- PAGE 37 ---
+■ Non–Q-wave infarcts (also known as subendocardial infarcts) have ST and 
+T changes without Q waves.
+■ In a normal ECG, R waves increase in size compared to the S wave 
+between 
+leads V1 and V 5. Poor R-wave progression refers to diminished R 
+waves in these precordial leads, and can be a sign of infarction, although it 
+is not specific.
+Chamber Enlargement
+■ Atrial  enlargement:
+■ Right atrial abnormality (P pulmonale):  The P-wave amplitude in 
+lead II is > 2.5 mm.
+■ Left atrial abnormality (P mitrale): The P-wave width in lead II is 
+> 120 msec, or terminal ⊝ deflection in V 1 is > 1 mm in amplitude 
+and > 40 msec in duration. Notched P waves can frequently be seen 
+in lead II.
+■ Left ventricular hypertrophy  (LVH; see Figure 2.1-5):
+■ Amplitude of S in V1 + R in V5 or V6 is > 35 mm.
+■ Alternative criteria:  The amplitude of R in aVL + S in V3 is > 28 mm 
+in men or > 20 mm in women.
+■ Usually associated with ST depression and T-wave changes .
+ KEY FACT
+■ P ulmonale causes Peaked P waves.
+■ M itrale causes M-shaped P waves.
+ MNEMONIC
+Heart auscultation locations—
+All Physicians Take Money
+Aortic
+Pulmonic
+Tricuspid
+Mitral
+V1 V2 V5 V6
+AB
+FIGURE 2.1-5.  Left ventricular hypertrophy. Shown are leads V1, V2, V5, and  
+V6. → S wave in V1 + R wave in V5 = 45 mm. Note ST changes and T-wave inversion in  
+V5 and V6, suggesting strain. (Reproduced with permission from USMLE-Rx.com.)
+1
+1
+1
+2
+3
+4
+5
+6
+7
+7777
+77
+PA
+M
+Pulmonic
+Aortic
+Mitral
+Tricuspid
+T
+FIGURE 2.1-6.  Auscultation locations. Auscultation sites are shown with associated valves. A, aortic valve; 
+M, mitral valve; P, pulmonic valve; T, tricuspid valve. (Modified with permission from USMLE-Rx.com.)
+20 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   20 8/28/18   12:28 PM
+--- PAGE 38 ---
+■ Right ventricular hypertrophy (RVH):
+■ Right-axis deviation and an R wave in V1 > 7 mm.
+Cardiac Physical Exam
+Key exam findings that can narrow the differential include the following:
+■ Jugular venous distention  (JVD > 4 cm above the sternal angle): Most 
+typically from volume overload, stemming from conditions such as right 
+heart failure or pulmonary hypertension.
+■ Hepatojugular reflux  (distention of neck veins upon applying pressure to 
+the liver): Seen in same conditions as JVD.
+■ Kussmaul sign  (↑ in jugular venous pressure [JVP] with inspiration): 
+Often seen in constrictive pericarditis.
+■ Systolic murmurs  (see Table 2.1-2 and Figures 2.1-6 and 2.1-7):
+■ Aortic stenosis:  A harsh systolic ejection murmur that radiates to the 
+carotids.
+■ Mitral regurgitation:  A holosystolic murmur that radiates to the axilla.
+■ Mitral valve prolapse:  A midsystolic or late systolic murmur with a pre-
+ceding click.
+■ Flow murmur:  Usually a soft murmur that is position-dependent (very 
+common and does not imply cardiac disease).
+■ Diastolic murmurs  (see Table 2.1-2 and Figures 2.1-6 and 2.1-7): Always 
+abnormal.
+■ Aortic regurgitation:  An early decrescendo murmur.
+■ Mitral stenosis:  A mid to late low-pitched murmur.
+■ Gallops:
+■ S3 gallop:  A sign of fluid overload (ie, heart failure, mitral valve dis-
+ease); often normal in younger patients and in high-output states (eg, 
+pregnancy).
+■ S4 gallop:  A sign of decreased compliance (ie, hypertension, aortic ste-
+nosis, diastolic dysfunction); usually pathologic but can be normal in 
+younger patients and in athletes.
+■ Edema:
+■ Pulmonary:  Left heart failure (fluid “backs up” into the lungs).
+■ Peripheral:  Right heart failure and biventricular failure (fluid “backs 
+up” into the periphery), nephrotic syndrome, hepatic disease, lymph-
+edema, hypoalbuminemia, and drugs.
+■ Hands:
+■ Finger clubbing:  Congenital cyanotic heart disease; endocarditis.
+■ Infective endocarditis:  Splinter hemorrhages; Osler nodes, Janeway 
+lesions.
+ KEY FACT
+Axis deviation can be a sign of 
+ventricular enlargement.
+ KEY FACT
+Right-sided murmurs increase with 
+inspiration. Left-sided murmurs increase 
+with expiration.
+A college-age man passed out 
+while playing basketball and had 
+no prodromal symptoms or signs 
+of seizure. His cardiac exam is 
+unremarkable, and an ECG shows a 
+slurred upstroke of the QRS. What are 
+the next best steps?
+systoLIc MurMurs dIastoLIc MurMurs
+Aortic stenosis
+Mitral regurgitation
+Mitral valve prolapse
+Tricuspid regurgitation
+Aortic regurgitation
+Mitral stenosis
+TABLE 2.1-2.  C ardiac Murmurs
+21HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   21 8/28/18   12:28 PM
+--- PAGE 39 ---
+Arrhythmias
+BRADYARRHYTHMIAS AND CONDUCTION ABNORMALITIES
+Table 2.1-3 outlines the etiologies, clinical presentation, and treatment of 
+common bradyarrhythmias and conduction abnormalities.
+ MNEMONIC
+Management options for atrial 
+fibrillation—
+ABCD
+Anticoagulate
+𝛃-blockers to control rate
+Cardiovert/Calcium channel blockers
+Digoxin (in refractory cases)
+ KEY FACT
+An atrial myxoma is a benign tumor 
+of the heart, commonly found 
+within the left and right atria on the 
+interatrial septum that can present 
+with atrial fibrillation or mimic infective 
+endocarditis. On auscultation, you will 
+often hear a tumor “Plop” or see a tumor 
+on echocardiography. Patients may 
+develop systemic embolization from 
+breakoff of tumor, leading to stroke. 
+Resection of the tumor is the only 
+treatment.
+■ Peripheral  pulses:
+■ Increased:  Compensated aortic regurgitation (bounding pulses); coarc-
+tation (greater in arms than in legs); patent ductus arteriosus.
+■ Decreased:  Peripheral arterial disease; late-stage heart failure.
+■ Collapsing  (“waterhammer”): Aortic incompetence; AV malforma-
+tions; patent ductus arteriosus; thyrotoxicosis, severe anemia.
+■ Pulsus paradoxus  (↓ systolic BP > 10 mm Hg with inspiration): Cardiac 
+tamponade; pericardial constriction; also seen in obstructive lung diseases 
+(eg, severe asthma), tension pneumothorax, and foreign body in airway.
+■ Pulsus alternans  (alternating weak and strong pulses): Cardiomyopa-
+thy; impaired left ventricular systolic function (LVF). Poor prognosis.
+■ Pulsus parvus et tardus  (weak and delayed pulse): Aortic stenosis.
+■ Jerky:  hypertrophic obstructive cardiomyopathy (HOCM).
+■ Pulsus bisferiens  (bifid pulse/“twice beating”): Aortic regurgitation; 
+combined aortic stenosis and aortic regurgitation, HOCM.
+This is Wolff-Parkinson-White 
+syndrome (WPW). Advise against 
+vigorous physical activity, use 
+procainamide for arrhythmias, 
+and refer for an electrophysiology 
+study. Calcium channel blockers are 
+contraindicated.
+FIGURE 2.1-7.  Heart murmurs. Visual representations of common heart murmurs are 
+shown in relation to S1 and S2. MC, midsystolic click; OS, opening snap. (Reproduced with permis-
+sion from USMLE-Rx.com.)
+Aortic stenosis
+S1 S2
+Mitral/tricuspid regurgitation 
+S1 S2
+Mitral valve prolapse
+S1 MC S2
+Ventricular septal defect
+S1 S2
+Aortic regurgitation
+S1 S2
+Mitral stenosis
+S1 S2 OS
+Patent ductus arteriosus
+S1 S2
+22 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   22 8/28/18   12:28 PM
+--- PAGE 40 ---
+Arrhythmias
+BRADYARRHYTHMIAS AND CONDUCTION ABNORMALITIES
+Table 2.1-3 outlines the etiologies, clinical presentation, and treatment of 
+common bradyarrhythmias and conduction abnormalities.
+ MNEMONIC
+Management options for atrial 
+fibrillation—
+ABCD
+Anticoagulate
+𝛃-blockers to control rate
+Cardiovert/Calcium channel blockers
+Digoxin (in refractory cases)
+ KEY FACT
+An atrial myxoma is a benign tumor 
+of the heart, commonly found 
+within the left and right atria on the 
+interatrial septum that can present 
+with atrial fibrillation or mimic infective 
+endocarditis. On auscultation, you will 
+often hear a tumor “Plop” or see a tumor 
+on echocardiography. Patients may 
+develop systemic embolization from 
+breakoff of tumor, leading to stroke. 
+Resection of the tumor is the only 
+treatment.
+type etIoLogy sIgns/syMptoMs ecg FIndIngs treatMent
+Sinus 
+bradycardia
+Normal response to cardio-
+vascular conditioning
+Can also result from sinus 
+node dysfunction, 
+β-blocker or CCB excess; 
+therefore, it is important 
+to review medications
+May be asymptomatic, but 
+may also present with light-
+headedness, syncope, chest 
+pain, or hypotension
+Sinus rhythm
+Ventricular rate < 60 bpm
+None if asymptomatic and 
+rate > 40 bpm; atropine 
+may be used to ↑ heart 
+rate
+Pacemaker implant is the 
+definitive treatment in 
+severe cases
+First-degree 
+AV block
+Can occur in normal indi-
+viduals; associated with 
+↑ vagal tone, β-blocker 
+or CCB use
+Asymptomatic
+PR interval > 200 msec None necessary
+Second-degree 
+AV block 
+(Mobitz 
+type I/
+Wenckebach)
+Drug effects (digoxin, 
+β-blockers, CCBs) or 
+↑ vagal tone; right 
+coronary ischemia or 
+infarction
+Usually asymptomatic
+Progressive PR lengthening 
+until a dropped beat 
+occurs; the PR interval 
+then resets
+None if asymptomatic
+Stop the offending drug
+Atropine as clinically 
+indicated
+Second-degree 
+AV block 
+(Mobitz 
+type II)
+Results from fibrotic 
+disease of the conduc-
+tion system or from 
+acute, subacute, or 
+prior MI
+Occasionally syncope; fre-
+quent progression to 
+third-degree AV block
+Unexpected dropped 
+beat(s) without a change 
+in PR interval
+Pacemaker placement 
+(even if asymptomatic)
+Third-degree 
+AV block 
+(complete)
+No electrical communica-
+tion between the atria 
+and ventricles
+Syncope, dizziness, acute 
+heart failure, hypotension, 
+cannon A waves
+No relationship between 
+P waves and QRS 
+complexes
+Pacemaker placement
+Sick sinus 
+syndrome/
+tachycardia-
+bradycardia 
+syndrome
+Heterogeneous disorder 
+that leads to intermit-
+tent supraventricular 
+tachyarrhythmias and 
+bradyarrhythmias
+2° to tachycardia or 
+bradycardia; AF and throm-
+boembolism may occur 
+→ syncope, palpitations, 
+dyspnea, chest pain, TIA, 
+and/or stroke
+Most common indica-
+tion for pacemaker 
+placement
+Anticoagulate in atrial 
+fibrillation/flutter to 
+prevent systemic emboli
+TABLE 2.1-3.  Br adyarrhythmias and Conduction Abnormalities
+23HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   23 8/28/18   12:28 PM
+--- PAGE 41 ---
+TACHYARRHYTHMIAS
+Tables 2.1-4 and 2.1-5 outline the etiologies, clinical presentation, and treat-
+ment of common supraventricular and ventricular tachyarrhythmias.
+ KEY FACT
+Patients with persistent tachyarrhythmia 
+(narrow- or wide-complex) causing 
+hemodynamic instability should be 
+managed with immediate synchronized 
+cardioversion.
+ KEY FACT
+Use the CHA2DS2-VASc scoring 
+system to estimate stroke risk in atrial 
+fibrillation, and anticoagulate with 
+NOAC (eg, dabigatran, rivaroxaban, 
+apixaban, and edoxaban) or warfarin 
+(used with metal valves or mitral 
+stenosis) for a score of 2 or more:
+■ CHF (1 point).
+■ HTN (1 point).
+■ Age ≥ 75 (2 points).
+■ Diabetes (1 point).
+■ Stroke or TIA history (2 points).
+■ Vascular disease (1 point).
+■ Age 65–74 (1 point).
+■ Sex category (female) (1 point).
+(continues)
+type etIoLogy sIgns/syMptoMs ecg FIndIngs treatMent
+atrIaL
+Sinus 
+tachycardia
+Normal physiologic 
+response to fear, 
+pain, and exercise
+Can also be 2° to 
+hyperthyroidism, 
+volume contraction, 
+infection, or PE
+Palpitations, shortness of breath
+ 
+Sinus rhythm
+Ventricular rate 
+> 100 bpm
+Treat the underlying cause
+Atrial fibrilla-
+tion (AF)
+Acute AF—PIRATES:
+Pulmonary disease
+Ischemia
+Rheumatic heart 
+disease
+Anemia/Atrial 
+myxoma
+Thyrotoxicosis
+Ethanol
+Sepsis
+Chronic AF—HTN, CHF
+Most often caused by 
+ectopic foci within 
+the pulmonary veins
+Often asymptomatic and incidental 
+but can present with shortness 
+of breath, chest pain, dizziness, 
+fatigue, or palpitations. May present 
+with congestive heart failure, 
+cardiogenic shock, or devastating 
+cerebrovascular accident
+Physical exam reveals an irregular 
+pulse
+No discernible P waves, 
+with variable and irreg-
+ular QRS response
+For chronic AF, initial 
+therapy:
+Rate control with 
+β-blockers, CCBs, or 
+digoxin
+Anticoagulate with 
+warfarin or novel 
+oral anticoagulant 
+(NOAC) for patients 
+with CHA
+2DS2-VASc 
+score ≥ 2
+For unstable AF, or new-
+onset AF (of < 2 days) 
+cardiovert
+If > 2 days or unclear 
+duration, must get TEE 
+to rule out atrial clot
+Atrial flutter Circular movement 
+of electrical activity 
+around the atrium 
+at a rate of approxi-
+mately 300 times 
+per minute
+Usually asymptomatic but can present 
+with palpitations, syncope, and 
+lightheadedness
+Regular rhythm; “saw-
+tooth” appearance of 
+P waves can be seen
+The atrial rate is usually 
+240–320 bpm, and 
+the ventricular rate is 
+∼150 bpm
+Anticoagulation, rate 
+control, and cardiover-
+sion guidelines as in AF 
+above
+Multifocal 
+atrial 
+tachycardia
+Multiple atrial pace-
+makers or reentrant 
+pathways; associ-
+ated with COPD, 
+hypoxemia
+May be asymptomatic. At least three 
+different P-wave morphologies
+Three or more unique 
+P-wave morphologies; 
+rate > 100 bpm
+Treat as AF but avoid 
+β-blockers because of 
+chronic lung disease (if 
+present)
+TABLE 2.1-4.  Supr aventricular Tachyarrhythmias
+24 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   24 8/28/18   12:28 PM
+--- PAGE 42 ---
+Congestive Heart Failure
+A clinical syndrome caused by inability of the heart to pump enough blood 
+to maintain fluid and metabolic homeostasis. Risk factors include the 
+following:
+■ Coronary heart disease.
+■ Hypertension.
+■ Cardiomyopathy.
+■ Valvular heart disease.
+■ Diabetes.
+■ COPD (cor pulmonale).
+The American Heart Association/American College of Cardiology guidelines 
+classify heart failure according to clinical syndromes, but alternative classifica
+-
+tion systems, including that of the New York Heart Association (NYHA), 
+include functional severity, left-sided vs right-sided failure, and systolic vs 
+nonsystolic failure (see Tables 2.1-6–2.1-8).
+TACHYARRHYTHMIAS
+Tables 2.1-4 and 2.1-5 outline the etiologies, clinical presentation, and treat-
+ment of common supraventricular and ventricular tachyarrhythmias.
+ KEY FACT
+Patients with persistent tachyarrhythmia 
+(narrow- or wide-complex) causing 
+hemodynamic instability should be 
+managed with immediate synchronized 
+cardioversion.
+ KEY FACT
+Use the CHA2DS2-VASc scoring 
+system to estimate stroke risk in atrial 
+fibrillation, and anticoagulate with 
+NOAC (eg, dabigatran, rivaroxaban, 
+apixaban, and edoxaban) or warfarin 
+(used with metal valves or mitral 
+stenosis) for a score of 2 or more:
+■ C HF (1 point).
+■ H TN (1 point).
+■ A ge ≥ 75 (2 points).
+■ D iabetes (1 point).
+■ S troke or TIA history (2 points).
+■ V ascular disease (1 point).
+■ A ge 65–74 (1 point).
+■ S ex category (female) (1 point).
+type etIoLogy sIgns/syMptoMs ecg FIndIngs treatMent
+atrIoVentrIcuLar JunctIon
+Atrioventric-
+ular nodal 
+reentry 
+tachycardia 
+(AVNRT)
+A reentry circuit in the 
+AV node depolar-
+izes the atrium and 
+ventricle nearly 
+simultaneously
+Palpitations, shortness of breath, 
+angina, syncope, lightheadedness
+Rate 150–250 bpm; P 
+wave is often buried in 
+QRS or shortly after
+Cardiovert if hemodynami-
+cally unstable. Vagal 
+maneuvers (eg, carotid 
+massage, Valsalva, ice 
+immersion (dive reflex). 
+Adenosine if vagal 
+maneuver fails
+Atrioven-
+tricular 
+reentrant 
+tachycardia 
+(AVRT )
+An ectopic connection 
+between the atrium 
+and ventricle that 
+causes a reentry 
+circuit
+Seen in WPW
+Palpitations, shortness of breath, 
+angina, syncope, lightheadedness
+A retrograde P wave 
+is often seen after a 
+normal QRS
+A reexcitation delta wave 
+is characteristically 
+seen in WPW
+Except for WPW, same as 
+that for AVNRT
+WPW listed separately 
+below
+Wolff-
+Parkinson-
+White 
+(WPW) 
+syndrome
+Abnormal fast acces-
+sory conduction 
+pathway from atria 
+to ventricle (Bundle 
+of Kent)
+Palpitations, dyspnea, dizziness, and 
+rarely cardiac death
+Characteristic delta wave 
+with widened QRS 
+complex and short-
+ened PR interval (see 
+Figure 2.1-8)
+Observation for 
+asymptomatics
+Acute therapy is procain-
+amide or amiodarone
+SVT gets worse after CCBs 
+or digoxin (dangerous in 
+WPW). Radiofrequency 
+catheter ablation is 
+curative
+Paroxysmal 
+atrial 
+tachycardia
+Rapid ectopic pace-
+maker in the atrium 
+(not sinus node)
+Palpitations, shortness of breath, 
+angina, syncope, lightheadedness
+Rate > 100 bpm; P wave 
+with an unusual axis 
+before each normal 
+QRS
+Adenosine can be used 
+to unmask underlying 
+atrial activity by slowing 
+down the rate
+TABLE 2.1-4.  Supraventricular Tachyarrhythmias (continued)
+25HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   25 8/28/18   12:28 PM
+--- PAGE 43 ---
+type etIoLogy sIgns/syMptoMs ecg FIndIngs treatMent
+Premature 
+ventricular 
+contraction 
+(PVC)
+Ectopic beats arise 
+from ventricular 
+foci. Associated with 
+hypoxia, fibrosis, ↓ LV 
+function, electrolyte 
+abnormalities, and 
+hyperthyroidism
+Usually asymptomatic but may lead to 
+palpitations
+Early, wide QRS not 
+preceded by a P 
+wave
+PVCs are usually 
+followed by a 
+compensatory 
+pause
+Treat the underlying 
+cause
+If symptomatic, give 
+β-blockers or, 
+occasionally, other 
+antiarrhythmics
+Ventricular 
+tachycardia 
+(VT)
+Can be associated with 
+CAD, MI, and struc-
+tural heart disease
+Nonsustained VT (lasts < 30 seconds) is 
+often asymptomatic; sustained VT (lasts 
+> 30 seconds) can lead to palpitations, hypo-
+tension, angina, and syncope
+Can progress to VF and death
+Three or more con-
+secutive PVCs; 
+wide QRS com-
+plexes in a regular 
+rapid rhythm; may 
+see AV dissociation
+Cardioversion if 
+unstable. Antiar-
+rhythmics (eg, 
+amiodarone, 
+lidocaine, procain-
+amide) if stable
+Ventricular 
+fibrillation 
+(VF)
+Associated with CAD 
+and structural heart 
+disease
+Also associated with 
+cardiac arrest 
+(together with 
+asystole)
+Syncope, absence of BP , no pulse
+Totally erratic wide-
+complex tracing
+Immediate electrical 
+defibrillation and 
+ACLS protocol
+Torsades de 
+pointes
+Associated with long 
+QT syndrome, proar-
+rhythmic response 
+to medications, 
+hypokalemia, con-
+genital deafness, 
+and alcoholism
+Can present with sudden cardiac death; typically 
+associated with palpitations, dizziness, and 
+syncope
+Polymorphous QRS; 
+VT with rates 
+between 150 and 
+250 bpm
+Give magnesium 
+initially and car-
+diovert if unstable
+Correct hypoka-
+lemia; withdraw 
+offending drugs
+TABLE 2.1-5.  V entricular Tachyarrhythmias
+cLass descrIptIon
+I No limitation of activity; no symptoms (palpitations, dyspnea, and fatigue) with 
+normal activity
+II Slight limitation of activity. Comfortable at rest or with mild exertion
+III Marked limitation of activity; comfortable only at rest
+IV Any physical activity brings on discomfort; symptoms (palpitations, dyspnea, and 
+fatigue) present at rest
+TABLE 2.1-6.  N YHA Functional Classification of CHF
+Delta wave
+PR interval
+Normal PR interval
+Shortened PR interval
+FIGURE 2.1-8.  Ventricular tachyar-
+rhythmias. Characteristic delta wave 
+with widened QRS complex and short-
+ened PR interval in WPW. (Reproduced with 
+permission from USMLE-Rx.com.)
+26 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   26 8/28/18   12:28 PM
+--- PAGE 44 ---
+SYSTOLIC DYSFUNCTION/HEART FAILURE WITH REDUCED EJECTION FRACTION
+A ↓ EF (< 40%) and ↑ left ventricular end-diastolic volumes. It is caused by 
+inadequate left ventricular contractility or ↑ afterload. The heart compensates 
+for ↓ EF and ↑ preload through hypertrophy and ventricular dilation (Frank-
+Starling law), but the compensation ultimately fails, leading to ↑ myocardial 
+work and worsening systolic function.
+History/PE
+■ Exertional dyspnea that progresses to orthopnea, paroxysmal nocturnal 
+dyspnea (PND), and finally dyspnea at rest.
+■ Chronic cough, fatigue, and peripheral edema may be reported.
+■ Exam: parasternal lift, an elevated and sustained left ventricular impulse, 
+an S3/S4 gallop, JVD, rales on lung exam, and peripheral edema.
+■ Look for signs to distinguish left- from right-sided failure (see Table 2.1-8).
+Diagnosis
+■ CHF is a clinical syndrome whose diagnosis is based on signs and 
+symptoms.
+■ Diagnostic studies that may support diagnosis include the following:
+■ Best initial test:  Echocardiogram (transthoracic echocardiogram). 
+↓ EF and ventricular dilation may help pinpoint underlying cause (ie, 
+AF, old MI, or LVH).
+■ ECG:  May show MI, heart block, arrhythmia.
+ KEY FACT
+The most common cause of right-sided 
+heart failure is left-sided heart failure.
+ KEY FACT
+Hyponatremia parallels severity of heart 
+failure and is an independent predictor 
+of mortality in these patients.
+ MNEMONIC
+CXR findings in CHF diagnosis—
+ABCDE
+Alveolar edema (“Bat’s wings”)
+Kerley B lines (interstitial edema)
+Cardiomegaly
+Dilated prominent upper lobe vessels
+Effusion (pleural)
+VarIabLe
+systoLIc dysFunctIon/Heart FaILure wItH 
+reduced eJectIon FractIon (HFreF)
+dIastoLIc dysFunctIon/Heart FaILure wItH preserVed eJectIon 
+FractIon (HFpeF)
+Patient age Often < 65 years of age Often > 65 years of age
+Comorbidities Dilated cardiomyopathy, valvular heart disease, 
+myocardial infarction
+Restrictive or hypertrophic cardiomyopathy; renal disease or HTN
+Physical exam Displaced PMI, S3 gallop (“KEN”-tuc-ky) Sustained PMI, S4 gallop (“Tenn”-es-SEE)
+CXR Pulmonary congestion, cardiomegaly Pulmonary congestion
+ECG/echocardiography Q waves, ↓ EF (< 40%), dilation of the heart LVH, normal/preserved EF (> 55%), abnormal LV diastolic indices
+TABLE 2.1-7.  C omparison of Systolic and Diastolic Dysfunction
+LeFt-sIded cHF syMptoMs rIgHt-sIded cHF syMptoMs
+Dyspnea predominates
+Left-sided S3/S4 gallop
+Bilateral basilar rales
+Pleural effusions
+Pulmonary edema
+Orthopnea, paroxysmal nocturnal dyspnea
+Fluid retention predominates
+Right-sided S3/S4 gallop
+JVD
+Hepatojugular reflux
+Peripheral edema
+Hepatomegaly, ascites
+TABLE 2.1-8.  Left-Sided vs Right-Sided Heart Failure
+27HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   27 8/28/18   12:28 PM
+--- PAGE 45 ---
+■ CXR:  May show cardiomegaly, cephalization of pulmonary vessels, 
+pleural effusions, vascular congestion, pulmonary edema, and promi-
+nent hila (see Figure 2.1-9).
+■ Lab abnormalities:  Brain natriuretic peptide > 500 pg/mL, ↓ CBC 
+(anemia), ↑ creatinine (sometimes), ↓ sodium in later stages, ↑ or ↓ 
+TSH/T4 levels.
+trEatmEnt
+Acute:
+■ Pharmacologic therapy  (see Table 2.1-9):
+■ Loop diuretics (most commonly) for aggressive diuresis.
+■ ACEIs or ARB in combination with loop diuretics.
+■ β -blockers should be avoided during decompensated CHF but should 
+be restarted once patient is euvolemic.
+■ Correct underlying causes such as arrhythmias, myocardial ischemia, and 
+drugs (eg, CCBs, antiarrhythmics, NSAIDs, alcohol, anemia, thyroid and 
+valvular disease, high-output states).
+ KEY FACT
+Atrial tachycardia with AV block occurs 
+2° to digoxin toxicity.
+ MNEMONIC
+Acute CHF management—
+LMNOP
+Lasix (furosemide)
+Morphine
+Nitrates
+Oxygen
+Position (sit upright)
+FIGURE 2.1-9.  Chest x-ray (CXR) with evidence of congestive heart failure. Frontal CXR 
+demonstrates marked cardiomegaly, cephalization of vessels (arrow), interstitial edema (circle), 
+and left-sided pleural effusion that raise concern for CHF. (Reproduced with permission from Tintinalli JE 
+et al. Tintinalli’s Emergency Medicine: A Comprehensive Study Guide, 7th ed. New York, NY: McGraw-Hill; 2011.)
+cLass exaMpLes sIde eFFects
+Loop diuretics Furosemide, ethacrynic acid, 
+bumetanide, torsemide
+Ototoxicity, hypokalemia, hypocalcemia, hyperuricemia, dehydration, gout
+Thiazide diuretics Hydrochlorothiazide, chloro-
+thiazide, chlorthalidone
+Hypokalemic metabolic alkalosis, hyponatremia, and hyperGLUC (hyperGlycemia, 
+hyperLipidemia, hyperUricemia, hyperCalcemia)
+K+-sparing agents Spironolactone, eplerenone, 
+triamterene, amiloride
+Hyperkalemia, gynecomastia, sexual dysfunction. Eplerenone does not have antian-
+drogenic effects that lead to gynecomastia
+Carbonic anhydrase 
+inhibitors
+Acetazolamide Hyperchloremic metabolic acidosis, neuropathy, NH
+3 toxicity, sulfa allergy
+Osmotic agents Mannitol Pulmonary edema, dehydration. Contraindicated in anuria and CHF
+TABLE 2.1-9.  T ypes of Diuretics
+28 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   28 8/28/18   12:28 PM
+--- PAGE 46 ---
+■ Treat acute pulmonary congestion with LMNOP (see Acute CHF man -
+agement mnemonic).
+■ Acute decompensated heart failure:  Inotropic agents (eg, dobutamine) 
+reduce left ventricular end-systolic volume for symptomatic improvement.
+Chronic:
+■ Lifestyle:  Control comorbid conditions, and limit dietary sodium and 
+fluid intake.
+■ Pharmacologic  therapy:
+■ β-blockers and ACEIs/ARBs:  Help prevent remodeling of the heart and 
+↓ mortality for NYHA class II–IV patients. Avoid CCBs (can worsen 
+edema).
+■ Low-dose spironolactone:  Shown to ↓ mortality risk in patients with 
+NYHA class III–IV heart failure.
+■ Diuretics  (most commonly loop diuretics): Prevent volume overload.
+■ Digoxin:  Symptomatic control of dyspnea and ↓  frequency of 
+hospitalizations.
+■ Daily ASA and a statin are recommended if the underlying cause is a 
+prior MI.
+■ Advanced pharmacologic  therapy:
+■ Sacubitril/valsartan:  angiotensin receptor-neprilysin inhibitor (ARNI) 
+is a new drug class used in patients who continue to be dyspneic 
+despite using the initial pharmacologic regimen. Provides mortality 
+benefit for systolic dysfunction.
+■ Ivabradine:  Reduces heart rate through SA nodal inhibition of the 
+“funny channels.” Indicated in patients with systolic dysfunction if 
+pulse is > 70 bpm or β-blockers are contraindicated.
+Advanced treatments:
+■ Implantable cardiac defibrillator (ICD) in patients with an EF < 35%. 
+Shown to ↓ mortality risk.
+■ Biventricular pacemaker in patient with an EF < 35%, dilated cardiomy-
+opathy, and widened QRS complex with persistent symptoms.
+■ Left ventricular assist device (LVAD) or cardiac transplantation may be 
+necessary in patients who are unresponsive to maximal medical therapy 
+and biventricular pacemaker failure
+.
+NONSYSTOLIC DYSFUNCTION/HEART FAILURE   
+WITH PRESERVED EJECTION FRACTION
+Defined by ↓ ventricular compliance with normal systolic function. The ven-
+tricle has either impaired active relaxation (2° to hypertension, ischemia, 
+aging, and/or hypertrophy) or impaired passive filling (scarring from prior  
+MI; restrictive cardiomyopathy). Left ventricular end-diastolic pressure ↑, car-
+diac output remains essentially normal, and EF is normal or ↑.
+History/PE
+Associated with stable and unstable angina, shortness of breath, dyspnea on 
+exertion, arrhythmias, MI, heart failure, and sudden death.
+trEatmEnt
+■ Best initial treatment:  Diuretics (see Table 2.1-9).
+■ Maintain rate and BP control via β -blockers (first-line), ACEIs, ARBs, or 
+CCBs.
+■ Digoxin and spironolactone are not beneficial in these patients.
+ KEY FACT
+ACEIs/ARBs, ARNI, β-blockers, 
+spironolactone or eplerenone, 
+hydralazine/nitrates, and implantable 
+defibrillator have mortality benefit 
+in systolic dysfunction. Diuretics and 
+digoxin (as well as other positive 
+inotropic agents) are for symptomatic 
+relief only and confer no mortality 
+benefit. CCBs may ↑ mortality.
+ KEY FACT
+Loops lose calcium; thiazides take 
+it in. Both cause hypokalemia and 
+hyperuricemia.
+A man was admitted for a CHF 
+exacerbation with low EF. The patient 
+is now ready for discharge, and his 
+medications include furosemide 
+and metoprolol. Assuming no 
+contraindications, what medication 
+would be appropriate to add to his 
+treatment regimen?
+1
+A woman with HTN and prior MI has 
+an exam notable for a displaced PMI, 
+an S3, a nonelevated JVP , and bibasilar 
+rales. What is the next best step in 
+diagnosis?
+2
+29HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   29 8/28/18   12:28 PM
+--- PAGE 47 ---
+Cardiomyopathy
+Myocardial disease; categorized as dilated, hypertrophic, or restrictive (see 
+Table 2.1-10 and Figure 2.1-10).
+DILATED CARDIOMYOPATHY
+The most common cardiomyopathy. Left ventricular dilation and ↓ EF must 
+be present for diagnosis. Most cases are idiopathic, but known 2° causes 
+include alcohol, postviral myocarditis, postpartum status, drugs (doxorubicin, 
+AZT, cocaine), radiation, endocrinopathies (thyrotoxicosis, acromegaly, 
+pheochromocytoma), infection (coxsackievirus, HIV, Chagas disease, para-
+sites), genetic factors, and nutritional disorders (wet beriberi). The most 
+common causes of 2° dilated cardiomyopathy are ischemia and long-
+standing hypertension.
+History/PE
+■ Often presents with gradual development of CHF symptoms such as  
+dyspnea on exertion, and diffuse edema of the ankles, feet, legs, and 
+abdomen.
+■ Exam often reveals displacement of the left ventricular impulse, JVD, 
+rales, an S3/S4 gallop, or mitral/tricuspid regurgitation.
+Diagnosis
+■ Echocardiography is diagnostic.
+■ CXR shows an enlarged, “balloon-like” heart and pulmonary congestion.
+trEatmEnt
+■ Address the underlying etiology (eg, alcohol use, endocrine disorders, 
+infection).
+■ Treat CHF as noted in above section with lifestyle changes, and pharma -
+cologic and advanced treatments.
+ KEY FACT
+An S3 gallop signifies rapid ventricular 
+filling in the setting of fluid overload 
+and is associated with dilated 
+cardiomyopathy. A S3 gallop sounds 
+similar to the word “KEN-tuc-ky.”
+ KEY FACT
+An S4 gallop signifies a stiff, 
+noncompliant ventricle and ↑ “atrial 
+kick,” and may be associated with 
+hypertrophic cardiomyopathy. A S4 
+gallop sounds similar to the word 
+“Tenn-es-SEE.”
+VarIabLe
+type
+dILated HypertropHIc restrIctIVe
+Major abnormality Impaired contractility Impaired relaxation Impaired elasticity
+Left ventricular cavity 
+size (end diastole)
+↑↑ ↓ ↓
+Left ventricular cavity 
+size (end systole)
+↑↑ ↓↓ ↓
+EF ↓↓ ↑ (or normal) Normal
+Wall thickness Usually ↓ ↑↑ Usually ↑
+TABLE 2.1-10.  D ifferential Diagnosis of Cardiomyopathies
+Add an angiotensin-converting 
+enzyme inhibitor (ACEI) to this 
+patient’s current regimen. ACEIs have 
+been shown to have a ⊕ mortality 
+benefit when used with β-blockers in 
+NYHA class II–IV heart failure patients.
+1
+This patient has evidence of dilated 
+cardiomyopathy. An echocardiogram 
+would be the next best diagnostic 
+step.
+2
+30 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   30 8/28/18   12:28 PM
+--- PAGE 48 ---
+HYPERTROPHIC CARDIOMYOPATHY
+Impaired left ventricular relaxation and filling (diastolic dysfunction) due to 
+thickened ventricular walls secondary to stressors on the myocardium, such 
+as HTN (most common cause) and aortic stenosis. Hypertrophy may  
+also involve the interventricular septum, leading to left ventricular outflow 
+tract obstruction and impaired ejection of blood due to asymmetric septal 
+hypertrophy. The congenital form, hypertrophic obstructive cardiomyo
+-
+pathy (HOCM), is inherited as an autosomal dominant trait in 50% of
+ 
+HOCM patients and is the most common cause of sudden death in young, 
+healthy athletes in the United States.
+History/PE
+■ Patients are often asymptomatic but may also present with syncope, light -
+headedness, dyspnea, palpitations, angina, or sudden cardiac death.
+■ Key finding is a harsh systolic ejection crescendo-decrescendo murmur in 
+the lower left sternal edge that 
+↑ with ↓ preload (eg, Valsalva maneuver, 
+standing) and ↓ with ↑ preload (eg, passive leg raise).
+■ Symptoms worsen with exercise, diuretics, dehydration, ACEIs/ARBs, 
+digoxin, and hydralazine.
+ KEY FACT
+HOCM is the most common cause 
+of sudden death in young, healthy 
+athletes in the United States.
+FIGURE 2.1-10.  Cardiomyopathies. Echocardiogram 
+four-chamber views of (A) a normal heart, (B) dilated 
+cardiomyopathy, and (C) hypertrophic cardiomyopathy. 
+(Reproduced with permission from Fuster V et al. Hurst’s The Heart, 12th ed. 
+New York, NY: McGraw-Hill; 2008.)
+B
+A
+C
+31HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   31 8/28/18   12:28 PM
+--- PAGE 49 ---
+■ Exam also often reveals a sustained apical impulse, an S4 gallop, para-
+doxical S2, and an abnormal bifid or bisferiens pulse (sudden quick 
+rise followed by a slower longer rise due to LV outflow tract 
+obstruction).
+Diagnosis
+■ Best initial test:  Echocardiography is diagnostic and shows an asymmetri-
+cally hypertrophied interventricular septum and dynamic obstruction of 
+blood flow (due to systolic anterior motion of the mitral valve against 
+hypertrophied septum).
+■ ECG may be normal or show signs of LVH and nonspecific ST- and 
+T-wave 
+changes. Septal Q waves are common in HOCM (inferior and lat-
+eral leads).
+■ CXR may reveal left atrial enlargement (LAE) 2° to mitral regurgitation.
+trEatmEnt
+■ Best initial treatment: β-blockers are the best initial therapy for symp-
+tomatic relief in both HCM and HOCM; non-dihydropyridine CCBs 
+(negative inotropic effect) and ventricular pacemakers are second-line 
+agents.
+■ Digoxin and spironolactone are contraindicated. Diuretics may help in 
+HCM but are contraindicated in HOCM.
+■ Implantable defibrillators should be used in symptomatic HOCM 
+patients.
+■ Patients should avoid intense athletic competition and training.
+■ Surgical options for HOCM with persistent symptoms include partial exci -
+sion or alcohol ablation of the myocardial septum.
+■ Surgical septal myomectomy is reserved for patients when medical and 
+catheter procedures fail.
+RESTRICTIVE CARDIOMYOPATHY
+Decreased elasticity of myocardium leading to impaired diastolic filling with-
+out significant systolic dysfunction (a normal or near-normal EF). It is caused 
+by infiltrative disease (eg, amyloidosis, sarcoidosis, hemochromatosis), sclero-
+derma, Loeffler eosinophilic endocarditis, endomyocardial fibrosis, or by scar-
+ring and fibrosis (2° to radiation).
+History/PE
+Signs and symptoms of right-sided heart failure (JVD, peripheral edema, asci-
+tes, hepatomegaly) often predominate over left-sided failure, but dyspnea is 
+the most common complaint.
+Diagnosis
+■ Echocardiography is key for diagnosis, with rapid early filling and a near-
+normal or elevated EF. CXR, MRI, and cardiac catheterization are help-
+ful for characterization (eg, sarcoid, amyloidosis).
+■ Cardiac biopsy may reveal fibrosis or evidence of infiltration.
+■ ECG frequently shows LBBB; low voltages are seen in amyloidosis.
+trEatmEnt
+Treat the underlying cause. Therapeutic options are limited and are generally 
+palliative only. Medical treatment includes cautious use of diuretics for fluid 
+overload and vasodilators to ↓ filling pressure.
+32 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   32 8/28/18   12:28 PM
+--- PAGE 50 ---
+Coronary Artery Disease
+Also known as ischemic heart disease (IHD) or atherosclerotic heart disease. 
+Clinical manifestations include stable and unstable angina, shortness of 
+breath, dyspnea on exertion, arrhythmias, MI, heart failure, and sudden 
+death.
+Risk factors include the following:
+■ Diabetes mellitus (DM).
+■ Family history of premature CAD (men age < 55 years, women age 
+< 65 years).
+■ Smoking.
+■ Hyperlipidemia.
+■ Abdominal obesity.
+■ HTN.
+■ Age (men age > 45 years, women age > 55 years).
+■ Male gender.
+■ CAD risk equivalents include DM, symptomatic carotid artery disease, 
+peripheral arterial disease, and abdominal aortic aneurysm (AAA)
+.
+ANGINA PECTORIS
+Substernal chest pain 2° to myocardial ischemia (O 2 supply-and-demand mis-
+match). Mostly caused by atheroma. Less frequently caused by anemia, aortic 
+stenosis, tachyarrhythmias, hypertrophic cardiomyopathy, and small vessel 
+disease.
+History/PE
+■ The classic triad consists of substernal chest pain that is usually precipi -
+tated by stress or exertion and is relieved by rest or nitrates (stable angina).
+■ The duration of stable angina is usually from 2–10 minutes (acute coro -
+nary syndrome is normally 10–30 minutes in duration).
+■ Pain can radiate to the neck or arm and may be associated with shortness of 
+breath, nausea/vomiting, diaphoresis, dizziness, or lightheadedness.
+■ Pain is usually described as dull, squeezing, tightness, or pressure-like.
+■ Ischemic pain is not tender, positional, or pleuritic .
+Diagnosis
+■ Best initial test:  ECG for any type of chest pain. Usually normal in 
+angina pectoris, but may show ST-depression, flat or inverted T waves, or 
+signs of past MI.
+■ Cardiac enzymes (CK-MB/troponin): Normal. May be required to be 
+done in emergency setting after an ECG.
+■ Stress testing:  ST-segment or wall-motion changes (using echo) with exer-
+cise or pharmacologic stress (dobutamine echo or dipyridamole thallium) 
+are diagnostic of CAD. ECG stress test is not helpful without imaging for 
+patients with abnormal baseline ECGs. (Note: Do not perform stress tests 
+on asymptomatic patients with low pretest probability of disease.) Hold 
+β-blockers, CCBs, and nitrates for 48 hours prior to stress test. Pharmaco-
+logic stress testing works due to coronary steal (diseased vessels are already 
+maximally dilated while nondiseased vessels dilate in response to drugs, 
+such as dipyridamole, leading to detectable ischemia).
+■ Coronary angiography or CT coronary angiogram: Coronary angiogra-
+phy, or a less invasive diagnostic test, CT coronary angiogram (availability 
+ KEY FACT
+Major risk factors for CAD include 
+advanced age, male gender, ↑ LDL, 
+↓ HDL, HTN, a family history, and 
+smoking. MI in menstruating women 
+is rare.
+ KEY FACT
+Pain that is sharp or stabbing, or that 
+changes with position, breathing, or 
+touch, is less likely to be ischemic.
+33HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   33 8/28/18   12:28 PM
+--- PAGE 51 ---
+varies among centers), may be used as a last resort if ECG or stress testing 
+is equivocal.
+■ Rule out pulmonary, GI, or other cardiac causes of chest pain.
+noncarDiac DiffErEntial Diagnosis
+■ GERD:  History described as hoarseness, bad taste, and cough; relief of 
+symptoms with proton pump inhibitors confirms diagnosis.
+■ Musculoskeletal/costochondritis:  Pain is described as tender to palpation 
+and movement.
+■ Pneumonia/pleuritis:  Pain is described as worsening with breathing 
+(pleuritic) and is often accompanied by fever and productive cough.
+■ Anxiety:  Patients may have history of panic disorder or anxiety attacks.
+trEatmEnt
+■ Chronic stable angina:  ASA, β-blockers, and nitroglycerin.
+■ Nitroglycerin relieves pain due to ↓ in left ventricular end-diastolic 
+pressure and wall stress.
+■ Initiate risk-factor reduction (eg, smoking, cholesterol, HTN) through the 
+initiation 
+of ACEIs/ARBs, lipid-lowering therapies (ie, statins), and smok-
+ing cessation. Hormone replacement therapy is not protective in post-
+menopausal women.
+PRINZMETAL (VARIANT) ANGINA
+■ Mimics angina pectoris but is caused by vasospasm of coronary vessels. It 
+classically affects young women at rest (rather than during activity) in the 
+early 
+morning and is associated with ST-segment elevation. It is also asso-
+ciated with illicit drug use, especially cocaine.
+■ Patients usually do not have the standard risk factors for atherosclerosis.
+■ Tx:  CCBs with or without long-acting nitrates. Aspirin is avoided as it can 
+aggravate the ischemic attacks. β-blockers are contraindicated as they can 
+↑ vasospasm.
+CAROTID ARTERY STENOSIS
+Atherosclerotic lesion of either (or both) carotid arteries. Accounts for 20% of 
+transient ischemic attacks and embolic strokes.
+History/PE
+■ Often asymptomatic.
+■ Symptomatic disease is characterized by sudden-onset focal neurologic 
+defect in the past six months (ie, TIA or stroke).
+■ PE may reveal carotid artery bruit.
+■ Risk factors: Advanced age, smoking, HTN, hyperlipidemia, diabetes, 
+obesity, and family history of CAD and/or carotid artery disease.
+Diagnosis
+Duplex ultrasonography can determine percent occlusion.
+trEatmEnt
+■ Definitive treatment:  Carotid endarterectomy (CEA).
+■ Men with ≥ 60% (≥ 50% if symptomatic) stenosis or women with 
+≥ 70% stenosis benefit from CEA.
+■ Smaller lesions are monitored with serial duplex ultrasonography.
+ KEY FACT
+Common causes of chest pain 
+include GERD, angina, esophageal 
+pain, musculoskeletal disorders 
+(costochondritis, trauma), and 
+pneumonia.
+ KEY FACT
+Only ASA and β-blockers have been 
+shown to have a mortality benefit in 
+the treatment of angina.
+34 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   34 8/28/18   12:28 PM
+--- PAGE 52 ---
+Acute Coronary Syndromes
+A spectrum of clinical syndromes caused by plaque disruption or vasospasm 
+that leads to acute myocardial ischemia.
+UNSTABLE ANGINA/NON–ST-SEGMENT ELEVATION MYOCARDIAL INFARCTION
+Chest pain that is (1) new onset, (2) accelerating (ie, occurs with less exertion, 
+lasts longer, or is less responsive to medications), or (3) occurs at rest. Patient his-
+tory distinguishes unstable angina from stable angina pectoris. Both stable and 
+unstable angina have no elevated cardiac biomarkers. It signals the presence of 
+possible impending infarction based on plaque instability. In contrast, NSTEMI 
+indicates myocardial necrosis marked by elevations in troponin I and creatine 
+kinase–MB isoenzyme (CK-MB) without ST-segment elevations seen on ECG.
+Diagnosis
+■ Patients should be risk stratified according to the Thrombolysis in Myocar -
+dial Infarction (TIMI) study criteria (see Table 2.1-11).
+■ ECG:  Unstable angina and NSTEMI are not associated with ST eleva-
+tion, but ST changes (eg, ST depression, T-wave inversion, nonspecific 
+changes) may be seen on ECG.
+■ Cardiac markers (CK-MB /troponin):  Unstable angina is not associated 
+with elevated cardiac markers. NSTEMI is associated with elevations in 
+cardiac markers.
+■ NSTEMI is diagnosed by serial cardiac enzymes and ECG.
+trEatmEnt
+Best initial treatment:
+■ Admit to CCU, and monitor closely.
+■ If SaO2 < 90% or breathless, administer O2.
+ KEY FACT
+Acute coronary syndrome:
+■ Unstable ang ina: ECG—no ST 
+elevation; cardiac biomarkers ⊝.
+■ NSTEMI: EC G—no ST elevation; 
+cardiac biomarkers ⊕.
+■ STEMI: EC G—ST elevation; cardiac 
+biomarkers ⊕.
+cHaracterIstIcs poInt
+History
+Age ≥ 65 years
+Three or more CAD risk factors (premature family history, DM, smoking, HTN, 
+↑ cholesterol, PAD, abdominal aortic aneurysm)
+Known CAD (stenosis > 50%)
+ASA use in past 7 days
+1
+1 
+1
+1
+Presentation
+Severe angina (two or more episodes within 24 hours)
+ST deviation ≥ 0.5 mm
++ cardiac marker
+ 
+1
+1
+1
+R
+isk score—total pointsa (0–7)
+aPatients at higher risk (risk score ≥ 3) benefit more from enoxaparin (vs unfractionated heparin), 
+glycoprotein IIb/IIIa inhibitors, and early angiography.
+TABLE 2.1-11.  TIMI R isk Score for Unstable Angina/NSTEMI
+35HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   35 8/28/18   12:28 PM
+--- PAGE 53 ---
+■ Analgesia:  IV morphine with IV metoclopramide.
+■ Nitrates:  IV, GTN, or sublingual.
+■ Antiplatelet therapy:  ASA (↓ mortality in ACS) in combination with a sec-
+ond agent (ie, clopidogrel, prasugrel, or ticagrelor), unless contraindicated.
+■ Consider β -blockers as hemodynamics allow (if hypertensive/tachycardic/
+LV function < 40%).
+■ Low-molecular-weight heparin (eg, enoxaparin) to prevent clot formation 
+in the coronary arteries.
+Interventions:
+■ Assess mortality risk (eg, TIMI score, GRACE score).
+■ Heparin is recommended for non-ST elevation MI. Thrombolytics are 
+only recommended in STEMI if percutaneous coronary intervention 
+(PCI) is not available within 2 hours.
+■ Patients with chest pain refractory to medical therapy, a TIMI score of 
+≥
+ 3, a troponin elevation, or ST changes > 1 mm should be given GPIIb/
+IIIa inhibitors (abciximab, tirofiban, eptifibatide) and scheduled for angi-
+ography and possible revascularization within 72 hours (percutaneous cor-
+onary intervention [PCI] or coronary artery bypass graft [CABG]).
+■ Dual antiplatelet therapy with aspirin and prasugrel or ticagrelor (also  
+P2Y12 inhibitors but superior to clopidogrel) should be considered for up to 
+12 months after angioplasty and stenting to prevent restenosis of stenting.
+■ Ensure patient is on long-term β-blockers (if depressed LV function), 
+ACEIs/ARBs, and statin.
+■ Address modifiable risk factors (ie, smoking, hypertension, hyperlipidemia, 
+diabetes).
+ST-SEGMENT ELEVATION MYOCARDIAL INFARCTION
+ST-segment elevations and cardiac enzyme release 2° to prolonged cardiac 
+ischemia and necrosis. STEMI is a common medical emergency, and prompt 
+treatment is absolutely necessary.
+History/PE
+■ Presentation:  Acute-onset substernal chest pain (> 10–30 min), com-
+monly described as a pressure, tightness, or heaviness that can radiate to 
+the left arm, shoulders, neck, or jaw. May present without chest pain 
+(“silent” infarct).
+■ Associated symptoms:  Diaphoresis, shortness of breath, lightheadedness, 
+anxiety, nausea/vomiting, epigastric pain (more common in women), and 
+syncope.
+■ PE:  May reveal arrhythmias, hypotension (cardiogenic shock), new S4, 
+pansystolic murmur, and evidence of new CHF. Clear lung fields are seen 
+in right ventricular MI (inferior MI). In a young, otherwise healthy per-
+son, consider cocaine use as the etiology.
+■ The best predictor of survival is left ventricular EF.
+■ Differential diagnosis:  Angina, myocarditis, pericarditis, aortic dissection, 
+pulmonary embolism, esophageal reflux/spasm.
+Diagnosis
+■ ECG:  ST-segment elevations, hyperacute (tall) T waves, or new LBBB 
+within hours. ST-segment depressions and dominant R waves in leads V 1–
+V2 can also be reciprocal change indicating posterior wall infarct. T-wave 
+inversion and pathologic Q waves develop within hours to days.
+■ Sequence of ECG changes:  Peaked T waves → ST-segment elevation → 
+Q waves →  T-wave inversion →  ST-segment normalization → T-wave 
+normalization over several hours to days.
+ MNEMONIC
+Treatment for MI—
+Patient is MOANing Big from MI
+Morphine
+Oxygen (to maintain saturations)
+ASA + Additional second antiplatelet 
+agent (NSTEMI)
+Nitrates
+𝛃-blockers
+ KEY FACT
+It is important to check for aortic 
+dissection clinically prior to 
+administering anticoagulants or 
+thrombolytics.
+36 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   36 8/28/18   12:28 PM
+--- PAGE 54 ---
+■ Cardiac  enzymes:
+■ Troponin (T and I) is the most sensitive and specific cardiac marker.
+■ CK-MB and the CK-MB/total CK ratio (CK index) are also regularly 
+checked.
+■ Both troponin and CK-MB can take up to 3–12 hours to rise following 
+the onset of chest pain. Troponin peaks at 24–48 hours, and CK-MB 
+peaks within 24 hours (see 
+Figure 2.1-11).
+■ ST-segment  abnormalities:
+■ Inferior MI (involving the RCA/PDA): ST-segment elevation in leads 
+II, III, and aVF (see Figure 2.1-12). Obtain a right-sided ECG to look 
+for ST elevations in the right ventricle.
+■ Anterior MI (involving LAD and diagonal branches):  ST-segment 
+elevation in leads V1–V4 (see Figure 2.1-13).
+ KEY FACT
+Women, diabetics, the elderly, and 
+post–heart transplant patients may 
+have atypical or clinically silent MIs.
+Normal
+8
+Myoglobin
+CK-MB
+MLC LD1
+cTnl
+1 23 4 5 6 7
+1
+2
+5
+10
+50
+Multiples of upper limit of normal
+Days after MI onset
+100
+cTnT
+FIGURE 2.1-11.  Typical pattern of serum marker elevation after an acute myocardial 
+infarction. CK-MB, creatine kinase MB isoenzyme; cTnI, cardiac troponin I; cTnT, cardiac 
+troponin T; LD1, lactate dehydrogenase isoenzyme 1; MLC, myosin light chain. (Reproduced with 
+permission from USMLE-Rx.com.)
+I aVR V1
+V4
+aVL V2 V5
+aVF V3 V6
+II
+III
+FIGURE 2.1-12.  Inferior wall myocardial infarction. In this patient with acute chest pain, 
+the ECG demonstrated acute ST-segment elevation in leads II, III, and aVF with reciprocal 
+ST-segment depression and T-wave flattening in leads I, aVL, and V4–V6. (Reproduced with permis-
+sion from USMLE-Rx.com.)
+37HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   37 8/28/18   12:28 PM
+--- PAGE 55 ---
+■ Lateral MI (involving LCA): ST-segment elevation in leads I, aVL, 
+and V5–V6.
+■ Posterior MI:  ST-segment depression in leads V 1–V2 (anterior leads) 
+can be indicative. Obtain posterior ECG leads V 7–V9 (15-lead) to 
+assess for ST-segment elevations.
+trEatmEnt
+Best initial treatment:
+■ First line:  Antiplatelet therapy; ASA (↓ mortality in ACS). Add prasugrel 
+or ticagrelor (both superior to clopidogrel), or clopidogrel as second anti-
+platelet agent with aspirin only for patients undergoing angioplasty or 
+stenting.
+■ Analgesia:  IV morphine with IV metoclopramide.
+■ Nitrates:  IV, GTN, or sublingual.
+■ If SaO2 < 95%, breathless, or in acute LVF, administer O2.
+■ Consider β -blockers as hemodynamics allow (if hypertensive/tachycardic/
+LV function < 40%).
+■ If the patient is in heart failure or in cardiogenic shock, do not give  
+β-blockers; instead, give ACEIs provided that the patient is not hypotensive.
+■ In inferior wall MI (ie, right ventricular infarction), avoid nitrates and 
+diuretics due to risk for severe hypotension (preload dependent).
+Interventions:
+■ Emergent angiography and PCI should be performed if possible (superior 
+to thrombolysis).
+■ If PCI cannot be performed < 120 minutes (door-to-balloon time should 
+ideally be <  90 minutes), and there are no contraindications to throm-
+bolysis, and the patient presents within 3 hours of chest pain onset, 
+thrombolysis with tPA, reteplase, or streptokinase should be performed 
+instead of PCI.
+■ Thrombolysis target time (door-to-needle time) is < 30 minutes and is 
+contraindicated if > 24 hours. Thrombolytics can be used up to 12 hours 
+from the onset of symptoms (mortality benefit extends to 12 hours).
+■ Long-term management (for all patients) includes ASA, ACEIs, β-blockers, 
+nitrates, and high-dose statins.
+ KEY FACT
+Contraindications to thrombolysis:
+■ P revious intracranial hemorrhage or 
+major GI bleed.
+■ R ecent major trauma/surgery/head 
+injury.
+■ Ischemic str oke within the last 
+6 months.
+■ S evere hypertension 
+(> 180/110 mmHg).
+■ K nown bleeding disorder.
+I
+aVR V1 V4
+aVL V2
+V5
+aVF V3
+V6
+II
+III
+FIGURE 2.1-13.  Anterior wall myocardial infarction. This patient presented with acute 
+chest pain. The ECG showed acute ST-segment elevation in leads V1–V6 and hyperacute 
+T waves. (Reproduced with permission from USMLE-Rx.com.)
+38 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   38 8/28/18   12:28 PM
+--- PAGE 56 ---
+■ If PCI was performed, add clopidogrel, prasugrel, or ticagrelor (dual anti -
+platelet therapy).
+■ Address modifiable risk factors (ie, smoking, hypertension, hyperlipidemia, 
+diabetes)
+.
+comPlications
+■ Arrhythmia:  VF and VT are the most common complications and the 
+most common causes of sudden death following acute MI. Sinus bradycar-
+dia and third-degree (complete) heart block are also very common.
+■ Less common complications include reinfarction, left ventricular wall 
+rupture, VSD, pericarditis, papillary muscle rupture (with mitral regurgita-
+tion), left ventricular aneurysm or pseudoaneurysm, and mural thrombi 
+(with subsequent acute limb ischemia, TIA, or stroke).
+■ A timeline of common post-MI complications:
+■ First day:  Heart failure.
+■ 2–4 days:  Arrhythmia, pericarditis.
+■ 5–10 days:  Left ventricular wall rupture (acute pericardial tamponade 
+causing electrical alternans, pulseless electrical activity, and JVD), pap-
+illary muscle rupture (severe mitral regurgitation, pulmonary edema), 
+septal rupture (lower left sternal border murmur, increase in O
+2 satura-
+tion in the right ventricle).
+■ Weeks to months:  Ventricular aneurysm (CHF, arrhythmia, persistent 
+ST-segment elevation, mitral regurgitation, thrombus formation).
+■ Dressler syndrome, an autoimmune process occurring 2–10 weeks post-MI,  
+presents with fever, pericarditis, pleural effusion, leukocytosis, and ↑ ESR.
+■ Right ventricular infarction:  Caused by the occlusion of the RCA. Pre -
+sents with hypotension, JVD, and clear lungs. Treat with high-volume 
+fluid replacement (preload dependent), and avoid nitrates and diuretics
+.
+Dyslipidemia
+Total cholesterol level > 200 mg/dL, LDL > 130 mg/dL, triglycerides 
+> 150 mg/dL, and HDL < 40 mg/dL, all of which are risk factors for CAD. 
+Etiologies include obesity, DM, alcoholism, hypothyroidism, nephrotic syn-
+drome, hepatic disease, Cushing syndrome, OCP use, high-dose diuretic use, 
+and familial hypercholesterolemia.
+History/PE
+■ Most patients have no specific signs or symptoms.
+■ Patients with extremely high triglyceride or LDL levels may have xanthomata 
+(eruptive itchy nodules, orange streaks in palmar creases, or tuberous plaques 
+on the elbows and knees); xanthelasma (yellow fatty deposits in the skin 
+around the lids just below the eyes); lipemia retinalis (creamy appearance of 
+retinal vessels); corneal arcus (deposition of lipid in the corneal stroma).
+■ Patients may have a history of familial primary hyperlipidemias .
+Diagnosis
+■ Fasting lipid profile:  Total cholesterol, LDL, HDL, and triglycerides.
+■ Conduct a fasting lipid profile for patients > 35 years of age or in those 
+≥ 20 years of age with CAD risk factors, and repeat every 5 years or sooner 
+if lipid levels are elevated.
+■ Total serum cholesterol > 200 mg/dL on two different occasions is diag-
+nostic of hypercholesterolemia.
+■ LDL >  130 mg/dL or HDL < 40 mg/dL is diagnostic of dyslipidemia (not 
+optimal levels), even if total serum cholesterol is < 200 mg/dL.
+■ Individuals with LDL > 190 mg/dL or triglycerides ≥ 500 mg/dL should 
+be evaluated for secondary causes of hyperlipidemia.
+ KEY FACT
+Indications for CABG:
+■ L eft main coronary artery disease.
+■ T riple-vessel disease with ≥ 70% in 
+each vessel.
+■ T wo-vessel disease in diabetic 
+patient.
+■ S ymptomatic patient despite 
+maximal medical therapy.
+ MNEMONIC
+Complication of MI—
+DARTH VADER
+Death
+Arrhythmia
+Rupture (ventricular wall, septum, or 
+papillary muscle)
+Tamponade
+Heart failure
+Valvular disease
+Aneurysm of ventricle
+Dressler’s syndrome
+Emboli (mural thrombosis)
+Recurrence/Reinfarction/Regurgitation 
+(mitral)
+ KEY FACT
+Right ventricular MI is caused by the 
+occlusion of the RCA. Nitrates and 
+diuretics must be avoided, and the 
+condition is treated with IV fluids.
+ KEY FACT
+Secondary hyperlipidemia causes 
+include Cushing syndrome, 
+hypothyroidism, nephrotic syndrome, 
+or cholestasis.
+ KEY FACT
+As you cannot calculate the patient’s 
+ASCVD risk on the USMLE, focus on 
+obvious signs of ↑ risk (smoking, 
+diabetes) or ↓ risk (young, healthy) 
+when deciding if statin therapy is 
+appropriate.
+39HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   39 8/28/18   12:28 PM
+--- PAGE 57 ---
+trEatmEnt
+■ Based on risk stratification using one of many cardiovascular risk calculators.
+■ The American College of Cardiology/American Heart Association recom -
+mendations are listed in Table 2.1-12.
+■ High-intensity therapy:  Goal reduction in LDL of > 50%, moderate-
+intensity as lowering by 30–50% or by specific medication and dosing 
+guidelines (ie, atorvastatin 80 mg).
+■ Smokers of all ages:  Screen for dyslipidemias due to their ↑ risk.
+■ First intervention:  12-week trial of diet and exercise in a patient with no 
+known ASCVD. Commonly used lipid-lowering agents are listed in 
+Table 2.1-13.
+■ Secondary hyperlipidemia:  Treat underlying cause.
+ KEY FACT
+Dyslipidemia:
+■ LDL >  130 mg/dL or
+■ HDL <  40 mg/dL.
+cLass exaMpLes eFFect on LIpId proFILe sIde eFFects
+HMG-CoA reductase inhibitors 
+(statins)
+Atorvastatin, simvastatin, lovastatin, 
+pravastatin, rosuvastatin
+↓ LDL, ↓ triglycerides ↑ LFTs, myositis, warfarin potentiation
+Lipoprotein lipase stimulators 
+(fibrates)
+Gemfibrozil ↓ Triglycerides, ↑ HDL GI upset, cholelithiasis, myositis  
+(especially in combination with 
+statins), ↑ LFTs, pancreatitis
+Cholesterol absorption inhibitors Ezetimibe ↓ LDL Diarrhea, abdominal pain. Can cause 
+angioedema
+Niacin Niaspan ↑ HDL, ↓ LDL Skin flushing (can be prevented with 
+ASA, due to ↑ prostaglandins), pares-
+thesias, pruritus, GI upset, ↑ LFTs
+Bile acid resins Cholestyramine, colestipol, 
+colesevelam
+↓ LDL Constipation, GI upset, LFT abnor-
+malities, myalgias. Can ↓ absorption of 
+other drugs from the small intestine
+Proprotein convertase subtilisin/
+kexin type 9 (PCSK9) inhibitors
+Evolocumab, alirocumab (injectable 
+medications taken every 2–4 weeks)
+↓↓ LDL Injection-site swelling, rash, muscle/
+limb pain, backache
+TABLE 2.1-13.  Lipid-L owering Agents
+patIent age crIterIa treatMent
+≥ 21 years Atherosclerotic cardiovascular disease (ASCVD) (eg, CAD, CVA, or PAD) High-intensity statin
+≥ 21 years LDL ≥ 190 mg/dL High-intensity statin
+40–75 years LDL 70–189 mg/dL without ASCVD or diabetes ≥ 7.5% 10-year risk → high-intensity statin
+5–7.5% 10-year risk → moderate-intensity statin
+≤ 5% 10-year risk → no statin
+40–75 years LDL 70–189 mg/dL with diabetes ≥ 7.5% 10-year risk → high-intensity statin
+≤ 7.5% 10-year risk → moderate-intensity statin
+≤ 75 years ASCVD High-intensity statin
+TABLE 2.1-12.  A merican College of Cardiology/American Heart Association Treatment Guidelines
+40 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   40 8/28/18   12:28 PM
+--- PAGE 58 ---
+Hypertension
+A major risk factor for stroke and MI. Defined as systolic BP ≥ 140 mm Hg 
+and/or diastolic BP ≥ 90 mm Hg based on three measurements separated in 
+time in adults (see Table 2.1-14). Classified as 1° or 2°.
+1° (ESSENTIAL) HYPERTENSION
+Hypertension with no identifiable cause. Represents 95% of cases of HTN. 
+Risk factors include a family history of HTN or heart disease, a high-
+sodium diet, smoking, obesity, ethnicity (African-Americans >  whites), and 
+advanced age.
+History/PE
+■ HTN is usually asymptomatic until complications develop.
+■ Patients should be evaluated for end-organ damage to the brain (stroke, 
+dementia), eye (cotton-wool exudates, hemorrhage, retinopathy), heart 
+(LVH), and kidney (proteinuria, CKD). Renal bruits may signify renal 
+artery stenosis as the cause of HTN.
+ KEY FACT
+PCSK9 inhibitors are a new class 
+of LDL-lowering drugs. They 
+significantly increase hepatic 
+clearance of LDL. Indicated in familial 
+hypercholesterolemia and statin-
+resistant or -intolerant patients with 
+severe hyperlipidemia.
+bp category bp treat or FoLLow-up
+Normal SBP < 120 mm Hg
+and
+DBP < 80 mm Hg
+Yearly evaluation
+Lifestyle modifications to maintain normal BP
+Elevated SBP 120–129 mm Hg
+and
+DBP < 80 mm Hg
+Recommend healthy lifestyle changes
+Reassess in 3–6 months
+Hypertension: stage 1 SBP ≥ 130–139 mm Hg
+or
+DBP ≥ 80–89 mm Hg
+Assess 10-year risk for heart disease and stroke (ASCVD)
+■ <  10% 10-year risk:
+■ Lif estyle recommendations
+■ R eassess in 3–6 months
+■ >  10% 10-year risk or the patient has known CVD, diabetes mellitus, or CKD, lifestyle 
+changes, and BP-lowering medication:
+■ R eassess in 1 month for effectiveness of medication therapy
+■ I f goal is met after 1 month, reassess in 3–6 months
+■ I f goal is not met after 1 month, consider different medication or titration; continue 
+monthly follow-up until control is achieved
+Hypertension: stage 2 SBP ≥ 140 mm Hg
+or
+DBP ≥  90 mm Hg
+Recommend healthy lifestyle changes and BP-lowering medication (two medications of 
+different classes)
+■ R eassess in 1 month for effectiveness:
+■ I f goal is met after 1 month, reassess in 3–6 months
+■ I f goal is not met after 1 month, consider different medications or titration
+■ C ontinue monthly follow-up until control is achieved
+a Based on 2017 report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines.
+TABLE 2.1-14.  A merican College of Cardiology/American Heart Association BP Guidelines a
+A woman is found with pulseless 
+electrical activity on hospital day 7 
+after suffering a lateral wall STEMI. The 
+ACLS protocol is initiated. What is the 
+next best step?
+41HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   41 8/28/18   12:28 PM
+--- PAGE 59 ---
+Diagnosis
+■ Quantify overall risk:  Fasting glucose, HBA1c, lipid profile.
+■ Assess end-organ damage:  ECG to check for LVH or past MI, urinalysis 
+for proteinuria or hematuria; BUN/creatinine.
+■ Exclude secondary causes (as required):  U&Es, Ca 2+, renal ultrasound, 
+24-hour urine metanephrine, renin, aldosterone, urinary cortisol.
+■ 24-hour ambulatory BP monitoring (ABPM) may be useful sometimes (ie, 
+“white coat” or borderline hypertension).
+trEatmEnt
+■ Begin with lifestyle modifications (weight loss, exercise, smoking cessa -
+tion, diet improvement, limit alcohol and salt intake).
+■ BP goals vary by category and ASCVD (see Table 2.1-14).
+■ Diuretics, CCBs, ACEIs, and β-blockers have been shown to ↓ mortality 
+in uncomplicated HTN. They are first-line agents unless a comorbid con-
+dition requires another medication (see Table 2.1-15).
+■ For patients who are not African-American, including those with diabetes, 
+→
+ ACEI/ARB (nephroprotective), thiazide, CCB.
+■ For African American patients, including those with diabetes, → thiazide, 
+CCB.
+■ For patients ≥ 18 years of age with CKD → ACEI/ARB (nephro-
+protective).
+■ If BP goal is not reached within 1 month of commencing treatment, 
+↑  dose of initial drug or add a second drug, and if goal BP cannot be 
+reached with two drugs, add and titrate a third drug. Poorer outcomes are 
+seen if ACEIs and ARBs are used together.
+■ Periodically test for end-organ complications, including renal complica -
+tions (BUN, creatinine, urine protein-to-creatinine ratio), hypertensive ret-
+inopathy (eye exam), and cardiac complications (ECG evidence of LVH).
+2° HYPERTENSION
+Hypertension 2° to an identifiable organic cause (∼5% of cases). See 
+Table 2.1-16 for the diagnosis and treatment of common causes.
+ MNEMONIC
+Treatment of HTN—
+ABCD
+ACEIs/ARBs
+𝛃-blockers
+CCBs
+Diuretics (typically thiazide diuretics)
+ MNEMONIC
+Causes of 2° hypertension—
+CHAPS
+Cushing syndrome
+Hyperaldosteronism (Conn syndrome)
+Aortic coarctation
+Pheochromocytoma
+Stenosis of renal arteries
+RECENT 
+Renal causes (renal artery stenosis, PKD)
+Endocrine (Conn syndrome, Cushing 
+syndrome, hyperparathyroidism, 
+pheochromocytoma)
+Coarctation of the aorta
+Estrogen (OCP)
+Neurologic (ICP)
+Thyroid disorder popuLatIon agents
+Uncomplicated Diuretics, CCBs, ACEIs
+CHF Diuretics, β-blockers, ACEIs, ARBs, aldosterone antagonists
+Diabetes Diuretics, ACEIs, ARBs, CCBs
+Post-MI β-blockers, ACEIs, ARBs, aldosterone antagonists
+Chronic kidney disease ACEIs, ARBs
+BPH Diuretics, α1-adrenergic blockers
+Isolated systolic HTN Diuretics, ACEIs, CCBs (dihydropyridines)
+Pregnancy Methyldopa, β-blockers (typically labetalol), hydralazine
+TABLE 2.1-15.  T reatment of 1° Hypertension in Specific Populations
+This patient has probably suffered a 
+left ventricular free-wall rupture with 
+acute cardiac tamponade. Emergent 
+pericardiocentesis is the next best 
+therapeutic and diagnostic step.
+42 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   42 8/28/18   12:28 PM
+--- PAGE 60 ---
+HYPERTENSIVE CRISES
+A spectrum of clinical presentations in which there is a severe increase in BP 
+(usually > 180/120 mm Hg) that can lead to end-organ damage.
+History/PE
+Present with end-organ damage revealed by acute kidney injury, severe chest 
+pain (ischemia, MI), back pain (aortic dissection), stroke, severe headache 
+with changes in mental status (hypertensive encephalopathy), and blurred 
+vision. Other symptoms include nausea and vomiting, seizures, shortness of 
+breath, and severe anxiety.
+etIoLogy descrIptIon ManageMent
+1° Renal disease Often unilateral renal parenchymal disease Treat with ACEIs, which slow the progression of renal 
+disease
+Renal artery stenosis Especially common in patients <  25 and > 50 years of age 
+with recent-onset HTN
+Etiologies include fibromuscular dysplasia (younger patients) 
+and atherosclerosis (older patients)
+Often present with headaches and bruits in abdomen/neck
+Diagnose with MRA, CT angiography, or renal artery 
+Doppler ultrasound
+May be treated with angioplasty or stenting. Consider 
+ACEIs in unilateral disease. (In bilateral disease, 
+ACEIs can accelerate kidney failure by preferential 
+vasodilation of the efferent arteriole.) Open surgery 
+is a second option if angioplasty is not effective or 
+feasible
+OCP use Common in women > 35 years of age, obese women, and 
+those with long-standing use
+Discontinue OCPs (effect may be delayed)
+Pheochromocytoma An adrenal gland tumor that secretes epinephrine and nor-
+epinephrine, leading to episodic headache, sweating, and 
+tachycardia
+Diagnose with urinary metanephrines and catechol-
+amine levels or plasma metanephrine
+Surgical removal of tumor after treatment with 
+α-blockers followed by β-blockers
+Conn syndrome 
+(hyperaldosteronism)
+Most often 2° to an aldosterone-producing adrenal adenoma
+Causes the triad of HTN, unexplained hypokalemia, and 
+metabolic alkalosis
+Metabolic workup with plasma aldosterone and renin 
+level; ↑ aldosterone and ↓ renin levels suggest 1° 
+hyperaldosteronism. Surgical removal of tumor
+Cushing syndrome Due to an ACTH-producing pituitary tumor, an ectopic ACTH-
+secreting tumor, or cortisol secretion by an adrenal adenoma 
+or carcinoma. Also due to exogenous steroid exposure. (See 
+the Endocrinology chapter for more details)
+Surgical removal of tumor; removal of exogenous 
+steroids
+Coarctation of the aorta See the Pediatrics chapter Surgical correction
+Hyperparathyroidism Either alone or as part of MEN type 2 (with 
+pheochromocytoma)
+Look for ↑ calcium and vascular/valvular calcification
+Treat underlying hyperparathyroidism
+TABLE 2.1-16.  C ommon Causes of 2° Hypertension
+A 40-year-old man presents for a 
+routine exam. His exam is significant 
+for a BP of 145/75 mm Hg but is 
+otherwise unremarkable, as are his 
+lab results. What is the next best 
+step?
+43HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   43 8/28/18   12:28 PM
+--- PAGE 61 ---
+Diagnosis
+■ Hypertensive urgency:  ↑ BP with mild to moderate symptoms (headache, 
+chest pain, nausea and vomiting) without end-organ damage.
+■ Hypertensive emergency: ↑ BP with signs or symptoms of impending 
+end-organ damage such as acute kidney injury, intracranial or retinal 
+hemorrhage, papilledema, stroke, or ECG changes suggestive of ischemia, 
+MI, or pulmonary edema.
+trEatmEnt
+■ Hypertensive urgency:  BP can be reduced gradually over 24–48 hours with 
+oral antihypertensives (eg, β-blockers, clonidine, ACEIs) (see Table 2.1-17).
+■ Hypertensive emergency: BP must be reduced immediately to prevent 
+imminent organ damage. Treat with IV medications (labetalol, nitroprus-
+side, nicardipine) with the goal of lowering mean arterial pressure by no 
+more than 25% over the first 2 hours to prevent cerebral hypoperfusion or 
+coronary insufficiency.
+ KEY FACT
+Hypertensive emergencies are 
+diagnosed on the basis of the 
+extent of end-organ damage, not BP 
+measurement.
+With a single BP recording and no 
+evidence of end-organ damage, the 
+next best step should consist of a 
+repeat BP measurement at the end 
+of the exam with a return visit if BP is 
+still high.
+cLass agents MecHanIsM oF actIon sIde eFFects
+Diuretics Thiazide, loop, K + sparing
+Ethacrynic acid is the only nonsulfa 
+loop diuretic that can be used in 
+severe sulfa allergy patients
+↓ Extracellular fluid volume and 
+thereby ↓ vascular resistance
+Hypokalemia (not with K+ sparing), 
+hyperglycemia, hyperlipidemia, hyper-
+uricemia, azotemia
+β-blockers Propranolol, metoprolol, nadolol,  
+atenolol, timolol, carvedilol, 
+labetalol
+↓ Cardiac contractility and renin 
+release
+Bronchospasm (in severe active asthma), 
+bradycardia, CHF exacerbation, impo-
+tence, fatigue, depression
+ACEIs Captopril, enalapril, fosinopril, bena-
+zepril, lisinopril
+Blocks the conversion of angio-
+tensin I to angiotensin II, reducing 
+peripheral resistance and salt/
+water retention. Bradykinin ↑ due 
+to the ↓ activation of ACE
+Cough and angioedema (due to ↑ brady-
+kinin build-up), rashes, leukopenia, 
+hyperkalemia
+ARBs Losartan, valsartan, irbesartan Blocks the activation of angiotensin 
+II receptor, reducing periph-
+eral resistance and salt/water 
+retention
+Rashes, leukopenia, and hyperkalemia 
+but no cough
+CCBs Dihydro pyridines (nifedipine, 
+felodipine, amlodipine), nondihy-
+dropyridines (diltiazem, verapamil)
+↓ Smooth muscle tone and cause 
+vasodilation; may also ↓ cardiac 
+output
+Dihydropyridines: headache, flushing, 
+peripheral edema
+Nondihydropyridines: ↓ Contractility
+Vasodilators Hydralazine, minoxidil ↓ Peripheral resistance by dilating 
+arteries/arterioles
+Hydralazine: headache, lupus-like syndrome
+Minoxidil: orthostasis, hirsutism
+α
+1-adrenergic 
+blockers
+Prazosin, terazosin, 
+phenoxybenzamine
+Cause vasodilation by blocking 
+actions of norepinephrine on 
+vascular smooth muscle
+Orthostatic hypotension
+Centrally acting 
+adrenergic 
+agonists
+Methyldopa, clonidine Inhibit the sympathetic nervous 
+system via central α
+2-adrenergic 
+receptors
+Somnolence, orthostatic hypotension, 
+impotence, rebound HTN
+TABLE 2.1-17.  M ajor Classes of Antihypertensive Agents
+44 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   44 8/28/18   12:28 PM
+--- PAGE 62 ---
+Pericardial Disease
+Consists of pericarditis, constrictive pericarditis, and pericardial tamponade. 
+Results from acute or chronic pericardial insults; may lead to pericardial 
+effusion.
+PERICARDITIS
+Inflammation of the pericardial sac. It can compromise cardiac output via tam-
+ponade (extravasation of large amounts of fluid secondary to pericarditis) or 
+constrictive pericarditis (chronic pericarditis). Most commonly idiopathic, 
+although known etiologies include viral infection (most common infection, 
+likely etiology Coxsackie B virus), Staphylococcus, Streptococcus, tuberculosis 
+(TB), systemic lupus erythematosus (SLE), uremia, drugs, radiation, connective 
+tissue disorder (ie, rheumatoid arthritis, Goodpasture syndrome), and neo-
+plasms. May also occur after MI (either within days after MI or as a delayed 
+phenomenon; ie, Dressler syndrome) or open-heart surgery (see Figure 2.1-14).
+History/PE
+■ Presentation:  Sharp pleuritic chest pain, dyspnea, cough, and fever.
+■ Key feature:  Chest pain tends to worsen in the supine position and with 
+inspiration. Classically, patient is seen sitting up (pain improves in prone 
+position) and bending forward.
+■ Exam:  May reveal a pericardial friction rub. Elevated JVP, tachycardia, 
+muffled S1 and S 2, and pulsus paradoxus (a ↓ in systolic BP >10 mm Hg 
+on inspiration) can be present with pericardial tamponade. Kussmaul sign 
+can be present with constrictive pericarditis.
+Diagnosis
+■ ECG:  Include diffuse ST-segment elevation and PR-segment depressions 
+followed by T-wave inversions (see Figure 2.1-15). Classically shows con-
+cave (saddle-shaped) ST segment elevation.
+ KEY FACT
+Pericardial calcification seen on chest 
+x-ray (CXR) strongly suggest constrictive 
+pericarditis due to chronic fibrosis and 
+calcification of the pericardium.
+ MNEMONIC
+Causes of pericarditis—
+CARDIAC RINDS
+Collagen vascular disease
+Aortic dissection
+Radiation
+Drugs
+Infections
+Acute renal failure
+Cardiac (MI) and Connective tissue disease
+Rheumatic fever
+Injury
+Neoplasms
+Dressler syndrome
+Surgery (postpericardiotomy syndrome)
+FIGURE 2.1-14.  Radiographic findings in pericarditis. Contrast-enhanced CT at the 
+level of the interventricular septum demonstrates a small pericardial effusion, with thickening 
+and increased enhancement of the pericardium consistent with infection in this postsurgical 
+patient. The air outlining the pericardium anteriorly is the result of dehiscence of the median 
+sternotomy. 
+(Reproduced with permission from USMLE-Rx.com.)
+45HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   45 8/28/18   12:28 PM
+--- PAGE 63 ---
+■ CXR:  Cardiomegaly may indicate a pericardial effusion.
+■ Blood tests:  FBC, ESR, U&Es, cardiac enzymes (troponin may be raised), 
+viral serology, and if indicated, autoantibodies, fungal precipitins, and 
+TFTs.
+■ Echo:  Pericardial thickening or effusion may be evident.
+trEatmEnt
+■ Treat the underlying cause (eg, corticosteroids/immunosuppressants for 
+SLE, dialysis for uremia) or symptoms (eg, ASA for post-MI pericarditis, 
+ASA/NSAIDs 
+for viral pericarditis or Dressler syndrome). Avoid corticoste-
+roids within a few days after MI, as they can predispose to ventricular wall 
+rupture.
+■ Treat idiopathic cases with NSAIDs such as ibuprofen, naproxen, or indo -
+methacin. Consider colchicine for relapse or persistent symptoms.
+■ Pericardial effusions without symptoms can be monitored, but evidence 
+of tamponade requires pericardiocentesis with continuous drainage as 
+needed.
+CARDIAC TAMPONADE
+Excess fluid in the pericardial sac ↑ the intrapericardial pressure, leading to 
+compromised ventricular filling and ↓ cardiac output. The rate of fluid for-
+mation is more important than the size of the effusion. Risk factors include 
+pericarditis, malignancy, SLE, TB, and trauma (commonly stab wounds 
+medial to the left nipple).
+History/PE
+■ Presents with fatigue, dyspnea, anxiety, tachycardia, and tachypnea that 
+can rapidly progress to shock and death.
+■ Exam of a patient with acute tamponade may reveal Beck triad (hypoten -
+sion, distant or muffled S 1 and S2 heart sounds, and JVD), a narrow pulse 
+pressure, and pulsus paradoxus.
+■ Lung fields are clear on exam.
+ KEY FACT
+ST-segment elevations in pericarditis 
+are differentiated from MI in that 
+they are not localized to one region 
+of the heart; widespread ST-segment 
+elevations are seen.
+I aVR
+PR
+PR
+ST
+STV1
+V2
+V3
+V4
+V5
+V6
+aVL
+aVF
+II
+III
+FIGURE 2.1-15.  Acute pericarditis. Diffuse ST-segment elevations in multiple leads not 
+consistent with any discrete coronary vascular territory and PR-segment depressions. (Reproduced 
+with permission from USMLE-Rx.com.)
+46 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   46 8/28/18   12:28 PM
+--- PAGE 64 ---
+Diagnosis
+■ Echo is diagnostic and shows right atrial and right ventricular diastolic col -
+lapse and echo-free zone around the heart.
+■ CXR may show an enlarged, globular, water-bottle-shaped heart with a 
+large effusion (see 
+Figure 2.1-16).
+■ If present on ECG, electrical alternans is diagnostic of a large pericardial 
+effusion
+.
+trEatmEnt
+■ Aggressive volume expansion with IV fluids.
+■ Urgent pericardiocentesis (aspirate will be non-clotting blood). Send fluid 
+to lab analysis to determine etiology.
+■ Decompensation or recurrent cases may warrant pericardial window.
+Valvular Heart Disease
+Until recently, rheumatic fever (which affects the mitral valve more often than 
+the aortic valve) was the most common cause of valvular heart disease in US 
+adults; the leading cause is now mechanical degeneration. Subtypes are listed in 
+Table 2.1-18 along with their etiologies, presentation, diagnosis, and treatment.
+Vascular Diseases
+AORTIC ANEURYSM
+Greater than 50% dilation of all three layers of the aortic wall. Aortic aneu-
+rysms are most commonly associated with atherosclerosis. Most are abdomi-
+nal, and > 90% originate below the renal arteries.
+■ Ascending aortic aneurysm—think cystic medial necrosis or connective 
+tissue disease.
+■ Descending aortic aneurysm—think atherosclerosis.
+■ Complications:  Rupture, thrombosis, embolism, fistulae, pressure on sur-
+rounding structures.
+History/PE
+■ Usually asymptomatic and discovered incidentally on exam or radiologic 
+study. It may cause mild abdominal or back pain.
+■ Exam demonstrates a pulsatile abdominal mass or abdominal bruits.
+■ Risk factors include HTN, high cholesterol, other vascular disease, a ⊕ 
+family history, smoking (strongest predictor of rupture), gender (males 
+> 
+females), and age.
+■ Ruptured aneurysm leads to hypotension and severe, tearing abdominal 
+pain that radiates to the back, iliac fossae, or groin, and syncope
+.
+Diagnosis
+■ Screening:  All men 65–75 years of age with a history of smoking are recom-
+mended for a one-time screening by ultrasound for AAA (see Figure 2.1-17).
+■ Abdominal ultrasound is used for diagnosis or to follow the course of an 
+aneurysm over time.
+■ CT with contrast or MRA may be useful to determine the precise anatomy.
+ KEY FACT
+Beck triad can diagnose acute cardiac 
+tamponade:
+■ JVD.
+■ Hypotension.
+■ Distant S1 and S2 heart sounds.
+ KEY FACT
+Size of AAA determines treatment:
+■ <  5 cm → monitoring.
+■ >  5 cm → surgical correction.
+A 20-year-old man presents with 
+an initial BP of 150/85 mm Hg, 
+and repeat measurement yields 
+147/85 mm Hg. The patient’s 
+potassium level is 3.2 mg/dL. What is 
+the next appropriate diagnostic step?
+FIGURE 2.1-16.  Pericardial effu-
+sion. Water-bottle-shaped heart seen on 
+CXR with pericardial effusion. (Reproduced 
+with permission from Chen MY et al. Basic Radiology, 
+2nd ed. New York, NY: McGraw-Hill; 2011.)
+47HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   47 8/28/18   12:28 PM
+--- PAGE 65 ---
+trEatmEnt
+■ In asymptomatic patients, monitoring is appropriate for lesions < 5 cm.
+■ Surgical correction is indicated if the lesion is ≥ 5.5 cm (abdominal), 
+> 6 cm (thoracic), or smaller but rapidly enlarging (watch for bowel isch-
+emia and infarction).
+■ Emergent surgery for symptomatic or ruptured aneurysms.
+type etIoLogy HIstory exaM/dIagnosIs treatMent
+Aortic stenosis Most often seen in the 
+elderly (senile calcific 
+aortic stenosis)
+Unicuspid in childhood 
+and adolescence. Rheu-
+matic heart disease can 
+predispose to AS
+May be asymptomatic for 
+years despite significant 
+stenosis
+Once symptomatic, usually 
+progresses from angina 
+to syncope to CHF to 
+death within 2 years
+Sx (also indications for 
+valve replacements):
+ACS—Angina, CHF, 
+Syncope
+PE: Pulsus parvus et tardus 
+(weak, delayed carotid 
+upstroke) and a single 
+or paradoxically split S2 
+sound; systolic crescendo-
+decrescendo murmur at the 
+right second intercostal space 
+radiating to the carotids
+Severe AS characterized by 
+soft and single S2
+Dx: Echocardiography
+Aortic valve replacement 
+(surgical or transcatheter 
+methods)
+Aortic 
+regurgitation
+Acute: Infective endocar-
+ditis, aortic dissection, 
+chest trauma, MI
+Chronic: Valve malforma-
+tions, rheumatic fever, 
+connective tissue 
+disorders (ie, Marfan 
+syndrome), syphilis, 
+inflammatory disorders
+Acute: Rapid onset of 
+pulmonary congestion, 
+cardiogenic shock, and 
+severe dyspnea
+Chronic: Slowly progres-
+sive onset of dyspnea 
+on exertion, orthopnea, 
+and PND. Uncomfort-
+able heart pounding 
+when lying on left side
+PE: Early blowing diastolic 
+murmur at the left sternal 
+border, mid-diastolic rumble 
+(Austin Flint murmur), and 
+midsystolic apical murmur
+Widened pulse pressure causes 
+de Musset sign (head bob 
+with heartbeat), Corrigan 
+sign (water-hammer pulse; 
+wide and bounding), and 
+Duroziez sign (femoral bruit)
+Dx: Echocardiography
+Vasodilator therapy 
+(dihydropyridines or 
+ACEIs) for isolated aortic 
+regurgitation until symp-
+toms become severe 
+enough to warrant valve 
+replacement. Digoxin 
+and diuretics have little 
+benefit
+Monitor LV function and 
+size
+Mitral valve 
+stenosis
+The most common eti-
+ology continues to be 
+rheumatic fever
+Uncommon in the US
+Sx: Include dyspnea, 
+orthopnea, PND, and 
+hemoptysis. Unique fea-
+tures secondary to LAE 
+include AF, dysphagia, 
+and hoarseness
+PE: Opening snap and mid-
+diastolic murmur at the 
+apex; pulmonary edema
+Dx: Echocardiography
+Antiarrhythmics (β-blockers, 
+digoxin, or CCBs) and 
+warfarin for AF. Mitral 
+balloon valvotomy and 
+valve replacement are 
+effective for severe cases
+Mitral valve 
+regurgitation
+Primarily 2° to rheumatic 
+fever or chordae ten-
+dineae rupture after MI
+Myxomatous degenera-
+tion due to mitral valve 
+prolapse
+Infective endocarditis
+Patients present with 
+dyspnea, orthopnea, 
+PND, and fatigue
+PE: Holosystolic/pansystolic 
+murmur radiating to the 
+axilla
+Dx: Echocardiography will 
+demonstrate regurgitant 
+flow; angiography can assess 
+the severity of disease
+ACEIs or ARBs to vasodilate 
+and ↓ rate of progression. 
+Antiarrhythmics if neces-
+sary (AF is common with 
+LAE). Digoxin and diuretics 
+may be needed in CHF
+Valve repair or replacement 
+for severe cases
+TABLE 2.1-18.  T ypes of Valvular Heart Disease
+A hyperaldosteronism workup with 
+serum aldosterone and renin levels is 
+an appropriate next diagnostic step.
+48 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   48 8/28/18   12:28 PM
+--- PAGE 66 ---
+AORTIC DISSECTION
+A transverse tear in the intima of a vessel that results in blood entering the 
+media, creating a false lumen and leading to a hematoma that propagates lon-
+gitudinally. Most commonly 2° to HTN, but also due to blunt chest trauma. 
+The most common sites of origin are above the aortic valve and distal to the 
+left subclavian artery. Most often occurs at 40–60 years of age, with a greater 
+frequency in males than in females.
+History/PE
+■ Hx:  HTN, Marfan syndrome, mitral valve prolapse, trauma.
+■ Presentation:  Sudden tearing/ripping pain in the anterior chest (ascend-
+ing) with or without radiation to the back (descending), typically between 
+the scapulae.
+■ Exam:
+■ Patients are typically hypertensive. If hypotensive, consider pericardial 
+tamponade, hypovolemia from blood loss, or other cardiopulmonary 
+etiologies.
+■ Asymmetric pulses and BP measurements or acute limb ischemia.
+■ A murmur of aortic regurgitation may be heard if the aortic valve is 
+involved with a proximal dissection.
+■ Neurologic deficits, such as paraplegia, may be seen if the aortic arch 
+or spinal arteries are involved.
+■ Anuria may be seen if renal arteries are involved.
+■ Signs of pericarditis or pericardial tamponade may be seen.
+Diagnosis
+■ Best initial test for hemodynamically stable patients:  CT angiography. 
+MRA can be used if contrast CT is contraindicated.
+■ Best initial test for hemodynamically unstable patients:  TEE. It may 
+also be used to visualize details of the proximal aorta and coronary vessels 
+and can also evaluate for pericardial effusion.
+ KEY FACT
+Aortic aneurysm is most often 
+associated with atherosclerosis, 
+whereas aortic dissection is commonly 
+linked to HTN.
+A 70-year-old man with HTN presents 
+for a routine appointment. He quit 
+smoking 20 years ago but has a 
+20-pack-year history. What screening, 
+if any, is indicated? 
+FIGURE 2.1-17.  Abdominal aortic aneurysm. (A) Ultrasound image of an AAA (Ao, aorta). (B) Transaxial image from a 
+contrast-enhanced CT showing an aneurysm with extensive mural thrombus (arrowhead). (Image A reproduced with permission from Tintinalli 
+JE et al. Tintinalli’s Emergency Medicine: A Comprehensive Study Guide, 6th ed. New York, NY: McGraw-Hill; 2004. Image B reproduced with permission from Doherty GM. Cur-
+rent Diagnosis & Treatment: Surgery, 13th ed. New York, NY: McGraw-Hill; 2010.)
+Ao
+A
+ B
+49HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   49 8/28/18   12:28 PM
+--- PAGE 67 ---
+■ The Stanford system classifies any dissection proximal to the left subcla -
+vian artery as type A and all others as type B (see Figure 2.1-18).
+■ Type A (∼70%) is the most common and involves the ascending aorta, 
+irrespective of the site of the tear. Type B does not involve the ascending 
+aorta.
+trEatmEnt
+■ BP control:  Important to monitor and medically manage BP and heart 
+rate as necessary. Avoid thrombolytics. Begin intravenous β-blockers (eg, 
+IV labetalol) before starting vasodilators (nitroprusside) to prevent reflex 
+tachycardia.
+■ All patients with type A thoracic dissection (ascending dissections) should 
+have surgery.
+■ Patients with type B thoracic dissection (descending dissections) may be 
+managed 
+medically with BP and heart rate control; surgery is reserved if 
+there is a leakage, rupture, or compromised organs.
+DEEP VENOUS THROMBOSIS
+Clot formation in the large veins of the extremities or pelvis. The classic 
+Virchow triad of risk factors includes venous stasis (eg, from long-haul flights, 
+prolonged bed rest, obesity, immobility, or incompetent venous valves in the 
+lower extremities), endothelial trauma (eg, surgery, injury to the lower 
+extremities, trauma), and hypercoagulable states (eg, thrombophilia, malig-
+nancy, pregnancy, OCP use).
+History/PE
+■ Presents with unilateral lower extremity pain and swelling. Calf warmth, 
+tenderness, and erythema may be present.
+■ Homans sign is calf tenderness with passive foot dorsiflexion (poor sensitiv-
+ity and specificity for DVT).
+■ Use pretest clinical probability scoring for DVT, the Wells score.
+ KEY FACT
+Ascending aortic dissections are 
+surgical emergencies; descending 
+dissections are still emergencies but 
+can often be treated medically.
+ KEY FACT
+Virchow triad: (1) venous stasis, 
+(2) trauma (endothelial damage), 
+(3) hypercoagulability
+The United States Preventive Services 
+Task Force (USPSTF) guidelines 
+recommend one-time screening for 
+AAA by ultrasound in men 65–75 
+years of age who have ever smoked.
+FIGURE 2.1-18.  Stanford classification of aortic dissection. Type A involves the ascend-
+ing aorta and may progress to involve the arch and thoracoabdominal aorta. Type B involves 
+the descending thoracic or thoracoabdominal aorta distal to the left subclavian artery without 
+involvement of the ascending aorta. 
+(Reproduced with permission from USMLE-Rx.com.)
+Ascending
+DescendingDescending
+Type A Type B
+Stanford Classiﬁcation
+50 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   50 8/28/18   12:28 PM
+--- PAGE 68 ---
+Diagnosis
+■ D-dimer test should be ordered (sensitive but not specific) and is elevated 
+in DVT. Also elevated in infections, malignancy, pregnancy, and postop
+-
+eratively. A negative result, combined with a low clinical probability is suf-
+ficient to exclude a DVT.
+■ If D-dimer is elevated and the patient has a high-to-intermediate clinical 
+probability, Doppler ultrasound is done.
+■ A spiral CT or V/Q scan may be used to evaluate for PE (see Figure 2.1-19).
+trEatmEnt
+■ Anticoagulate with subcutaneous low-molecular-weight heparin (LMWH) 
+or IV unfractionated heparin followed by PO warfarin or NOACs for a 
+total of 3–6 months.
+■ In patients with contraindications for anticoagulation, inferior vena cava 
+filters should be placed.
+■ Hospitalized patients should receive DVT prophylaxis consisting of  
+exercise as tolerated, antithromboembolic stockings, and subcutaneous 
+LMWH or unfractionated heparin.
+PERIPHERAL ARTERIAL DISEASE
+Defined as a restriction of the blood supply to the extremities by atheroscle-
+rotic plaque. The lower extremities are most commonly affected. Clinical 
+manifestations depend on the vessels involved, the extent and rate of obstruc-
+tion, and the presence of collateral blood flow.
+History/PE
+■ Presents with intermittent claudication; reproducible cramping pain in 
+the calf, thigh, or buttock after walking for a certain distance (claudication 
+distance) and is relieved with rest.
+■ As the disease progresses, it causes critical limb ischemia. Pain occurs at 
+rest and affects the distal extremities. Dorsal foot ulcerations may develop 
+2° to poor perfusion. A painful, cold, numb foot is characteristic of critical 
+limb ischemia.
+ KEY FACT
+A ⊝ D-dimer test can be used to rule 
+out the possibility of PE in low-risk 
+patients.
+DVT
+Clinical suspicion for
+DVT or PE
+Low
+Assess clinical liklihood
+PE
+Not low
+High
+High
+High
+Not high
+D-dimer
+D-dimer
+Normal
+No DVT
+No PE
+Normal
+Imaging 
+test 
+needed
+Imaging 
+test 
+needed
+FIGURE 2.1-19.  Algorithm for diagnostic imaging of deep vein thrombosis and pulmo-
+nary embolism. (Reproduced with permission from USMLE-Rx.com)
+51HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   51 8/28/18   12:28 PM
+--- PAGE 69 ---
+■ For more proximal lesions, there will be claudication and weak pulses 
+below the area of occlusion (ie, aortoiliac disease; [Leriche syndrome] is 
+characterized by the triad of hip, thigh, and buttock claudication, impo
+-
+tence, and symmetric atrophy of bilateral lower extremities).
+■ A Buerger angle of < 20 degrees and capillary filling of > 15 seconds are 
+seen in severe ischemia.
+■ Acute  ischemia:
+■ May be due to thrombosis in situ ( ∼40), emboli usually of cardiac ori-
+gin (∼38%), graft/angioplasty occlusion (∼15%), or trauma. Acute 
+occlusions commonly occur at bifurcations distal to the last palpable 
+pulse (see mnemonic for signs and symptoms).
+■ May also be 2° to cholesterol atheroembolism (“blue toe syndrome”), 
+which is characterized by blue toes, livedo reticularis, renal failure 
+(often 2° to catheterization).
+■ Chronic ischemia:  Lack of blood perfusion leads to muscle atrophy, pal-
+lor, loss of sweat and sebaceous glands, cyanosis, hair loss, and gangrene/
+necrosis.
+Diagnosis
+■ Identify cardiovascular risk factors, especially smoking, diabetes, hyperten -
+sion, and hyperlipidemia.
+■ Best initial test:  Ankle-brachial index test; can provide objective evidence 
+of atherosclerosis (rest pain usually occurs with an ABI < 0.4). A very high 
+ABI can indicate calcification of the arteries.
+■ Doppler ultrasound: Identifies stenosis and occlusion. Normal ankle 
+Doppler readings are > 90% of brachial readings.
+■ Most accurate test:  Angiography; often not necessary unless revasculariza-
+tion is indicated.
+trEatmEnt
+■ Treat acute symptomatic ischemia with heparin and prompt revascu -
+larization.
+■ Address modifiable risk factors:  Smoking (vital), hypertension, hyperlip-
+idemia, and diabetes.
+■ Educate regarding careful hygiene and foot care. Exercise helps develop 
+collateral circulation.
+■ Antiplatelet agents (ASA or vorapaxar) do not consistently reduce symp -
+toms, but ↓ the risk for associated cardiovascular mortality.
+■ Cilostazol is effective medication in intermittent claudication.
+■ Surgery (arterial bypass), percutaneous transluminal angioplasty, and 
+stenting, or amputation can be employed when conservative treatment 
+fails or in acute limb ischemia
+.
+LYMPHEDEMA
+A disruption of the lymphatic circulation that results in peripheral edema and 
+chronic infection of the extremities. Primary (or congenital) lymphedema is 
+rare. Most often caused secondarily by surgeries involving lymph node dissec-
+tion or, in developing countries, parasitic infections.
+History/PE
+History will differ by cause. Examples include the following:
+■ Postmastectomy patients present with unexplained swelling of the upper 
+extremity (secondary to surgery).
+ MNEMONIC
+The 6 P’s of acute ischemia—
+Pain
+Pallor
+Paralysis
+Pulse deficit
+Paresthesias
+Poikilothermia
+ KEY FACT
+ABI = Pleg/Parm
+Rest pain seen with an ABI < 0.4. 
+(normal ABI: 1.0–1.2)
+ KEY FACT
+Calf claudication = femoral disease
+Buttock claudication = iliac disease
+Buttock claudication + impotence =  
+Leriche syndrome (aortoiliac occlusive 
+disease)
+ KEY FACT
+The major cause of mortality in patients 
+with PAD is cardiovascular disease (MI, 
+stroke); there is a 20–30% risk for these 
+complications. There is only a 1–2% risk 
+for developing limb ischemia.
+52 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   52 8/28/18   12:28 PM
+--- PAGE 70 ---
+■ Patients originating from developing countries present with progressive 
+swelling of the lower extremities bilaterally with no cardiac abnormali
+-
+ties (ie, filariasis infection).
+■ Children present with progressive, bilateral swelling of the extremities (1°).
+■ Patients with Turner syndrome will have lymphatic edema.
+Diagnosis
+Diagnosis is clinical. Rule out other causes of edema, such as cardiac and 
+metabolic disorders.
+trEatmEnt
+■ Directed at symptom management, including exercise, massage ther -
+apy, and pressure garments to mobilize and limit fluid accumulation.
+■ Diuretics are ineffective and relatively contraindicated.
+■ Maintain vigilance for cellulitis with prompt gram- ⊕ antibiotic cover -
+age for infection.
+Syncope
+A sudden, temporary loss of consciousness and postural tone 2° to cerebral 
+hypoperfusion. Etiologies can be cardiac, neurologic, or other.
+■ Cardiac:  Valvular lesions (aortic stenosis), arrhythmias, PE, cardiac 
+tamponade, aortic dissection.
+■ Neurologic:  Subarachnoid hemorrhage.
+■ Other:  Orthostatic/hypovolemic hypotension, metabolic abnormalities, 
+neurocardiogenic syndromes (eg, vasovagal/micturition syncope), psy-
+chiatric, medications.
+History/PE
+■ Age, triggers, prodromal symptoms, and associated symptoms should be 
+investigated.
+■ Syncope can be confused with seizures. Unlike syncope, seizures may 
+be characterized by a preceding aura, tonic-clonic activity, tongue-
+biting, bladder and bowel incontinence, and a postictal phase.
+■ Cardiac causes of syncope are typically associated with very brief or 
+absent prodromal symptoms, a history of exertion, lack of association 
+with changes in position, and/or a history of cardiac disease.
+■ Neurocardiogenic syndrome is common in younger patients and older 
+patients with difficulty voiding.
+Diagnosis
+Depending on the suspected etiology:
+■ Cardiac:  ECG, Holter monitors or 2-week event recorders (arrhyth-
+mias), echocardiograms (structural abnormalities), stress tests (ischemia).
+■ Neurologic:  CT of head (ischemia or hemorrhage) and EEG (seizure).
+■ Other:  Orthostatic BP readings (hypovolemia, autonomic dysfunction), 
+glucose (hypoglycemia), and tilt-table testing (neurally mediated syncope).
+trEatmEnt
+Tailored to the etiology.
+ KEY FACT
+Cardiac syncope is associated with 
+1-year sudden cardiac death rates of up 
+to 40%.
+53HIGH-YIELD FACTS INCARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   53 8/28/18   12:28 PM
+--- PAGE 71 ---
+NOTES
+54 HIGH-YIELD FACTS IN CARDIOVASCULAR
+2019_02.01_Step2CK_Cardio_10e_015-054.indd   54 8/28/18   12:28 PM
+--- PAGE 72 ---
+Layers of the Skin 56
+Allergic and Immune-Mediated Skin Disorders
+ 57
+Hypersensitivity reactions 57
+atopic Dermatitis (eczema) 59
+contact Dermatitis 60
+seborrHeic Dermatitis 60
+stasis Dermatitis 61
+psoriasis 61
+Urticaria (Hives) 62
+DrUg erUption 63
+erytHema mUltiforme 64
+stevens-JoHnson synDrome/toxic epiDermal necrolysis 65
+erytHema noDosUm 66
+bUlloUs pempHigoiD/pempHigUs vUlgaris 66
+Infectious Disease Manifestations of the Skin 67
+viral Diseases 67
+bacterial infections 71
+fUngal infections 75
+parasitic infections 77
+Ischemic Skin Disorders 79
+DecUbitUs Ulcers 79
+gangrene 79
+Miscellaneous Skin Disorders 80
+acantHosis nigricans 80
+licHen planUs 80
+rosacea 81
+pityriasis rosea 81
+vitiligo 82
+eyeliD lesions 83
+epiDermal inclUsion cysts 83
+Dermatofibroma 83
+HiDraDenitis sUppUrativa 83
+icHtHyosis vUlgaris 83
+age-relateD skin cHanges 83
+sUn protection 84
+sUnbUrn 84
+Neoplasms of the Skin 84
+seborrHeic keratosis 84
+actinic keratosis 84
+cUtaneoUs sqUamoUs cell carcinoma 85
+basal cell carcinoma 85
+melanoma 86
+kaposi sarcoma 86
+mycosis fUngoiDes (cUtaneoUs t-cell lympHoma) 88
+cHerry angiomas (Hemangiomas) 88
+55
+HIGH-YIELD FACTS IN
+DERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   55 8/28/18   12:32 PM
+--- PAGE 73 ---
+Layers of the Skin
+The skin is the largest organ in the human body. It provides a barrier and 
+immunologic protection against the environment, regulates body tempera-
+ture, fluids, and electrolytes, and allows for touch and sensation. Figures 2.2-1 
+and 2.2-2 and Table 2.2-1 outline the skin layers, cell junctions, and common 
+terminology related to the skin.
+Lesion CharaCteristiCs exampLes
+Macule Flat lesion < 1 cm Freckle, labial macule (see Image A)
+Patch Flat lesion > 1 cm Birthmark (congenital nevus) (see Image B)
+Papule Elevated solid lesion < 1 cm Mole (nevus) (see Image C), acne
+Plaque Elevated lesion > 1 cm Psoriasis (see Image D)
+Vesicle Small fluid-containing blister < 1 cm Chickenpox (varicella), shingles (zoster) (see Image E)
+Bulla Large fluid-containing blister > 1 cm Bullous pemphigoid (see Image F)
+Cyst Epithelium-lined sac containing material or fluid Pilar cyst (follicular cyst on scalp)
+Pustule Vesicle containing pus Pustular psoriasis (see Image G)
+Wheal Transient edematous papule or plaque Hives (urticarial) (see Image H)
+Scale Flaking off of stratum corneum Eczema, psoriasis, SCC (see Image I)
+Crust Exudate of dried serum, blood, and/or pus Impetigo (see Image J)
+Ulcer Defect extending through the epidermis and upper dermis Diabetic foot ulcer
+Lichenification Hypertrophy and thickening of the epidermis with accentuation of 
+normal skin markings
+Chronic scratching (pruritic scabies, eczema)
+A
+ B
+ C
+ D
+ E
+F
+ G
+ H
+ I
+ J
+Images reproduced with permission from Dr. Richard Usatine.
+TABLE 2.2-1.  Derma tologic Macroscopic Terms
+56 HIGH-YIELD FACTS IN DERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   56 8/28/18   12:32 PM
+--- PAGE 74 ---
+Allergic and Immune-Mediated Skin Disorders
+HYPERSENSITIVITY REACTIONS
+Table 2.2-2 outlines the types and mechanisms of hypersensitivity reactions.
+FIGURE 2.2-1.  Layers of the skin. (Reproduced with permission from USMLE-Rx-com.)
+Epidermal ridge
+Free nerve ending
+Dermal papilla
+Corpuscle of touch
+(Meissner corpuscle)
+Arrector pili muscle
+Hair follicle
+Apocrine sweat gland
+Sensory nerve
+Lamellated (pacinian)
+corpuscle
+Eccrine sweat gland
+Vein
+Artery
+Adipose tissue
+Sweat pore
+EPIDERMIS
+Hair shaft
+Capillary
+loop
+Sebaceous
+(oil) gland DERMIS
+SUBCUTANEOUS
+LAYER
+Hair root
+FIGURE 2.2-2.  Epithelial cell junctions. (Reproduced with permission from USMLE-Rx.com.)
+Tight junction (zonula occludens)—prevents paracellular 
+movement of solutes; composed of claudins and occludins.
+Adherens junction (zonula adherens)—below tight junction, 
+forms “belt” connecting actin cytoskeletons of adjacent cells 
+with CADherins (Ca
+2+ -dependent adhesion proteins). Loss of 
+E-cadherin promotes metastasis.
+Desmosome (macula adherens)—structural support via keratin 
+interactions. Autoantibodies /uni2192 pemphigus vulgaris.
+Gap junction—channel proteins called connexons permit 
+electrical and chemical communication between cells.
+Hemidesmosome—connects keratin in basal cells to 
+underlying basement membrane. Autoantibodies /uni2192bullous
+pemphigoid. (Hemidesmosomes are down “
+bullow”).
+Integrins—membrane proteins that maintain 
+integrity of basolateral membrane by binding 
+to collagen and laminin in basement membrane.
+Cell membrane
+Basement membraneBasolateral
+Apical
+E-cadherin
+Desmoplakin
+Keratin
+Connexon
+with central
+channel
+Actin
+/f_ilaments
+57HIGH-YIELD FACTS INDERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   57 8/28/18   12:32 PM
+--- PAGE 75 ---
+DesCription meChanism Comments exampLes
+type i
+Anaphylactic and atopic
+Ag
+Fc receptorMast cell or
+basophil
+IgE
+Antigen cross-links preformed 
+surface-bound IgE on mast 
+cells and basophils, triggering 
+the release of vasoactive 
+amines like histamine
+Reaction develops rapidly as a 
+result of preformed antibody
+First and Fast (like 
+anaphylaxis)
+Types I, II, and III are all anti-
+body mediated
+Anaphylaxis (bee sting, food 
+allergy), asthma, urticaria, 
+urticarial drug reactions, 
+local wheal and flare
+type ii
+Cytotoxic
+C
+C
+IgG
+IgG
+Cell
+= complement
+IgM and IgG bind to antigen 
+on an “enemy” cell, leading 
+to lysis by complement or 
+phagocytosis
+Cy-2-toxic
+Antibody and comple-
+ment lead to formation 
+of the membrane attack 
+complex (MAC)
+Autoimmune hemolytic 
+anemia, erythroblastosis 
+fetalis, Goodpasture syn-
+drome, rheumatic fever
+type iii
+Immune complex
+ 
+Ag
+Ag
+C
+Antigen-antibody complexes fix 
+complement, which attracts 
+PMNs; PMNs release lyso-
+somal enzymes
+Imagine an immune 
+complex as three things 
+stuck together: antigen-
+antibody-complement
+Includes many glomerulone-
+phritides and vasculitides
+Polyarteritis nodosa, immune 
+complex glomerulonephritis, 
+SLE, rheumatoid arthritis
+type iV
+Delayed (cell-mediated) type
+APC
+Th cells
+Sensitized T lymphocytes 
+encounter antigen and then 
+release lymphokines (leading 
+to macrophage activation)
+Fourth and final 
+(last)—delayed
+Cell mediated, not antibody 
+mediated; therefore, it is 
+not transferable by serum
+TB skin tests, transplant rejec-
+tion, contact dermatitis
+Modified with permission from Le T et al. First Aid for the USMLE Step 1 2016. New York, NY: McGraw-Hill Education; 2016.
+TABLE 2.2-2.  T ypes and Mechanisms of Hypersensitivity Reactions
+58 HIGH-YIELD FACTS IN DERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   58 8/28/18   12:32 PM
+--- PAGE 76 ---
+ATOPIC DERMATITIS (ECZEMA)
+A chronic inflammatory dermatitis that classically manifests in infancy and 
+persists into adulthood. It is characterized by a defective epidermal barrier, 
+causing sensitization, inflammation, pruritus, and ultimately lichenification 
+(see Figure 2.2-3).
+History/PE
+■ Look for a strong family history of asthma, eczema, and allergic rhinitis 
+(“atopic triad”) as well as food allergies
+.
+■ Patients are at ↑ risk for 2° bacterial (Staphylococcus aureus or Streptococ-
+cus pyogenes) and viral (HSV or molluscum) infection due to constant 
+waxing and waning cycles of pruritus and excoriation.
+■ Triggers include climate, food, skin irritants, allergens, and emotional 
+factors.
+■ Manifestations by age group:
+■ Infants:  Erythematous, edematous, weeping, pruritic vesicles, papules, 
+and plaques on the face, scalp, and extensor surfaces of the extremities. 
+The diaper area is often spared.
+■ Children:  Dry, scaly, pruritic, excoriated vesicles, papules, and plaques 
+in the flexural areas and neck.
+■ Adults:  Lichenification and dry, fissured skin in a flexural distribution. 
+Often, there is hand or eyelid involvement.
+Diagnosis
+Characteristic exam findings and history are sufficient. Excluding contact der-
+matitis by history and anatomic distribution is important. KOH prep can help 
+distinguish chronic eczema from tinea. Mild peripheral eosinophilia and 
+↑ IgE may be seen but have no diagnostic value.
+ KEY FACT
+Long-term use of immunomodulating 
+medications may ↑ the risk for 
+developing lymphoma. 
+ KEY FACT
+Erythema toxicum neonatorum 
+typically begins 1–3 days after delivery 
+and presents with red papules, pustules, 
+and/or vesicles with surrounding 
+erythematous halos. ↑ Eosinophils are 
+present in the pustules or vesicles. This 
+benign eruption usually resolves in 
+1–2 weeks with no treatment.
+FIGURE 2.2-3.  Atopic dermatitis. Lichenification, excoriations, and ill-defined, scaly ery-
+thematous plaques are characteristic. (Reproduced with permission from Tintinalli JE et al. Tintinalli’s Emergency 
+Medicine: A Comprehensive Study Guide, 7th ed. New York, NY: McGraw-Hill; 2011.)
+An infant with a history of eczema 
+treated with corticosteroids is 
+brought in with a new-onset rash and 
+fever. Physical exam reveals grouped 
+monomorphic vesicles involving 
+eczematous areas of the infant’s 
+extremities and face (see Figure 2.2-4). 
+What is the appropriate therapy?
+FIGURE 2.2-4.  (Reproduced with permis -
+sion from Dr. Richard Usatine).
+59HIGH-YIELD FACTS INDERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   59 8/28/18   12:32 PM
+--- PAGE 77 ---
+trEatmEnt
+■ The primary goal of therapy is to break the itch-scratch cycle with agents 
+targeted at inflammation, pruritus, and xerosis (dry skin).
+■ Topical corticosteroids are first-line therapy for flares, but watch out for 
+atrophy, telangiectasias, and rebound flares with prolonged use. Topical 
+calcineurin inhibitors (eg, tacrolimus) are useful as steroid-sparing agents 
+for moderate to severe eczema for patients 
+> 2 years of age.
+■ H1-blockers may be used for relief of pruritus. Choose a first-generation 
+H1-blocker (eg, hydroxyzine) for nighttime use.
+■ Aggressive use of emollients, avoidance of harsh soaps, and limiting hot 
+showers after resolution of acute flares will prevent future episodes.
+CONTACT DERMATITIS
+A type IV hypersensitivity reaction that results from contact with an allergen 
+to which the patient has previously been exposed and sensitized such as 
+nickel, poison ivy, perfumes/deodorants, and neomycin. More common in 
+adults.
+History/PE
+■ Presents with pruritus and an eczematous rash, with the distribution of the 
+rash often mimicking the contact event (see 
+Figure 2.2-5). Characteristic 
+distributions are seen where makeup, clothing, perfume, nickel jewelry, 
+and plants come into contact with the skin.
+■ Often described as a “linear” or “angular” rash. It can spread over the body 
+via transfer of allergen by the hands or via circulating T-lymphocytes.
+■ Frequently implicated allergens:  Poison ivy, poison oak, nickel, topical 
+antibiotics, cosmetics, and latex. 
+Diagnosis
+Characteristic exam findings and history are sufficient. Excluding atopic der-
+matitis (eczema) is important. Patch testing can be used to establish the caus-
+ative allergen after the acute-phase eruption has been treated.
+trEatmEnt
+The best initial treatment is topical corticosteroids and allergen avoidance. In 
+severe cases, a systemic corticosteroid may be needed.
+SEBORRHEIC DERMATITIS
+A common chronic inflammatory skin disease that may be caused by a reac-
+tion to Malassezia furfur, a generally harmless yeast found in sebum and hair 
+follicles. It has a predilection for areas with sebaceous glands.
+History/PE
+■ Rash presentation varies with age:
+■ Infants:  Severe, red diaper rash with yellow scale, erosions, and blis-
+ters. Scaling and crusting (“cradle cap”) may be seen on the scalp (see 
+Figure 2.2-6A).
+■ Children/adults:  Ill-defined red, scaly thin plaques are seen around the 
+ears, eyebrows, nasolabial fold, midchest, and scalp (see Figure 2.2-6B).
+■ Patients with HIV/AIDS, psychotic disorders, and Parkinson disease can 
+develop severe, widespread seborrheic dermatitis.
+ KEY FACT
+Remember that patch testing results 
+are affected by topical steroids 
+and calcineurin inhibitors but 
+not antihistamines, since type IV 
+hypersensitivity reactions are not 
+histamine-mediated.
+FIGURE 2.2-5.  Contact dermatitis. 
+Shown are erythematous papules and 
+vesicles with serous weeping localized 
+to areas of contact with the offending 
+agent. 
+(Reproduced with permission from Hurwitz 
+RM. Pathology of the Skin: Atlas of Clinical-Pathological 
+Correlation, 2nd ed. Stamford, CT: Appleton & Lange; 
+1998.)
+This infant has eczema herpeticum, a 
+medical emergency that is due to the 
+propensity for HSV infection to spread 
+systemically, potentially affecting the 
+brain. IV acyclovir must be started 
+immediately!
+60 HIGH-YIELD FACTS IN DERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   60 8/28/18   12:32 PM
+--- PAGE 78 ---
+Diagnosis
+Characteristic exam findings and history are sufficient. Can be confused with 
+atopic dermatitis, contact dermatitis, tinea, or psoriasis.
+trEatmEnt
+Treat adults with ketoconazole, selenium sulfide or zinc pyrithione shampoos 
+for the scalp, and topical antifungals (ketoconazole cream) and/or topical cor-
+ticosteroids for other areas. Cradle cap often resolves with routine bathing and 
+application of emollients in infants.
+STASIS DERMATITIS
+Lower extremity dermatitis due to venous hypertension forcing blood from 
+the deep to the superficial venous system. Venous hypertension is often a 
+result of venous valve incompetence or flow obstruction. It commonly 
+involves the medial ankle in patients with deep vein thrombosis (DVT) his-
+tory, chronic edema, and long periods of standing. If untreated, the area can 
+become inflamed, exudative, and hyperpigmented from hemosiderin deposi-
+tion (see Figure 2.2-7). Stasis ulcers may develop. Treat early with leg eleva-
+tion, compression stockings, emollients, and topical steroids.
+PSORIASIS
+A T-cell–mediated inflammatory dermatosis characterized by well-demar-
+cated, erythematous plaques with silvery scales (see Figure 2.2-8A) due to der-
+mal inflammation and epidermal hyperplasia. Psoriasis can begin at any age.
+History/PE
+■ Lesions are classically found on the extensor surfaces, including the 
+elbows and knees. Scalp and lumbosacral regions are often involved. Nails 
+are frequently affected with pitting, “oil spots,” and onycholysis (lifting of 
+the nail plate, see 
+Figure 2.2-8B).
+B
+A
+FIGURE 2.2-6.  Seborrheic dermatitis. (A) Seborrheic dermatitis (cradle cap) in an infant. 
+Note the yellow, scaly crust present on the infant’s scalp with an area of erosion. (B) Photo-exac-
+erbated seborrheic dermatitis, affecting the face only at sites of predilection for the seborrheic 
+eruption. 
+(Image A reproduced with permission from Tintinalli JE et al. Tintinalli’s Emergency Medicine: A Comprehensive Study 
+Guide, 7th ed. New York, NY: McGraw-Hill; 2011. Image B reproduced with permission from Goldsmith LA et al. Fitzpatrick’s 
+Dermatology in General Medicine, 8th ed. New York, NY: McGraw-Hill; 2012.)
+FIGURE 2.2-7.  Stasis dermatitis. 
+Venous ulceration with stasis dermatitis, 
+edema, and varicosities. (Reproduced with 
+permission from Goldsmith LA et al. Fitzpatrick’s Der-
+matology in General Medicine, 8th ed. New York, NY: 
+McGraw-Hill; 2012.)
+61HIGH-YIELD FACTS INDERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   61 8/28/18   12:32 PM
+--- PAGE 79 ---
+■ Lesions initially appear small but may become confluent and can be pro -
+voked by local irritation or trauma (Koebner phenomenon). Some medi-
+cations such as β-blockers, lithium, and ACE inhibitors (ACEIs), can 
+worsen psoriatic lesions.
+■ Up to 30% develop psoriatic arthritis (affecting small joints of the hands 
+and feet).
+Diagnosis
+■ Characteristic exam findings and history are sufficient. Classical presenta -
+tion: Auspitz sign (pinpoint bleeding when scale is scraped) overlying 
+well-demarcated, erythematous plaques with silvery “micaceous” scale.
+■ Perform a biopsy if diagnosis is uncertain. Histology shows a thickened 
+epidermis, elongated rete ridges, an absent granular cell layer, preservation 
+of nuclei in the stratum corneum (parakeratosis), and a sterile neutro-
+philic infiltrate in the stratum corneum (Munro microabscesses).
+trEatmEnt
+■ Local disease:  Manage with topical steroids, calcipotriene (vitamin D 
+derivative), and retinoids such as tazarotene or acitretin (vitamin A 
+derivative).
+■ Severe disease or presence of psoriatic arthritis: Methotrexate or anti–
+tumour necrosis factor (TNF) biologics (etanercept, infliximab, adalim-
+umab). Newer agents such as ustekinumab (anti-interleukin [IL]-12/23), 
+secukinumab (anti-IL17), and UV light therapy can be used for extensive 
+skin involvement (except in immunosuppressed patients who can develop 
+skin cancer from UV light).
+■ Before starting methotrexate or anti-TNF biologics, patients should at a 
+minimum get a complete blood count (CBC), comprehensive metabolic 
+panel (CMP), hepatitis panel, and a purified protein derivative (PPD)
+.
+URTICARIA (HIVES)
+Results from the release of histamine and prostaglandins from mast cells in a 
+type I hypersensitivity response. Sharply demarcated edematous plaques with 
+ KEY FACT
+If a rash involves the extensor surfaces, 
+think psoriasis. If a rash involves the 
+flexor surfaces, think atopic dermatitis.
+ KEY FACT
+“Sausage digits” and pencil-in-cup x-ray 
+findings are suggestive of psoriatic 
+arthritis.
+FIGURE 2.2-8.  Psoriasis. (A) Skin changes. The classic sharply demarcated plaques with 
+silvery scales are commonly located on the extensor surfaces (eg, elbows, knees). (B) Nail 
+changes. Note the pitting, onycholysis, and “oil spots.” (Image A reproduced with permission from Wolff 
+K et al. Fitzpatrick’s Color Atlas and Synopsis of Clinical Dermatology, 7th ed. New York, NY: McGraw-Hill; 2013. Image B repro-
+duced with permission from Hurwitz RM. Pathology of the Skin: Atlas of Clinical-Pathological Correlation, 2nd ed. Stamford, CT: 
+Appleton & Lange; 1998.)
+B
+A
+62 HIGH-YIELD FACTS IN DERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   62 8/28/18   12:32 PM
+--- PAGE 80 ---
+surrounding erythema (“wheal and flare”) are seen, with each lesion lasting 
+< 24 hours. Can be acute or chronic (lasting > 6 weeks).
+History/PE
+■ Urticaria lesions (wheals) are reddish or white transient papules or plaques 
+representing dermal edema. Lesions may be widespread and last a few 
+hours.
+■ In severe allergic reactions, extracutaneous manifestations can include 
+tongue swelling, angioedema (deep, diffuse swelling often around the eyes 
+and mouth; see 
+Figure 2.2-9), asthma, GI symptoms, joint swelling, and 
+fever.
+■ Acute urticaria is a response to some often-unidentified trigger: food, drug, 
+virus, insect bite, or physical stimulus (cold, heat, sun). Chronic urticaria 
+is usually idiopathic.
+Diagnosis
+Characteristic exam findings and history are sufficient. Positive dermatogra-
+phism (formation of wheals where the skin is stroked) may help. If in doubt, 
+drawing a serum tryptase (coreleased with histamine from mast cells) can 
+help clinch the diagnosis. It can often be difficult to determine the cause of 
+urticaria.
+trEatmEnt
+Treat urticaria with systemic antihistamines. Anaphylaxis (rare) requires intra-
+muscular epinephrine, antihistamines, IV fluids, and airway support.
+DRUG ERUPTION
+Drug eruptions can range from a mild morbilliform rash (most common, see 
+Figure 2.2-10) to the rare but life-threatening toxic epidermal necrolysis 
+(TEN). Maintain a high suspicion for a cutaneous drug reaction in patients 
+who are hospitalized and develop rashes. Drugs can cause all four types of 
+hypersensitivity reactions, and the same drug may cause different types of 
+reactions in different persons.
+A 23-year-old woman is seen for an 
+itchy, linear rash on her right leg. 
+She returned from a camping trip 4 
+days ago and denies using any new 
+makeup, clothing, or jewelry. What 
+features of this presentation favor a 
+contact dermatitis?
+FIGURE 2.2-9.  Urticaria (hives) and angioedema. This patient has urticaria occurring on 
+the face, neck, and shoulders with orbital angioedema. (Reproduced with permission from Goldsmith LA et 
+al. Fitzpatrick’s Dermatology in General Medicine, 8th ed. New York, NY: McGraw-Hill; 2012.)
+63HIGH-YIELD FACTS INDERMATOLOGY
+2019_02.02_Step2CK_Derm_10e_055-088.indd   63 8/28/18   12:32 PM

@@ -1,0 +1,68 @@
+[
+  {
+    "database_file": "USMLE_Step_1_QBank.db",
+    "title": "USMLE Step 1 QBank",
+    "description": "High-Yield Basic Medical Sciences for USMLE Step 1",
+    "mcq_count": 12000,
+    "json_file": "qbank/USMLE_Step_1_QBank.json",
+    "books_included": [
+      "First Aid Step 1 2023",
+      "First Aid Q&A Step 1",
+      "Pathoma Fundamentals of Pathology"
+    ]
+  },
+  {
+    "database_file": "USMLE_Step_2_CK_QBank.db",
+    "title": "USMLE Step 2 CK QBank",
+    "description": "Clinical Knowledge Board Exam QBank for USMLE Step 2 CK",
+    "mcq_count": 4000,
+    "json_file": "qbank/USMLE_Step_2_CK_QBank.json",
+    "books_included": [
+      "First Aid Step 2 CK 10th Ed"
+    ]
+  },
+  {
+    "database_file": "FCPS_Part_1_and_NLE_QBank.db",
+    "title": "FCPS Part 1 & NLE Medical QBank",
+    "description": "High-Yield Review for FCPS Part 1, NLE, NEB, and Residency",
+    "mcq_count": 8000,
+    "json_file": "qbank/FCPS_Part_1_and_NLE_QBank.json",
+    "books_included": [
+      "ROAMS Medical Review",
+      "Pathoma 2021 Edition"
+    ]
+  },
+  {
+    "database_file": "PLAB_1_and_UKMLA_QBank.db",
+    "title": "PLAB 1 / UKMLA QBank",
+    "description": "UK General Medical Council Licensing Exam QBank",
+    "mcq_count": 8000,
+    "json_file": "qbank/PLAB_1_and_UKMLA_QBank.json",
+    "books_included": [
+      "First Aid Step 2 CK 10th Ed",
+      "ROAMS Medical Review"
+    ]
+  },
+  {
+    "database_file": "NEET_PG_and_FMGE_QBank.db",
+    "title": "NEET PG / INI-CET & FMGE QBank",
+    "description": "Indian PG Medical Entrance QBank for NEET PG & FMGE",
+    "mcq_count": 12000,
+    "json_file": "qbank/NEET_PG_and_FMGE_QBank.json",
+    "books_included": [
+      "Review of Pharmacology 9th Ed (Garg & Gupta)",
+      "Self-Assessment Pharmacology 4th Ed",
+      "ROAMS Medical Review"
+    ]
+  },
+  {
+    "database_file": "MRCS_Surgery_QBank.db",
+    "title": "Surgery & MRCS QBank",
+    "description": "Royal College of Surgeons MRCS Part A & MS Surgery QBank",
+    "mcq_count": 4000,
+    "json_file": "qbank/MRCS_Surgery_QBank.json",
+    "books_included": [
+      "Bailey & Love Surgery 26th Ed"
+    ]
+  }
+]

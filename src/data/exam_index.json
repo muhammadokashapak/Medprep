@@ -1,0 +1,68 @@
+[
+  {
+    "category_id": "usmle_step1",
+    "title": "USMLE Step 1 QBank",
+    "db_file": "usmle_step1.db",
+    "json_file": "usmle_step1.json",
+    "count": 4500,
+    "books": [
+      "First Aid Step 1 2023",
+      "First Aid Q&A Step 1",
+      "Pathoma Fundamentals of Pathology"
+    ]
+  },
+  {
+    "category_id": "usmle_step2_ck",
+    "title": "USMLE Step 2 CK QBank",
+    "db_file": "usmle_step2_ck.db",
+    "json_file": "usmle_step2_ck.json",
+    "count": 1500,
+    "books": [
+      "First Aid Step 2 CK 10th Ed"
+    ]
+  },
+  {
+    "category_id": "fcps_nle_medical",
+    "title": "FCPS Part 1 & NLE Medical QBank",
+    "db_file": "fcps_nle_medical.db",
+    "json_file": "fcps_nle_medical.json",
+    "count": 3000,
+    "books": [
+      "ROAMS Medical Review",
+      "Pathoma 2021 Edition"
+    ]
+  },
+  {
+    "category_id": "surgery_mrcs",
+    "title": "Surgery & MRCS QBank",
+    "db_file": "surgery_mrcs.db",
+    "json_file": "surgery_mrcs.json",
+    "count": 1500,
+    "books": [
+      "Bailey & Love Surgery 26th Ed"
+    ]
+  },
+  {
+    "category_id": "pharmacology_pg",
+    "title": "Pharmacology & Therapeutics QBank",
+    "db_file": "pharmacology_pg.db",
+    "json_file": "pharmacology_pg.json",
+    "count": 4500,
+    "books": [
+      "Self-Assessment Pharmacology 4th Ed",
+      "Pharmacology An Illustrated Review",
+      "Review of Pharmacology 9th Ed (Garg & Gupta)"
+    ]
+  },
+  {
+    "category_id": "basic_sciences_anatomy_physio",
+    "title": "Anatomy & Physiology QBank",
+    "db_file": "basic_sciences_anatomy_physio.db",
+    "json_file": "basic_sciences_anatomy_physio.json",
+    "count": 3000,
+    "books": [
+      "Guyton and Hall Physiology 14th Ed",
+      "Snell's Clinical Anatomy 8th Ed"
+    ]
+  }
+]

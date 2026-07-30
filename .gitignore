@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Production Build
+dist/
+build/
+
+# Local Environment & Logs
+.env
+.env.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.gemini/
+
+# Large PDF Books, Heavy Databases & APK Binaries (Excluded from GitHub)
+books/
+database/
+*.db
+*.apk
