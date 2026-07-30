@@ -33,6 +33,9 @@ export default defineConfig({
             purpose: 'any maskable'
           }
         ]
+      },
+      workbox: {
+        maximumFileSizeToCacheInBytes: 60000000 // 60 MB to accommodate qbank-data
       }
     })
   ],
