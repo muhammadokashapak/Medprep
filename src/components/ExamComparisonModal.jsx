@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { getQuestionsForTrack } from '../utils/security';
-import questionsData from '../data/questions.json';
 
 const ALL_EXAM_TRACKS = [
   { id: 'FCPS Part 1', title: 'FCPS Part 1 (Pakistan)', icon: 'fa-user-doctor', targetQs: 1500, passRate: 70 },
@@ -11,20 +10,20 @@ const ALL_EXAM_TRACKS = [
   { id: 'MRCS Surgery', title: 'MRCS Part A (UK/Intl)', icon: 'fa-scalpel', targetQs: 1000, passRate: 70 }
 ];
 
-export default function ExamComparisonModal({ isOpen, onClose, history = [], currentUser, addToast }) {
+export default function ExamComparisonModal({ isOpen, onClose, history = [], currentUser, questions = [] }) {
   const [selectedTrackFilter, setSelectedTrackFilter] = useState('all');
 
   if (!isOpen) return null;
 
   // Calculate statistics for each exam track based on candidate exam history
   const trackAnalytics = ALL_EXAM_TRACKS.map(track => {
-    const questionsForTrack = getQuestionsForTrack(questionsData, track.id);
+    const questionsForTrack = getQuestionsForTrack(questions, track.id);
     const totalAvailable = questionsForTrack.length;
 
     // Filter history entries matching this track
     const trackHistory = history.filter(h => 
-      (h.title && h.title.toLowerCase().includes(track.id.toLowerCase())) ||
-      (currentUser?.examPreference === track.id)
+      h.examTrack === track.id ||
+      (h.title && h.title.toLowerCase().includes(track.id.toLowerCase()))
     );
 
     let totalAttempted = 0;
@@ -39,7 +38,7 @@ export default function ExamComparisonModal({ isOpen, onClose, history = [], cur
     const completionRate = totalAvailable > 0 ? Math.min(100, Math.round((totalAttempted / totalAvailable) * 100)) : 0;
     
     // Readiness Score algorithm: Weighted combination of Accuracy (70%) and Completion Rate (30%)
-    const readinessScore = totalAttempted > 0 
+    const readinessScore = totalAttempted >= 20 
       ? Math.min(100, Math.round((accuracy * 0.7) + (completionRate * 0.3)))
       : 0;
 
@@ -260,7 +259,7 @@ export default function ExamComparisonModal({ isOpen, onClose, history = [], cur
               </tr>
             </thead>
             <tbody>
-              {trackAnalytics.map(t => (
+              {filteredTracks.map(t => (
                 <tr key={t.id} style={{ borderBottom: '1px solid rgba(255,255,255,0.04)' }}>
                   <td style={{ padding: '0.75rem', fontWeight: 600 }}>
                     <i className={`fa-solid ${t.icon}`} style={{ marginRight: '0.4rem', color: 'var(--accent-cyan)' }}></i>

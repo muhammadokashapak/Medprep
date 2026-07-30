@@ -8,10 +8,12 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   userAnswersRef.current = userAnswers;
 
   const [markedForReview, setMarkedForReview] = useState({});
+  const examStartRef = useRef(Date.now());
+  const endTimeRef = useRef(null);
   const [timerSeconds, setTimerSeconds] = useState(() => {
-    if (config?.isMock || config?.limit) {
-      const minutes = config?.limit || 120;
-      return minutes * 60;
+    const limit = config?.timeLimitMinutes ?? config?.limit ?? null;
+    if (limit !== null) {
+      return limit * 60;
     }
     return null;
   });
@@ -23,41 +25,59 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   const [startTime] = useState(Date.now());
   const [showOnlyIncorrect, setShowOnlyIncorrect] = useState(false);
 
-  const currentQ = quizList[currentIndex];
+  const safeList = Array.isArray(quizList) ? quizList : [];
+
+  if (safeList.length === 0 && !isCompleted) {
+    return (
+      <div className="animate-fade-in" style={{ padding: '2rem', textAlign: 'center' }}>
+        <div className="glass-panel" style={{ padding: '2.5rem' }}>
+          <i className="fa-solid fa-circle-xmark" style={{ fontSize: '3rem', color: 'var(--accent-rose)', marginBottom: '1rem', display: 'block' }}></i>
+          <h3>No Questions Found</h3>
+          <p style={{ color: 'var(--text-muted)', margin: '0.5rem 0 1.5rem' }}>No questions available for this exam track.</p>
+          <button className="btn-primary" onClick={onFinish}>Return to Dashboard</button>
+        </div>
+      </div>
+    );
+  }
+
+  const currentQ = safeList[currentIndex];
+  const qKey = currentQ ? (currentQ.id ?? `q_${currentIndex}`) : null;
 
   const handleFinalSubmit = useCallback((auto = false) => {
     setShowSubmitModal(false);
     setIsCompleted(true);
 
-    const totalQ = quizList.length;
+    const totalQ = safeList.length;
     let correctCount = 0;
     let attemptedCount = 0;
-    const details = [];
     const currentAnswersMap = userAnswersRef.current;
 
-    quizList.forEach((q, idx) => {
-      const ans = currentAnswersMap[q.id];
-      const selected = ans ? ans.selected : null;
-      const isCorrect = ans ? ans.isCorrect : false;
+    const details = safeList.map((q, idx) => {
+      const iterQKey = q.id ?? `q_${idx}`;
+      const ans = currentAnswersMap[iterQKey];
+      const selected = ans?.selected ?? null;
+      const isCorrect = selected && q.correct_answer 
+        ? selected.toUpperCase() === String(q.correct_answer).toUpperCase()
+        : false;
 
       if (selected !== null && selected !== undefined) {
         attemptedCount++;
         if (isCorrect) correctCount++;
-        
-        details.push({
-          q,
-          index: idx + 1,
-          selected,
-          isCorrect,
-          correctAnswer: q.correct_answer,
-          explanation: q.explanation
-        });
       }
+
+      return {
+        q,
+        index: idx + 1,
+        selected: selected ?? 'Unattempted',
+        isCorrect,
+        wasAttempted: !!selected,
+        correctAnswer: q.correct_answer,
+        explanation: q.explanation
+      };
     });
 
-    const scorePercentage = attemptedCount > 0 
-      ? Math.round((correctCount / attemptedCount) * 100) 
-      : 0;
+    const scorePercentage = totalQ > 0 ? Math.round((correctCount / totalQ) * 100) : 0;
+    const accuracyPercentage = attemptedCount > 0 ? Math.round((correctCount / attemptedCount) * 100) : 0;
 
     const elapsedMs = Date.now() - startTime;
     const elapsedMins = Math.floor(elapsedMs / 60000);
@@ -71,6 +91,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
       skippedCount: totalQ - attemptedCount,
       correctCount,
       scorePercentage,
+      accuracyPercentage,
       timeTaken: timeTakenStr,
       details,
       date: new Date().toLocaleDateString()
@@ -81,28 +102,38 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
       onRecordResult(resultObj);
     }
 
-    if (scorePercentage >= 70 && attemptedCount > 0) {
+    if (auto) {
+      addToast?.('Time expired! Exam auto-submitted.', 'warning');
+    } else if (scorePercentage >= 70 && attemptedCount > 0) {
       confetti({ particleCount: 120, spread: 80, origin: { y: 0.5 } });
-      addToast(`Passed! Accuracy: ${scorePercentage}% (${correctCount}/${attemptedCount} Solved)`, 'success');
+      addToast?.(`Passed! Score: ${scorePercentage}% (${correctCount}/${totalQ} Solved)`, 'success');
     } else {
-      addToast(`Exam Submitted. Accuracy: ${scorePercentage}% (${correctCount}/${attemptedCount} Solved)`, 'warning');
+      addToast?.(`Exam Submitted. Score: ${scorePercentage}% (${correctCount}/${totalQ} Solved)`, 'warning');
     }
-  }, [quizList, startTime, config, onRecordResult, addToast]);
+  }, [safeList, startTime, config, onRecordResult, addToast]);
 
   useEffect(() => {
-    if (timerSeconds === null || timerSeconds <= 0 || isCompleted) return;
+    if (timerSeconds === null || isCompleted) return;
+    endTimeRef.current = Date.now() + timerSeconds * 1000;
     const interval = setInterval(() => {
-      setTimerSeconds(prev => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          handleFinalSubmit(true);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+      const remaining = Math.max(0, Math.ceil((endTimeRef.current - Date.now()) / 1000));
+      setTimerSeconds(remaining);
+      if (remaining <= 0) {
+        clearInterval(interval);
+      }
+    }, 500);
     return () => clearInterval(interval);
+  }, []); // only run once on mount
+
+  useEffect(() => {
+    if (timerSeconds === 0 && !isCompleted) {
+      handleFinalSubmit(true);
+    }
   }, [timerSeconds, isCompleted, handleFinalSubmit]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentIndex]);
 
   if (!currentQ && !isCompleted) {
     return (
@@ -132,6 +163,12 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
     const filteredDetails = showOnlyIncorrect
       ? examResult.details.filter(d => !d.isCorrect)
       : examResult.details;
+
+    const getOptionText = (q, key) => {
+      if (!key || key === 'Unattempted') return 'Not Answered';
+      const optKey = `option_${key.toLowerCase()}`;
+      return q[optKey] ? `${key}: ${q[optKey]}` : key;
+    };
 
     return (
       <div className="animate-fade-in" style={{ padding: '1rem 0', maxWidth: '960px', margin: '0 auto' }}>
@@ -207,9 +244,16 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          {filteredDetails.length === 0 && showOnlyIncorrect && (
+            <div className="glass-panel text-center" style={{ padding: '2.5rem', marginTop: '1rem' }}>
+              <i className="fa-solid fa-face-grin-stars" style={{ fontSize: '3rem', color: 'var(--accent-emerald)', marginBottom: '1rem' }}></i>
+              <h3 style={{ color: 'var(--accent-emerald)' }}>Perfect Score!</h3>
+              <p style={{ color: 'var(--text-muted)' }}>You didn't get any questions wrong.</p>
+            </div>
+          )}
           {filteredDetails.map((det) => (
             <div
-              key={det.q.id}
+              key={det.q.id ?? `review_q_${det.index}`}
               className="glass-panel"
               style={{
                 padding: '1.25rem',
@@ -218,7 +262,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.65rem', flexWrap: 'wrap', gap: '0.4rem' }}>
                 <span style={{ fontWeight: 700, fontSize: '0.82rem', color: 'var(--accent-cyan)' }}>
-                  Q#{det.index} &bull; {det.q.category}
+                  Q#{det.index} &bull; {det.q.category || 'General'}
                 </span>
                 <span className="badge" style={{
                   padding: '0.2rem 0.6rem',
@@ -239,14 +283,14 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
                 <div style={{ padding: '0.6rem 0.85rem', borderRadius: 'var(--radius-sm)', background: det.isCorrect ? 'rgba(16, 185, 129, 0.1)' : 'rgba(244, 63, 94, 0.1)', border: '1px solid var(--border-subtle)' }}>
                   <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-muted)' }}>YOUR ANSWER</span>
                   <strong style={{ fontSize: '0.88rem', color: det.isCorrect ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
-                    Option {det.selected}
+                    {getOptionText(det.q, det.selected)}
                   </strong>
                 </div>
 
                 <div style={{ padding: '0.6rem 0.85rem', borderRadius: 'var(--radius-sm)', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid var(--border-subtle)' }}>
                   <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-muted)' }}>CORRECT ANSWER</span>
                   <strong style={{ fontSize: '0.88rem', color: 'var(--accent-emerald)' }}>
-                    Option {det.correctAnswer}
+                    {getOptionText(det.q, det.correctAnswer)}
                   </strong>
                 </div>
               </div>
@@ -273,22 +317,24 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
     { key: 'C', text: currentQ.option_c },
     { key: 'D', text: currentQ.option_d },
     { key: 'E', text: currentQ.option_e }
-  ].filter(o => o.text && o.text.trim() !== '') : [];
+  ].filter(o => String(o.text ?? '').trim() !== '') : [];
 
-  const currentAnswer = currentQ ? userAnswers[currentQ.id] : null;
-  const isMarked = currentQ ? markedForReview[currentQ.id] : false;
+  const currentAnswer = currentQ ? userAnswers[qKey] : null;
+  const isMarked = currentQ ? markedForReview[qKey] : false;
 
   const answeredCount = Object.keys(userAnswers).length;
   const markedCount = Object.keys(markedForReview).filter(k => markedForReview[k]).length;
-  const unansweredCount = quizList.length - answeredCount;
+  const unansweredCount = safeList.length - answeredCount;
 
   const handleSelectOption = (key) => {
-    if (isCompleted) return;
-    const isCorrect = key.toUpperCase() === currentQ.correct_answer.toUpperCase();
+    if (isCompleted || !currentQ) return;
+    const isCorrect = currentQ.correct_answer 
+      ? key.toUpperCase() === String(currentQ.correct_answer).toUpperCase()
+      : false;
     
     const updatedAnswers = {
       ...userAnswers,
-      [currentQ.id]: { selected: key, isCorrect }
+      [qKey]: { selected: key, isCorrect }
     };
     setUserAnswers(updatedAnswers);
     if (typeof onAnswer === 'function') {
@@ -299,8 +345,8 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   const toggleMarkForReview = () => {
     if (!currentQ) return;
     setMarkedForReview(prev => {
-      const next = { ...prev, [currentQ.id]: !prev[currentQ.id] };
-      if (!prev[currentQ.id]) addToast(`Question #${currentIndex + 1} marked for review`, 'info');
+      const next = { ...prev, [qKey]: !prev[qKey] };
+      if (!prev[qKey]) addToast?.(`Question #${currentIndex + 1} marked for review`, 'info');
       return next;
     });
   };
@@ -320,10 +366,10 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', flexWrap: 'wrap' }}>
           <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text-main)' }}>
-            Q{currentIndex + 1} <span style={{ color: 'var(--text-muted)', fontWeight: 400 }}>/ {quizList.length}</span>
+            Q{currentIndex + 1} <span style={{ color: 'var(--text-muted)', fontWeight: 400 }}>/ {safeList.length}</span>
           </span>
           <span style={{ fontSize: '0.72rem', color: 'var(--accent-cyan)', fontWeight: 700, background: 'rgba(6,182,212,0.12)', padding: '0.15rem 0.55rem', borderRadius: '6px' }}>
-            {currentQ.category}
+            {currentQ?.category || 'General'}
           </span>
         </div>
 
@@ -350,7 +396,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
             onClick={() => setShowPalette(!showPalette)}
             style={{ padding: '0.3rem 0.6rem', fontSize: '0.78rem', minHeight: '34px', width: 'auto' }}
           >
-            <i className="fa-solid fa-grid-2"></i> ({answeredCount}/{quizList.length})
+            <i className="fa-solid fa-grid-2"></i> ({answeredCount}/{safeList.length})
           </button>
 
           <button
@@ -391,16 +437,21 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(42px, 1fr))', gap: '0.4rem', maxHeight: '180px', overflowY: 'auto' }}>
-            {quizList.map((q, idx) => {
-              const isAns = !!userAnswers[q.id];
-              const isM = !!markedForReview[q.id];
+            {safeList.map((q, idx) => {
+              const iterQKey = q.id ?? `q_${idx}`;
+              const isAns = !!userAnswers[iterQKey];
+              const isM = !!markedForReview[iterQKey];
               const isCurr = idx === currentIndex;
 
               let bg = 'rgba(255,255,255,0.04)';
               let color = 'var(--text-muted)';
               let border = '1px solid var(--border-subtle)';
 
-              if (isM) {
+              if (isM && isAns) {
+                bg = 'rgba(168, 85, 247, 0.2)';
+                color = 'var(--accent-cyan)';
+                border = '1px solid var(--accent-purple)';
+              } else if (isM) {
                 bg = 'rgba(168, 85, 247, 0.2)';
                 color = 'var(--accent-purple)';
                 border = '1px solid var(--accent-purple)';
@@ -441,7 +492,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
       <div style={{ height: '5px', background: 'rgba(255,255,255,0.06)', borderRadius: '99px', marginBottom: '0.85rem', overflow: 'hidden' }}>
         <div style={{
           height: '100%',
-          width: `${((currentIndex + 1) / quizList.length) * 100}%`,
+          width: `${((currentIndex + 1) / safeList.length) * 100}%`,
           background: 'var(--gradient-primary)',
           transition: 'width 0.25s ease'
         }}></div>
@@ -463,6 +514,10 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
                 key={opt.key}
                 className={`option-card ${isSelected ? 'selected' : ''}`}
                 onClick={() => handleSelectOption(opt.key)}
+                role="button"
+                tabIndex={0}
+                aria-selected={isSelected}
+                onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && handleSelectOption(opt.key)}
               >
                 <div className="option-badge">
                   {opt.key}
@@ -491,13 +546,31 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         <div style={{ display: 'flex', gap: '0.45rem' }}>
           <button
             className="btn-secondary"
-            onClick={() => setCurrentIndex(p => Math.min(quizList.length - 1, p + 1))}
-            style={{ padding: '0.6rem 0.9rem', fontSize: '0.85rem', width: 'auto', minHeight: '40px' }}
+            onClick={toggleMarkForReview}
+            style={{
+              padding: '0.6rem 0.9rem',
+              fontSize: '0.85rem',
+              width: 'auto',
+              minHeight: '40px',
+              background: isMarked ? 'rgba(168, 85, 247, 0.2)' : 'transparent',
+              color: isMarked ? 'var(--accent-purple)' : 'var(--text-main)',
+              borderColor: isMarked ? 'var(--accent-purple)' : 'var(--border-subtle)'
+            }}
           >
-            Skip
+            <i className="fa-solid fa-bookmark"></i> {isMarked ? 'Marked' : 'Mark'}
           </button>
 
-          {currentIndex < quizList.length - 1 ? (
+          <button
+            className="btn-secondary"
+            onClick={() => currentIndex < safeList.length - 1 
+              ? setCurrentIndex(p => Math.min(safeList.length - 1, p + 1))
+              : setShowSubmitModal(true)}
+            style={{ padding: '0.6rem 0.9rem', fontSize: '0.85rem', width: 'auto', minHeight: '40px' }}
+          >
+            {currentIndex < safeList.length - 1 ? 'Skip' : 'Review'}
+          </button>
+
+          {currentIndex < safeList.length - 1 ? (
             <button className="btn-primary" onClick={() => setCurrentIndex(p => p + 1)} style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem', width: 'auto', minHeight: '40px' }}>
               Next <i className="fa-solid fa-chevron-right"></i>
             </button>
@@ -522,6 +595,16 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
         <button
           className="btn-secondary"
+          onClick={() => currentIndex < safeList.length - 1 
+            ? setCurrentIndex(p => Math.min(safeList.length - 1, p + 1))
+            : setShowSubmitModal(true)}
+          style={{ flex: 1 }}
+        >
+          {currentIndex < safeList.length - 1 ? 'Skip' : 'Review'}
+        </button>
+
+        <button
+          className="btn-secondary"
           onClick={toggleMarkForReview}
           style={{
             flex: 1,
@@ -533,7 +616,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
           <i className="fa-solid fa-bookmark"></i> {isMarked ? 'Marked' : 'Mark'}
         </button>
 
-        {currentIndex < quizList.length - 1 ? (
+        {currentIndex < safeList.length - 1 ? (
           <button className="btn-primary" onClick={() => setCurrentIndex(p => p + 1)} style={{ flex: 1.2 }}>
             Next <i className="fa-solid fa-chevron-right"></i>
           </button>
@@ -546,7 +629,9 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
       {/* Submit Modal Overlay */}
       {showSubmitModal && (
-        <div style={{
+        <div 
+          onClick={() => setShowSubmitModal(false)}
+          style={{
           position: 'fixed',
           top: 0,
           left: 0,
@@ -560,10 +645,12 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
           justifyContent: 'center',
           padding: '1rem'
         }}>
-          <div className="glass-panel animate-fade-in text-center" style={{ padding: '1.75rem 1.25rem', maxWidth: '440px', width: '100%' }}>
+          <div className="glass-panel animate-fade-in text-center" 
+               onClick={e => e.stopPropagation()}
+               style={{ padding: '1.75rem 1.25rem', maxWidth: '440px', width: '100%' }}>
             <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Submit Examination Session?</h3>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', marginBottom: '1.25rem' }}>
-              You have answered <strong>{answeredCount}</strong> out of <strong>{quizList.length}</strong> questions.
+              You have answered <strong>{answeredCount}</strong> out of <strong>{safeList.length}</strong> questions.
               {unansweredCount > 0 && ` (${unansweredCount} unattempted).`}
             </p>
 

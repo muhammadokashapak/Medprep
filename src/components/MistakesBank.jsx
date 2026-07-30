@@ -1,8 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 
 export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMistakes, removeSingleMistake }) {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 20;
 
   // Extract categories with counts
   const categoriesMap = useMemo(() => {
@@ -19,13 +21,24 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
   const filteredMistakes = useMemo(() => {
     if (!mistakesList) return [];
     return mistakesList.filter(m => {
-      const matchesCat = selectedCategory === 'all' || m.category === selectedCategory;
+      const matchesCat = selectedCategory === 'all' || (m.category || 'General') === selectedCategory;
       const matchesSearch = !searchTerm || 
-        m.question.toLowerCase().includes(searchTerm.toLowerCase()) || 
-        m.category.toLowerCase().includes(searchTerm.toLowerCase());
+        (m.question || '').toLowerCase().includes(searchTerm.toLowerCase()) || 
+        (m.category || '').toLowerCase().includes(searchTerm.toLowerCase());
       return matchesCat && matchesSearch;
     });
   }, [mistakesList, selectedCategory, searchTerm]);
+
+  useEffect(() => {
+    setPage(1);
+  }, [selectedCategory, searchTerm]);
+
+  const paginatedMistakes = useMemo(() => {
+    const start = (page - 1) * PAGE_SIZE;
+    return filteredMistakes.slice(start, start + PAGE_SIZE);
+  }, [filteredMistakes, page]);
+  
+  const totalPages = Math.ceil(filteredMistakes.length / PAGE_SIZE);
 
   if (!mistakesList || mistakesList.length === 0) {
     return (
@@ -87,7 +100,11 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
           <button className="btn-primary" onClick={startMistakesQuiz} style={{ flex: 1, padding: '0.65rem 1rem', fontSize: '0.88rem', minHeight: '40px', justifyContent: 'center' }}>
             <i className="fa-solid fa-play"></i> Practice ({mistakesList.length})
           </button>
-          <button className="btn-secondary" onClick={clearMistakes} style={{ color: 'var(--accent-rose)', borderColor: 'rgba(244, 63, 94, 0.3)', padding: '0.65rem 1rem', fontSize: '0.88rem', minHeight: '40px', width: 'auto' }}>
+          <button className="btn-secondary" onClick={() => {
+            if (window.confirm('Are you sure you want to clear your entire Mistakes Bank? This cannot be undone.')) {
+              clearMistakes();
+            }
+          }} style={{ color: 'var(--accent-rose)', borderColor: 'rgba(244, 63, 94, 0.3)', padding: '0.65rem 1rem', fontSize: '0.88rem', minHeight: '40px', width: 'auto' }}>
             <i className="fa-solid fa-trash"></i> Reset
           </button>
         </div>
@@ -160,7 +177,12 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
 
       {/* Filtered Mistakes Cards List */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-        {filteredMistakes.map((item, idx) => (
+        {filteredMistakes.length === 0 && mistakesList.length > 0 && (
+          <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)' }}>
+            No mistakes match your search.
+          </div>
+        )}
+        {paginatedMistakes.map((item, idx) => (
           <div
             key={item.id || idx}
             className="glass-panel"
@@ -207,6 +229,20 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
           </div>
         ))}
       </div>
+
+      {totalPages > 1 && (
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', alignItems: 'center', marginTop: '1.5rem' }}>
+          <button className="btn-secondary" disabled={page === 1} onClick={() => setPage(p => p - 1)}>
+            <i className="fa-solid fa-chevron-left"></i> Prev
+          </button>
+          <span style={{ padding: '0 1rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
+            Page {page} of {totalPages}
+          </span>
+          <button className="btn-secondary" disabled={page === totalPages} onClick={() => setPage(p => p + 1)}>
+            Next <i className="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

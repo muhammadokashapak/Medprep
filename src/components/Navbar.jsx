@@ -1,16 +1,20 @@
 import React from 'react';
 
-export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTheme, currentUser, onOpenAuth, onOpenProfile, totalQuestions = 48000 }) {
+export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTheme, currentUser, onOpenAuth, onOpenProfile, onLeaveExam, totalQuestions = 48000 }) {
   const isExamActive = activeTab === 'practice';
 
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: 'fa-table-columns' },
+    { id: 'qbank', label: 'QBank', icon: 'fa-book-medical' },
     { id: 'mistakes', label: 'Mistakes', icon: 'fa-brain' }
   ];
 
   const handleTabChange = (tabId) => {
-    if (isExamActive && !window.confirm('Leave active examination session? Your progress up to your last answered question is recorded.')) {
-      return;
+    if (isExamActive) {
+      if (!window.confirm('Leave active examination session? Your progress up to your last answered question is recorded.')) {
+        return;
+      }
+      onLeaveExam?.();
     }
     setActiveTab(tabId);
   };
@@ -39,6 +43,9 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
           {/* Brand Emblem & App Title */}
           <div 
             onClick={() => handleTabChange('dashboard')} 
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && handleTabChange('dashboard')}
             style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', cursor: 'pointer' }}
           >
             <div style={{
@@ -108,16 +115,45 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
 
           {/* Right Controls & Profile */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            {isExamActive && (
+              <button 
+                onClick={() => {
+                  if (window.confirm('Leave active examination session? Your progress up to your last answered question is recorded.')) {
+                    onLeaveExam?.();
+                    setActiveTab('dashboard');
+                  }
+                }}
+                style={{
+                  padding: '0.4rem 0.85rem',
+                  fontSize: '0.82rem',
+                  background: 'rgba(239, 68, 68, 0.1)',
+                  color: 'var(--accent-rose)',
+                  border: '1px solid rgba(239, 68, 68, 0.2)',
+                  borderRadius: 'var(--radius-full)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.45rem',
+                  fontWeight: 600
+                }}
+              >
+                <i className="fa-solid fa-arrow-right-from-bracket"></i>
+                <span className="desktop-only">Exit Exam</span>
+              </button>
+            )}
             {!isExamActive && (
               <div className="badge desktop-only" style={{ padding: '0.4rem 0.9rem', fontSize: '0.82rem' }}>
                 <i className="fa-solid fa-fire" style={{ color: 'var(--accent-amber)' }}></i>
-                <span>{stats.attemptedCount.toLocaleString()} / {totalQuestions.toLocaleString()} Solved</span>
+                <span>{(stats?.attemptedCount ?? 0).toLocaleString()} / {totalQuestions.toLocaleString()} Solved</span>
               </div>
             )}
 
             {currentUser ? (
               <div 
                 onClick={onOpenProfile}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onOpenProfile?.()}
                 style={{ 
                   display: 'flex', 
                   alignItems: 'center', 
@@ -144,7 +180,7 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
                 }}>
                   {currentUser.name ? currentUser.name.charAt(0).toUpperCase() : 'D'}
                 </div>
-                <span style={{ fontSize: '0.85rem', fontWeight: 600 }} className="desktop-only">{currentUser.name}</span>
+                <span style={{ fontSize: '0.85rem', fontWeight: 600, maxWidth: '130px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} className="desktop-only">{currentUser.name}</span>
                 <i className="fa-solid fa-chevron-down desktop-only" style={{ fontSize: '0.7rem', color: 'var(--text-subdued)' }}></i>
               </div>
             ) : (
@@ -190,8 +226,15 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
             className={`mobile-nav-item ${activeTab === 'dashboard' ? 'active' : ''}`}
             onClick={() => handleTabChange('dashboard')}
           >
-            <i className="fa-solid fa-house-medical"></i>
-            <span>Hub</span>
+            <i className="fa-solid fa-table-columns"></i>
+            <span>Dashboard</span>
+          </button>
+          <button 
+            className={`mobile-nav-item ${activeTab === 'qbank' ? 'active' : ''}`}
+            onClick={() => handleTabChange('qbank')}
+          >
+            <i className="fa-solid fa-book-medical"></i>
+            <span>QBank</span>
           </button>
           <button 
             className={`mobile-nav-item ${activeTab === 'mistakes' ? 'active' : ''}`}

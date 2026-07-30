@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { hashPassword, safeStorageGet, safeStorageSet, sanitizeUserSession, validateEmail, sanitizeInputString } from '../utils/security';
 
-export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
+export default function AuthModal({ isOpen, onClose, onLogin, addToast, canClose = true }) {
   const [view, setView] = useState('login'); // 'login' | 'register' | 'forgot'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -10,8 +10,31 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
   const [name, setName] = useState('');
   const [rememberMe, setRememberMe] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
+  const [showRegPassword, setShowRegPassword] = useState(false);
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [examPreference, setExamPreference] = useState('FCPS Part 1');
+
+  const resetFormState = () => {
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
+    setNewPassword('');
+    setName('');
+    setShowPassword(false);
+    setShowRegPassword(false);
+    setShowForgotPassword(false);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleEsc = (e) => {
+      if (e.key === 'Escape' && canClose) onClose();
+    };
+    document.addEventListener('keydown', handleEsc);
+    return () => document.removeEventListener('keydown', handleEsc);
+  }, [isOpen, canClose, onClose]);
 
   if (!isOpen) return null;
 
@@ -52,7 +75,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
       const found = users.find(u => u && u.email && u.email.toLowerCase() === email.trim().toLowerCase());
 
       if (found) {
-        if (found.password === hashedPassword || found.password === password) {
+        if (found.password === hashedPassword) {
           const safeUser = sanitizeUserSession(found) || { name: 'Doctor', email: found.email, examPreference: found.examPreference || 'FCPS Part 1' };
           onLogin(safeUser, rememberMe);
           if (addToast) addToast(`Welcome back, ${safeUser.name || 'Candidate'}!`, 'success');
@@ -73,6 +96,10 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
 
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
+    if (!name.trim()) {
+      if (addToast) addToast('Please enter your full name', 'error');
+      return;
+    }
     const cleanName = sanitizeInputString(name, 60) || 'Dr. Candidate';
     const cleanEmail = email.trim().toLowerCase();
 
@@ -153,7 +180,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
         users[userIndex].password = hashedPassword;
         safeStorageSet('fcps_users', users);
         if (addToast) addToast(`Password updated successfully for ${email}. You can now sign in.`, 'success');
-        setView('login');
+        resetFormState(); setView('login');
       } else {
         if (addToast) addToast('No candidate account found matching that email address', 'error');
       }
@@ -190,22 +217,24 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
         maxHeight: '90vh',
         overflowY: 'auto'
       }}>
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          style={{
-            position: 'absolute',
-            top: '1.25rem',
-            right: '1.25rem',
-            background: 'transparent',
-            border: 'none',
-            color: 'var(--text-muted)',
-            cursor: 'pointer',
-            fontSize: '1.2rem'
-          }}
-        >
-          <i className="fa-solid fa-xmark"></i>
-        </button>
+        {/* Close Button - only show if explicitly allowed */}
+        {canClose && (
+          <button
+            onClick={onClose}
+            style={{
+              position: 'absolute',
+              top: '1.25rem',
+              right: '1.25rem',
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-muted)',
+              cursor: 'pointer',
+              fontSize: '1.2rem'
+            }}
+          >
+            <i className="fa-solid fa-xmark"></i>
+          </button>
+        )}
 
         {/* Brand Header */}
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
@@ -229,8 +258,8 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
             {view === 'forgot' && 'Reset Password'}
           </h2>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginTop: '0.25rem' }}>
-            {view === 'login' && 'Access your FCPS Part 1 QBank & Mock History'}
-            {view === 'register' && 'Join thousands of doctors preparing for FCPS Part 1'}
+            {view === 'login' && 'Access your medical board QBank & exam history'}
+            {view === 'register' && 'Join thousands of doctors preparing for their board exams'}
             {view === 'forgot' && 'Enter your email to receive password recovery steps'}
           </p>
         </div>
@@ -248,6 +277,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
+                disabled={loading}
                 style={{
                   width: '100%',
                   padding: '0.8rem 1rem',
@@ -264,7 +294,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem' }}>
                 <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)' }}>Password</label>
                 <span
-                  onClick={() => setView('forgot')}
+                  onClick={() => { resetFormState(); setView('forgot'); }}
                   style={{ fontSize: '0.85rem', color: 'var(--accent-cyan)', cursor: 'pointer', fontWeight: 500 }}
                 >
                   Forgot password?
@@ -277,6 +307,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                   value={password}
                   onChange={e => setPassword(e.target.value)}
                   required
+                  disabled={loading}
                   style={{
                     width: '100%',
                     padding: '0.8rem 2.8rem 0.8rem 1rem',
@@ -308,6 +339,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                 id="remember"
                 checked={rememberMe}
                 onChange={e => setRememberMe(e.target.checked)}
+                disabled={loading}
                 style={{ cursor: 'pointer', accentColor: 'var(--accent-cyan)' }}
               />
               <label htmlFor="remember" style={{ cursor: 'pointer' }}>Keep me logged in on this device</label>
@@ -320,7 +352,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
 
             <div style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
               Don't have an account?{' '}
-              <span onClick={() => setView('register')} style={{ color: 'var(--accent-cyan)', fontWeight: 600, cursor: 'pointer' }}>
+              <span onClick={() => { resetFormState(); setView('register'); }} style={{ color: 'var(--accent-cyan)', fontWeight: 600, cursor: 'pointer' }}>
                 Create one now
               </span>
             </div>
@@ -340,6 +372,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                 value={name}
                 onChange={e => setName(e.target.value)}
                 required
+                disabled={loading}
                 style={{
                   width: '100%',
                   padding: '0.8rem 1rem',
@@ -362,6 +395,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
+                disabled={loading}
                 style={{
                   width: '100%',
                   padding: '0.8rem 1rem',
@@ -382,6 +416,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                 value={examPreference}
                 onChange={e => setExamPreference(e.target.value)}
                 required
+                disabled={loading}
                 style={{
                   width: '100%',
                   padding: '0.8rem 1rem',
@@ -408,22 +443,37 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
               <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: '0.4rem' }}>
                 Password
               </label>
-              <input
-                type="password"
-                placeholder="••••••••"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                required
-                style={{
-                  width: '100%',
-                  padding: '0.8rem 1rem',
-                  borderRadius: 'var(--radius-sm)',
-                  border: '1px solid var(--border-subtle)',
-                  background: 'rgba(255,255,255,0.04)',
-                  color: 'var(--text-main)',
-                  outline: 'none'
-                }}
-              />
+              <div style={{ position: 'relative' }}>
+                <input
+                  type={showRegPassword ? 'text' : 'password'}
+                  placeholder="••••••••"
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
+                  required
+                  disabled={loading}
+                  style={{
+                    width: '100%',
+                    padding: '0.8rem 2.8rem 0.8rem 1rem',
+                    borderRadius: 'var(--radius-sm)',
+                    border: '1px solid var(--border-subtle)',
+                    background: 'rgba(255,255,255,0.04)',
+                    color: 'var(--text-main)',
+                    outline: 'none'
+                  }}
+                />
+                <i
+                  className={`fa-solid ${showRegPassword ? 'fa-eye-slash' : 'fa-eye'}`}
+                  onClick={() => setShowRegPassword(!showRegPassword)}
+                  style={{
+                    position: 'absolute',
+                    right: '1rem',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--text-muted)',
+                    cursor: 'pointer'
+                  }}
+                ></i>
+              </div>
               {password && (
                 <div style={{ marginTop: '0.4rem' }}>
                   <div style={{ height: '4px', background: 'rgba(255,255,255,0.1)', borderRadius: '99px', overflow: 'hidden' }}>
@@ -446,6 +496,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                 value={confirmPassword}
                 onChange={e => setConfirmPassword(e.target.value)}
                 required
+                disabled={loading}
                 style={{
                   width: '100%',
                   padding: '0.8rem 1rem',
@@ -458,6 +509,11 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
               />
             </div>
 
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
+              <input type="checkbox" id="rememberReg" checked={rememberMe} onChange={e => setRememberMe(e.target.checked)} disabled={loading} style={{ cursor: 'pointer', accentColor: 'var(--accent-cyan)' }} />
+              <label htmlFor="rememberReg" style={{ cursor: 'pointer' }}>Keep me logged in on this device</label>
+            </div>
+
             <button type="submit" className="btn-primary" disabled={loading} style={{ justifyContent: 'center', marginTop: '0.5rem' }}>
               {loading ? <i className="fa-solid fa-circle-notch fa-spin"></i> : <i className="fa-solid fa-user-plus"></i>}
               {loading ? 'Registering...' : 'Register Account'}
@@ -465,7 +521,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
 
             <div style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
               Already registered?{' '}
-              <span onClick={() => setView('login')} style={{ color: 'var(--accent-cyan)', fontWeight: 600, cursor: 'pointer' }}>
+              <span onClick={() => { resetFormState(); setView('login'); }} style={{ color: 'var(--accent-cyan)', fontWeight: 600, cursor: 'pointer' }}>
                 Sign in here
               </span>
             </div>
@@ -485,6 +541,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
+                disabled={loading}
                 style={{
                   width: '100%',
                   padding: '0.8rem 1rem',
@@ -501,23 +558,38 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
               <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: '0.4rem' }}>
                 Enter New Password
               </label>
-              <input
-                type="password"
-                placeholder="••••••••"
-                value={newPassword}
-                onChange={e => setNewPassword(e.target.value)}
-                required
-                minLength={6}
-                style={{
-                  width: '100%',
-                  padding: '0.8rem 1rem',
-                  borderRadius: 'var(--radius-sm)',
-                  border: '1px solid var(--border-subtle)',
-                  background: 'rgba(255,255,255,0.04)',
-                  color: 'var(--text-main)',
-                  outline: 'none'
-                }}
-              />
+              <div style={{ position: 'relative' }}>
+                <input
+                  type={showForgotPassword ? 'text' : 'password'}
+                  placeholder="••••••••"
+                  value={newPassword}
+                  onChange={e => setNewPassword(e.target.value)}
+                  required
+                  minLength={6}
+                  disabled={loading}
+                  style={{
+                    width: '100%',
+                    padding: '0.8rem 2.8rem 0.8rem 1rem',
+                    borderRadius: 'var(--radius-sm)',
+                    border: '1px solid var(--border-subtle)',
+                    background: 'rgba(255,255,255,0.04)',
+                    color: 'var(--text-main)',
+                    outline: 'none'
+                  }}
+                />
+                <i
+                  className={`fa-solid ${showForgotPassword ? 'fa-eye-slash' : 'fa-eye'}`}
+                  onClick={() => setShowForgotPassword(!showForgotPassword)}
+                  style={{
+                    position: 'absolute',
+                    right: '1rem',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    color: 'var(--text-muted)',
+                    cursor: 'pointer'
+                  }}
+                ></i>
+              </div>
             </div>
 
             <button type="submit" className="btn-primary" disabled={loading} style={{ justifyContent: 'center', marginTop: '0.5rem' }}>
@@ -526,7 +598,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast }) {
             </button>
 
             <div style={{ textAlign: 'center', marginTop: '1rem', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-              <span onClick={() => setView('login')} style={{ color: 'var(--accent-cyan)', fontWeight: 600, cursor: 'pointer' }}>
+              <span onClick={() => { resetFormState(); setView('login'); }} style={{ color: 'var(--accent-cyan)', fontWeight: 600, cursor: 'pointer' }}>
                 Back to Sign In
               </span>
             </div>

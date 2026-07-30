@@ -1,6 +1,63 @@
 import React, { useState, useMemo } from 'react';
 
-export default function Dashboard({ questions, stats, history, startQuiz, currentUser, onOpenAuth, onOpenCompareModal, onOpenRankModal, onOpenGoalModal, dailyGoal = 50 }) {
+const examTracks = [
+  {
+    id: 'USMLE Step 1',
+    title: 'USMLE Step 1 QBank',
+    format: '280 Questions • 8 Hours (7 Blocks)',
+    desc: 'Organ systems-based basic science vignettes from First Aid Step 1, Pathoma & Physiology.',
+    icon: 'fa-book-medical',
+    color: 'var(--accent-cyan)',
+    questionsCount: '12,000+ MCQs'
+  },
+  {
+    id: 'USMLE Step 2 CK',
+    title: 'USMLE Step 2 CK QBank',
+    format: '320 Questions • 9 Hours (8 Blocks)',
+    desc: 'Clinical Knowledge board exam review from First Aid for the USMLE Step 2 CK.',
+    icon: 'fa-notes-medical',
+    color: 'var(--accent-indigo)',
+    questionsCount: '4,000+ MCQs'
+  },
+  {
+    id: 'FCPS Part 1',
+    title: 'FCPS Part 1 & NLE QBank',
+    format: '200 Questions • 6 Hours (2 Papers)',
+    desc: 'Pakistani licensing & residency exam questions from ROAMS Review & Pathoma 2021.',
+    icon: 'fa-graduation-cap',
+    color: 'var(--accent-emerald)',
+    questionsCount: '8,000+ MCQs'
+  },
+  {
+    id: 'PLAB / UKMLA',
+    title: 'PLAB 1 / UKMLA QBank',
+    format: '180 Questions • 3 Hours (SBA Format)',
+    desc: 'UK General Medical Council Licensing Exam clinical decision-making vignettes.',
+    icon: 'fa-hospital-user',
+    color: 'var(--accent-purple)',
+    questionsCount: '8,000+ MCQs'
+  },
+  {
+    id: 'NEET PG',
+    title: 'NEET PG & FMGE QBank',
+    format: '200 Questions • 3.5 Hours (210 Mins)',
+    desc: 'High-yield Indian medical entrance prof revision from Garg & Gupta Pharm and ROAMS Review.',
+    icon: 'fa-user-doctor',
+    color: 'var(--accent-amber)',
+    questionsCount: '12,000+ MCQs'
+  },
+  {
+    id: 'MRCS Surgery',
+    title: 'MRCS & MS Surgery QBank',
+    format: '300 Questions • 5 Hours (2 Papers)',
+    desc: 'Royal College of Surgeons Part A & MS Surgery vignettes from Bailey & Love Surgery.',
+    icon: 'fa-user-nurse',
+    color: 'var(--accent-rose)',
+    questionsCount: '4,000+ MCQs'
+  }
+];
+
+export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0, mistakesList: [], todayAttemptedCount: 0 }, history = [], startQuiz, currentUser, onOpenAuth, onOpenProfile, onOpenCompareModal, onOpenRankModal, onOpenGoalModal, dailyGoal = 50 }) {
   const [selectedMockLimit, setSelectedMockLimit] = useState(50);
   const [dailyCaseSelected, setDailyCaseSelected] = useState(null);
   const [showCaseRationale, setShowCaseRationale] = useState(false);
@@ -9,14 +66,12 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
     ? Math.round((stats.correctCount / stats.attemptedCount) * 100) 
     : 0;
 
-  // Calculate Best & Average Score from attempt history
+  // Calculate Best Score from attempt history
   const totalTests = history ? history.length : 0;
-  const scores = history && history.length > 0 ? history.map(h => h.scorePercentage) : [accuracy];
-  const bestScore = scores.length > 0 ? Math.max(...scores) : 0;
-  const avgScore = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+  const bestScore = history && history.length > 0 ? Math.max(...history.map(h => h.scorePercentage || 0)) : 0;
 
   // Calculate real-time subject breakdown accuracy dynamically from history details
-  const subjectAccuracyMap = React.useMemo(() => {
+  const subjectAccuracyMap = useMemo(() => {
     const map = {
       'Pathology': { total: 0, correct: 0 },
       'Pharmacology': { total: 0, correct: 0 },
@@ -44,72 +99,15 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
   }, [history]);
 
   // Identify Weak Subjects from mistakes list
-  const weakSubjects = React.useMemo(() => {
+  const weakSubjects = useMemo(() => {
     if (!stats.mistakesList || stats.mistakesList.length === 0) return [];
     const counts = {};
     stats.mistakesList.forEach(m => {
-      const subj = m.category.split('-')[0].trim();
+      const subj = (m?.category || 'General').split('-')[0].trim();
       counts[subj] = (counts[subj] || 0) + 1;
     });
     return Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 4);
   }, [stats.mistakesList]);
-
-  const examTracks = [
-    {
-      id: 'USMLE Step 1',
-      title: 'USMLE Step 1 QBank',
-      format: '280 Questions • 8 Hours (7 Blocks)',
-      desc: 'Organ systems-based basic science vignettes from First Aid Step 1, Pathoma & Physiology.',
-      icon: 'fa-book-medical',
-      color: 'var(--accent-cyan)',
-      questionsCount: '12,000+ MCQs'
-    },
-    {
-      id: 'USMLE Step 2 CK',
-      title: 'USMLE Step 2 CK QBank',
-      format: '320 Questions • 9 Hours (8 Blocks)',
-      desc: 'Clinical Knowledge board exam review from First Aid for the USMLE Step 2 CK.',
-      icon: 'fa-notes-medical',
-      color: 'var(--accent-indigo)',
-      questionsCount: '4,000+ MCQs'
-    },
-    {
-      id: 'FCPS Part 1',
-      title: 'FCPS Part 1 & NLE QBank',
-      format: '200 Questions • 6 Hours (2 Papers)',
-      desc: 'Pakistani licensing & residency exam questions from ROAMS Review & Pathoma 2021.',
-      icon: 'fa-graduation-cap',
-      color: 'var(--accent-emerald)',
-      questionsCount: '8,000+ MCQs'
-    },
-    {
-      id: 'PLAB / UKMLA',
-      title: 'PLAB 1 / UKMLA QBank',
-      format: '180 Questions • 3 Hours (SBA Format)',
-      desc: 'UK General Medical Council Licensing Exam clinical decision-making vignettes.',
-      icon: 'fa-hospital-user',
-      color: 'var(--accent-purple)',
-      questionsCount: '8,000+ MCQs'
-    },
-    {
-      id: 'NEET PG',
-      title: 'NEET PG & FMGE QBank',
-      format: '200 Questions • 3.5 Hours (210 Mins)',
-      desc: 'High-yield Indian medical entrance prof revision from Garg & Gupta Pharm and ROAMS Review.',
-      icon: 'fa-user-doctor',
-      color: 'var(--accent-amber)',
-      questionsCount: '12,000+ MCQs'
-    },
-    {
-      id: 'MRCS Surgery',
-      title: 'MRCS & MS Surgery QBank',
-      format: '300 Questions • 5 Hours (2 Papers)',
-      desc: 'Royal College of Surgeons Part A & MS Surgery vignettes from Bailey & Love Surgery.',
-      icon: 'fa-user-nurse',
-      color: 'var(--accent-rose)',
-      questionsCount: '4,000+ MCQs'
-    }
-  ];
 
   // General Unauthenticated Guest View
   if (!currentUser) {
@@ -134,7 +132,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
           <p style={{ color: 'var(--text-muted)', maxWidth: '820px', margin: '0 auto 1.75rem', fontSize: '0.95rem', lineHeight: 1.6 }}>
             Master medical licensing boards with real-world timed simulations, subject mastery analytics, and anti-trick distractor verification.
           </p>
-          <button className="btn-primary" onClick={onOpenAuth} style={{ margin: '0 auto', padding: '0.8rem 1.8rem', fontSize: '0.95rem' }}>
+          <button className="btn-primary" onClick={() => onOpenAuth?.()} style={{ margin: '0 auto', padding: '0.8rem 1.8rem', fontSize: '0.95rem' }}>
             <i className="fa-solid fa-user-doctor"></i> Sign In / Register Account
           </button>
         </div>
@@ -189,7 +187,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
                 </p>
               </div>
 
-              <button className="btn-secondary" onClick={onOpenAuth} style={{ width: '100%', justifyContent: 'center', marginTop: '1rem' }}>
+              <button className="btn-secondary" onClick={() => onOpenAuth?.()} style={{ width: '100%', justifyContent: 'center', marginTop: '1rem' }}>
                 Start {track.id} Exam <i className="fa-solid fa-arrow-right"></i>
               </button>
             </div>
@@ -201,6 +199,10 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
 
   // Authenticated Candidate Dashboard View
   const userTrack = currentUser.examPreference || 'FCPS Part 1';
+
+  const todaySolved = stats?.todayAttemptedCount ?? 0;
+  const safeGoal = dailyGoal > 0 ? dailyGoal : 50;
+  const goalProgress = Math.min(100, Math.round((todaySolved / safeGoal) * 100));
 
   return (
     <div className="animate-fade-in" style={{ padding: '1.25rem 0' }}>
@@ -231,7 +233,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
         <div style={{ width: '100%', maxWidth: '280px' }}>
           <button 
             className="btn-primary" 
-            onClick={() => startQuiz({ mode: 'full_official', examTrack: userTrack })}
+            onClick={() => startQuiz?.({ mode: 'full_official', examTrack: userTrack })}
             style={{ width: '100%', justifyContent: 'center', padding: '0.8rem 1.2rem', fontSize: '0.95rem' }}
           >
             <i className="fa-solid fa-play"></i> Launch {userTrack} Exam
@@ -331,7 +333,10 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
         }}>
           {/* Daily Goal Circle Ring */}
           <div 
-            onClick={() => onOpenGoalModal && onOpenGoalModal()}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onOpenGoalModal?.()}
+            onClick={() => onOpenGoalModal?.()}
             style={{
               background: 'rgba(255,255,255,0.03)',
               padding: '1rem',
@@ -358,11 +363,11 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
                   fill="none"
                   stroke="var(--accent-cyan)"
                   strokeWidth="3.5"
-                  strokeDasharray={`${Math.min(100, Math.round(((stats.attemptedCount % dailyGoal) / dailyGoal) * 100))}, 100`}
+                  strokeDasharray={`${goalProgress}, 100`}
                 />
               </svg>
               <span style={{ position: 'absolute', fontSize: '0.82rem', fontWeight: 800, color: 'var(--accent-cyan)' }}>
-                {stats.attemptedCount % dailyGoal}/{dailyGoal}
+                {todaySolved}/{safeGoal}
               </span>
             </div>
             <div>
@@ -376,7 +381,10 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
 
           {/* Candidate Level Badge */}
           <div 
-            onClick={() => onOpenRankModal && onOpenRankModal()}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onOpenRankModal?.()}
+            onClick={() => onOpenRankModal?.()}
             style={{
               background: 'rgba(255,255,255,0.03)',
               padding: '1rem',
@@ -447,21 +455,17 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
             { id: 'C', text: 'Biliary stricture fibrosis', isCorrect: false },
             { id: 'D', text: 'Thrombin clot microembolization', isCorrect: false }
           ].map(opt => {
-            const isChosen = dailyCaseSelected === opt.id;
+            const isCorrectOpt = opt.isCorrect;
+            const isSelectedOpt = dailyCaseSelected === opt.id;
             let btnBg = 'rgba(255,255,255,0.04)';
             let btnBorder = '1px solid var(--border-subtle)';
             let textColor = 'var(--text-main)';
 
-            if (isChosen) {
-              if (opt.isCorrect) {
-                btnBg = 'rgba(16, 185, 129, 0.18)';
-                btnBorder = '2px solid var(--accent-emerald)';
-                textColor = 'var(--accent-emerald)';
-              } else {
-                btnBg = 'rgba(239, 68, 68, 0.18)';
-                btnBorder = '2px solid var(--accent-rose)';
-                textColor = 'var(--accent-rose)';
-              }
+            if (showCaseRationale) {
+              if (isCorrectOpt) { btnBg = 'rgba(16,185,129,0.15)'; btnBorder = '1px solid var(--accent-emerald)'; textColor = 'var(--accent-emerald)'; }
+              else if (isSelectedOpt && !isCorrectOpt) { btnBg = 'rgba(244,63,94,0.12)'; btnBorder = '1px solid var(--accent-rose)'; textColor = 'var(--accent-rose)'; }
+            } else if (isSelectedOpt) {
+              btnBg = 'rgba(6,182,212,0.12)'; btnBorder = '1px solid var(--accent-cyan)'; textColor = 'var(--accent-cyan)';
             }
 
             return (
@@ -538,25 +542,32 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
           </div>
 
           <div style={{ height: '160px', width: '100%', position: 'relative', display: 'flex', alignItems: 'flex-end', gap: '0.4rem', padding: '0.5rem 0 1.5rem' }}>
-            {(history && history.length > 0 ? history.slice(0, 7).reverse() : [{ scorePercentage: accuracy || 65 }, { scorePercentage: 72 }, { scorePercentage: 80 }]).map((item, idx) => {
-              const hPct = Math.max(15, Math.min(100, item.scorePercentage || 50));
-              return (
-                <div key={idx} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.35rem', height: '100%', justifyContent: 'flex-end' }}>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 700, color: item.scorePercentage >= 70 ? 'var(--accent-emerald)' : 'var(--accent-amber)' }}>
-                    {item.scorePercentage}%
-                  </span>
-                  <div style={{
-                    width: '100%',
-                    maxWidth: '32px',
-                    height: `${hPct}%`,
-                    background: item.scorePercentage >= 70 ? 'var(--gradient-success)' : 'var(--gradient-gold)',
-                    borderRadius: '6px 6px 0 0',
-                    transition: 'height 0.4s ease'
-                  }}></div>
-                  <span style={{ fontSize: '0.65rem', color: 'var(--text-subdued)' }}>T#{idx + 1}</span>
-                </div>
-              );
-            })}
+            {(!history || history.length === 0) ? (
+              <div style={{ textAlign: 'center', padding: '2rem', color: 'var(--text-muted)', fontSize: '0.88rem', width: '100%' }}>
+                <i className="fa-solid fa-chart-line" style={{ fontSize: '2rem', marginBottom: '0.5rem', display: 'block', opacity: 0.4 }}></i>
+                Complete a mock exam to see your performance trend
+              </div>
+            ) : (
+              history.slice(0, 7).reverse().map((item, idx) => {
+                const hPct = Math.max(15, Math.min(100, item.scorePercentage ?? 0));
+                return (
+                  <div key={idx} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.35rem', height: '100%', justifyContent: 'flex-end' }}>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 700, color: (item.scorePercentage ?? 0) >= 70 ? 'var(--accent-emerald)' : 'var(--accent-amber)' }}>
+                      {item.scorePercentage ?? 0}%
+                    </span>
+                    <div style={{
+                      width: '100%',
+                      maxWidth: '32px',
+                      height: `${hPct}%`,
+                      background: (item.scorePercentage ?? 0) >= 70 ? 'var(--gradient-success)' : 'var(--gradient-gold)',
+                      borderRadius: '6px 6px 0 0',
+                      transition: 'height 0.4s ease'
+                    }}></div>
+                    <span style={{ fontSize: '0.65rem', color: 'var(--text-subdued)' }}>T#{idx + 1}</span>
+                  </div>
+                );
+              })
+            )}
           </div>
         </div>
 
@@ -575,13 +586,14 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
               { subject: 'Physiology & Biochemistry', key: 'Physiology', color: 'var(--accent-amber)' }
             ].map(item => {
               const data = subjectAccuracyMap[item.key] || { total: 0, correct: 0 };
-              const score = data.total > 0 ? Math.round((data.correct / data.total) * 100) : (accuracy > 0 ? accuracy : 70);
+              const hasData = data.total > 0;
+              const score = hasData ? Math.round((data.correct / data.total) * 100) : 0;
 
               return (
                 <div key={item.subject}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem', marginBottom: '0.25rem' }}>
                     <span style={{ color: 'var(--text-main)', fontWeight: 500 }}>{item.subject}</span>
-                    <strong style={{ color: item.color }}>{score}% ({data.correct}/{data.total || 10})</strong>
+                    <strong style={{ color: item.color }}>{hasData ? `${score}% (${data.correct}/${data.total})` : 'No data yet'}</strong>
                   </div>
                   <div style={{ height: '6px', background: 'rgba(255,255,255,0.06)', borderRadius: '99px', overflow: 'hidden' }}>
                     <div style={{ height: '100%', width: `${score}%`, background: item.color, transition: 'width 0.4s ease' }}></div>
@@ -606,7 +618,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
             </div>
             <button 
               className="btn-secondary"
-              onClick={() => startQuiz({ mode: 'mistakes' })}
+              onClick={() => startQuiz?.({ mode: 'mistakes' })}
               style={{ padding: '0.4rem 0.85rem', fontSize: '0.8rem', minHeight: '36px', width: 'auto' }}
             >
               Review <i className="fa-solid fa-rotate-right"></i>
@@ -652,7 +664,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
         marginBottom: '2.5rem'
       }}>
         {examTracks.map(track => {
-          const isSelected = track.id === userTrack;
+          const isSelected = track.id.toLowerCase() === userTrack.toLowerCase();
           return (
             <div key={track.id} className="glass-panel" style={{
               padding: '1.35rem',
@@ -701,7 +713,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
 
               <button 
                 className={isSelected ? "btn-primary" : "btn-secondary"} 
-                onClick={() => startQuiz({ mode: 'full_official', examTrack: track.id })} 
+                onClick={() => startQuiz?.({ mode: 'full_official', examTrack: track.id })} 
                 style={{ width: '100%', justifyContent: 'center', marginTop: '1rem' }}
               >
                 Launch {track.id} Exam <i className="fa-solid fa-arrow-right"></i>
@@ -722,7 +734,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
         </p>
 
         <div style={{ display: 'flex', gap: '0.75rem', flexDirection: 'column' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(70px, 1fr))', gap: '0.4rem' }}>
             {[25, 50, 100, 150].map(count => (
               <button
                 key={count}
@@ -746,7 +758,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
 
           <button 
             className="btn-primary"
-            onClick={() => startQuiz({ mode: 'mock', limit: selectedMockLimit })}
+            onClick={() => startQuiz?.({ mode: 'mock', limit: selectedMockLimit })}
             style={{ background: 'var(--gradient-purple)', padding: '0.75rem 1.2rem', fontSize: '0.9rem', width: '100%', justifyContent: 'center' }}
           >
             Start {selectedMockLimit}-MCQ Timed Block <i className="fa-solid fa-play"></i>
@@ -772,7 +784,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
               <div>
                 <strong style={{ fontSize: '0.95rem', color: 'var(--text-main)' }}>{h.title || `${userTrack} Exam`}</strong>
                 <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '0.2rem' }}>
-                  {h.date} &bull; {h.attemptedCount || h.totalQuestions} Questions Solved
+                  {h.date} &bull; {h.attemptedCount ?? h.totalQuestions} Questions Solved
                 </div>
               </div>
               <div style={{ textAlign: 'right' }}>
@@ -806,27 +818,24 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.15rem' }}>
           {[
             {
-              name: 'Dr. Ayesha Malik',
-              role: 'FCPS Part 1 Passed (1st Attempt)',
-              hospital: 'King Edward Medical University',
-              quote: 'MedPrep Pro’s ROAMS and Pathoma-aligned explanations were spot on. The timed exam simulation made the real FCPS paper feel effortless!',
-              score: 'Pass (1st Try)',
+              name: 'Dr. Ayesha',
+              role: 'Medical Resident',
+              hospital: 'General Hospital',
+              quote: 'MedPrep Pro’s aligned explanations were spot on. The timed exam simulation made the real paper feel effortless!',
               rating: 5
             },
             {
-              name: 'Dr. Rohan Gupta',
-              role: 'USMLE Step 1 (Score: 262)',
-              hospital: 'AIIMS New Delhi',
+              name: 'Dr. Rohan',
+              role: 'USMLE Candidate',
+              hospital: 'University Hospital',
               quote: 'The anti-trick distractor rationales and high-yield physiology vignettes are superior to standard QBanks. Highly recommended!',
-              score: 'Score: 262',
               rating: 5
             },
             {
-              name: 'Dr. Sarah Jenkins',
-              role: 'PLAB 1 / UKMLA Cleared',
-              hospital: 'NHS Foundation Trust, UK',
-              quote: 'Practicing the clinical decision-making vignettes on MedPrep Pro gave me the exact speed and confidence required for the GMC UK exam.',
-              score: 'Cleared (Score 154)',
+              name: 'Dr. Sarah',
+              role: 'PLAB Candidate',
+              hospital: 'NHS Trust',
+              quote: 'Practicing the clinical decision-making vignettes on MedPrep Pro gave me the exact speed and confidence required for the exam.',
               rating: 5
             }
           ].map((t, idx) => (
@@ -836,9 +845,6 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
                   <div style={{ display: 'flex', color: 'var(--accent-amber)', fontSize: '0.82rem', gap: '0.15rem' }}>
                     {[...Array(t.rating)].map((_, r) => <i key={r} className="fa-solid fa-star"></i>)}
                   </div>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--accent-emerald)', fontWeight: 700, background: 'rgba(16, 185, 129, 0.1)', padding: '0.15rem 0.55rem', borderRadius: '4px' }}>
-                    {t.score}
-                  </span>
                 </div>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-main)', lineHeight: 1.5, fontStyle: 'italic', marginBottom: '1rem' }}>
                   "{t.quote}"
@@ -858,7 +864,7 @@ export default function Dashboard({ questions, stats, history, startQuiz, curren
                   fontWeight: 800,
                   fontSize: '0.9rem'
                 }}>
-                  {t.name.split(' ')[1]?.charAt(0) || 'D'}
+                  {t.name.replace('Dr. ', '').charAt(0) || 'D'}
                 </div>
                 <div>
                   <strong style={{ fontSize: '0.88rem', display: 'block', color: 'var(--text-main)' }}>{t.name}</strong>

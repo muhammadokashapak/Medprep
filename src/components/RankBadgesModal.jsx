@@ -13,8 +13,10 @@ export default function RankBadgesModal({ isOpen, onClose, stats, history }) {
   if (!isOpen) return null;
 
   const totalAttempted = stats?.attemptedCount || 0;
-  const accuracy = totalAttempted > 0 ? Math.round((stats.correctCount / totalAttempted) * 100) : 0;
-  const passedMocks = history ? history.filter(h => h.scorePercentage >= 70).length : 0;
+  const accuracy = totalAttempted > 0 ? Math.round(((stats?.correctCount || 0) / totalAttempted) * 100) : 0;
+  const passedMocks = history ? history.filter(h => 
+    (h.totalQuestions >= 50 || h.attemptedCount >= 50) && h.scorePercentage >= 70
+  ).length : 0;
 
   // Calculate Level and XP
   const xpPerQ = 10;
@@ -128,10 +130,10 @@ export default function RankBadgesModal({ isOpen, onClose, stats, history }) {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.85rem', marginBottom: '1.5rem' }}>
           {BADGES.map(badge => {
-            let isUnlocked = false;
-            if (badge.minQs && totalAttempted >= badge.minQs) isUnlocked = true;
-            if (badge.minAcc && accuracy >= badge.minAcc && totalAttempted >= (badge.minQs || 1)) isUnlocked = true;
-            if (badge.requiresMock && passedMocks > 0) isUnlocked = true;
+            let isUnlocked = true;
+            if (badge.minQs && totalAttempted < badge.minQs) isUnlocked = false;
+            if (badge.minAcc && accuracy < badge.minAcc) isUnlocked = false;
+            if (badge.requiresMock && passedMocks <= 0) isUnlocked = false;
 
             return (
               <div

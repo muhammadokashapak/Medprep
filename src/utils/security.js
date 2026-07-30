@@ -34,6 +34,7 @@ export function safeStorageGet(key, fallbackValue = null) {
     const item = localStorage.getItem(key);
     if (!item) return fallbackValue;
     const parsed = JSON.parse(item);
+    if (typeof fallbackValue === 'object' && !Array.isArray(fallbackValue) && parsed && typeof parsed === 'object') return { ...fallbackValue, ...parsed };
     if (Array.isArray(fallbackValue) && !Array.isArray(parsed)) {
       return fallbackValue;
     }
@@ -93,6 +94,7 @@ export function getQuestionsForTrack(questions, examTrack) {
   const track = examTrack.toLowerCase().trim();
 
   const filtered = questions.filter(q => {
+    if (!q) return false;
     const src = (q.book_source || '').toLowerCase();
     const cat = (q.category || '').toLowerCase();
 
@@ -131,5 +133,5 @@ export function getQuestionsForTrack(questions, examTrack) {
   });
 
   // If filtered set is non-empty, return it; otherwise return full dataset
-  return filtered.length > 0 ? filtered : questions;
+  return filtered;
 }

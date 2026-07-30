@@ -6,14 +6,15 @@ export default function ToastNotification({ toasts, removeToast }) {
   return (
     <div style={{
       position: 'fixed',
-      top: '1rem',
+      bottom: '1.5rem',
       right: '1rem',
       zIndex: 9999,
       display: 'flex',
       flexDirection: 'column',
       gap: '0.5rem',
       maxWidth: '360px',
-      width: 'calc(100% - 2rem)'
+      width: 'calc(100% - 2rem)',
+      pointerEvents: 'none'
     }}>
       {toasts.map(toast => {
         let bg = 'rgba(21, 28, 44, 0.95)';
@@ -50,7 +51,8 @@ export default function ToastNotification({ toasts, removeToast }) {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              boxShadow: 'var(--shadow-card)'
+              boxShadow: 'var(--shadow-card)',
+              pointerEvents: 'auto'
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>

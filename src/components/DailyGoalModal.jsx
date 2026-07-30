@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function DailyGoalModal({ isOpen, onClose, currentGoal, onSetGoal }) {
+  const [customValue, setCustomValue] = useState('');
+
+  useEffect(() => {
+    const handleEsc = (e) => { if (e.key === 'Escape') onClose(); };
+    if (isOpen) document.addEventListener('keydown', handleEsc);
+    return () => document.removeEventListener('keydown', handleEsc);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const goalOptions = [20, 35, 50, 75, 100];
 
   return (
-    <div style={{
+    <div role="dialog" aria-modal="true" aria-label="Set Daily Goal" style={{
       position: 'fixed',
       top: 0,
       left: 0,
@@ -97,6 +105,44 @@ export default function DailyGoalModal({ isOpen, onClose, currentGoal, onSetGoal
               </button>
             );
           })}
+        </div>
+
+        {/* Custom Goal Input */}
+        <div style={{ marginBottom: '1.5rem', textAlign: 'left' }}>
+          <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>Or set a custom goal:</p>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <input
+              type="number"
+              min="1"
+              max="500"
+              placeholder="e.g. 30"
+              value={customValue}
+              onChange={e => setCustomValue(e.target.value)}
+              style={{
+                flex: 1,
+                padding: '0.65rem 0.85rem',
+                borderRadius: 'var(--radius-sm)',
+                border: '1px solid var(--border-subtle)',
+                background: 'rgba(255,255,255,0.04)',
+                color: 'var(--text-main)',
+                outline: 'none',
+                fontSize: '0.9rem'
+              }}
+            />
+            <button
+              className="btn-primary"
+              onClick={() => {
+                const val = parseInt(customValue, 10);
+                if (val >= 1 && val <= 500) {
+                  onSetGoal(val);
+                  onClose();
+                }
+              }}
+              style={{ padding: '0.65rem 1rem', width: 'auto' }}
+            >
+              Set
+            </button>
+          </div>
         </div>
 
         <button className="btn-secondary" onClick={onClose} style={{ width: '100%', justifyContent: 'center' }}>

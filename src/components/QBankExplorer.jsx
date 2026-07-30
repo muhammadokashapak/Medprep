@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 
-export default function QBankExplorer({ questions, bookmarks, toggleBookmark, addToast }) {
+export default function QBankExplorer({ questions = [], bookmarks = {}, toggleBookmark, addToast }) {
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('ALL');
   const [showBookmarksOnly, setShowBookmarksOnly] = useState(false);
@@ -12,7 +12,7 @@ export default function QBankExplorer({ questions, bookmarks, toggleBookmark, ad
   const categories = useMemo(() => {
     const set = new Set();
     questions.forEach(q => {
-      const cat = q.category.split('-')[0].trim();
+      const cat = (q.category || '').split('-')[0].trim();
       set.add(cat);
     });
     return Array.from(set).sort();
@@ -21,12 +21,12 @@ export default function QBankExplorer({ questions, bookmarks, toggleBookmark, ad
   // Filtered list
   const filtered = useMemo(() => {
     return questions.filter(q => {
-      const matchBookmark = !showBookmarksOnly || !!bookmarks[q.id];
-      const matchCat = selectedCategory === 'ALL' || q.category.toLowerCase().includes(selectedCategory.toLowerCase());
+      const matchBookmark = !showBookmarksOnly || !!(bookmarks?.[q.id]);
+      const matchCat = selectedCategory === 'ALL' || (q.category && q.category.toLowerCase().includes(selectedCategory.toLowerCase()));
       const matchQuery = !search.trim() || 
-        q.question.toLowerCase().includes(search.toLowerCase()) || 
+        (q.question || '').toLowerCase().includes(search.toLowerCase()) || 
         (q.explanation && q.explanation.toLowerCase().includes(search.toLowerCase())) ||
-        q.category.toLowerCase().includes(search.toLowerCase());
+        (q.category || '').toLowerCase().includes(search.toLowerCase());
       return matchBookmark && matchCat && matchQuery;
     });
   }, [questions, selectedCategory, search, showBookmarksOnly, bookmarks]);
@@ -37,6 +37,10 @@ export default function QBankExplorer({ questions, bookmarks, toggleBookmark, ad
   }, [filtered, page]);
 
   const totalPages = Math.ceil(filtered.length / pageSize);
+
+  useEffect(() => {
+    if (page > totalPages && totalPages > 0) setPage(1);
+  }, [totalPages, page]);
 
   const copyExplanation = (text) => {
     navigator.clipboard.writeText(text);
@@ -152,7 +156,7 @@ export default function QBankExplorer({ questions, bookmarks, toggleBookmark, ad
                 {['A', 'B', 'C', 'D', 'E'].map(letter => {
                   const optText = q[`option_${letter.toLowerCase()}`];
                   if (!optText) return null;
-                  const isCorrect = letter.toUpperCase() === q.correct_answer.toUpperCase();
+                  const isCorrect = letter.toUpperCase() === String(q.correct_answer || '').toUpperCase();
                   return (
                     <div
                       key={letter}

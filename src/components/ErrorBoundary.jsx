@@ -3,7 +3,7 @@ import React from 'react';
 export default class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { hasError: false, error: null };
+    this.state = { hasError: false, error: null, errorInfo: null };
   }
 
   static getDerivedStateFromError(error) {
@@ -12,6 +12,7 @@ export default class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     console.error("Uncaught application error:", error, errorInfo);
+    this.setState({ errorInfo });
   }
 
   handleReload = () => {
@@ -19,8 +20,9 @@ export default class ErrorBoundary extends React.Component {
   };
 
   handleResetStorage = () => {
-    if (window.confirm("This will reset corrupt local storage cache and reload the application. Continue?")) {
-      localStorage.clear();
+    if (window.confirm('This will reset corrupt cached data and reload. Your account remains intact. Continue?')) {
+      const keysToRemove = ['fcps_stats', 'fcps_history', 'fcps_bookmarks'];
+      keysToRemove.forEach(key => localStorage.removeItem(key));
       window.location.reload();
     }
   };
@@ -78,7 +80,39 @@ export default class ErrorBoundary extends React.Component {
             }}>
               {this.state.error?.toString() || 'Unknown Error'}
             </div>
-            <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center' }}>
+            {this.state.errorInfo && (
+              <details style={{ marginBottom: '1rem', textAlign: 'left' }}>
+                <summary style={{ cursor: 'pointer', fontSize: '0.8rem', color: '#94a3b8', marginBottom: '0.5rem' }}>Show Technical Details</summary>
+                <pre style={{
+                  background: 'rgba(0,0,0,0.3)',
+                  padding: '0.75rem',
+                  borderRadius: '8px',
+                  fontSize: '0.72rem',
+                  color: '#f43f5e',
+                  overflow: 'auto',
+                  maxHeight: '150px',
+                  whiteSpace: 'pre-wrap',
+                  wordBreak: 'break-all'
+                }}>
+                  {this.state.errorInfo.componentStack}
+                </pre>
+              </details>
+            )}
+            <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button
+                onClick={() => this.setState({ hasError: false, error: null, errorInfo: null })}
+                style={{
+                  padding: '0.65rem 1.2rem',
+                  borderRadius: '8px',
+                  border: '1px solid rgba(6, 182, 212, 0.4)',
+                  background: 'transparent',
+                  color: '#06b6d4',
+                  fontWeight: 600,
+                  cursor: 'pointer'
+                }}
+              >
+                Try Again
+              </button>
               <button
                 onClick={this.handleReload}
                 style={{

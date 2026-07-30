@@ -9,12 +9,13 @@ import UserProfileModal from './components/UserProfileModal';
 import ExamComparisonModal from './components/ExamComparisonModal';
 import RankBadgesModal from './components/RankBadgesModal';
 import DailyGoalModal from './components/DailyGoalModal';
+import QBankExplorer from './components/QBankExplorer';
 import questionsData from './data/questions.json';
 import { safeStorageGet, safeStorageSet, sanitizeUserSession, fisherYatesShuffle, getQuestionsForTrack } from './utils/security';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
-  const [theme, setTheme] = useState(() => localStorage.getItem('fcps_theme') || 'dark');
+  const [theme, setTheme] = useState(() => safeStorageGet('fcps_theme', 'dark'));
   const [quizState, setQuizState] = useState(null); // { list, config }
 
   // Safe Authentication State Initialization
@@ -30,6 +31,18 @@ export default function App() {
   const [isDailyGoalModalOpen, setIsDailyGoalModalOpen] = useState(false);
 
   const [dailyGoal, setDailyGoal] = useState(() => safeStorageGet('fcps_daily_goal', 50));
+
+  const [bookmarks, setBookmarks] = useState(() => safeStorageGet('fcps_bookmarks', {}));
+
+  const toggleBookmark = (qId) => {
+    setBookmarks(prev => {
+      const next = { ...prev };
+      if (next[qId]) delete next[qId];
+      else next[qId] = true;
+      safeStorageSet('fcps_bookmarks', next);
+      return next;
+    });
+  };
 
   // Global Toasts State
   const [toasts, setToasts] = useState([]);
@@ -52,7 +65,9 @@ export default function App() {
       attemptedCount: 0,
       correctCount: 0,
       mistakesCount: 0,
-      mistakesList: []
+      mistakesList: [],
+      todayAttemptedCount: 0,
+      lastResetDate: ''
     });
   });
 
@@ -94,7 +109,7 @@ export default function App() {
   }, [userTrack]);
 
   // Launch Quiz Helper - Filtered strictly for candidate's registered track
-  const startQuiz = ({ mode, examTrack, limit, timeLimitMinutes }) => {
+  const startQuiz = ({ mode, examTrack, limit, timeLimitMinutes } = {}) => {
     if (!currentUser) {
       addToast('Please Sign In or Register an Account to access QBank tests', 'warning');
       setIsAuthOpen(true);
@@ -112,7 +127,8 @@ export default function App() {
     let selectedQuestions = [];
 
     if (mode === 'mistakes') {
-      const mistakesIds = new Set(stats.mistakesList.map(m => m.id));
+      const mistakesList = Array.isArray(stats?.mistakesList) ? stats.mistakesList : [];
+      const mistakesIds = new Set(mistakesList.map(m => m.id));
       selectedQuestions = pool.filter(q => mistakesIds.has(q.id));
       if (selectedQuestions.length === 0) {
         addToast('No mistake questions found for this exam track!', 'info');
@@ -133,6 +149,7 @@ export default function App() {
         examTrack: activeExamTrack,
         title: `${activeExamTrack} Official Exam Block`,
         limit: selectedQuestions.length,
+        timeLimitMinutes: timeLimitMinutes ?? null,
         isMock: mode === 'mock' || mode === 'full_official'
       }
     });
@@ -147,19 +164,24 @@ export default function App() {
     setHistory(prev => [examResultObj, ...prev]);
 
     setStats(prev => {
-      const newAttempted = prev.attemptedCount + (examResultObj.attemptedCount || 0);
-      const newCorrect = prev.correctCount + (examResultObj.correctCount || 0);
-
-      let updatedMistakes = [...prev.mistakesList];
+      const safePrev = prev || { attemptedCount: 0, correctCount: 0, mistakesCount: 0, mistakesList: [], todayAttemptedCount: 0, lastResetDate: '' };
+      const today = new Date().toISOString().split('T')[0];
+      const isNewDay = safePrev.lastResetDate !== today;
+      const todayCount = isNewDay ? (examResultObj.attemptedCount || 0) : ((safePrev.todayAttemptedCount || 0) + (examResultObj.attemptedCount || 0));
+      
+      const newAttempted = (safePrev.attemptedCount || 0) + (examResultObj.attemptedCount || 0);
+      const newCorrect = (safePrev.correctCount || 0) + (examResultObj.correctCount || 0);
+      let updatedMistakes = Array.isArray(safePrev.mistakesList) ? [...safePrev.mistakesList] : [];
 
       if (examResultObj.details && Array.isArray(examResultObj.details)) {
         examResultObj.details.forEach(item => {
-          if (!item.isCorrect) {
-            if (!updatedMistakes.some(m => m.id === item.q.id)) {
+          if (!item?.q?.id) return;
+          if (!item.isCorrect && item.selected && item.selected !== 'Unattempted') {
+            if (!updatedMistakes.some(m => m && m.id === item.q.id)) {
               updatedMistakes.push(item.q);
             }
-          } else {
-            updatedMistakes = updatedMistakes.filter(m => m.id !== item.q.id);
+          } else if (item.isCorrect) {
+            updatedMistakes = updatedMistakes.filter(m => m && m.id !== item.q.id);
           }
         });
       }
@@ -168,7 +190,9 @@ export default function App() {
         attemptedCount: newAttempted,
         correctCount: newCorrect,
         mistakesCount: updatedMistakes.length,
-        mistakesList: updatedMistakes
+        mistakesList: updatedMistakes,
+        todayAttemptedCount: todayCount,
+        lastResetDate: today
       };
     });
   };
@@ -181,7 +205,7 @@ export default function App() {
 
   const removeSingleMistake = (qId) => {
     setStats(prev => {
-      const filtered = prev.mistakesList.filter(m => m.id !== qId);
+      const filtered = prev.mistakesList.filter(m => m && m.id !== qId);
       return {
         ...prev,
         mistakesCount: filtered.length,
@@ -201,11 +225,14 @@ export default function App() {
   };
 
   const resetProgress = () => {
+    setQuizState(null);
     setStats({
       attemptedCount: 0,
       correctCount: 0,
       mistakesCount: 0,
-      mistakesList: []
+      mistakesList: [],
+      todayAttemptedCount: 0,
+      lastResetDate: ''
     });
     setHistory([]);
     localStorage.removeItem('fcps_stats');
@@ -219,6 +246,8 @@ export default function App() {
     setIsAuthOpen(false);
     if (rememberMe) {
       safeStorageSet('medprep_user', safeUser);
+    } else {
+      localStorage.removeItem('medprep_user');
     }
     const doctorName = safeUser.name || 'Candidate';
     const pref = safeUser.examPreference || 'FCPS Part 1';
@@ -227,9 +256,28 @@ export default function App() {
 
   const handleLogout = () => {
     setCurrentUser(null);
+    setQuizState(null);
+    setActiveTab('dashboard');
+    setStats({ attemptedCount: 0, correctCount: 0, mistakesCount: 0, mistakesList: [], todayAttemptedCount: 0, lastResetDate: '' });
+    setHistory([]);
     localStorage.removeItem('medprep_user');
     setIsAuthOpen(true);
-    setActiveTab('dashboard');
+  };
+
+  const updateUserPreference = (newPreference) => {
+    if (!currentUser) return;
+    const updatedUser = { ...currentUser, examPreference: newPreference };
+    setCurrentUser(updatedUser);
+    safeStorageSet('medprep_user', updatedUser);
+    // Also update in users list
+    const rawUsers = safeStorageGet('fcps_users', []);
+    const users = Array.isArray(rawUsers) ? rawUsers : [];
+    const idx = users.findIndex(u => u && u.email === currentUser.email);
+    if (idx !== -1) {
+      users[idx].examPreference = newPreference;
+      safeStorageSet('fcps_users', users);
+    }
+    addToast(`Exam track updated to ${newPreference}`, 'success');
   };
 
   return (
@@ -256,6 +304,7 @@ export default function App() {
         onOpenAuth={() => setIsAuthOpen(true)}
         onOpenProfile={() => setIsProfileOpen(true)}
         totalQuestions={trackQuestions.length}
+        onLeaveExam={handleFinishQuiz}
       />
 
       <main style={{ flex: 1, maxWidth: '1300px', width: '100%', margin: '0 auto', padding: '0 0.85rem' }}>
@@ -328,6 +377,15 @@ export default function App() {
                 removeSingleMistake={removeSingleMistake} 
               />
             )}
+
+            {activeTab === 'qbank' && (
+              <QBankExplorer
+                questions={trackQuestions}
+                bookmarks={bookmarks}
+                toggleBookmark={toggleBookmark}
+                addToast={addToast}
+              />
+            )}
           </>
         )}
       </main>
@@ -361,6 +419,7 @@ export default function App() {
         onLogout={handleLogout} 
         resetProgress={resetProgress} 
         addToast={addToast} 
+        updateUserPreference={updateUserPreference}
       />
 
       <ExamComparisonModal
@@ -369,6 +428,7 @@ export default function App() {
         history={history}
         currentUser={currentUser}
         addToast={addToast}
+        questions={questionsData}
       />
 
       <RankBadgesModal
