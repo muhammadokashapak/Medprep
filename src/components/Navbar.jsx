@@ -5,7 +5,6 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
 
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: 'fa-table-columns' },
-    { id: 'qbank', label: 'QBank', icon: 'fa-book-medical' },
     { id: 'mistakes', label: 'Mistakes', icon: 'fa-brain' }
   ];
 
@@ -229,13 +228,7 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
             <i className="fa-solid fa-table-columns"></i>
             <span>Dashboard</span>
           </button>
-          <button 
-            className={`mobile-nav-item ${activeTab === 'qbank' ? 'active' : ''}`}
-            onClick={() => handleTabChange('qbank')}
-          >
-            <i className="fa-solid fa-book-medical"></i>
-            <span>QBank</span>
-          </button>
+
           <button 
             className={`mobile-nav-item ${activeTab === 'mistakes' ? 'active' : ''}`}
             onClick={() => handleTabChange('mistakes')}
