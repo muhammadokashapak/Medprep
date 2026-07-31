@@ -876,16 +876,7 @@ textarea:focus-visible {
 }
 .exam-btn-primary:hover { opacity: 0.9; }
 
-/* EXAM BLOCK BADGE & STRIKE-THROUGH STYLING */
-.exam-block-badge {
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-subtle);
-  padding: 0.2rem 0.65rem;
-  border-radius: 6px;
-}
+/* STRIKE-THROUGH STYLING */
 
 .exam-option-card {
   position: relative;
