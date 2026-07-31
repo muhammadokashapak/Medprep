@@ -231,6 +231,14 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
           </button>
 
           <button 
+            className={`mobile-nav-item ${activeTab === 'subjects' ? 'active' : ''}`}
+            onClick={() => handleTabChange('subjects')}
+          >
+            <i className="fa-solid fa-shapes"></i>
+            <span>Subjects</span>
+          </button>
+
+          <button 
             className={`mobile-nav-item ${activeTab === 'mistakes' ? 'active' : ''}`}
             onClick={() => handleTabChange('mistakes')}
           >
