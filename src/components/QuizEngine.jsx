@@ -352,314 +352,199 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   };
 
   return (
-    <div className="animate-fade-in" style={{ padding: '0.5rem 0 4.5rem', maxWidth: '1000px', margin: '0 auto', position: 'relative' }}>
-      {/* Top Exam Header Bar */}
-      <div className="glass-panel" style={{ 
-        display: 'flex', 
-        justifyContent: 'space-between', 
-        alignItems: 'center', 
-        padding: '0.65rem 0.85rem', 
-        marginBottom: '0.85rem', 
-        flexWrap: 'wrap', 
-        gap: '0.5rem',
-        borderLeft: '4px solid var(--accent-cyan)'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', flexWrap: 'wrap' }}>
-          <span style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text-main)' }}>
-            Q{currentIndex + 1} <span style={{ color: 'var(--text-muted)', fontWeight: 400 }}>/ {safeList.length}</span>
-          </span>
-          <span style={{ fontSize: '0.72rem', color: 'var(--accent-cyan)', fontWeight: 700, background: 'rgba(6,182,212,0.12)', padding: '0.15rem 0.55rem', borderRadius: '6px' }}>
-            {currentQ?.category || 'General'}
-          </span>
+    <div className="exam-engine-container animate-fade-in">
+      {/* Top Header - Professional & Clean */}
+      <header className="exam-header">
+        <div className="exam-header-left">
+          <div className="exam-q-info">
+            <span className="exam-q-number">Question {currentIndex + 1} of {safeList.length}</span>
+            <span className="exam-q-category">{currentQ?.category || 'General'}</span>
+          </div>
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+        <div className="exam-header-center">
           {timerSeconds !== null && (
-            <div style={{ 
-              background: 'rgba(245, 158, 11, 0.12)', 
-              color: 'var(--accent-amber)', 
-              border: '1px solid rgba(245, 158, 11, 0.3)', 
-              borderRadius: 'var(--radius-sm)',
-              padding: '0.25rem 0.55rem', 
-              fontSize: '0.8rem',
-              fontWeight: 700,
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.3rem'
-            }}>
-              <i className="fa-solid fa-clock"></i> {formatTimer(timerSeconds)}
+            <div className={`exam-timer ${timerSeconds < 300 ? 'timer-danger' : ''}`}>
+              <i className="fa-regular fa-clock"></i>
+              <span>{formatTimer(timerSeconds)}</span>
             </div>
           )}
+        </div>
 
+        <div className="exam-header-right">
           <button
-            className="btn-secondary"
+            className="exam-btn-icon"
             onClick={() => setShowPalette(!showPalette)}
-            style={{ padding: '0.3rem 0.6rem', fontSize: '0.78rem', minHeight: '34px', width: 'auto' }}
+            title="Question Navigator"
           >
-            <i className="fa-solid fa-grid-2"></i> ({answeredCount}/{safeList.length})
+            <i className="fa-solid fa-list-ol"></i>
+            <span className="desktop-only">Navigator ({answeredCount}/{safeList.length})</span>
           </button>
-
+          
           <button
-            className="btn-secondary desktop-only"
-            onClick={toggleMarkForReview}
-            style={{
-              padding: '0.3rem 0.6rem',
-              fontSize: '0.78rem',
-              minHeight: '34px',
-              width: 'auto',
-              background: isMarked ? 'rgba(168, 85, 247, 0.2)' : 'transparent',
-              color: isMarked ? 'var(--accent-purple)' : 'var(--text-main)',
-              borderColor: isMarked ? 'var(--accent-purple)' : 'var(--border-subtle)'
-            }}
-          >
-            <i className="fa-solid fa-bookmark"></i> {isMarked ? 'Marked' : 'Mark'}
-          </button>
-
-          <button
-            className="btn-primary"
+            className="exam-btn-icon btn-danger-outline"
             onClick={() => setShowSubmitModal(true)}
-            style={{ padding: '0.3rem 0.75rem', fontSize: '0.78rem', minHeight: '34px', width: 'auto', background: 'var(--gradient-primary)' }}
+            title="End Exam"
           >
-            Submit
+            <i className="fa-solid fa-power-off"></i>
+            <span className="desktop-only">End Block</span>
           </button>
         </div>
+      </header>
+
+      <div className="exam-progress-bar">
+        <div 
+          className="exam-progress-fill" 
+          style={{ width: `${((currentIndex + 1) / safeList.length) * 100}%` }}
+        ></div>
       </div>
 
-      {/* Question Palette Grid Drawer */}
-      {showPalette && (
-        <div className="glass-panel animate-fade-in" style={{ padding: '1rem', marginBottom: '1rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-            <h4 style={{ fontSize: '0.88rem', fontWeight: 600 }}>Question Navigator</h4>
-            <div style={{ display: 'flex', gap: '0.75rem', fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-              <span><i className="fa-solid fa-circle" style={{ color: 'var(--accent-cyan)' }}></i> Solved ({answeredCount})</span>
-              <span><i className="fa-solid fa-circle" style={{ color: 'var(--accent-purple)' }}></i> Marked ({markedCount})</span>
+      <div className="exam-main-content">
+        {/* Left Side: Question Navigator Drawer (Desktop) */}
+        {showPalette && (
+          <aside className="exam-navigator animate-slide-right">
+            <div className="navigator-header">
+              <h4>Questions</h4>
+              <button onClick={() => setShowPalette(false)} className="close-btn"><i className="fa-solid fa-xmark"></i></button>
             </div>
+            <div className="navigator-legend">
+              <span><i className="fa-solid fa-square-check" style={{ color: 'var(--accent-emerald)' }}></i> Answered</span>
+              <span><i className="fa-solid fa-bookmark" style={{ color: 'var(--accent-amber)' }}></i> Marked</span>
+            </div>
+            <div className="navigator-grid">
+              {safeList.map((q, idx) => {
+                const iterQKey = q.id ?? `q_${idx}`;
+                const isAns = !!userAnswers[iterQKey];
+                const isM = !!markedForReview[iterQKey];
+                const isCurr = idx === currentIndex;
+
+                let classes = 'nav-cell';
+                if (isAns) classes += ' answered';
+                if (isM) classes += ' marked';
+                if (isCurr) classes += ' current';
+
+                return (
+                  <button
+                    key={q.id || idx}
+                    className={classes}
+                    onClick={() => { setCurrentIndex(idx); setShowPalette(false); }}
+                  >
+                    {isM && <i className="fa-solid fa-bookmark mini-mark"></i>}
+                    {idx + 1}
+                  </button>
+                );
+              })}
+            </div>
+          </aside>
+        )}
+
+        {/* Right Side / Main: Vignette and Options */}
+        <div className={`exam-vignette-area ${showPalette ? 'with-sidebar' : ''}`}>
+          <div className="question-stem-container">
+            <p className="question-stem-text">
+              {currentQ.question}
+            </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(42px, 1fr))', gap: '0.4rem', maxHeight: '180px', overflowY: 'auto' }}>
-            {safeList.map((q, idx) => {
-              const iterQKey = q.id ?? `q_${idx}`;
-              const isAns = !!userAnswers[iterQKey];
-              const isM = !!markedForReview[iterQKey];
-              const isCurr = idx === currentIndex;
-
-              let bg = 'rgba(255,255,255,0.04)';
-              let color = 'var(--text-muted)';
-              let border = '1px solid var(--border-subtle)';
-
-              if (isM && isAns) {
-                bg = 'rgba(168, 85, 247, 0.2)';
-                color = 'var(--accent-cyan)';
-                border = '1px solid var(--accent-purple)';
-              } else if (isM) {
-                bg = 'rgba(168, 85, 247, 0.2)';
-                color = 'var(--accent-purple)';
-                border = '1px solid var(--accent-purple)';
-              } else if (isAns) {
-                bg = 'rgba(6, 182, 212, 0.15)';
-                color = 'var(--accent-cyan)';
-                border = '1px solid var(--accent-cyan)';
-              }
-
-              if (isCurr) {
-                border = '2px solid #ffffff';
-              }
-
+          <div className="options-container">
+            {options.map((opt) => {
+              const isSelected = currentAnswer?.selected === opt.key;
               return (
-                <button
-                  key={q.id || idx}
-                  onClick={() => { setCurrentIndex(idx); setShowPalette(false); }}
-                  style={{
-                    height: '40px',
-                    borderRadius: 'var(--radius-sm)',
-                    background: bg,
-                    color,
-                    border,
-                    fontWeight: 700,
-                    fontSize: '0.82rem',
-                    cursor: 'pointer'
-                  }}
+                <div
+                  key={opt.key}
+                  className={`exam-option-card ${isSelected ? 'selected' : ''}`}
+                  onClick={() => handleSelectOption(opt.key)}
+                  role="button"
+                  tabIndex={0}
+                  aria-selected={isSelected}
+                  onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && handleSelectOption(opt.key)}
                 >
-                  {idx + 1}
-                </button>
+                  <div className="exam-option-letter">{opt.key}</div>
+                  <div className="exam-option-text">{opt.text}</div>
+                </div>
               );
             })}
           </div>
         </div>
-      )}
-
-      {/* Progress Bar */}
-      <div style={{ height: '5px', background: 'rgba(255,255,255,0.06)', borderRadius: '99px', marginBottom: '0.85rem', overflow: 'hidden' }}>
-        <div style={{
-          height: '100%',
-          width: `${((currentIndex + 1) / safeList.length) * 100}%`,
-          background: 'var(--gradient-primary)',
-          transition: 'width 0.25s ease'
-        }}></div>
       </div>
 
-      {/* Main Vignette Question Card */}
-      <div className="glass-panel" style={{ padding: '1.25rem 1rem', marginBottom: '1rem' }}>
-        <h3 style={{ fontSize: '0.98rem', lineHeight: 1.6, fontWeight: 500, color: 'var(--text-main)', marginBottom: '1.25rem' }}>
-          {currentQ.question}
-        </h3>
-
-        {/* Answer Options A-E */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-          {options.map((opt) => {
-            const isSelected = currentAnswer?.selected === opt.key;
-
-            return (
-              <div
-                key={opt.key}
-                className={`option-card ${isSelected ? 'selected' : ''}`}
-                onClick={() => handleSelectOption(opt.key)}
-                role="button"
-                tabIndex={0}
-                aria-selected={isSelected}
-                onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && handleSelectOption(opt.key)}
-              >
-                <div className="option-badge">
-                  {opt.key}
-                </div>
-
-                <span style={{ fontSize: '0.9rem', fontWeight: isSelected ? 600 : 400, lineHeight: 1.45, color: isSelected ? 'var(--accent-cyan)' : 'var(--text-main)' }}>
-                  {opt.text}
-                </span>
-              </div>
-            );
-          })}
+      {/* Unified Bottom Navigation Footer */}
+      <footer className="exam-footer">
+        <div className="footer-left">
+          <button
+            className="exam-nav-btn"
+            onClick={() => setCurrentIndex(p => Math.max(0, p - 1))}
+            disabled={currentIndex === 0}
+          >
+            <i className="fa-solid fa-chevron-left"></i> <span className="desktop-only">Previous</span>
+          </button>
         </div>
-      </div>
 
-      {/* Desktop Footer Navigation */}
-      <div className="desktop-only" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.5rem' }}>
-        <button
-          className="btn-secondary"
-          onClick={() => setCurrentIndex(p => Math.max(0, p - 1))}
-          disabled={currentIndex === 0}
-          style={{ opacity: currentIndex === 0 ? 0.4 : 1, padding: '0.6rem 1rem', fontSize: '0.85rem', width: 'auto', minHeight: '40px' }}
-        >
-          <i className="fa-solid fa-chevron-left"></i> Prev
-        </button>
-
-        <div style={{ display: 'flex', gap: '0.45rem' }}>
+        <div className="footer-center">
           <button
-            className="btn-secondary"
+            className={`exam-nav-btn mark-btn ${isMarked ? 'is-marked' : ''}`}
             onClick={toggleMarkForReview}
-            style={{
-              padding: '0.6rem 0.9rem',
-              fontSize: '0.85rem',
-              width: 'auto',
-              minHeight: '40px',
-              background: isMarked ? 'rgba(168, 85, 247, 0.2)' : 'transparent',
-              color: isMarked ? 'var(--accent-purple)' : 'var(--text-main)',
-              borderColor: isMarked ? 'var(--accent-purple)' : 'var(--border-subtle)'
-            }}
           >
-            <i className="fa-solid fa-bookmark"></i> {isMarked ? 'Marked' : 'Mark'}
+            <i className={isMarked ? "fa-solid fa-bookmark" : "fa-regular fa-bookmark"}></i>
+            <span className="desktop-only">{isMarked ? 'Marked' : 'Mark'}</span>
           </button>
+        </div>
 
-          <button
-            className="btn-secondary"
-            onClick={() => currentIndex < safeList.length - 1 
-              ? setCurrentIndex(p => Math.min(safeList.length - 1, p + 1))
-              : setShowSubmitModal(true)}
-            style={{ padding: '0.6rem 0.9rem', fontSize: '0.85rem', width: 'auto', minHeight: '40px' }}
-          >
-            {currentIndex < safeList.length - 1 ? 'Skip' : 'Review'}
-          </button>
-
+        <div className="footer-right">
           {currentIndex < safeList.length - 1 ? (
-            <button className="btn-primary" onClick={() => setCurrentIndex(p => p + 1)} style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem', width: 'auto', minHeight: '40px' }}>
-              Next <i className="fa-solid fa-chevron-right"></i>
+            <button 
+              className="exam-nav-btn next-btn" 
+              onClick={() => setCurrentIndex(p => p + 1)}
+            >
+              <span className="desktop-only">Next</span> <i className="fa-solid fa-chevron-right"></i>
             </button>
           ) : (
-            <button className="btn-primary" style={{ background: 'var(--gradient-success)', padding: '0.6rem 1.1rem', fontSize: '0.85rem', width: 'auto', minHeight: '40px' }} onClick={() => setShowSubmitModal(true)}>
-              Submit <i className="fa-solid fa-check"></i>
+            <button 
+              className="exam-nav-btn submit-btn" 
+              onClick={() => setShowSubmitModal(true)}
+            >
+              Finish Block <i className="fa-solid fa-flag-checkered"></i>
             </button>
           )}
         </div>
-      </div>
+      </footer>
 
-      {/* Mobile Sticky Action Bar */}
-      <div className="exam-mobile-footer">
-        <button
-          className="btn-secondary"
-          onClick={() => setCurrentIndex(p => Math.max(0, p - 1))}
-          disabled={currentIndex === 0}
-          style={{ flex: 1, opacity: currentIndex === 0 ? 0.4 : 1 }}
-        >
-          <i className="fa-solid fa-chevron-left"></i> Prev
-        </button>
-
-        <button
-          className="btn-secondary"
-          onClick={() => currentIndex < safeList.length - 1 
-            ? setCurrentIndex(p => Math.min(safeList.length - 1, p + 1))
-            : setShowSubmitModal(true)}
-          style={{ flex: 1 }}
-        >
-          {currentIndex < safeList.length - 1 ? 'Skip' : 'Review'}
-        </button>
-
-        <button
-          className="btn-secondary"
-          onClick={toggleMarkForReview}
-          style={{
-            flex: 1,
-            background: isMarked ? 'rgba(168, 85, 247, 0.25)' : 'rgba(255,255,255,0.05)',
-            color: isMarked ? 'var(--accent-purple)' : 'var(--text-main)',
-            borderColor: isMarked ? 'var(--accent-purple)' : 'var(--border-subtle)'
-          }}
-        >
-          <i className="fa-solid fa-bookmark"></i> {isMarked ? 'Marked' : 'Mark'}
-        </button>
-
-        {currentIndex < safeList.length - 1 ? (
-          <button className="btn-primary" onClick={() => setCurrentIndex(p => p + 1)} style={{ flex: 1.2 }}>
-            Next <i className="fa-solid fa-chevron-right"></i>
-          </button>
-        ) : (
-          <button className="btn-primary" style={{ flex: 1.2, background: 'var(--gradient-success)' }} onClick={() => setShowSubmitModal(true)}>
-            Finish <i className="fa-solid fa-check"></i>
-          </button>
-        )}
-      </div>
-
-      {/* Submit Modal Overlay */}
+      {/* Redesigned Submit Modal Overlay - Fixed Clickability */}
       {showSubmitModal && (
-        <div 
-          onClick={() => setShowSubmitModal(false)}
-          style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          background: 'rgba(0, 0, 0, 0.75)',
-          backdropFilter: 'blur(10px)',
-          zIndex: 999,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '1rem'
-        }}>
-          <div className="glass-panel animate-fade-in text-center" 
-               onClick={e => e.stopPropagation()}
-               style={{ padding: '1.75rem 1.25rem', maxWidth: '440px', width: '100%' }}>
-            <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Submit Examination Session?</h3>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', marginBottom: '1.25rem' }}>
-              You have answered <strong>{answeredCount}</strong> out of <strong>{safeList.length}</strong> questions.
-              {unansweredCount > 0 && ` (${unansweredCount} unattempted).`}
+        <div className="exam-modal-overlay" onClick={() => setShowSubmitModal(false)}>
+          <div className="exam-modal-content animate-slide-up" onClick={e => e.stopPropagation()}>
+            <div className="modal-icon-header">
+              <i className="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h3>End Examination Block?</h3>
+            
+            <div className="modal-stats-box">
+              <div className="stat-item">
+                <span className="stat-label">Attempted</span>
+                <span className="stat-value" style={{ color: 'var(--accent-cyan)' }}>{answeredCount}</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-label">Unanswered</span>
+                <span className="stat-value" style={{ color: 'var(--accent-amber)' }}>{unansweredCount}</span>
+              </div>
+              <div className="stat-item">
+                <span className="stat-label">Marked</span>
+                <span className="stat-value" style={{ color: 'var(--accent-purple)' }}>{markedCount}</span>
+              </div>
+            </div>
+
+            <p className="modal-warning-text">
+              {unansweredCount > 0 
+                ? "You have unanswered questions. Are you sure you want to submit?" 
+                : "You have answered all questions. Ready to submit?"}
             </p>
 
-            <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center' }}>
-              <button className="btn-secondary" onClick={() => setShowSubmitModal(false)} style={{ width: 'auto', minHeight: '40px' }}>
-                Continue Exam
+            <div className="modal-actions">
+              <button className="exam-btn-secondary" onClick={() => setShowSubmitModal(false)}>
+                Return to Exam
               </button>
-              <button className="btn-primary" style={{ background: 'var(--gradient-success)', width: 'auto', minHeight: '40px' }} onClick={() => handleFinalSubmit(false)}>
-                Confirm & Submit
+              <button className="exam-btn-primary" onClick={() => handleFinalSubmit(false)}>
+                Submit Exam
               </button>
             </div>
           </div>
