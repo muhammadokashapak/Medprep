@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { addXP } from '../utils/gamification';
 
 const FLASHCARD_DECKS = [
@@ -62,6 +62,10 @@ export default function Flashcards({ addToast }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [masteredCards, setMasteredCards] = useState({});
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   const currentDeck = FLASHCARD_DECKS.find(d => d.id === activeDeckId) || FLASHCARD_DECKS[0];
   const currentCard = currentDeck.cards[cardIndex];
 
@@ -100,38 +104,38 @@ export default function Flashcards({ addToast }) {
         </p>
       </div>
 
-      {/* Deck Selector Tabs */}
-      <div style={{ display: 'flex', gap: '0.5rem', overflowX: 'auto', paddingBottom: '0.75rem', marginBottom: '1.5rem' }}>
-        {FLASHCARD_DECKS.map(deck => {
-          const isActive = deck.id === activeDeckId;
-          return (
-            <button
-              key={deck.id}
-              onClick={() => {
-                setActiveDeckId(deck.id);
-                setCardIndex(0);
-                setIsFlipped(false);
-              }}
-              style={{
-                padding: '0.6rem 1rem',
-                borderRadius: 'var(--radius-sm)',
-                border: `1px solid ${isActive ? deck.color : 'var(--border-subtle)'}`,
-                background: isActive ? `${deck.color}20` : 'rgba(255,255,255,0.02)',
-                color: isActive ? deck.color : 'var(--text-main)',
-                fontSize: '0.85rem',
-                fontWeight: 600,
-                cursor: 'pointer',
-                whiteSpace: 'nowrap',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.45rem',
-                transition: 'all 0.2s'
-              }}
-            >
-              <i className={`fa-solid ${deck.icon}`}></i> {deck.name}
-            </button>
-          );
-        })}
+      {/* Deck Selector Dropdown Menu */}
+      <div style={{ marginBottom: '1.5rem' }}>
+        <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '0.45rem' }}>
+          <i className="fa-solid fa-layer-group" style={{ color: 'var(--accent-cyan)', marginRight: '0.4rem' }}></i> SELECT FLASHCARD DECK
+        </label>
+        <select
+          value={activeDeckId}
+          onChange={(e) => {
+            setActiveDeckId(e.target.value);
+            setCardIndex(0);
+            setIsFlipped(false);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          style={{
+            width: '100%',
+            padding: '0.75rem 1rem',
+            borderRadius: 'var(--radius-sm)',
+            border: '1px solid var(--border-subtle)',
+            background: 'var(--bg-card)',
+            color: 'var(--text-main)',
+            fontSize: '0.92rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            outline: 'none'
+          }}
+        >
+          {FLASHCARD_DECKS.map(deck => (
+            <option key={deck.id} value={deck.id}>
+              {deck.name} ({deck.cards.length} Cards)
+            </option>
+          ))}
+        </select>
       </div>
 
       {/* Progress Bar */}

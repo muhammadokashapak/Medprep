@@ -53,6 +53,10 @@ export default function App() {
     }
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [activeTab]);
+
   const toggleBookmark = (qId) => {
     setBookmarks(prev => {
       const next = { ...prev };

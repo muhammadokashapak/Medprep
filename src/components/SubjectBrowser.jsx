@@ -1,9 +1,13 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { SUBJECT_METADATA, groupQuestionsBySubject } from '../utils/subjectCategorizer';
 
 export default function SubjectBrowser({ questions = [], startSubjectQuiz }) {
   const [selectedLimit, setSelectedLimit] = useState(25);
   const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const subjectGroups = useMemo(() => {
     return groupQuestionsBySubject(questions);
