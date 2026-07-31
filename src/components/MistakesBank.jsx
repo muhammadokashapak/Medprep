@@ -189,8 +189,8 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
             style={{ padding: '1.25rem', borderLeft: '4px solid var(--accent-rose)' }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.65rem' }}>
-              <span className="badge" style={{ background: 'rgba(6, 182, 212, 0.12)', color: 'var(--accent-cyan)', fontSize: '0.75rem' }}>
-                {item.category}
+              <span className="badge" style={{ background: 'rgba(244, 63, 94, 0.12)', color: 'var(--accent-rose)', fontSize: '0.75rem' }}>
+                <i className="fa-solid fa-triangle-exclamation" style={{ marginRight: '0.35rem' }}></i> Mistake Item #{idx + 1}
               </span>
               <button
                 onClick={() => removeSingleMistake && removeSingleMistake(item.id)}

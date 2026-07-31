@@ -129,7 +129,9 @@ export default function QBankExplorer({ questions = [], bookmarks = {}, toggleBo
           return (
             <div key={q.id} className="glass-panel" style={{ padding: '1.75rem' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.85rem' }}>
-                <span className="badge">{q.category}</span>
+                <span className="badge" style={{ background: 'rgba(6, 182, 212, 0.12)', color: 'var(--accent-cyan)', border: '1px solid rgba(6, 182, 212, 0.3)' }}>
+                  <i className="fa-solid fa-file-medical" style={{ marginRight: '0.35rem' }}></i> QBank Question
+                </span>
                 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-subdued)', fontWeight: 600 }}>MCQ #{q.id}</span>
