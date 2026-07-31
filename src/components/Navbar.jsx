@@ -6,6 +6,8 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: 'fa-table-columns' },
     { id: 'subjects', label: 'Subjects', icon: 'fa-shapes' },
+    { id: 'flashcards', label: 'Flashcards', icon: 'fa-clone' },
+    { id: 'mnemonics', label: 'Mnemonics', icon: 'fa-lightbulb' },
     { id: 'mistakes', label: 'Mistakes', icon: 'fa-brain' }
   ];
 
@@ -236,6 +238,14 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
           >
             <i className="fa-solid fa-shapes"></i>
             <span>Subjects</span>
+          </button>
+
+          <button 
+            className={`mobile-nav-item ${activeTab === 'flashcards' ? 'active' : ''}`}
+            onClick={() => handleTabChange('flashcards')}
+          >
+            <i className="fa-solid fa-clone"></i>
+            <span>Cards</span>
           </button>
 
           <button 

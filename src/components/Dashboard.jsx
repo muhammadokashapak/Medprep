@@ -113,40 +113,24 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
   if (!currentUser) {
     return (
       <div className="animate-fade-in" style={{ padding: '1.25rem 0' }}>
-        {/* General Welcome Hero Banner */}
-        <div className="glass-panel" style={{
-          padding: '2.5rem 1.25rem',
-          marginBottom: '2rem',
-          background: 'var(--gradient-card-hero)',
-          border: '1px solid var(--border-glow)',
-          textAlign: 'center',
-          position: 'relative',
-          overflow: 'hidden'
-        }}>
-          <div className="badge" style={{ marginBottom: '1rem', fontSize: '0.78rem' }}>
-            <i className="fa-solid fa-circle-check"></i> 48,000+ High-Yield MCQs
-          </div>
-          <h1 style={{ fontSize: '1.8rem', marginBottom: '0.85rem', fontWeight: 800, lineHeight: 1.25 }}>
-            Global Medical Board <span className="gradient-text">Exam Suite</span>
+        <div className="glass-panel text-center" style={{ padding: '3rem 1.5rem', marginBottom: '2rem', borderLeft: '6px solid var(--accent-cyan)' }}>
+          <h1 style={{ fontSize: '2.2rem', marginBottom: '0.75rem', fontWeight: 800 }}>
+            Master FCPS, USMLE & PLAB Board Exams
           </h1>
-          <p style={{ color: 'var(--text-muted)', maxWidth: '820px', margin: '0 auto 1.75rem', fontSize: '0.95rem', lineHeight: 1.6 }}>
-            Master medical licensing boards with real-world timed simulations, subject mastery analytics, and anti-trick distractor verification.
+          <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', maxWidth: '680px', margin: '0 auto 1.75rem', lineHeight: 1.6 }}>
+            Access over 48,000+ high-yield medical board MCQs, timed mock blocks, clinical vignettes, and analytics designed by physicians.
           </p>
-          <button className="btn-primary" onClick={() => onOpenAuth?.()} style={{ margin: '0 auto', padding: '0.8rem 1.8rem', fontSize: '0.95rem' }}>
-            <i className="fa-solid fa-user-doctor"></i> Sign In / Register Account
+          <button className="btn-primary" onClick={() => onOpenAuth?.()} style={{ padding: '0.85rem 2.2rem', fontSize: '1rem', width: 'auto' }}>
+            <i className="fa-solid fa-user-plus"></i> Join Candidate Platform
           </button>
         </div>
 
-        {/* Clean Exam Tracks Grid */}
-        <h2 style={{ fontSize: '1.4rem', marginBottom: '1.25rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <i className="fa-solid fa-graduation-cap" style={{ color: 'var(--accent-cyan)' }}></i>
-          Official Medical Board Examination Tracks
-        </h2>
+        <h2 style={{ fontSize: '1.35rem', marginBottom: '1rem', fontWeight: 700 }}>Supported Examination Tracks</h2>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-          gap: '1.15rem',
-          marginBottom: '2.5rem'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '1.25rem',
+          marginBottom: '2rem'
         }}>
           {examTracks.map(track => (
             <div key={track.id} className="glass-panel" style={{
@@ -218,23 +202,35 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
         flexWrap: 'wrap',
         gap: '1.25rem'
       }}>
-        <div style={{ maxWidth: '700px', flex: 1, minWidth: '240px' }}>
-          <div className="badge" style={{ marginBottom: '0.65rem', fontSize: '0.78rem' }}>
-            <i className="fa-solid fa-user-check"></i> Registered Candidate &bull; {userTrack} Track
+        <div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginBottom: '0.35rem' }}>
+            <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--accent-cyan)', letterSpacing: '0.05em' }}>CANDIDATE PORTAL</span>
+            <span className="badge" style={{ background: 'rgba(6, 182, 212, 0.15)', color: 'var(--accent-cyan)', border: '1px solid rgba(6, 182, 212, 0.3)', fontSize: '0.72rem' }}>
+              <i className="fa-solid fa-award"></i> Level 1: Medical Student
+            </span>
           </div>
-          <h1 style={{ fontSize: '1.65rem', marginBottom: '0.45rem', fontWeight: 800, lineHeight: 1.3 }}>
-            Welcome back, <span className="gradient-text">Dr. {currentUser.name}</span>
+
+          <h1 style={{ fontSize: '1.65rem', margin: '0 0 0.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
+            Welcome, Dr. {currentUser.name || 'Candidate'}! 👋
           </h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem', lineHeight: 1.5 }}>
-            Select an official medical board exam block or custom timed mock session below to start.
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', margin: 0 }}>
+            Target Track: <strong style={{ color: 'var(--accent-cyan)' }}>{userTrack}</strong> &bull; {stats.attemptedCount.toLocaleString()} MCQs Solved Overall
           </p>
         </div>
 
-        <div style={{ width: '100%', maxWidth: '280px' }}>
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <button
+            className="btn-secondary"
+            onClick={() => onOpenDailyChallenge?.()}
+            style={{ padding: '0.75rem 1.1rem', fontSize: '0.88rem', background: 'rgba(245, 158, 11, 0.12)', color: 'var(--accent-amber)', borderColor: 'rgba(245, 158, 11, 0.3)' }}
+          >
+            <i className="fa-solid fa-fire-flame-curved"></i> Daily 10-Q Sprint
+          </button>
+
           <button 
             className="btn-primary" 
             onClick={() => onOpenLaunchModal ? onOpenLaunchModal(userTrack) : startQuiz?.({ mode: 'full_official', examTrack: userTrack })}
-            style={{ width: '100%', justifyContent: 'center', padding: '0.8rem 1.2rem', fontSize: '0.95rem' }}
+            style={{ padding: '0.75rem 1.25rem', fontSize: '0.88rem' }}
           >
             <i className="fa-solid fa-play"></i> Launch {userTrack} Exam
           </button>

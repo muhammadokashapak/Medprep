@@ -12,6 +12,10 @@ import RankBadgesModal from './components/RankBadgesModal';
 import DailyGoalModal from './components/DailyGoalModal';
 import QBankExplorer from './components/QBankExplorer';
 import SubjectBrowser from './components/SubjectBrowser';
+import Flashcards from './components/Flashcards';
+import MnemonicsLibrary from './components/MnemonicsLibrary';
+import DailyChallengeModal from './components/DailyChallengeModal';
+import { updateDailyStreak, addXP, getUserGamificationData } from './utils/gamification';
 import questionsData from './data/questions.json';
 import { safeStorageGet, safeStorageSet, sanitizeUserSession, fisherYatesShuffle, getQuestionsForTrack } from './utils/security';
 
@@ -36,8 +40,18 @@ export default function App() {
 
   const [bookmarks, setBookmarks] = useState(() => safeStorageGet('fcps_bookmarks', {}));
 
-  // Exam Launch Modal State
   const [launchExamTrack, setLaunchExamTrack] = useState(null);
+  const [isDailyChallengeOpen, setIsDailyChallengeOpen] = useState(false);
+  const [gamification, setGamification] = useState(() => getUserGamificationData());
+
+  useEffect(() => {
+    // Check daily streak on mount
+    const res = updateDailyStreak();
+    setGamification(res.data);
+    if (res.streakIncremented) {
+      addToast(`🔥 Daily Streak Maintained! +50 XP Bonus`, 'success');
+    }
+  }, []);
 
   const toggleBookmark = (qId) => {
     setBookmarks(prev => {
@@ -197,6 +211,28 @@ export default function App() {
 
     setActiveTab('practice');
     addToast(`Loaded ${selected.length} ${subjectName} MCQs!`, 'success');
+  };
+
+  const startDailyChallengeSprint = () => {
+    setIsDailyChallengeOpen(false);
+    const pool = getQuestionsForTrack(questionsData, userTrack);
+    const shuffled = fisherYatesShuffle(pool);
+    const selected = shuffled.slice(0, 10);
+
+    setQuizState({
+      list: selected,
+      config: {
+        mode: 'daily_challenge',
+        examTrack: userTrack,
+        title: `🔥 Daily 10-MCQ Challenge Sprint`,
+        limit: 10,
+        timeLimitMinutes: 10,
+        isMock: true
+      }
+    });
+
+    setActiveTab('practice');
+    addToast('Daily 10-Q Sprint Launched! Good luck!', 'success');
   };
 
   const recordExamResult = (examResultObj) => {
@@ -391,6 +427,7 @@ export default function App() {
                 history={history} 
                 startQuiz={startQuiz}
                 onOpenLaunchModal={(trackId) => setLaunchExamTrack(trackId)}
+                onOpenDailyChallenge={() => setIsDailyChallengeOpen(true)}
                 currentUser={currentUser}
                 onOpenAuth={() => setIsAuthOpen(true)}
                 onOpenProfile={() => setIsProfileOpen(true)}
@@ -425,6 +462,14 @@ export default function App() {
                 questions={trackQuestions} 
                 startSubjectQuiz={startSubjectQuiz} 
               />
+            )}
+
+            {activeTab === 'flashcards' && (
+              <Flashcards addToast={addToast} />
+            )}
+
+            {activeTab === 'mnemonics' && (
+              <MnemonicsLibrary />
             )}
 
             {activeTab === 'qbank' && (
@@ -504,6 +549,14 @@ export default function App() {
         onClose={() => setLaunchExamTrack(null)}
         examTrack={launchExamTrack}
         onLaunchBlock={handleLaunchBlock}
+      />
+
+      {/* Daily Challenge Sprint Modal */}
+      <DailyChallengeModal
+        isOpen={isDailyChallengeOpen}
+        onClose={() => setIsDailyChallengeOpen(false)}
+        onStartChallenge={startDailyChallengeSprint}
+        streak={gamification.streak}
       />
     </div>
   );
