@@ -11,6 +11,7 @@ import ExamLaunchModal from './components/ExamLaunchModal';
 import RankBadgesModal from './components/RankBadgesModal';
 import DailyGoalModal from './components/DailyGoalModal';
 import QBankExplorer from './components/QBankExplorer';
+import SubjectBrowser from './components/SubjectBrowser';
 import questionsData from './data/questions.json';
 import { safeStorageGet, safeStorageSet, sanitizeUserSession, fisherYatesShuffle, getQuestionsForTrack } from './utils/security';
 
@@ -165,6 +166,37 @@ export default function App() {
   const handleLaunchBlock = (examTrack, limit, timeLimitMinutes, blockName) => {
     setLaunchExamTrack(null); // Close modal
     startQuiz({ mode: 'full_official', examTrack, limit, timeLimitMinutes });
+  };
+
+  const startSubjectQuiz = (subjectName, subjectQuestions, limit = 25) => {
+    if (!currentUser) {
+      addToast('Please Sign In or Register to access Subject practice blocks', 'warning');
+      setIsAuthOpen(true);
+      return;
+    }
+
+    if (!subjectQuestions || subjectQuestions.length === 0) {
+      addToast(`No questions found for ${subjectName}`, 'error');
+      return;
+    }
+
+    const shuffled = fisherYatesShuffle(subjectQuestions);
+    const selected = shuffled.slice(0, Math.min(limit, shuffled.length));
+
+    setQuizState({
+      list: selected,
+      config: {
+        mode: 'subject_practice',
+        examTrack: userTrack,
+        title: `${subjectName} — Practice Block (${selected.length} Qs)`,
+        limit: selected.length,
+        timeLimitMinutes: Math.round(selected.length * 1.2), // ~1.2 mins per question
+        isMock: false
+      }
+    });
+
+    setActiveTab('practice');
+    addToast(`Loaded ${selected.length} ${subjectName} MCQs!`, 'success');
   };
 
   const recordExamResult = (examResultObj) => {
@@ -385,6 +417,13 @@ export default function App() {
                 startMistakesQuiz={() => startQuiz({ mode: 'mistakes' })} 
                 clearMistakes={clearMistakesOnly} 
                 removeSingleMistake={removeSingleMistake} 
+              />
+            )}
+
+            {activeTab === 'subjects' && (
+              <SubjectBrowser 
+                questions={trackQuestions} 
+                startSubjectQuiz={startSubjectQuiz} 
               />
             )}
 

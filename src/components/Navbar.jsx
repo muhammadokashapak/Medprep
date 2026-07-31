@@ -5,6 +5,7 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
 
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: 'fa-table-columns' },
+    { id: 'subjects', label: 'Subjects', icon: 'fa-shapes' },
     { id: 'mistakes', label: 'Mistakes', icon: 'fa-brain' }
   ];
 
