@@ -466,10 +466,6 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         <div className="exam-header-left">
           <div className="exam-q-info">
             <span className="exam-q-number">Question {currentIndex + 1} of {safeList.length}</span>
-            <span className="exam-block-badge">
-              <i className="fa-solid fa-file-signature" style={{ marginRight: '0.35rem', color: 'var(--accent-cyan)' }}></i>
-              {config?.title || 'Board Examination Block'}
-            </span>
           </div>
         </div>
 

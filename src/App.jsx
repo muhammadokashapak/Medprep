@@ -55,7 +55,64 @@ export default function App() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (!window.history.state || window.history.state.tab !== activeTab) {
+      window.history.pushState({ tab: activeTab }, '', `#${activeTab}`);
+    }
   }, [activeTab]);
+
+  // Native Mobile History & Back Gesture Navigation
+  useEffect(() => {
+    const handlePopState = (e) => {
+      // 1. Close open modals first
+      if (launchExamTrack) {
+        setLaunchExamTrack(null);
+        return;
+      }
+      if (isDailyChallengeOpen) {
+        setIsDailyChallengeOpen(false);
+        return;
+      }
+      if (isProfileOpen) {
+        setIsProfileOpen(false);
+        return;
+      }
+      if (isCompareOpen) {
+        setIsCompareOpen(false);
+        return;
+      }
+      if (isRankModalOpen) {
+        setIsRankModalOpen(false);
+        return;
+      }
+      if (isDailyGoalModalOpen) {
+        setIsDailyGoalModalOpen(false);
+        return;
+      }
+
+      // 2. Intercept active quiz session
+      if (quizState) {
+        if (window.confirm('Exit active examination session?')) {
+          setQuizState(null);
+          setActiveTab('dashboard');
+        } else {
+          window.history.pushState({ tab: activeTab }, '', `#${activeTab}`);
+        }
+        return;
+      }
+
+      // 3. Return to Dashboard tab from any sub-tab
+      if (activeTab !== 'dashboard') {
+        setActiveTab('dashboard');
+        return;
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [
+    activeTab, quizState, launchExamTrack, isDailyChallengeOpen,
+    isProfileOpen, isCompareOpen, isRankModalOpen, isDailyGoalModalOpen
+  ]);
 
   const toggleBookmark = (qId) => {
     setBookmarks(prev => {
