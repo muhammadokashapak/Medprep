@@ -155,7 +155,7 @@ export default function MnemonicsLibrary() {
               >
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent-cyan)', textTransform: 'uppercase' }}>
-                    {item.category}
+                    <i className="fa-solid fa-lightbulb" style={{ marginRight: '0.35rem' }}></i> High-Yield Mnemonic #{item.id}
                   </span>
                   <h3 style={{ fontSize: '1.3rem', fontWeight: 800, margin: '0.1rem 0 0.2rem', color: 'var(--text-main)' }}>
                     {item.title}

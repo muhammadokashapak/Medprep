@@ -19,6 +19,7 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
       onLeaveExam?.();
     }
     setActiveTab(tabId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

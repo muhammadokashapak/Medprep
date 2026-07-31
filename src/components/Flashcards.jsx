@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { addXP } from '../utils/gamification';
 
 const FLASHCARD_DECKS = [
@@ -62,10 +62,6 @@ export default function Flashcards({ addToast }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [masteredCards, setMasteredCards] = useState({});
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
-
   const currentDeck = FLASHCARD_DECKS.find(d => d.id === activeDeckId) || FLASHCARD_DECKS[0];
   const currentCard = currentDeck.cards[cardIndex];
 
@@ -105,9 +101,9 @@ export default function Flashcards({ addToast }) {
       </div>
 
       {/* Deck Selector Dropdown Menu */}
-      <div style={{ marginBottom: '1.5rem' }}>
-        <label style={{ display: 'block', fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '0.45rem' }}>
-          <i className="fa-solid fa-layer-group" style={{ color: 'var(--accent-cyan)', marginRight: '0.4rem' }}></i> SELECT FLASHCARD DECK
+      <div style={{ marginBottom: '1.5rem', background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+        <label style={{ display: 'block', fontSize: '0.78rem', fontWeight: 800, color: 'var(--accent-cyan)', marginBottom: '0.45rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <i className="fa-solid fa-layer-group" style={{ marginRight: '0.35rem' }}></i> SELECT FLASHCARD DECK MODULE
         </label>
         <select
           value={activeDeckId}
@@ -124,15 +120,15 @@ export default function Flashcards({ addToast }) {
             border: '1px solid var(--border-subtle)',
             background: 'var(--bg-card)',
             color: 'var(--text-main)',
-            fontSize: '0.92rem',
-            fontWeight: 600,
+            fontSize: '0.95rem',
+            fontWeight: 700,
             cursor: 'pointer',
             outline: 'none'
           }}
         >
           {FLASHCARD_DECKS.map(deck => (
             <option key={deck.id} value={deck.id}>
-              {deck.name} ({deck.cards.length} Cards)
+              {deck.name} ({deck.cards.length} High-Yield Cards)
             </option>
           ))}
         </select>
