@@ -57,7 +57,7 @@ const examTracks = [
   }
 ];
 
-export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0, mistakesList: [], todayAttemptedCount: 0 }, history = [], startQuiz, currentUser, onOpenAuth, onOpenProfile, onOpenCompareModal, onOpenRankModal, onOpenGoalModal, dailyGoal = 50 }) {
+export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0, mistakesList: [], todayAttemptedCount: 0 }, history = [], startQuiz, onOpenLaunchModal, currentUser, onOpenAuth, onOpenProfile, onOpenCompareModal, onOpenRankModal, onOpenGoalModal, dailyGoal = 50 }) {
   const [selectedMockLimit, setSelectedMockLimit] = useState(50);
   const [dailyCaseSelected, setDailyCaseSelected] = useState(null);
   const [showCaseRationale, setShowCaseRationale] = useState(false);
@@ -233,7 +233,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
         <div style={{ width: '100%', maxWidth: '280px' }}>
           <button 
             className="btn-primary" 
-            onClick={() => startQuiz?.({ mode: 'full_official', examTrack: userTrack })}
+            onClick={() => onOpenLaunchModal ? onOpenLaunchModal(userTrack) : startQuiz?.({ mode: 'full_official', examTrack: userTrack })}
             style={{ width: '100%', justifyContent: 'center', padding: '0.8rem 1.2rem', fontSize: '0.95rem' }}
           >
             <i className="fa-solid fa-play"></i> Launch {userTrack} Exam
@@ -713,7 +713,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
 
               <button 
                 className={isSelected ? "btn-primary" : "btn-secondary"} 
-                onClick={() => startQuiz?.({ mode: 'full_official', examTrack: track.id })} 
+                onClick={() => onOpenLaunchModal ? onOpenLaunchModal(track.id) : startQuiz?.({ mode: 'full_official', examTrack: track.id })}
                 style={{ width: '100%', justifyContent: 'center', marginTop: '1rem' }}
               >
                 Launch {track.id} Exam <i className="fa-solid fa-arrow-right"></i>

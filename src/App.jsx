@@ -7,6 +7,7 @@ import ToastNotification from './components/ToastNotification';
 import AuthModal from './components/AuthModal';
 import UserProfileModal from './components/UserProfileModal';
 import ExamComparisonModal from './components/ExamComparisonModal';
+import ExamLaunchModal from './components/ExamLaunchModal';
 import RankBadgesModal from './components/RankBadgesModal';
 import DailyGoalModal from './components/DailyGoalModal';
 import QBankExplorer from './components/QBankExplorer';
@@ -33,6 +34,9 @@ export default function App() {
   const [dailyGoal, setDailyGoal] = useState(() => safeStorageGet('fcps_daily_goal', 50));
 
   const [bookmarks, setBookmarks] = useState(() => safeStorageGet('fcps_bookmarks', {}));
+
+  // Exam Launch Modal State
+  const [launchExamTrack, setLaunchExamTrack] = useState(null);
 
   const toggleBookmark = (qId) => {
     setBookmarks(prev => {
@@ -147,7 +151,7 @@ export default function App() {
       config: {
         mode,
         examTrack: activeExamTrack,
-        title: `${activeExamTrack} Official Exam Block`,
+        title: mode === 'full_official' ? `${activeExamTrack} Official Exam Block` : `${activeExamTrack} Practice`,
         limit: selectedQuestions.length,
         timeLimitMinutes: timeLimitMinutes ?? null,
         isMock: mode === 'mock' || mode === 'full_official'
@@ -156,6 +160,11 @@ export default function App() {
 
     setActiveTab('practice');
     addToast(`Loaded ${selectedQuestions.length} Questions for ${activeExamTrack}`, 'success');
+  };
+
+  const handleLaunchBlock = (examTrack, limit, timeLimitMinutes, blockName) => {
+    setLaunchExamTrack(null); // Close modal
+    startQuiz({ mode: 'full_official', examTrack, limit, timeLimitMinutes });
   };
 
   const recordExamResult = (examResultObj) => {
@@ -348,7 +357,8 @@ export default function App() {
                 questions={trackQuestions} 
                 stats={stats} 
                 history={history} 
-                startQuiz={startQuiz} 
+                startQuiz={startQuiz}
+                onOpenLaunchModal={(trackId) => setLaunchExamTrack(trackId)}
                 currentUser={currentUser}
                 onOpenAuth={() => setIsAuthOpen(true)}
                 onOpenProfile={() => setIsProfileOpen(true)}
@@ -438,15 +448,23 @@ export default function App() {
         history={history}
       />
 
-      <DailyGoalModal
-        isOpen={isDailyGoalModalOpen}
-        onClose={() => setIsDailyGoalModalOpen(false)}
+      <DailyGoalModal 
+        isOpen={isDailyGoalModalOpen} 
+        onClose={() => setIsDailyGoalModalOpen(false)} 
         currentGoal={dailyGoal}
-        onSetGoal={(newGoal) => {
-          setDailyGoal(newGoal);
-          safeStorageSet('fcps_daily_goal', newGoal);
-          addToast(`Daily MCQ target set to ${newGoal} questions!`, 'success');
+        onSaveGoal={(g) => {
+          setDailyGoal(g);
+          safeStorageSet('fcps_daily_goal', g);
+          addToast(`Daily MCQ target set to ${g} questions!`, 'success');
         }}
+      />
+
+      {/* Exam Launch Modal */}
+      <ExamLaunchModal
+        isOpen={!!launchExamTrack}
+        onClose={() => setLaunchExamTrack(null)}
+        examTrack={launchExamTrack}
+        onLaunchBlock={handleLaunchBlock}
       />
     </div>
   );
