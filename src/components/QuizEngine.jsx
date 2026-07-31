@@ -23,7 +23,8 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   const [isCompleted, setIsCompleted] = useState(false);
   const [examResult, setExamResult] = useState(null);
   const [startTime] = useState(Date.now());
-  const [showOnlyIncorrect, setShowOnlyIncorrect] = useState(false);
+  const [reviewFilter, setReviewFilter] = useState('attempted'); // 'attempted' | 'incorrect' | 'correct' | 'all'
+  const [strikedOptions, setStrikedOptions] = useState({}); // { [qKey]: { A: true } }
 
   const safeList = Array.isArray(quizList) ? quizList : [];
 
@@ -42,6 +43,20 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
   const currentQ = safeList[currentIndex];
   const qKey = currentQ ? (currentQ.id ?? `q_${currentIndex}`) : null;
+
+  const toggleStrikeOption = (optKey) => {
+    if (!qKey) return;
+    setStrikedOptions(prev => {
+      const qStriked = prev[qKey] || {};
+      return {
+        ...prev,
+        [qKey]: {
+          ...qStriked,
+          [optKey]: !qStriked[optKey]
+        }
+      };
+    });
+  };
 
   const handleFinalSubmit = useCallback((auto = false) => {
     setShowSubmitModal(false);
@@ -175,9 +190,13 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   // COMPLETED EXAM PERFORMANCE SUMMARY VIEW
   if (isCompleted && examResult) {
     const isPass = examResult.scorePercentage >= 60;
-    const filteredDetails = showOnlyIncorrect
-      ? examResult.details.filter(d => !d.isCorrect)
-      : examResult.details;
+
+    const filteredDetails = examResult.details.filter(d => {
+      if (reviewFilter === 'attempted') return d.wasAttempted;
+      if (reviewFilter === 'incorrect') return d.wasAttempted && !d.isCorrect;
+      if (reviewFilter === 'correct') return d.wasAttempted && d.isCorrect;
+      return true; // 'all'
+    });
 
     const getOptionText = (q, key) => {
       if (!key || key === 'Unattempted') return 'Not Answered';
@@ -229,15 +248,15 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
             </div>
 
             <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>SOLVED / TOTAL</span>
-              <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                {examResult.correctCount} <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>/ {examResult.totalQuestions}</span>
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>ATTEMPTED</span>
+              <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-cyan)' }}>
+                {examResult.attemptedCount} <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>/ {examResult.totalQuestions}</span>
               </span>
             </div>
 
             <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
               <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>ACCURACY</span>
-              <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-cyan)' }}>
+              <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-emerald)' }}>
                 {examResult.accuracyPercentage}%
               </span>
             </div>
@@ -289,28 +308,50 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
           </div>
         )}
 
-        {/* Detailed Question Review Section */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-          <h3 style={{ fontSize: '1.1rem', fontWeight: 700 }}>
-            Rationale Review ({filteredDetails.length})
+        {/* Filtered Question Review Section */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.75rem' }}>
+          <h3 style={{ fontSize: '1.1rem', fontWeight: 700, margin: 0 }}>
+            <i className="fa-solid fa-clipboard-check" style={{ color: 'var(--accent-cyan)', marginRight: '0.4rem' }}></i>
+            Attempted Questions Review ({filteredDetails.length})
           </h3>
 
-          <button
-            className="btn-secondary"
-            onClick={() => setShowOnlyIncorrect(!showOnlyIncorrect)}
-            style={{ padding: '0.4rem 0.8rem', fontSize: '0.8rem', minHeight: '36px', width: 'auto' }}
-          >
-            <i className={`fa-solid ${showOnlyIncorrect ? 'fa-eye' : 'fa-filter'}`}></i>
-            {showOnlyIncorrect ? 'Show All' : 'Incorrect Only'}
-          </button>
+          {/* Filter Pills */}
+          <div style={{ display: 'flex', gap: '0.4rem', background: 'rgba(0,0,0,0.2)', padding: '0.3rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+            {[
+              { id: 'attempted', label: 'Attempted Only' },
+              { id: 'incorrect', label: 'Incorrect' },
+              { id: 'correct', label: 'Correct' },
+              { id: 'all', label: 'All Questions' }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setReviewFilter(tab.id)}
+                style={{
+                  padding: '0.35rem 0.75rem',
+                  fontSize: '0.78rem',
+                  fontWeight: 700,
+                  borderRadius: '4px',
+                  border: 'none',
+                  cursor: 'pointer',
+                  background: reviewFilter === tab.id ? 'var(--accent-cyan)' : 'transparent',
+                  color: reviewFilter === tab.id ? '#fff' : 'var(--text-muted)',
+                  transition: 'all 0.2s'
+                }}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          {filteredDetails.length === 0 && showOnlyIncorrect && (
-            <div className="glass-panel text-center" style={{ padding: '2.5rem', marginTop: '1rem' }}>
-              <i className="fa-solid fa-face-grin-stars" style={{ fontSize: '3rem', color: 'var(--accent-emerald)', marginBottom: '1rem' }}></i>
-              <h3 style={{ color: 'var(--accent-emerald)' }}>Perfect Score!</h3>
-              <p style={{ color: 'var(--text-muted)' }}>You didn't get any questions wrong.</p>
+          {filteredDetails.length === 0 && (
+            <div className="glass-panel text-center" style={{ padding: '2.5rem', marginTop: '0.5rem' }}>
+              <i className="fa-solid fa-clipboard-question" style={{ fontSize: '2.5rem', color: 'var(--accent-cyan)', marginBottom: '0.75rem' }}></i>
+              <h4 style={{ color: 'var(--text-main)', margin: '0 0 0.25rem' }}>No Questions to Display</h4>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', margin: 0 }}>
+                {reviewFilter === 'attempted' ? 'No questions were attempted during this exam block.' : 'No questions match the selected filter.'}
+              </p>
             </div>
           )}
           {filteredDetails.map((det) => (
@@ -318,49 +359,54 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
               key={det.q.id ?? `review_q_${det.index}`}
               className="glass-panel"
               style={{
-                padding: '1.25rem',
-                borderLeft: `4px solid ${det.isCorrect ? 'var(--accent-emerald)' : 'var(--accent-rose)'}`
+                padding: '1.5rem',
+                borderLeft: `4px solid ${det.isCorrect ? 'var(--accent-emerald)' : (det.wasAttempted ? 'var(--accent-rose)' : 'var(--text-muted)')}`
               }}
             >
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.65rem', flexWrap: 'wrap', gap: '0.4rem' }}>
-                <span style={{ fontWeight: 700, fontSize: '0.82rem', color: 'var(--accent-cyan)' }}>
-                  Q#{det.index} &bull; {det.q.category || 'General'}
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.75rem', flexWrap: 'wrap', gap: '0.4rem' }}>
+                <span style={{ fontWeight: 800, fontSize: '0.85rem', color: 'var(--accent-cyan)' }}>
+                  Question #{det.index}
                 </span>
                 <span className="badge" style={{
-                  padding: '0.2rem 0.6rem',
-                  fontSize: '0.72rem',
-                  background: det.isCorrect ? 'rgba(16, 185, 129, 0.15)' : 'rgba(244, 63, 94, 0.15)',
-                  color: det.isCorrect ? 'var(--accent-emerald)' : 'var(--accent-rose)',
-                  borderColor: det.isCorrect ? 'rgba(16, 185, 129, 0.3)' : 'rgba(244, 63, 94, 0.3)'
+                  padding: '0.25rem 0.65rem',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  background: det.isCorrect 
+                    ? 'rgba(16, 185, 129, 0.15)' 
+                    : (det.wasAttempted ? 'rgba(244, 63, 94, 0.15)' : 'rgba(255,255,255,0.08)'),
+                  color: det.isCorrect 
+                    ? 'var(--accent-emerald)' 
+                    : (det.wasAttempted ? 'var(--accent-rose)' : 'var(--text-muted)'),
+                  border: `1px solid ${det.isCorrect ? 'rgba(16, 185, 129, 0.3)' : (det.wasAttempted ? 'rgba(244, 63, 94, 0.3)' : 'var(--border-subtle)')}`
                 }}>
-                  {det.isCorrect ? 'CORRECT' : 'INCORRECT'}
+                  {det.isCorrect ? '✓ CORRECT' : (det.wasAttempted ? '✗ INCORRECT' : 'UNATTEMPTED')}
                 </span>
               </div>
 
-              <h4 style={{ fontSize: '0.95rem', fontWeight: 500, lineHeight: 1.5, marginBottom: '1rem' }}>
+              <h4 style={{ fontSize: '1rem', fontWeight: 500, lineHeight: 1.6, marginBottom: '1.25rem', color: 'var(--text-main)' }}>
                 {det.q.question}
               </h4>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '0.65rem', marginBottom: '1rem' }}>
-                <div style={{ padding: '0.6rem 0.85rem', borderRadius: 'var(--radius-sm)', background: det.isCorrect ? 'rgba(16, 185, 129, 0.1)' : 'rgba(244, 63, 94, 0.1)', border: '1px solid var(--border-subtle)' }}>
-                  <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-muted)' }}>YOUR ANSWER</span>
-                  <strong style={{ fontSize: '0.88rem', color: det.isCorrect ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem', marginBottom: '1.25rem' }}>
+                <div style={{ padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', background: det.isCorrect ? 'rgba(16, 185, 129, 0.1)' : 'rgba(244, 63, 94, 0.1)', border: '1px solid var(--border-subtle)' }}>
+                  <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '0.2rem' }}>YOUR SELECTION</span>
+                  <strong style={{ fontSize: '0.92rem', color: det.isCorrect ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
                     {getOptionText(det.q, det.selected)}
                   </strong>
                 </div>
 
-                <div style={{ padding: '0.6rem 0.85rem', borderRadius: 'var(--radius-sm)', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid var(--border-subtle)' }}>
-                  <span style={{ display: 'block', fontSize: '0.7rem', color: 'var(--text-muted)' }}>CORRECT ANSWER</span>
-                  <strong style={{ fontSize: '0.88rem', color: 'var(--accent-emerald)' }}>
+                <div style={{ padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid var(--border-subtle)' }}>
+                  <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '0.2rem' }}>CORRECT ANSWER</span>
+                  <strong style={{ fontSize: '0.92rem', color: 'var(--accent-emerald)' }}>
                     {getOptionText(det.q, det.correctAnswer)}
                   </strong>
                 </div>
               </div>
 
               {det.explanation && (
-                <div style={{ padding: '0.85rem 1rem', background: 'rgba(255,255,255,0.02)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)', fontSize: '0.88rem', lineHeight: 1.5 }}>
-                  <strong style={{ color: 'var(--accent-cyan)', display: 'block', marginBottom: '0.25rem' }}>
-                    <i className="fa-solid fa-lightbulb"></i> Clinical Explanation:
+                <div style={{ padding: '1rem 1.15rem', background: 'rgba(255,255,255,0.02)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                  <strong style={{ color: 'var(--accent-cyan)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.35rem' }}>
+                    <i className="fa-solid fa-lightbulb"></i> Clinical Rationale & Explanation:
                   </strong>
                   {det.explanation}
                 </div>
@@ -420,7 +466,10 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         <div className="exam-header-left">
           <div className="exam-q-info">
             <span className="exam-q-number">Question {currentIndex + 1} of {safeList.length}</span>
-            <span className="exam-q-category">{currentQ?.category || 'General'}</span>
+            <span className="exam-block-badge">
+              <i className="fa-solid fa-file-signature" style={{ marginRight: '0.35rem', color: 'var(--accent-cyan)' }}></i>
+              {config?.title || 'Board Examination Block'}
+            </span>
           </div>
         </div>
 
@@ -511,11 +560,17 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
           <div className="options-container">
             {options.map((opt) => {
               const isSelected = currentAnswer?.selected === opt.key;
+              const isStriked = !!(strikedOptions[qKey]?.[opt.key]);
+
               return (
                 <div
                   key={opt.key}
-                  className={`exam-option-card ${isSelected ? 'selected' : ''}`}
+                  className={`exam-option-card ${isSelected ? 'selected' : ''} ${isStriked ? 'striked' : ''}`}
                   onClick={() => handleSelectOption(opt.key)}
+                  onContextMenu={(e) => {
+                    e.preventDefault();
+                    toggleStrikeOption(opt.key);
+                  }}
                   role="button"
                   tabIndex={0}
                   aria-selected={isSelected}
@@ -523,6 +578,19 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
                 >
                   <div className="exam-option-letter">{opt.key}</div>
                   <div className="exam-option-text">{opt.text}</div>
+
+                  {/* Strike-Through Action Button */}
+                  <button
+                    type="button"
+                    className={`strike-btn ${isStriked ? 'active' : ''}`}
+                    title={isStriked ? "Restore Option" : "Eliminate Option (Right Click)"}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleStrikeOption(opt.key);
+                    }}
+                  >
+                    <i className="fa-solid fa-strikethrough"></i>
+                  </button>
                 </div>
               );
             })}

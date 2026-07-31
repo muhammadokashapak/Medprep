@@ -875,6 +875,69 @@ textarea:focus-visible {
 }
 .exam-btn-primary:hover { opacity: 0.9; }
 
+/* EXAM BLOCK BADGE & STRIKE-THROUGH STYLING */
+.exam-block-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  padding: 0.2rem 0.65rem;
+  border-radius: 6px;
+}
+
+.exam-option-card {
+  position: relative;
+  user-select: none;
+}
+
+.exam-option-card.striked {
+  opacity: 0.45;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-style: dashed !important;
+}
+
+.exam-option-card.striked .exam-option-text {
+  text-decoration: line-through;
+  color: var(--text-muted) !important;
+}
+
+.strike-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s;
+  margin-left: auto;
+  flex-shrink: 0;
+  opacity: 0.4;
+}
+
+.exam-option-card:hover .strike-btn {
+  opacity: 1;
+  border-color: var(--border-subtle);
+}
+
+.strike-btn:hover {
+  background: rgba(244, 63, 94, 0.15) !important;
+  color: var(--accent-rose) !important;
+  border-color: rgba(244, 63, 94, 0.3) !important;
+}
+
+.strike-btn.active {
+  opacity: 1;
+  background: rgba(244, 63, 94, 0.2);
+  color: var(--accent-rose);
+  border-color: var(--accent-rose);
+}
+
 /* RESPONSIVE OVERRIDES */
 @media (max-width: 768px) {
   .exam-vignette-area { padding: 1rem; }
