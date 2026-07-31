@@ -371,10 +371,10 @@ export default function App() {
 
             {activeTab === 'practice' && (
               <QuizEngine 
-                quizList={quizState?.list || trackQuestions} 
+                quizList={quizState?.list || trackQuestions.slice(0, 100)} 
                 onRecordResult={recordExamResult} 
                 onFinish={handleFinishQuiz} 
-                config={quizState?.config} 
+                config={quizState?.config || { title: `${userTrack} Practice Block`, isMock: false, limit: 100 }} 
                 addToast={addToast} 
               />
             )}

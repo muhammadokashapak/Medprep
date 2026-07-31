@@ -11,9 +11,9 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   const examStartRef = useRef(Date.now());
   const endTimeRef = useRef(null);
   const [timerSeconds, setTimerSeconds] = useState(() => {
-    const limit = config?.timeLimitMinutes ?? config?.limit ?? null;
-    if (limit !== null) {
-      return limit * 60;
+    const timeLimit = config?.timeLimitMinutes ?? null;
+    if (timeLimit !== null && !isNaN(timeLimit)) {
+      return timeLimit * 60;
     }
     return null;
   });
@@ -52,6 +52,8 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
     let attemptedCount = 0;
     const currentAnswersMap = userAnswersRef.current;
 
+    const subjectStats = {};
+
     const details = safeList.map((q, idx) => {
       const iterQKey = q.id ?? `q_${idx}`;
       const ans = currentAnswersMap[iterQKey];
@@ -60,9 +62,20 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         ? selected.toUpperCase() === String(q.correct_answer).toUpperCase()
         : false;
 
+      const rawSubj = (q.category || 'General').split('-')[0].trim();
+
+      if (!subjectStats[rawSubj]) {
+        subjectStats[rawSubj] = { total: 0, attempted: 0, correct: 0 };
+      }
+      subjectStats[rawSubj].total++;
+
       if (selected !== null && selected !== undefined) {
         attemptedCount++;
-        if (isCorrect) correctCount++;
+        subjectStats[rawSubj].attempted++;
+        if (isCorrect) {
+          correctCount++;
+          subjectStats[rawSubj].correct++;
+        }
       }
 
       return {
@@ -86,6 +99,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
     const resultObj = {
       title: config?.title || (config?.isMock ? 'Official Board Examination' : 'Practice Exam'),
+      examTrack: config?.examTrack || 'FCPS Part 1',
       totalQuestions: totalQ,
       attemptedCount,
       skippedCount: totalQ - attemptedCount,
@@ -93,6 +107,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
       scorePercentage,
       accuracyPercentage,
       timeTaken: timeTakenStr,
+      subjectStats,
       details,
       date: new Date().toLocaleDateString()
     };
@@ -104,11 +119,11 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
     if (auto) {
       addToast?.('Time expired! Exam auto-submitted.', 'warning');
-    } else if (scorePercentage >= 70 && attemptedCount > 0) {
-      confetti({ particleCount: 120, spread: 80, origin: { y: 0.5 } });
-      addToast?.(`Passed! Score: ${scorePercentage}% (${correctCount}/${totalQ} Solved)`, 'success');
+    } else if (scorePercentage >= 60 && attemptedCount > 0) {
+      confetti({ particleCount: 140, spread: 90, origin: { y: 0.5 } });
+      addToast?.(`PASSED! Score: ${scorePercentage}% (${correctCount}/${totalQ})`, 'success');
     } else {
-      addToast?.(`Exam Submitted. Score: ${scorePercentage}% (${correctCount}/${totalQ} Solved)`, 'warning');
+      addToast?.(`Exam Submitted. Score: ${scorePercentage}% (${correctCount}/${totalQ})`, 'warning');
     }
   }, [safeList, startTime, config, onRecordResult, addToast]);
 
@@ -159,7 +174,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
   // COMPLETED EXAM PERFORMANCE SUMMARY VIEW
   if (isCompleted && examResult) {
-    const isPass = examResult.scorePercentage >= 70;
+    const isPass = examResult.scorePercentage >= 60;
     const filteredDetails = showOnlyIncorrect
       ? examResult.details.filter(d => !d.isCorrect)
       : examResult.details;
@@ -170,62 +185,109 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
       return q[optKey] ? `${key}: ${q[optKey]}` : key;
     };
 
+    const subjectEntries = Object.entries(examResult.subjectStats || {});
+
     return (
-      <div className="animate-fade-in" style={{ padding: '1rem 0', maxWidth: '960px', margin: '0 auto' }}>
+      <div className="animate-fade-in" style={{ padding: '1.5rem 0', maxWidth: '980px', margin: '0 auto' }}>
         {/* Results Overview Hero Header */}
         <div className="glass-panel text-center" style={{
-          padding: '2rem 1.25rem',
+          padding: '2.5rem 1.5rem',
           marginBottom: '1.5rem',
-          borderLeft: `5px solid ${isPass ? 'var(--accent-emerald)' : 'var(--accent-amber)'}`,
-          background: isPass ? 'rgba(16, 185, 129, 0.08)' : 'rgba(245, 158, 11, 0.08)'
+          borderTop: `6px solid ${isPass ? 'var(--accent-emerald)' : 'var(--accent-rose)'}`,
+          background: isPass ? 'rgba(16, 185, 129, 0.06)' : 'rgba(244, 63, 94, 0.06)',
+          position: 'relative'
         }}>
           <div style={{
-            width: '56px',
-            height: '56px',
-            borderRadius: '50%',
-            background: isPass ? 'rgba(16, 185, 129, 0.18)' : 'rgba(245, 158, 11, 0.18)',
-            color: isPass ? 'var(--accent-emerald)' : 'var(--accent-amber)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            fontSize: '1.8rem',
-            margin: '0 auto 1rem'
+            display: 'inline-block',
+            padding: '0.35rem 1rem',
+            borderRadius: '99px',
+            fontSize: '0.8rem',
+            fontWeight: 800,
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            marginBottom: '1rem',
+            background: isPass ? 'rgba(16, 185, 129, 0.2)' : 'rgba(244, 63, 94, 0.2)',
+            color: isPass ? 'var(--accent-emerald)' : 'var(--accent-rose)',
+            border: `1px solid ${isPass ? 'rgba(16, 185, 129, 0.4)' : 'rgba(244, 63, 94, 0.4)'}`
           }}>
-            <i className={`fa-solid ${isPass ? 'fa-award' : 'fa-clipboard-check'}`}></i>
+            {isPass ? '✓ OFFICIAL PASS (Grade A)' : '✗ UNMET THRESHOLD (Needs Revision)'}
           </div>
 
-          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.35rem', fontWeight: 800 }}>
-            {examResult.title} Complete
+          <h1 style={{ fontSize: '1.8rem', marginBottom: '0.35rem', fontWeight: 800, color: 'var(--text-main)' }}>
+            {examResult.title}
           </h1>
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '1.5rem' }}>
-            Board Examination Results Logged
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem', marginBottom: '2rem' }}>
+            Board Standard Scorecard &bull; Official Passing Cutoff: 60%
           </p>
 
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-            <div>
-              <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>ACCURACY</span>
-              <span style={{ fontSize: '1.8rem', fontWeight: 800, color: isPass ? 'var(--accent-emerald)' : 'var(--accent-amber)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
+            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>SCORE</span>
+              <span style={{ fontSize: '2rem', fontWeight: 800, color: isPass ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
                 {examResult.scorePercentage}%
               </span>
             </div>
-            <div>
-              <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>CORRECT</span>
+
+            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>SOLVED / TOTAL</span>
               <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--text-main)' }}>
-                {examResult.correctCount} <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>/ {examResult.attemptedCount}</span>
+                {examResult.correctCount} <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>/ {examResult.totalQuestions}</span>
               </span>
             </div>
-            <div>
-              <span style={{ display: 'block', fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>TIME</span>
+
+            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>ACCURACY</span>
               <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-cyan)' }}>
+                {examResult.accuracyPercentage}%
+              </span>
+            </div>
+
+            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>TIME ELAPSED</span>
+              <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-purple)' }}>
                 {examResult.timeTaken}
               </span>
             </div>
           </div>
 
-          <button className="btn-primary" onClick={() => onFinish && onFinish(examResult)} style={{ padding: '0.75rem 1.8rem', fontSize: '0.92rem' }}>
+          <button className="btn-primary" onClick={() => onFinish && onFinish(examResult)} style={{ padding: '0.8rem 2.2rem', fontSize: '0.95rem' }}>
             <i className="fa-solid fa-house"></i> Return to Candidate Hub
           </button>
         </div>
+
+        {/* Subject-Wise Performance Breakdown */}
+        {subjectEntries.length > 0 && (
+          <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+            <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <i className="fa-solid fa-chart-pie" style={{ color: 'var(--accent-cyan)' }}></i> Subject Performance Breakdown
+            </h3>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
+              {subjectEntries.map(([subj, data]) => {
+                const pct = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0;
+                const isSubjPass = pct >= 60;
+                return (
+                  <div key={subj} style={{ background: 'rgba(255,255,255,0.02)', padding: '0.85rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.88rem', fontWeight: 600, marginBottom: '0.4rem' }}>
+                      <span>{subj}</span>
+                      <span style={{ color: isSubjPass ? 'var(--accent-emerald)' : 'var(--accent-amber)' }}>
+                        {pct}% ({data.correct}/{data.total})
+                      </span>
+                    </div>
+                    <div style={{ height: '6px', background: 'rgba(255,255,255,0.06)', borderRadius: '99px', overflow: 'hidden' }}>
+                      <div style={{
+                        height: '100%',
+                        width: `${pct}%`,
+                        background: isSubjPass ? 'var(--accent-emerald)' : 'var(--accent-rose)',
+                        transition: 'width 0.4s ease'
+                      }}></div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
 
         {/* Detailed Question Review Section */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
