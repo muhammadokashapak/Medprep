@@ -461,21 +461,12 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
   return (
     <div className="exam-engine-container animate-fade-in">
-      {/* Top Header - Professional & Clean */}
+      {/* Top Header - Clean & Focused */}
       <header className="exam-header">
-        <div className="exam-header-left" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+        <div className="exam-header-left">
           <div className="exam-q-info">
             <span className="exam-q-number">Question {currentIndex + 1} of {safeList.length}</span>
           </div>
-
-          <button
-            className={`mode-toggle-btn ${isFlashcardMode ? 'active' : ''}`}
-            onClick={() => setIsFlashcardMode(!isFlashcardMode)}
-            title="Toggle Flashcard MCQ View"
-          >
-            <i className="fa-solid fa-layer-group"></i>
-            <span className="desktop-only">{isFlashcardMode ? 'Flashcard Mode' : 'Standard View'}</span>
-          </button>
         </div>
 
         <div className="exam-header-center">
@@ -488,15 +479,6 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         </div>
 
         <div className="exam-header-right">
-          <button
-            className="exam-btn-icon"
-            onClick={() => setShowPalette(!showPalette)}
-            title="Question Navigator"
-          >
-            <i className="fa-solid fa-list-ol"></i>
-            <span className="desktop-only">Navigator ({answeredCount}/{safeList.length})</span>
-          </button>
-          
           <button
             className="exam-btn-icon btn-danger-outline"
             onClick={() => setShowSubmitModal(true)}
@@ -516,87 +498,13 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
       </div>
 
       <div className="exam-main-content">
-        {/* Left Side: Question Navigator Drawer (Desktop) */}
-        {showPalette && (
-          <aside className="exam-navigator animate-slide-right">
-            <div className="navigator-header">
-              <h4>Questions</h4>
-              <button onClick={() => setShowPalette(false)} className="close-btn"><i className="fa-solid fa-xmark"></i></button>
-            </div>
-            <div className="navigator-legend">
-              <span><i className="fa-solid fa-square-check" style={{ color: 'var(--accent-emerald)' }}></i> Answered</span>
-              <span><i className="fa-solid fa-bookmark" style={{ color: 'var(--accent-amber)' }}></i> Marked</span>
-            </div>
-            <div className="navigator-grid">
-              {safeList.map((q, idx) => {
-                const iterQKey = q.id ?? `q_${idx}`;
-                const isAns = !!userAnswers[iterQKey];
-                const isM = !!markedForReview[iterQKey];
-                const isCurr = idx === currentIndex;
-
-                let classes = 'nav-cell';
-                if (isAns) classes += ' answered';
-                if (isM) classes += ' marked';
-                if (isCurr) classes += ' current';
-
-                return (
-                  <button
-                    key={q.id || idx}
-                    className={classes}
-                    onClick={() => { setCurrentIndex(idx); setShowPalette(false); }}
-                  >
-                    {isM && <i className="fa-solid fa-bookmark mini-mark"></i>}
-                    {idx + 1}
-                  </button>
-                );
-              })}
-            </div>
-          </aside>
-        )}
-
-        {/* Right Side / Main: Vignette and Options */}
-        <div className={`exam-vignette-area ${showPalette ? 'with-sidebar' : ''}`}>
-          {/* 3D Flashcard Mode vs Standard Mode Stem */}
-          {isFlashcardMode ? (
-            <div
-              className={`mcq-flashcard-container ${isMcqCardFlipped ? 'is-flipped' : ''}`}
-              onClick={() => setIsMcqCardFlipped(!isMcqCardFlipped)}
-            >
-              <div className="mcq-flashcard-inner">
-                {/* Front Face: Vignette Prompt */}
-                <div className="mcq-flashcard-front glass-panel">
-                  <span style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--accent-cyan)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-                    <i className="fa-solid fa-rotate" style={{ marginRight: '0.35rem' }}></i> FLASHCARD MCQ #{currentIndex + 1} (TAP TO FLIP)
-                  </span>
-                  <p className="question-stem-text" style={{ margin: '1rem 0', fontSize: '1rem' }}>
-                    {currentQ.question}
-                  </p>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>
-                    Tap card to reveal clinical breakdown & discussion
-                  </span>
-                </div>
-
-                {/* Back Face: Clinical Breakdown & Rationale */}
-                <div className="mcq-flashcard-back glass-panel">
-                  <span style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--accent-purple)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-                    <i className="fa-solid fa-lightbulb" style={{ marginRight: '0.35rem' }}></i> CLINICAL PEARL & HIGHLIGHTS
-                  </span>
-                  <p style={{ fontSize: '0.92rem', lineHeight: 1.6, color: 'var(--text-main)', margin: '1rem 0' }}>
-                    {currentQ.explanation ? currentQ.explanation : "Analyze the clinical vignette stem carefully and choose the correct option below."}
-                  </p>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--accent-purple)', fontWeight: 700 }}>
-                    Tap card again to flip back to question prompt
-                  </span>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className="question-stem-container">
-              <p className="question-stem-text">
-                {currentQ.question}
-              </p>
-            </div>
-          )}
+        {/* Main Vignette and Options */}
+        <div className="exam-vignette-area">
+          <div className="question-stem-container">
+            <p className="question-stem-text">
+              {currentQ.question}
+            </p>
+          </div>
 
           <div className="options-container">
             {options.map((opt) => {
