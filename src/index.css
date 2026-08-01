@@ -1154,6 +1154,115 @@ textarea:focus-visible {
   line-height: 1.65;
 }
 
+/* COMPREHENSIVE LIGHT THEME OVERRIDES FOR FLIGHT-MODE CONSISTENCY */
+body.light-theme .glass-panel {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-theme .exam-modal-overlay {
+  background: rgba(15, 23, 42, 0.5) !important;
+}
+
+body.light-theme .exam-modal-content {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.light-theme .submit-modal-close {
+  background: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #64748b !important;
+}
+
+body.light-theme .submit-modal-close:hover {
+  background: #ffe4e6 !important;
+  color: #e11d48 !important;
+}
+
+body.light-theme .modal-stat-card {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+body.light-theme .modal-alert-box.warning {
+  background: #fffbeb !important;
+  border-color: #fde68a !important;
+  color: #b45309 !important;
+}
+
+body.light-theme .modal-alert-box.success {
+  background: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+  color: #047857 !important;
+}
+
+body.light-theme .results-hero-panel.pass {
+  background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%) !important;
+  border: 1px solid #a7f3d0 !important;
+  border-top: 6px solid #10b981 !important;
+}
+
+body.light-theme .results-hero-panel.fail {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffffff 100%) !important;
+  border: 1px solid #fecdd3 !important;
+  border-top: 6px solid #f43f5e !important;
+}
+
+body.light-theme .results-metric-card {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+body.light-theme .mcq-flashcard-front {
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-left: 5px solid #06b6d4 !important;
+}
+
+body.light-theme .mcq-flashcard-back {
+  background: #f4f4fe !important;
+  border: 1px solid #c7d2fe !important;
+  border-left: 5px solid #6366f1 !important;
+}
+
+body.light-theme .choice-pill.correct {
+  background: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+}
+
+body.light-theme .choice-pill.incorrect {
+  background: #fff1f2 !important;
+  border-color: #fecdd3 !important;
+}
+
+body.light-theme .choice-pill.neutral {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+body.light-theme .clinical-rationale-box {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  border-left: 4px solid #06b6d4 !important;
+  color: #1e293b !important;
+}
+
+body.light-theme .mode-toggle-btn {
+  background: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #475569 !important;
+}
+
+body.light-theme .mode-toggle-btn.active {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+  color: #0369a1 !important;
+}
+
 /* RESPONSIVE OVERRIDES */
 @media (max-width: 768px) {
   .exam-vignette-area { padding: 1rem; }
