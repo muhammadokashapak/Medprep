@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { getMedicalRank } from '../utils/gamification';
+import { getUserGamificationData, getCurrentRank } from '../utils/gamification';
 
 export default function UserProfileModal({ isOpen, onClose, user, stats, history, onLogout, resetProgress, addToast, updateUserPreference }) {
   useEffect(() => {
@@ -15,7 +15,8 @@ export default function UserProfileModal({ isOpen, onClose, user, stats, history
     ? Math.round(((stats?.correctCount || 0) / stats.attemptedCount) * 100) 
     : 0;
   const mockCount = Array.isArray(history) ? history.length : 0;
-  const rank = getMedicalRank(attempted);
+  const gamification = getUserGamificationData();
+  const rank = getCurrentRank(gamification?.xp || 0);
 
   const handleReset = () => {
     if (window.confirm('Are you sure you want to reset all test statistics and mistakes bank? This action cannot be undone.')) {
