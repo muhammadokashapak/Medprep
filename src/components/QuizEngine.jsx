@@ -25,6 +25,8 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
   const [startTime] = useState(Date.now());
   const [reviewFilter, setReviewFilter] = useState('attempted'); // 'attempted' | 'incorrect' | 'correct' | 'all'
   const [strikedOptions, setStrikedOptions] = useState({}); // { [qKey]: { A: true } }
+  const [isFlashcardMode, setIsFlashcardMode] = useState(false); // Mode switch: Standard vs 3D Flashcard MCQ
+  const [isMcqCardFlipped, setIsMcqCardFlipped] = useState(false);
 
   const safeList = Array.isArray(quizList) ? quizList : [];
 
@@ -163,6 +165,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsMcqCardFlipped(false);
   }, [currentIndex]);
 
   if (!currentQ && !isCompleted) {
@@ -209,18 +212,14 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
     return (
       <div className="animate-fade-in" style={{ padding: '1.5rem 0', maxWidth: '980px', margin: '0 auto' }}>
         {/* Results Overview Hero Header */}
-        <div className="glass-panel text-center" style={{
-          padding: '2.5rem 1.5rem',
-          marginBottom: '1.5rem',
-          borderTop: `6px solid ${isPass ? 'var(--accent-emerald)' : 'var(--accent-rose)'}`,
-          background: isPass ? 'rgba(16, 185, 129, 0.06)' : 'rgba(244, 63, 94, 0.06)',
-          position: 'relative'
-        }}>
+        <div className={`results-hero-panel ${isPass ? 'pass' : 'fail'} text-center`}>
           <div style={{
-            display: 'inline-block',
-            padding: '0.35rem 1rem',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+            padding: '0.35rem 1.1rem',
             borderRadius: '99px',
-            fontSize: '0.8rem',
+            fontSize: '0.82rem',
             fontWeight: 800,
             textTransform: 'uppercase',
             letterSpacing: '0.05em',
@@ -229,54 +228,55 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
             color: isPass ? 'var(--accent-emerald)' : 'var(--accent-rose)',
             border: `1px solid ${isPass ? 'rgba(16, 185, 129, 0.4)' : 'rgba(244, 63, 94, 0.4)'}`
           }}>
-            {isPass ? '✓ OFFICIAL PASS (Grade A)' : '✗ UNMET THRESHOLD (Needs Revision)'}
+            <i className={`fa-solid ${isPass ? 'fa-circle-check' : 'fa-triangle-exclamation'}`}></i>
+            {isPass ? 'OFFICIAL PASS • GRADE A' : 'UNMET THRESHOLD • REVISION REQUIRED'}
           </div>
 
-          <h1 style={{ fontSize: '1.8rem', marginBottom: '0.35rem', fontWeight: 800, color: 'var(--text-main)' }}>
+          <h1 style={{ fontSize: '1.9rem', marginBottom: '0.35rem', fontWeight: 800, color: 'var(--text-main)' }}>
             {examResult.title}
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.92rem', marginBottom: '2rem' }}>
-            Board Standard Scorecard &bull; Official Passing Cutoff: 60%
+            Board Standard Performance Scorecard &bull; Cutoff Threshold: 60%
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
-            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>SCORE</span>
-              <span style={{ fontSize: '2rem', fontWeight: 800, color: isPass ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
+            <div className="results-metric-card">
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 800, textTransform: 'uppercase' }}>FINAL SCORE</span>
+              <span style={{ fontSize: '2.2rem', fontWeight: 800, color: isPass ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
                 {examResult.scorePercentage}%
               </span>
             </div>
 
-            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>ATTEMPTED</span>
+            <div className="results-metric-card">
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 800, textTransform: 'uppercase' }}>ATTEMPTED</span>
               <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-cyan)' }}>
                 {examResult.attemptedCount} <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>/ {examResult.totalQuestions}</span>
               </span>
             </div>
 
-            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>ACCURACY</span>
+            <div className="results-metric-card">
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 800, textTransform: 'uppercase' }}>ACCURACY</span>
               <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-emerald)' }}>
                 {examResult.accuracyPercentage}%
               </span>
             </div>
 
-            <div style={{ padding: '1rem', background: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
-              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700 }}>TIME ELAPSED</span>
+            <div className="results-metric-card">
+              <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 800, textTransform: 'uppercase' }}>TIME ELAPSED</span>
               <span style={{ fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-purple)' }}>
                 {examResult.timeTaken}
               </span>
             </div>
           </div>
 
-          <button className="btn-primary" onClick={() => onFinish && onFinish(examResult)} style={{ padding: '0.8rem 2.2rem', fontSize: '0.95rem' }}>
+          <button className="btn-primary" onClick={() => onFinish && onFinish(examResult)} style={{ padding: '0.8rem 2.5rem', fontSize: '0.95rem' }}>
             <i className="fa-solid fa-house"></i> Return to Candidate Hub
           </button>
         </div>
 
         {/* Subject-Wise Performance Breakdown */}
         {subjectEntries.length > 0 && (
-          <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
+          <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '1.75rem' }}>
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <i className="fa-solid fa-chart-pie" style={{ color: 'var(--accent-cyan)' }}></i> Subject Performance Breakdown
             </h3>
@@ -383,20 +383,20 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
                 </span>
               </div>
 
-              <h4 style={{ fontSize: '1rem', fontWeight: 500, lineHeight: 1.6, marginBottom: '1.25rem', color: 'var(--text-main)' }}>
+              <h4 style={{ fontSize: '0.98rem', fontWeight: 500, lineHeight: 1.6, marginBottom: '1.25rem', color: 'var(--text-main)' }}>
                 {det.q.question}
               </h4>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem', marginBottom: '1.25rem' }}>
-                <div style={{ padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', background: det.isCorrect ? 'rgba(16, 185, 129, 0.1)' : 'rgba(244, 63, 94, 0.1)', border: '1px solid var(--border-subtle)' }}>
-                  <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '0.2rem' }}>YOUR SELECTION</span>
+              <div className="choice-pill-container">
+                <div className={`choice-pill ${det.isCorrect ? 'correct' : 'incorrect'}`}>
+                  <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 800, textTransform: 'uppercase', marginBottom: '0.2rem' }}>YOUR SELECTION</span>
                   <strong style={{ fontSize: '0.92rem', color: det.isCorrect ? 'var(--accent-emerald)' : 'var(--accent-rose)' }}>
                     {getOptionText(det.q, det.selected)}
                   </strong>
                 </div>
 
-                <div style={{ padding: '0.75rem 1rem', borderRadius: 'var(--radius-sm)', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid var(--border-subtle)' }}>
-                  <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '0.2rem' }}>CORRECT ANSWER</span>
+                <div className="choice-pill correct">
+                  <span style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 800, textTransform: 'uppercase', marginBottom: '0.2rem' }}>CORRECT ANSWER</span>
                   <strong style={{ fontSize: '0.92rem', color: 'var(--accent-emerald)' }}>
                     {getOptionText(det.q, det.correctAnswer)}
                   </strong>
@@ -404,8 +404,8 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
               </div>
 
               {det.explanation && (
-                <div style={{ padding: '1rem 1.15rem', background: 'rgba(255,255,255,0.02)', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)', fontSize: '0.9rem', lineHeight: 1.6 }}>
-                  <strong style={{ color: 'var(--accent-cyan)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.35rem' }}>
+                <div className="clinical-rationale-box">
+                  <strong style={{ color: 'var(--accent-cyan)', display: 'flex', alignItems: 'center', gap: '0.4rem', marginBottom: '0.35rem', fontSize: '0.88rem' }}>
                     <i className="fa-solid fa-lightbulb"></i> Clinical Rationale & Explanation:
                   </strong>
                   {det.explanation}
@@ -463,10 +463,19 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
     <div className="exam-engine-container animate-fade-in">
       {/* Top Header - Professional & Clean */}
       <header className="exam-header">
-        <div className="exam-header-left">
+        <div className="exam-header-left" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           <div className="exam-q-info">
             <span className="exam-q-number">Question {currentIndex + 1} of {safeList.length}</span>
           </div>
+
+          <button
+            className={`mode-toggle-btn ${isFlashcardMode ? 'active' : ''}`}
+            onClick={() => setIsFlashcardMode(!isFlashcardMode)}
+            title="Toggle Flashcard MCQ View"
+          >
+            <i className="fa-solid fa-layer-group"></i>
+            <span className="desktop-only">{isFlashcardMode ? 'Flashcard Mode' : 'Standard View'}</span>
+          </button>
         </div>
 
         <div className="exam-header-center">
@@ -547,11 +556,47 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
         {/* Right Side / Main: Vignette and Options */}
         <div className={`exam-vignette-area ${showPalette ? 'with-sidebar' : ''}`}>
-          <div className="question-stem-container">
-            <p className="question-stem-text">
-              {currentQ.question}
-            </p>
-          </div>
+          {/* 3D Flashcard Mode vs Standard Mode Stem */}
+          {isFlashcardMode ? (
+            <div
+              className={`mcq-flashcard-container ${isMcqCardFlipped ? 'is-flipped' : ''}`}
+              onClick={() => setIsMcqCardFlipped(!isMcqCardFlipped)}
+            >
+              <div className="mcq-flashcard-inner">
+                {/* Front Face: Vignette Prompt */}
+                <div className="mcq-flashcard-front glass-panel">
+                  <span style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--accent-cyan)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                    <i className="fa-solid fa-rotate" style={{ marginRight: '0.35rem' }}></i> FLASHCARD MCQ #{currentIndex + 1} (TAP TO FLIP)
+                  </span>
+                  <p className="question-stem-text" style={{ margin: '1rem 0', fontSize: '1rem' }}>
+                    {currentQ.question}
+                  </p>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                    Tap card to reveal clinical breakdown & discussion
+                  </span>
+                </div>
+
+                {/* Back Face: Clinical Breakdown & Rationale */}
+                <div className="mcq-flashcard-back glass-panel">
+                  <span style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--accent-purple)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                    <i className="fa-solid fa-lightbulb" style={{ marginRight: '0.35rem' }}></i> CLINICAL PEARL & HIGHLIGHTS
+                  </span>
+                  <p style={{ fontSize: '0.92rem', lineHeight: 1.6, color: 'var(--text-main)', margin: '1rem 0' }}>
+                    {currentQ.explanation ? currentQ.explanation : "Analyze the clinical vignette stem carefully and choose the correct option below."}
+                  </p>
+                  <span style={{ fontSize: '0.75rem', color: 'var(--accent-purple)', fontWeight: 700 }}>
+                    Tap card again to flip back to question prompt
+                  </span>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="question-stem-container">
+              <p className="question-stem-text">
+                {currentQ.question}
+              </p>
+            </div>
+          )}
 
           <div className="options-container">
             {options.map((opt) => {
