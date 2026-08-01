@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { hashPassword, safeStorageGet, safeStorageSet, sanitizeUserSession, validateEmail, sanitizeInputString } from '../utils/security';
+import { loginUserNeon, registerUserNeon, getNeonUrl, isNeonConfigured } from '../services/neonDb';
 
 export default function AuthModal({ isOpen, onClose, onLogin, addToast, canClose = true }) {
   const [view, setView] = useState('login'); // 'login' | 'register' | 'forgot'
@@ -14,6 +15,8 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast, canClose
   const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [examPreference, setExamPreference] = useState('FCPS Part 1');
+  const [neonInputUrl, setNeonInputUrl] = useState(() => getNeonUrl());
+  const [showNeonConfig, setShowNeonConfig] = useState(false);
 
   const resetFormState = () => {
     setEmail('');
@@ -69,26 +72,15 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast, canClose
 
     setLoading(true);
     try {
-      const hashedPassword = await hashPassword(password);
-      const rawUsers = safeStorageGet('fcps_users', []);
-      const users = Array.isArray(rawUsers) ? rawUsers : [];
-      const found = users.find(u => u && u.email && u.email.toLowerCase() === email.trim().toLowerCase());
-
-      if (found) {
-        if (found.password === hashedPassword) {
-          const safeUser = sanitizeUserSession(found) || { name: 'Doctor', email: found.email, examPreference: found.examPreference || 'FCPS Part 1' };
-          onLogin(safeUser, rememberMe);
-          if (addToast) addToast(`Welcome back, ${safeUser.name || 'Candidate'}!`, 'success');
-          onClose();
-        } else {
-          if (addToast) addToast('Incorrect password', 'error');
-        }
-      } else {
-        if (addToast) addToast('No candidate account found with this email. Please register first.', 'error');
+      const result = await loginUserNeon({ email, password });
+      if (result && result.user) {
+        onLogin(result.user, rememberMe, result.stats, result.history);
+        if (addToast) addToast(`Welcome back, ${result.user.name || 'Candidate'}!`, 'success');
+        onClose();
       }
     } catch (err) {
       console.error('[Auth Error]', err);
-      if (addToast) addToast('Login failed. Please try again.', 'error');
+      if (addToast) addToast(err.message || 'Login failed. Please try again.', 'error');
     } finally {
       setLoading(false);
     }
@@ -125,34 +117,19 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast, canClose
 
     setLoading(true);
     try {
-      const hashedPassword = await hashPassword(password);
-      const rawUsers = safeStorageGet('fcps_users', []);
-      const users = Array.isArray(rawUsers) ? rawUsers : [];
-
-      if (users.some(u => u && u.email && u.email.toLowerCase() === cleanEmail)) {
-        if (addToast) addToast('An account with this email address already exists', 'error');
-        setLoading(false);
-        return;
-      }
-
-      const newUser = {
+      const newUser = await registerUserNeon({
         name: cleanName,
         email: cleanEmail,
-        password: hashedPassword,
-        examPreference: examPreference || 'FCPS Part 1',
-        joined: new Date().toLocaleDateString()
-      };
+        password,
+        examPreference
+      });
 
-      users.push(newUser);
-      safeStorageSet('fcps_users', users);
-
-      const safeUser = sanitizeUserSession(newUser) || { name: cleanName, email: cleanEmail, examPreference: examPreference || 'FCPS Part 1' };
-      onLogin(safeUser, rememberMe);
-      if (addToast) addToast('Candidate account created successfully!', 'success');
+      onLogin(newUser, rememberMe);
+      if (addToast) addToast('Candidate account created permanently!', 'success');
       onClose();
     } catch (err) {
       console.error('[Registration Error]', err);
-      if (addToast) addToast('Registration failed. Please try again.', 'error');
+      if (addToast) addToast(err.message || 'Registration failed. Please try again.', 'error');
     } finally {
       setLoading(false);
     }

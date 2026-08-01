@@ -18,6 +18,7 @@ import DailyChallengeModal from './components/DailyChallengeModal';
 import { updateDailyStreak, addXP, getUserGamificationData } from './utils/gamification';
 import questionsData from './data/questions.json';
 import { safeStorageGet, safeStorageSet, sanitizeUserSession, fisherYatesShuffle, getQuestionsForTrack } from './utils/security';
+import { syncStatsNeon, saveExamResultNeon } from './services/neonDb';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -162,10 +163,13 @@ export default function App() {
     localStorage.setItem('fcps_theme', theme);
   }, [theme]);
 
-  // Save Stats & History Safely
+  // Save Stats & History Safely & Sync to Neon Cloud DB
   useEffect(() => {
     safeStorageSet('fcps_stats', stats);
-  }, [stats]);
+    if (currentUser?.email) {
+      syncStatsNeon(currentUser.email, stats);
+    }
+  }, [stats, currentUser]);
 
   useEffect(() => {
     safeStorageSet('fcps_history', history);
@@ -301,6 +305,10 @@ export default function App() {
 
     setHistory(prev => [examResultObj, ...prev]);
 
+    if (currentUser?.email) {
+      saveExamResultNeon(currentUser.email, examResultObj);
+    }
+
     setStats(prev => {
       const safePrev = prev || { attemptedCount: 0, correctCount: 0, mistakesCount: 0, mistakesList: [], todayAttemptedCount: 0, lastResetDate: '' };
       const today = new Date().toISOString().split('T')[0];
@@ -377,11 +385,19 @@ export default function App() {
     localStorage.removeItem('fcps_history');
   };
 
-  const handleLogin = (userObj, rememberMe) => {
+  const handleLogin = (userObj, rememberMe, cloudStats = null, cloudHistory = null) => {
     if (!userObj) return;
     const safeUser = sanitizeUserSession(userObj) || { name: 'Candidate', email: userObj.email || '', examPreference: userObj.examPreference || 'FCPS Part 1' };
     setCurrentUser(safeUser);
     setIsAuthOpen(false);
+
+    if (cloudStats) {
+      setStats(cloudStats);
+    }
+    if (cloudHistory && Array.isArray(cloudHistory)) {
+      setHistory(cloudHistory);
+    }
+
     if (rememberMe) {
       safeStorageSet('medprep_user', safeUser);
     } else {
