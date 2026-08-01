@@ -728,10 +728,10 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
 
             <div className="modal-actions">
               <button className="exam-btn-secondary" onClick={() => setShowSubmitModal(false)} style={{ flex: 1 }}>
-                <i className="fa-solid fa-arrow-left"></i> Return to Exam
+                <i className="fa-solid fa-arrow-left"></i> Return
               </button>
-              <button className="exam-btn-primary" onClick={() => handleFinalSubmit(false)} style={{ flex: 1.2 }}>
-                <i className="fa-solid fa-circle-check"></i> Submit Exam
+              <button className="exam-btn-primary" onClick={() => handleFinalSubmit(false)} style={{ flex: 1 }}>
+                <i className="fa-solid fa-check-double"></i> Submit
               </button>
             </div>
           </div>
