@@ -588,7 +588,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         </div>
       </footer>
 
-      {/* Redesigned Submit Modal Overlay */}
+      {/* Redesigned Submit Modal Overlay - Unified Outer Card Block */}
       {showSubmitModal && (
         <div className="exam-modal-overlay" onClick={() => setShowSubmitModal(false)}>
           <div className="exam-modal-content animate-slide-up" onClick={e => e.stopPropagation()}>
@@ -604,33 +604,42 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
               <i className="fa-solid fa-flag-checkered"></i>
             </div>
             
-            <h3>Finish Examination Block?</h3>
-            <p className="modal-subtitle">Review your question summary below before submitting for scoring.</p>
+            <h3>End Examination Block?</h3>
+            <p className="modal-subtitle">Review your question summary before submitting for scoring.</p>
             
-            <div className="modal-stats-grid">
-              <div className="modal-stat-card">
-                <i className="fa-solid fa-circle-check" style={{ color: 'var(--accent-cyan)' }}></i>
-                <span className="stat-label">Attempted</span>
-                <span className="stat-value" style={{ color: 'var(--accent-cyan)' }}>{answeredCount}</span>
-              </div>
-              <div className="modal-stat-card">
-                <i className="fa-solid fa-circle-question" style={{ color: unansweredCount > 0 ? 'var(--accent-amber)' : 'var(--text-muted)' }}></i>
-                <span className="stat-label">Unanswered</span>
-                <span className="stat-value" style={{ color: unansweredCount > 0 ? 'var(--accent-amber)' : 'var(--text-muted)' }}>{unansweredCount}</span>
-              </div>
-              <div className="modal-stat-card">
-                <i className="fa-solid fa-bookmark" style={{ color: 'var(--accent-purple)' }}></i>
-                <span className="stat-label">Marked</span>
-                <span className="stat-value" style={{ color: 'var(--accent-purple)' }}>{markedCount}</span>
-              </div>
-            </div>
+            {/* SINGLE UNIFIED OUTER CONTAINER CARD BLOCK */}
+            <div className="submit-summary-card">
+              <div className="summary-stats-row">
+                <div className="summary-stat-cell">
+                  <i className="fa-solid fa-circle-check" style={{ color: 'var(--accent-cyan)' }}></i>
+                  <span className="stat-label">Attempted</span>
+                  <span className="stat-value" style={{ color: 'var(--accent-cyan)' }}>{answeredCount}</span>
+                </div>
 
-            <div className={`modal-alert-box ${unansweredCount > 0 ? 'warning' : 'success'}`}>
-              <i className={`fa-solid ${unansweredCount > 0 ? 'fa-triangle-exclamation' : 'fa-shield-check'}`} style={{ fontSize: '1.2rem' }}></i>
-              <div>
-                {unansweredCount > 0 
-                  ? `You have ${unansweredCount} unanswered questions remaining. Unanswered items will be scored as incorrect.` 
-                  : `Excellent! All ${safeList.length} questions completed. Ready to submit for instant scoring.`}
+                <div className="summary-stat-divider"></div>
+
+                <div className="summary-stat-cell">
+                  <i className="fa-solid fa-circle-question" style={{ color: unansweredCount > 0 ? 'var(--accent-amber)' : 'var(--text-muted)' }}></i>
+                  <span className="stat-label">Unanswered</span>
+                  <span className="stat-value" style={{ color: unansweredCount > 0 ? 'var(--accent-amber)' : 'var(--text-muted)' }}>{unansweredCount}</span>
+                </div>
+
+                <div className="summary-stat-divider"></div>
+
+                <div className="summary-stat-cell">
+                  <i className="fa-solid fa-bookmark" style={{ color: 'var(--accent-purple)' }}></i>
+                  <span className="stat-label">Marked</span>
+                  <span className="stat-value" style={{ color: 'var(--accent-purple)' }}>{markedCount}</span>
+                </div>
+              </div>
+
+              <div className={`summary-alert-strip ${unansweredCount > 0 ? 'warning' : 'success'}`}>
+                <i className={`fa-solid ${unansweredCount > 0 ? 'fa-triangle-exclamation' : 'fa-shield-check'}`}></i>
+                <span>
+                  {unansweredCount > 0 
+                    ? `${unansweredCount} unanswered questions will be marked incorrect.` 
+                    : `All ${safeList.length} questions completed! Ready to submit.`}
+                </span>
               </div>
             </div>
 
