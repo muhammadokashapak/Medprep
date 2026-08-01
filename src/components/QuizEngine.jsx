@@ -680,42 +680,58 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
         </div>
       </footer>
 
-      {/* Redesigned Submit Modal Overlay - Fixed Clickability */}
+      {/* Redesigned Submit Modal Overlay */}
       {showSubmitModal && (
         <div className="exam-modal-overlay" onClick={() => setShowSubmitModal(false)}>
           <div className="exam-modal-content animate-slide-up" onClick={e => e.stopPropagation()}>
+            <button
+              className="submit-modal-close"
+              onClick={() => setShowSubmitModal(false)}
+              title="Close modal"
+            >
+              <i className="fa-solid fa-xmark"></i>
+            </button>
+
             <div className="modal-icon-header">
-              <i className="fa-solid fa-clipboard-check"></i>
+              <i className="fa-solid fa-flag-checkered"></i>
             </div>
-            <h3>End Examination Block?</h3>
             
-            <div className="modal-stats-box">
-              <div className="stat-item">
+            <h3>Finish Examination Block?</h3>
+            <p className="modal-subtitle">Review your question summary below before submitting for scoring.</p>
+            
+            <div className="modal-stats-grid">
+              <div className="modal-stat-card">
+                <i className="fa-solid fa-circle-check" style={{ color: 'var(--accent-cyan)' }}></i>
                 <span className="stat-label">Attempted</span>
                 <span className="stat-value" style={{ color: 'var(--accent-cyan)' }}>{answeredCount}</span>
               </div>
-              <div className="stat-item">
+              <div className="modal-stat-card">
+                <i className="fa-solid fa-circle-question" style={{ color: unansweredCount > 0 ? 'var(--accent-amber)' : 'var(--text-muted)' }}></i>
                 <span className="stat-label">Unanswered</span>
-                <span className="stat-value" style={{ color: 'var(--accent-amber)' }}>{unansweredCount}</span>
+                <span className="stat-value" style={{ color: unansweredCount > 0 ? 'var(--accent-amber)' : 'var(--text-muted)' }}>{unansweredCount}</span>
               </div>
-              <div className="stat-item">
+              <div className="modal-stat-card">
+                <i className="fa-solid fa-bookmark" style={{ color: 'var(--accent-purple)' }}></i>
                 <span className="stat-label">Marked</span>
                 <span className="stat-value" style={{ color: 'var(--accent-purple)' }}>{markedCount}</span>
               </div>
             </div>
 
-            <p className="modal-warning-text">
-              {unansweredCount > 0 
-                ? "You have unanswered questions. Are you sure you want to submit?" 
-                : "You have answered all questions. Ready to submit?"}
-            </p>
+            <div className={`modal-alert-box ${unansweredCount > 0 ? 'warning' : 'success'}`}>
+              <i className={`fa-solid ${unansweredCount > 0 ? 'fa-triangle-exclamation' : 'fa-shield-check'}`} style={{ fontSize: '1.2rem' }}></i>
+              <div>
+                {unansweredCount > 0 
+                  ? `You have ${unansweredCount} unanswered questions remaining. Unanswered items will be scored as incorrect.` 
+                  : `Excellent! All ${safeList.length} questions completed. Ready to submit for instant scoring.`}
+              </div>
+            </div>
 
             <div className="modal-actions">
-              <button className="exam-btn-secondary" onClick={() => setShowSubmitModal(false)}>
-                Return to Exam
+              <button className="exam-btn-secondary" onClick={() => setShowSubmitModal(false)} style={{ flex: 1 }}>
+                <i className="fa-solid fa-arrow-left"></i> Return to Exam
               </button>
-              <button className="exam-btn-primary" onClick={() => handleFinalSubmit(false)}>
-                Submit Exam
+              <button className="exam-btn-primary" onClick={() => handleFinalSubmit(false)} style={{ flex: 1.2 }}>
+                <i className="fa-solid fa-circle-check"></i> Submit Exam
               </button>
             </div>
           </div>
