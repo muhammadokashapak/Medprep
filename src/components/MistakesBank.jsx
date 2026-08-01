@@ -125,7 +125,7 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
                 padding: '0.65rem 0.85rem 0.65rem 2.4rem',
                 borderRadius: 'var(--radius-sm)',
                 border: '1px solid var(--border-subtle)',
-                background: 'rgba(255,255,255,0.03)',
+                background: 'var(--bg-card)',
                 color: 'var(--text-main)',
                 outline: 'none',
                 fontSize: '0.88rem'
@@ -142,12 +142,13 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
               padding: '0.3rem 0.75rem',
               borderRadius: 'var(--radius-full)',
               border: `1px solid ${selectedCategory === 'all' ? 'var(--accent-cyan)' : 'var(--border-subtle)'}`,
-              background: selectedCategory === 'all' ? 'rgba(6, 182, 212, 0.18)' : 'rgba(255,255,255,0.03)',
+              background: selectedCategory === 'all' ? 'rgba(6, 182, 212, 0.18)' : 'var(--bg-card-hover)',
               color: selectedCategory === 'all' ? 'var(--accent-cyan)' : 'var(--text-muted)',
               fontSize: '0.78rem',
               fontWeight: 600,
               cursor: 'pointer',
-              whiteSpace: 'nowrap'
+              whiteSpace: 'nowrap',
+              transition: 'all 0.2s ease'
             }}
           >
             All ({mistakesList.length})
@@ -161,12 +162,13 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
                 padding: '0.3rem 0.75rem',
                 borderRadius: 'var(--radius-full)',
                 border: `1px solid ${selectedCategory === cat ? 'var(--accent-cyan)' : 'var(--border-subtle)'}`,
-                background: selectedCategory === cat ? 'rgba(6, 182, 212, 0.18)' : 'rgba(255,255,255,0.03)',
+                background: selectedCategory === cat ? 'rgba(6, 182, 212, 0.18)' : 'var(--bg-card-hover)',
                 color: selectedCategory === cat ? 'var(--accent-cyan)' : 'var(--text-muted)',
                 fontSize: '0.78rem',
                 fontWeight: 600,
                 cursor: 'pointer',
-                whiteSpace: 'nowrap'
+                whiteSpace: 'nowrap',
+                transition: 'all 0.2s ease'
               }}
             >
               {cat} ({count})
@@ -199,9 +201,14 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
                   border: 'none',
                   color: 'var(--text-subdued)',
                   cursor: 'pointer',
-                  fontSize: '0.82rem'
+                  fontSize: '0.82rem',
+                  transition: 'color 0.2s',
+                  padding: '0.25rem 0.5rem',
+                  borderRadius: '4px'
                 }}
                 title="Remove from Mistakes Bank"
+                onMouseEnter={e => e.currentTarget.style.color = 'var(--accent-rose)'}
+                onMouseLeave={e => e.currentTarget.style.color = 'var(--text-subdued)'}
               >
                 <i className="fa-solid fa-xmark"></i> Remove
               </button>
@@ -214,7 +221,7 @@ export default function MistakesBank({ mistakesList, startMistakesQuiz, clearMis
             {item.explanation && (
               <div style={{
                 padding: '0.85rem 1rem',
-                background: 'rgba(255, 255, 255, 0.02)',
+                background: 'var(--bg-card-hover)',
                 borderRadius: 'var(--radius-sm)',
                 border: '1px solid var(--border-subtle)',
                 fontSize: '0.88rem',

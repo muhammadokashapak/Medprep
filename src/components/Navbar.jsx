@@ -3,6 +3,8 @@ import React from 'react';
 export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTheme, currentUser, onOpenAuth, onOpenProfile, onLeaveExam, totalQuestions = 48000 }) {
   const isExamActive = activeTab === 'practice';
 
+  if (isExamActive) return null;
+
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: 'fa-table-columns' },
     { id: 'subjects', label: 'Subjects', icon: 'fa-shapes' },
@@ -81,7 +83,7 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
               display: 'flex',
               alignItems: 'center',
               gap: '0.35rem',
-              background: 'rgba(255,255,255,0.03)',
+              background: 'var(--bg-card-hover)',
               padding: '0.25rem',
               borderRadius: 'var(--radius-full)',
               border: '1px solid var(--border-subtle)'
@@ -162,11 +164,11 @@ export default function Navbar({ activeTab, setActiveTab, stats, theme, toggleTh
                   alignItems: 'center', 
                   gap: '0.5rem', 
                   cursor: 'pointer', 
-                  background: 'rgba(255,255,255,0.05)', 
+                  background: 'var(--bg-card-hover)', 
                   padding: '0.3rem 0.65rem', 
                   borderRadius: 'var(--radius-full)',
                   border: '1px solid var(--border-subtle)',
-                  transition: 'border-color 0.2s'
+                  transition: 'all 0.2s'
                 }}
               >
                 <div style={{

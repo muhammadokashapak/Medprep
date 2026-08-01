@@ -100,6 +100,32 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--accent-cyan);
 }
 
+/* Global Form Element Base Styles */
+input, select, textarea {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--text-main);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.15);
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2.25rem;
+}
+
 /* Glassmorphism Panel */
 .glass-panel {
   background: var(--bg-card);
@@ -449,7 +475,7 @@ textarea:focus-visible {
 .exam-engine-container {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 60px); /* Assuming navbar height */
+  height: calc(100vh - 2rem);
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -498,10 +524,11 @@ textarea:focus-visible {
   font-weight: 700;
   font-size: 0.95rem;
   color: var(--text-main);
-  background: rgba(255,255,255,0.05);
+  background: var(--bg-card-hover);
   padding: 0.35rem 0.75rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
+  letter-spacing: 0.03em;
 }
 
 .timer-danger {
@@ -552,13 +579,14 @@ textarea:focus-visible {
 /* PROGRESS BAR */
 .exam-progress-bar {
   height: 4px;
-  background: rgba(255,255,255,0.05);
+  background: var(--border-subtle);
   width: 100%;
 }
 .exam-progress-fill {
   height: 100%;
   background: var(--gradient-primary);
   transition: width 0.3s ease;
+  border-radius: 0 2px 2px 0;
 }
 
 /* MAIN CONTENT */
@@ -599,49 +627,54 @@ textarea:focus-visible {
   display: flex;
   align-items: flex-start;
   gap: 0.85rem;
-  padding: 0.75rem 1rem;
-  background: rgba(255,255,255,0.02);
+  padding: 0.8rem 1rem;
+  background: var(--bg-card-hover);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
+  user-select: none;
 }
 
 .exam-option-card:hover {
-  background: rgba(255,255,255,0.05);
-  border-color: rgba(255,255,255,0.1);
+  background: rgba(6, 182, 212, 0.05);
+  border-color: rgba(6, 182, 212, 0.3);
+  transform: translateY(-1px);
 }
 
 .exam-option-card.selected {
-  background: rgba(6,182,212,0.08);
+  background: rgba(6,182,212,0.1);
   border-color: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.15);
 }
 
 .exam-option-letter {
-  width: 26px;
-  height: 26px;
-  border-radius: 5px;
-  background: rgba(255,255,255,0.1);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   flex-shrink: 0;
+  transition: all 0.2s;
 }
 
 .exam-option-card.selected .exam-option-letter {
   background: var(--gradient-primary);
   color: #fff;
+  box-shadow: 0 0 8px rgba(6, 182, 212, 0.3);
 }
 
 .exam-option-text {
-  font-size: 0.92rem;
-  line-height: 1.5;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.55;
   color: var(--text-main);
-  padding-top: 2px;
+  padding-top: 3px;
+  flex: 1;
 }
 .exam-option-card.selected .exam-option-text {
   color: var(--accent-cyan);
@@ -747,19 +780,22 @@ textarea:focus-visible {
   gap: 0.5rem;
   padding: 0.6rem 1.25rem;
   border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 0.88rem;
   cursor: pointer;
   transition: all 0.2s;
   border: 1px solid var(--border-subtle);
-  background: rgba(255,255,255,0.02);
+  background: var(--bg-card-hover);
   color: var(--text-main);
+  min-height: 40px;
 }
 .exam-nav-btn:hover:not(:disabled) {
-  background: rgba(255,255,255,0.08);
+  background: var(--bg-card);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
 }
 .exam-nav-btn:disabled {
-  opacity: 0.4;
+  opacity: 0.35;
   cursor: not-allowed;
 }
 
@@ -1098,13 +1134,13 @@ body.light-theme .summary-alert-strip.success {
 
 .mcq-flashcard-front {
   border-left: 5px solid var(--accent-cyan);
-  background: rgba(15, 23, 42, 0.65);
+  background: var(--bg-card);
 }
 
 .mcq-flashcard-back {
   transform: rotateY(180deg);
   border-left: 5px solid var(--accent-purple);
-  background: rgba(99, 102, 241, 0.08);
+  background: var(--bg-card-hover);
 }
 
 /* Results Hero Scorecard Styling */
@@ -1136,7 +1172,7 @@ body.light-theme .summary-alert-strip.success {
 
 .results-metric-card {
   padding: 1.15rem 1rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-card-hover);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
   transition: transform 0.2s, background 0.2s;
@@ -1144,7 +1180,8 @@ body.light-theme .summary-alert-strip.success {
 
 .results-metric-card:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-card);
+  border-color: var(--accent-cyan);
 }
 
 /* Choice Comparison Box Styling */
@@ -1173,27 +1210,151 @@ body.light-theme .summary-alert-strip.success {
 }
 
 .choice-pill.neutral {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-card-hover);
   border-color: var(--border-subtle);
 }
 
 .clinical-rationale-box {
   padding: 1.15rem 1.25rem;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--bg-card-hover);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
   border-left: 4px solid var(--accent-cyan);
   font-size: 0.9rem;
   line-height: 1.65;
+  color: var(--text-main);
 }
 
-/* COMPREHENSIVE LIGHT THEME OVERRIDES FOR FLIGHT-MODE CONSISTENCY */
+/* COMPREHENSIVE LIGHT THEME OVERRIDES */
+
+/* Glass panels, cards */
 body.light-theme .glass-panel {
   background: #ffffff !important;
   border-color: #e2e8f0 !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
 }
 
+body.light-theme .exam-engine-container {
+  background: #ffffff !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.light-theme .exam-header,
+body.light-theme .exam-footer {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+body.light-theme .exam-progress-bar {
+  background: #e2e8f0 !important;
+}
+
+body.light-theme .exam-timer {
+  background: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+body.light-theme .exam-q-number {
+  color: #0f172a !important;
+}
+
+body.light-theme .exam-btn-icon {
+  color: #334155 !important;
+  border-color: #cbd5e1 !important;
+}
+
+body.light-theme .exam-btn-icon:hover {
+  background: #f1f5f9 !important;
+}
+
+body.light-theme .exam-option-card {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+body.light-theme .exam-option-card:hover {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+}
+
+body.light-theme .exam-option-card.selected {
+  background: #e0f2fe !important;
+  border-color: #0284c7 !important;
+}
+
+body.light-theme .exam-option-letter {
+  background: #e2e8f0 !important;
+  color: #475569 !important;
+}
+
+body.light-theme .exam-option-card.selected .exam-option-text {
+  color: #0369a1 !important;
+}
+
+body.light-theme .exam-nav-btn {
+  background: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+body.light-theme .exam-nav-btn:hover:not(:disabled) {
+  background: #f1f5f9 !important;
+  border-color: #0284c7 !important;
+  color: #0284c7 !important;
+}
+
+body.light-theme .question-stem-text {
+  color: #0f172a !important;
+}
+
+body.light-theme .question-stem-container {
+  background: #f8fafc !important;
+}
+
+/* Nav desktop tab container */
+body.light-theme .desktop-only[style*='rgba(255,255,255,0.03)'] {
+  background: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Mobile bottom nav */
+body.light-theme .mobile-bottom-nav {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-top-color: #e2e8f0 !important;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.light-theme .mobile-nav-item {
+  color: #64748b !important;
+}
+
+body.light-theme .mobile-nav-item.active {
+  color: #0284c7 !important;
+}
+
+/* Inputs in light mode */
+body.light-theme input,
+body.light-theme select,
+body.light-theme textarea {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+body.light-theme input:focus,
+body.light-theme select:focus,
+body.light-theme textarea:focus {
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12) !important;
+}
+
+body.light-theme input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Submit modal */
 body.light-theme .exam-modal-overlay {
   background: rgba(15, 23, 42, 0.5) !important;
 }
@@ -1216,23 +1377,42 @@ body.light-theme .submit-modal-close:hover {
   color: #e11d48 !important;
 }
 
-body.light-theme .modal-stat-card {
+body.light-theme .submit-summary-card {
   background: #f8fafc !important;
   border-color: #e2e8f0 !important;
 }
 
-body.light-theme .modal-alert-box.warning {
+body.light-theme .summary-stats-row {
+  background: #f8fafc !important;
+}
+
+body.light-theme .summary-stat-divider {
+  background: #e2e8f0 !important;
+}
+
+body.light-theme .summary-alert-strip.warning {
   background: #fffbeb !important;
-  border-color: #fde68a !important;
   color: #b45309 !important;
+  border-color: #fde68a !important;
 }
 
-body.light-theme .modal-alert-box.success {
+body.light-theme .summary-alert-strip.success {
   background: #ecfdf5 !important;
-  border-color: #a7f3d0 !important;
   color: #047857 !important;
+  border-color: #a7f3d0 !important;
 }
 
+body.light-theme .exam-btn-secondary {
+  background: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+}
+
+body.light-theme .exam-btn-secondary:hover {
+  background: #e2e8f0 !important;
+}
+
+/* Results scorecard */
 body.light-theme .results-hero-panel.pass {
   background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%) !important;
   border: 1px solid #a7f3d0 !important;
@@ -1250,18 +1430,18 @@ body.light-theme .results-metric-card {
   border-color: #e2e8f0 !important;
 }
 
+/* Flashcards */
 body.light-theme .mcq-flashcard-front {
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
   border-left: 5px solid #06b6d4 !important;
 }
 
 body.light-theme .mcq-flashcard-back {
   background: #f4f4fe !important;
-  border: 1px solid #c7d2fe !important;
   border-left: 5px solid #6366f1 !important;
 }
 
+/* Choice pills */
 body.light-theme .choice-pill.correct {
   background: #ecfdf5 !important;
   border-color: #a7f3d0 !important;
@@ -1284,6 +1464,7 @@ body.light-theme .clinical-rationale-box {
   color: #1e293b !important;
 }
 
+/* Mode toggle */
 body.light-theme .mode-toggle-btn {
   background: #f1f5f9 !important;
   border-color: #cbd5e1 !important;
@@ -1296,6 +1477,21 @@ body.light-theme .mode-toggle-btn.active {
   color: #0369a1 !important;
 }
 
+/* Scrollbar */
+body.light-theme ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15) !important;
+}
+
+body.light-theme ::-webkit-scrollbar-thumb:hover {
+  background: #0284c7 !important;
+}
+
+body.light-theme .badge {
+  background: rgba(2, 132, 199, 0.1) !important;
+  color: #0369a1 !important;
+  border-color: rgba(2, 132, 199, 0.25) !important;
+}
+
 /* RESPONSIVE OVERRIDES */
 @media (max-width: 768px) {
   .exam-vignette-area { padding: 1rem; }
@@ -1306,6 +1502,160 @@ body.light-theme .mode-toggle-btn.active {
     height: 100vh;
     margin-top: 0;
     border-radius: 0;
-    max-height: calc(100vh - 60px);
+    max-height: 100vh;
   }
+}
+
+/* =========================================================
+   DASHBOARD & GENERAL LIGHT MODE DEEP FIXES
+   Targets all hardcoded rgba(255,255,255, ...) dark backgrounds
+   that become invisible in light mode
+========================================================= */
+
+/* Daily goal ring / rank card inner panels */
+body.light-theme [style*="rgba(255,255,255,0.03)"],
+body.light-theme [style*="rgba(255, 255, 255, 0.03)"] {
+  background: #f8fafc !important;
+}
+body.light-theme [style*="rgba(255,255,255,0.04)"],
+body.light-theme [style*="rgba(255, 255, 255, 0.04)"] {
+  background: #f1f5f9 !important;
+}
+body.light-theme [style*="rgba(255,255,255,0.05)"],
+body.light-theme [style*="rgba(255, 255, 255, 0.05)"] {
+  background: #f1f5f9 !important;
+}
+body.light-theme [style*="rgba(255,255,255,0.06)"],
+body.light-theme [style*="rgba(255, 255, 255, 0.06)"] {
+  background: #e2e8f0 !important;
+}
+body.light-theme [style*="rgba(255,255,255,0.08)"],
+body.light-theme [style*="rgba(255, 255, 255, 0.08)"] {
+  background: #e2e8f0 !important;
+}
+body.light-theme [style*="rgba(255,255,255,0.10)"],
+body.light-theme [style*="rgba(255,255,255, 0.1)"] {
+  background: #e2e8f0 !important;
+}
+
+/* Fix SVG progress ring track in light mode */
+body.light-theme svg path[stroke="rgba(255,255,255,0.08)"] {
+  stroke: #e2e8f0 !important;
+}
+
+/* Nav desktop pill container background override */
+body.light-theme header .desktop-only {
+  background: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Auth modal input backgrounds */
+body.light-theme [style*="rgba(255,255,255,0.04)"][style*="padding"] {
+  background: #ffffff !important;
+}
+
+/* Dashboard option/mock block selector in light mode */
+body.light-theme .dash-mock-btn {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #334155;
+}
+
+/* Navigator sidebar cells in light mode */
+body.light-theme .nav-cell {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #475569 !important;
+}
+body.light-theme .nav-cell:hover {
+  background: #f1f5f9 !important;
+}
+body.light-theme .nav-cell.answered {
+  background: rgba(2, 132, 199, 0.08) !important;
+  border-color: #0284c7 !important;
+  color: #0284c7 !important;
+}
+body.light-theme .nav-cell.marked {
+  background: rgba(168, 85, 247, 0.08) !important;
+  border-color: #a855f7 !important;
+  color: #9333ea !important;
+}
+body.light-theme .nav-cell.current {
+  border: 2px solid #0284c7 !important;
+  color: #0284c7 !important;
+}
+
+/* Exam Navigator sidebar in light mode */
+body.light-theme .exam-navigator {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Strike-through card in light mode */
+body.light-theme .exam-option-card.striked {
+  opacity: 0.5;
+  background: #f1f5f9 !important;
+}
+
+/* Mnemonics library card backgrounds */
+body.light-theme .mnemonic-card,
+body.light-theme [class*="mnemonic"] {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+/* Flashcard study container in light mode */
+body.light-theme .flashcard-container,
+body.light-theme [class*="flashcard"] {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* User profile modal hero & inner panels */
+body.light-theme .profile-modal-overlay {
+  background: rgba(15, 23, 42, 0.5) !important;
+}
+body.light-theme .profile-hero-card {
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%) !important;
+  border-color: #bae6fd !important;
+}
+
+/* MistakesReview in light mode */
+body.light-theme .mistakes-card,
+body.light-theme [class*="mistake"] {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Toast notifications in light mode */
+body.light-theme .toast-item {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix subject mastery bars background track */
+body.light-theme [style*="rgba(255,255,255,0.06)"][style*="height: 6px"] {
+  background: #e2e8f0 !important;
+}
+
+/* Results hero panel text */
+body.light-theme .results-hero-panel h2,
+body.light-theme .results-hero-panel h3,
+body.light-theme .results-hero-panel p,
+body.light-theme .results-hero-panel span {
+  color: inherit;
+}
+
+/* Question stem vignette section */
+body.light-theme .exam-vignette-area {
+  background: transparent;
+}
+
+/* Ensure all general text inherits properly in light mode */
+body.light-theme strong,
+body.light-theme b {
+  color: inherit;
 }

@@ -101,7 +101,7 @@ export default function Flashcards({ addToast }) {
       </div>
 
       {/* Deck Selector Dropdown Menu */}
-      <div style={{ marginBottom: '1.5rem', background: 'rgba(255,255,255,0.02)', padding: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+      <div style={{ marginBottom: '1.5rem', background: 'var(--bg-card-hover)', padding: '1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
         <label style={{ display: 'block', fontSize: '0.78rem', fontWeight: 800, color: 'var(--accent-cyan)', marginBottom: '0.45rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
           <i className="fa-solid fa-layer-group" style={{ marginRight: '0.35rem' }}></i> SELECT FLASHCARD DECK MODULE
         </label>
@@ -139,7 +139,7 @@ export default function Flashcards({ addToast }) {
         <span>Card {cardIndex + 1} of {currentDeck.cards.length}</span>
         <span style={{ color: 'var(--accent-emerald)' }}>{masteredCount} / {currentDeck.cards.length} Mastered</span>
       </div>
-      <div style={{ height: '6px', background: 'rgba(255,255,255,0.06)', borderRadius: '99px', overflow: 'hidden', marginBottom: '1.5rem' }}>
+      <div style={{ height: '6px', background: 'var(--border-subtle)', borderRadius: '99px', overflow: 'hidden', marginBottom: '1.5rem' }}>
         <div style={{
           height: '100%',
           width: `${((cardIndex + 1) / currentDeck.cards.length) * 100}%`,
@@ -202,7 +202,7 @@ export default function Flashcards({ addToast }) {
             justifyContent: 'center',
             alignItems: 'center',
             padding: '2rem',
-            background: 'rgba(16, 185, 129, 0.08)',
+            background: 'var(--bg-card-hover)',
             borderTop: '5px solid var(--accent-emerald)'
           }}>
             <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent-emerald)', textTransform: 'uppercase', marginBottom: '1rem' }}>

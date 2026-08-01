@@ -286,14 +286,14 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
                 const pct = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0;
                 const isSubjPass = pct >= 60;
                 return (
-                  <div key={subj} style={{ background: 'rgba(255,255,255,0.02)', padding: '0.85rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+                  <div key={subj} style={{ background: 'var(--bg-card-hover)', padding: '0.85rem 1rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.88rem', fontWeight: 600, marginBottom: '0.4rem' }}>
                       <span>{subj}</span>
                       <span style={{ color: isSubjPass ? 'var(--accent-emerald)' : 'var(--accent-amber)' }}>
                         {pct}% ({data.correct}/{data.total})
                       </span>
                     </div>
-                    <div style={{ height: '6px', background: 'rgba(255,255,255,0.06)', borderRadius: '99px', overflow: 'hidden' }}>
+                    <div style={{ height: '6px', background: 'var(--border-subtle)', borderRadius: '99px', overflow: 'hidden' }}>
                       <div style={{
                         height: '100%',
                         width: `${pct}%`,
@@ -316,7 +316,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
           </h3>
 
           {/* Filter Pills */}
-          <div style={{ display: 'flex', gap: '0.4rem', background: 'rgba(0,0,0,0.2)', padding: '0.3rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
+          <div style={{ display: 'flex', gap: '0.4rem', background: 'var(--bg-card-hover)', padding: '0.3rem', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-subtle)' }}>
             {[
               { id: 'attempted', label: 'Attempted Only' },
               { id: 'incorrect', label: 'Incorrect' },
@@ -373,7 +373,7 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
                   fontWeight: 700,
                   background: det.isCorrect 
                     ? 'rgba(16, 185, 129, 0.15)' 
-                    : (det.wasAttempted ? 'rgba(244, 63, 94, 0.15)' : 'rgba(255,255,255,0.08)'),
+                    : (det.wasAttempted ? 'rgba(244, 63, 94, 0.15)' : 'var(--bg-card-hover)'),
                   color: det.isCorrect 
                     ? 'var(--accent-emerald)' 
                     : (det.wasAttempted ? 'var(--accent-rose)' : 'var(--text-muted)'),
@@ -483,9 +483,22 @@ export default function QuizEngine({ quizList, onAnswer, onRecordResult, onFinis
             className="exam-btn-icon btn-danger-outline"
             onClick={() => setShowSubmitModal(true)}
             title="End Exam"
+            style={{
+              padding: '0.45rem 0.95rem',
+              borderRadius: 'var(--radius-full)',
+              background: 'rgba(239, 68, 68, 0.12)',
+              color: 'var(--accent-rose)',
+              border: '1px solid rgba(239, 68, 68, 0.3)',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.45rem',
+              fontWeight: 700,
+              fontSize: '0.85rem'
+            }}
           >
             <i className="fa-solid fa-power-off"></i>
-            <span className="desktop-only">End Block</span>
+            <span>End Exam</span>
           </button>
         </div>
       </header>

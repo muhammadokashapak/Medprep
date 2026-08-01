@@ -148,7 +148,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                     width: '42px',
                     height: '42px',
                     borderRadius: '12px',
-                    background: 'rgba(255,255,255,0.04)',
+                    background: 'var(--bg-card-hover)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -158,7 +158,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                   }}>
                     <i className={`fa-solid ${track.icon}`}></i>
                   </div>
-                  <span className="badge" style={{ background: 'rgba(255,255,255,0.04)', color: 'var(--text-muted)', border: '1px solid var(--border-subtle)', fontSize: '0.75rem' }}>
+                  <span className="badge" style={{ background: 'var(--bg-card-hover)', color: 'var(--text-muted)', border: '1px solid var(--border-subtle)', fontSize: '0.75rem' }}>
                     {track.questionsCount}
                   </span>
                 </div>
@@ -334,7 +334,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onOpenGoalModal?.()}
             onClick={() => onOpenGoalModal?.()}
             style={{
-              background: 'rgba(255,255,255,0.03)',
+              background: 'var(--bg-card-hover)',
               padding: '1rem',
               borderRadius: 'var(--radius-sm)',
               border: '1px solid var(--border-subtle)',
@@ -351,7 +351,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                 <path
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   fill="none"
-                  stroke="rgba(255,255,255,0.08)"
+                  stroke="var(--border-subtle)"
                   strokeWidth="3.5"
                 />
                 <path
@@ -382,7 +382,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
             onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onOpenRankModal?.()}
             onClick={() => onOpenRankModal?.()}
             style={{
-              background: 'rgba(255,255,255,0.03)',
+              background: 'var(--bg-card-hover)',
               padding: '1rem',
               borderRadius: 'var(--radius-sm)',
               border: '1px solid var(--border-subtle)',
@@ -491,7 +491,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                   width: '24px',
                   height: '24px',
                   borderRadius: '50%',
-                  background: 'rgba(255,255,255,0.08)',
+                  background: 'var(--bg-card-hover)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -591,7 +591,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                     <span style={{ color: 'var(--text-main)', fontWeight: 500 }}>{item.subject}</span>
                     <strong style={{ color: item.color }}>{hasData ? `${score}% (${data.correct}/${data.total})` : 'No data yet'}</strong>
                   </div>
-                  <div style={{ height: '6px', background: 'rgba(255,255,255,0.06)', borderRadius: '99px', overflow: 'hidden' }}>
+                  <div style={{ height: '6px', background: 'var(--border-subtle)', borderRadius: '99px', overflow: 'hidden' }}>
                     <div style={{ height: '100%', width: `${score}%`, background: item.color, transition: 'width 0.4s ease' }}></div>
                   </div>
                 </div>
@@ -639,7 +639,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                 }}
               >
                 <span>{subject}</span>
-                <span style={{ background: 'rgba(0,0,0,0.25)', padding: '0.1rem 0.4rem', borderRadius: '99px', fontSize: '0.7rem' }}>
+                <span style={{ background: 'rgba(15,23,42,0.15)', padding: '0.1rem 0.4rem', borderRadius: '99px', fontSize: '0.7rem' }}>
                   {count}
                 </span>
               </div>
@@ -677,7 +677,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                     width: '42px',
                     height: '42px',
                     borderRadius: '12px',
-                    background: 'rgba(255,255,255,0.04)',
+                    background: 'var(--bg-card-hover)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -692,7 +692,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                       <i className="fa-solid fa-check"></i> Primary Track
                     </span>
                   ) : (
-                    <span className="badge" style={{ background: 'rgba(255,255,255,0.04)', color: 'var(--text-muted)', border: '1px solid var(--border-subtle)', fontSize: '0.75rem' }}>
+                    <span className="badge" style={{ background: 'var(--bg-card-hover)', color: 'var(--text-muted)', border: '1px solid var(--border-subtle)', fontSize: '0.75rem' }}>
                       {track.questionsCount}
                     </span>
                   )}
@@ -739,7 +739,7 @@ export default function Dashboard({ stats = { attemptedCount: 0, correctCount: 0
                   padding: '0.5rem 0.2rem',
                   borderRadius: 'var(--radius-sm)',
                   border: `1px solid ${selectedMockLimit === count ? 'var(--accent-purple)' : 'var(--border-subtle)'}`,
-                  background: selectedMockLimit === count ? 'rgba(168, 85, 247, 0.18)' : 'rgba(255,255,255,0.03)',
+                  background: selectedMockLimit === count ? 'rgba(168, 85, 247, 0.18)' : 'var(--bg-card-hover)',
                   color: selectedMockLimit === count ? 'var(--accent-purple)' : 'var(--text-main)',
                   fontWeight: 700,
                   fontSize: '0.82rem',

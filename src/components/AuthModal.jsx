@@ -421,21 +421,20 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast, canClose
                   width: '100%',
                   padding: '0.8rem 1rem',
                   borderRadius: 'var(--radius-sm)',
-                  border: '1px solid var(--border-glow)',
-                  background: '#0f172a',
-                  color: '#ffffff',
-                  outline: 'none',
+                  border: '1px solid var(--border-subtle)',
+                  background: 'var(--bg-card)',
+                  color: 'var(--text-main)',
                   cursor: 'pointer',
-                  fontSize: '0.95rem',
+                  fontSize: '0.9rem',
                   fontWeight: 600
                 }}
               >
-                <option value="FCPS Part 1" style={{ background: '#0f172a', color: '#ffffff' }}>FCPS Part 1 (Pakistan)</option>
-                <option value="USMLE Step 1" style={{ background: '#0f172a', color: '#ffffff' }}>USMLE Step 1 (USA)</option>
-                <option value="USMLE Step 2 CK" style={{ background: '#0f172a', color: '#ffffff' }}>USMLE Step 2 CK (USA)</option>
-                <option value="PLAB / UKMLA" style={{ background: '#0f172a', color: '#ffffff' }}>PLAB / UKMLA (UK)</option>
-                <option value="NEET PG" style={{ background: '#0f172a', color: '#ffffff' }}>NEET PG / INI-CET (India)</option>
-                <option value="MRCS Surgery" style={{ background: '#0f172a', color: '#ffffff' }}>MRCS Part A Surgery (UK/Intl)</option>
+                <option value="FCPS Part 1">FCPS Part 1 (Pakistan)</option>
+                <option value="USMLE Step 1">USMLE Step 1 (USA)</option>
+                <option value="USMLE Step 2 CK">USMLE Step 2 CK (USA)</option>
+                <option value="PLAB / UKMLA">PLAB / UKMLA (UK)</option>
+                <option value="NEET PG">NEET PG / INI-CET (India)</option>
+                <option value="MRCS Surgery">MRCS Part A Surgery (UK/Intl)</option>
               </select>
             </div>
 
@@ -476,7 +475,7 @@ export default function AuthModal({ isOpen, onClose, onLogin, addToast, canClose
               </div>
               {password && (
                 <div style={{ marginTop: '0.4rem' }}>
-                  <div style={{ height: '4px', background: 'rgba(255,255,255,0.1)', borderRadius: '99px', overflow: 'hidden' }}>
+                  <div style={{ height: '4px', background: 'var(--border-subtle)', borderRadius: '99px', overflow: 'hidden' }}>
                     <div style={{ height: '100%', width: `${strength.score}%`, background: strength.color, transition: 'all 0.3s' }}></div>
                   </div>
                   <span style={{ fontSize: '0.75rem', color: strength.color, fontWeight: 600, marginTop: '0.2rem', display: 'block' }}>

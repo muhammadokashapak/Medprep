@@ -167,8 +167,9 @@ export default function MnemonicsLibrary() {
 
                 <div style={{
                   width: '36px', height: '36px', borderRadius: '50%',
-                  background: 'rgba(255,255,255,0.05)', display: 'flex',
-                  alignItems: 'center', justifyContent: 'center', color: 'var(--text-main)'
+                  background: 'var(--bg-card-hover)', display: 'flex',
+                  alignItems: 'center', justifyContent: 'center', color: 'var(--text-main)',
+                  transition: 'background 0.2s'
                 }}>
                   <i className={`fa-solid ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
                 </div>
@@ -185,7 +186,7 @@ export default function MnemonicsLibrary() {
                           alignItems: 'center',
                           gap: '0.75rem',
                           padding: '0.6rem 0.85rem',
-                          background: 'rgba(255,255,255,0.02)',
+                          background: 'var(--bg-card-hover)',
                           borderRadius: 'var(--radius-sm)',
                           border: '1px solid var(--border-subtle)'
                         }}
